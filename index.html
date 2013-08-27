@@ -1,0 +1,510 @@
+<html>
+<head>
+<title>Portfolio</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-10.1.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<style>
+body {
+  padding-left:10px;
+  padding-right:10px;
+  color:rgb(255,255,255);
+  background-color: rgb(241,241,241);
+}
+
+@font-face {
+  font-family: 'Circula'; src: url('media/circula.ttf')
+}
+
+h1 {
+  font-family:'Circula';
+  font-size:60px;
+  margin-top:20px;
+  margin-bottom:-10px;
+}
+
+#appWrapper {
+      width:350px;
+      height:609px;
+      padding-top:130px;
+      padding-left:30px;
+      background-image:url('media/iphone4.png');
+      position:relative;
+}
+
+#appContent {
+      background-image:url('media/iosbg1.png');
+      height:481px;
+      width:320px;
+      float:left;
+      
+}
+
+#title {
+   text-align:center;
+   color:black;
+}
+
+#subtitle {
+  margin-top:10px;
+  font-size:40px;
+}
+
+#notificationBar
+{
+  font-size:17px;
+  font-family: 'HelveticaNeue-Light';
+}
+
+#carrier
+{
+float:left;
+font-size:14px;
+margin-left:3px;
+margin-top:1px;
+}
+
+#time {
+ text-align:center;
+ margin-left:-50px;
+ z-index:10;
+}
+
+.filledCellDot
+{
+  height:4px;
+  width:4px;
+  border: 1px solid white;
+  background-color:white;
+  float:left;
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+.emptyCellDot
+{
+  height:4px;
+  width:4px;
+  border: 1px solid white;
+  float:left;
+  border-radius:2px;
+  margin-top: 8px;
+}
+
+#cellSpacer
+{
+float:left;
+width:10px;
+}
+
+#bar1 {
+margin-left:6px;
+}
+
+#bar2 {
+margin-left:2px;
+}
+
+#bar3 {
+margin-left:2px;
+}
+
+#bar4 {
+margin-left:2px;
+}
+
+#bar5 {
+margin-left:2px;
+}
+
+#batteryStatus {
+  float:right;
+  height:9px;
+  width:20px;
+  border: 1px solid white;
+  border-radius:1px;
+  background-color: white;
+  margin-top:4px;
+  margin-right:7px;
+}
+#batteryCap {
+  float:right;
+  height:4px;
+  width:2px;
+  border: 1px solid white;
+  border-radius:0px;
+  background-color: white;
+  margin-top:6px;
+  margin-right:-25px;
+}
+
+#apps {
+  float:left;
+  margin-top:10px;
+  margin-left:-70px;
+  text-align: justify;
+  margin-right:0px;
+}
+
+.appIcon
+{
+  margin-top:20px;
+  height:57px;
+  width:57px;
+  border-radius: 9px;
+  /*-moz-transition: all .3s/* linear;  */
+  /*-webkit-transition: all .3s linear;  */
+  /*-ms-transition: all .3s linear;  */
+  /*-o-transition: all .3s linear;  */
+  /*transition: all .3s linear;  */
+}
+
+.appIcon:active
+{
+  /*opacity:0.6;*/
+  /*filter:alpha(opacity=100);*/
+  -webkit-filter: brightness(40%); 
+  -moz-filter: brightness(40%);   
+  -ms-filter: brightness(40%);
+  -o-filter: brightness(40%); 
+  filter: brightness(40%);  
+}
+
+.first {
+  margin-left:7px;
+}
+
+.two {
+  margin-left:15px;
+}
+
+.third {
+  margin-left:15px;
+}
+
+.fourth {
+  margin-left:15px;
+}
+
+.topRow {
+  margin-top:0;
+}
+
+#footer {
+  background-color:black;
+}
+
+.iconName {
+  font-family: 'HelveticaNeue-Light';
+  color:white;
+  text-algin:center;
+}
+
+.firstText {
+  margin-left:18px;
+}
+
+.twoText {
+  margin-left:22px;
+}
+
+.thirdText {
+  margin-left:32px;
+}
+
+.fourthText {
+  margin-left:32px;
+}
+
+.chirps {
+  margin-left:16px;
+}
+
+.gPlus {
+  margin-left:27px;
+}
+
+.github {
+  margin-left:24px;
+}
+
+.press {
+  margin-left:34px;
+}
+
+.contact {
+  margin-left:12px;
+}
+
+#browser {
+  z-index:1000;
+  height:480px;
+  width:320px;
+  margin-top:-300px;
+  border:0;
+}
+
+#homeButton.ios {
+      position:absolute;
+      width:69px;
+      height:69px;
+      bottom:32px;
+      left:155px;
+    }
+    #homeButton.ios:hover {
+      cursor:pointer;
+    }
+
+.flatButton {
+  padding:10px;
+  font-family: 'Circula';
+  font-size:20px;
+  border-radius:7px;
+  -moz-transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -ms-transition: all .1s linear;  
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  color:white; 
+}
+
+.flatRed {
+  background-color:rgb(192, 57, 43);
+}
+
+.flatBlue {
+  background-color:rgb(52, 152, 219);
+
+}
+
+.flatButton:hover {
+  -webkit-filter: brightness(120%); 
+  -moz-filter: brightness(120%);   
+  -ms-filter: brightness(120%);
+  -o-filter: brightness(120%); 
+  filter: brightness(120%);
+  color:white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.flatButton:active {
+  -webkit-filter: brightness(40%); 
+  -moz-filter: brightness(40%);   
+  -ms-filter: brightness(40%);
+  -o-filter: brightness(40%); 
+  filter: brightness(40%);
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+    }
+
+
+</style>
+</head>
+<body>
+<h1 id="title">GAUTAM MITTAL<small><br /><div id="subtitle">Frontend Developer</div></small></h1>
+<br />
+<center>
+<div id="appWrapper">
+<div id="appContent">
+<div id="notificationBar">
+<span id="bar1" class="filledCellDot"></span><span id="cellSpacer"> </span> 
+<span id="bar2" class="filledCellDot"></span><span id="cellSpacer"> </span> 
+<span id="bar3" class="filledCellDot"></span> <span id="cellSpacer"> </span>
+<span id="bar4" class="emptyCellDot"></span> <span id="cellSpacer"> </span>
+<span id="bar5" class="emptyCellDot"></span> <span id="cellSpacer"> </span>
+<span id="carrier">AT&T</span>
+<span id="time"></span>
+<span id="batteryStatus"></span>
+<span id="batteryCap"></span>
+</div>
+<div id="apps">
+  <img id="blend" src="media/icons/blend.png" class="appIcon first topRow" />
+  <img id="mathninja" src="media/icons/icon.png" class="appIcon two topRow" />
+  <img id="smartcodes" src="http://www.gautam.cc/images/smartcodesico.png" class="appIcon third topRow" />
+  <img id="deskrock" src="http://www.gautam.cc/images/rockico.png" class="appIcon fourth topRow" />
+  <br />
+<span class="iconName firstText">Blend</span>
+<span class="iconName twoText">MathNinja</span>
+<span class="iconName thirdText">SC</span>
+<span class="iconName fourthText">DeskRock</span>
+<br />
+  <img id="tweets" src="http://www.redmagnetmedia.com/wp-content/uploads/2013/03/twitter_neue_ios_icon_by_theintenseplayer-d5fwil3.png" class="appIcon first" />
+  <img id="googlePlus" src="media/icons/googlesocial.png" class="appIcon two" />
+  <img id="githubProf" src="http://chrismwayne.com/wp-content/uploads/2012/10/github-logo.png" class="appIcon third" />
+  <img id="pressLinks" src="http://www.iphonefaq.org/images/archives/app-newsstand-icon.jpg" class="appIcon fourth" />
+  <br />
+
+<span class="iconName chirps">Chirps</span>
+<span class="iconName gPlus">Google+</span>
+<span class="iconName github">Github</span>
+<span class="iconName press">Press</span>
+  <br />
+<img id="mail" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/mail_ios7_ios_7.png" class="appIcon first" />
+
+
+
+<br />
+<span class="iconName contact">Contact</span>
+
+ <!--  <img src="icon.png" class="appIcon first" />
+  <img src="icon.png" class="appIcon two" />
+  <img src="icon.png" class="appIcon third" />
+  <img src="icon.png" class="appIcon fourth" />
+  <br /> -->
+</div>
+</div>
+<div id="homeButton" class="ios"></div>
+</div>
+<br /><br />
+<hr class="style-one">
+<a href="mailto:gautam@mittal.net" class="flatButton flatRed">Want a cool website like this?</a>
+<a href="https://www.twitter.com/gthinkin/" class="flatButton flatBlue">Follow @gthinkin</a><br /><br /><br />
+
+
+</center>
+
+
+<script>
+  
+  // $(.appIcon).click(function() {
+  //   $(.appIcon).style = ""
+  // });
+
+  $(document).ready(function () {
+  startTime();
+  prettify();
+
+  // setTimeout(function(){startTime()},500);
+
+  });
+  
+  function prettify() {
+    var chooseWrapper = Math.random();
+    if (chooseWrapper <= 0.50) {
+      $("#appWrapper").css( "background-image", "url('media/ipod4.png')" );
+    } else {
+      $("#appWrapper").css( "background-image", "url('media/iphone4.png')" );
+    }
+
+    var chooseWallpaper = Math.random();
+    if (chooseWallpaper <= 0.33) {
+      $("#appContent").css( "background-image", "url('media/iosbg1.png')" );
+    } else if (chooseWallpaper > 0.33 && chooseWallpaper < 0.66) {
+      $("#appContent").css( "background-image", "url('media/iosbg2.png')" );
+    } else {
+      $("#appContent").css( "background-image", "url('media/iosbg3.png')" );
+    }
+  }
+
+  $('#about').click(function () {
+  $('#aboutModal').modal({
+  keyboard:true
+  });
+  });
+  
+  $('#projects').click(function () {
+  $('#projectsModal').modal({
+  keyboard:true
+  });
+  });
+  
+  $('#contact').click(function () {
+  $('#contactModal').modal({
+  keyboard:true
+  });
+  });
+
+
+  $("#homeButton").click(function() {
+    $("#browser").remove();
+  });
+
+  $("#blend").click(function() {
+    $("#appContent").append('<iframe src="http://www.gautam.cc/beta/" id="browser"></iframe>');
+  });
+
+  $("#mathninja").click(function() {
+    $("#appContent").append('<iframe src="http://www.gautam.cc/mathninja/phonegap/www/" id="browser"></iframe>');
+  });
+
+  $("#smartcodes").click(function() {
+    $("#appContent").append('<iframe src="http://www.gautam.cc/smartcodes/phonegap/www/" id="browser"></iframe>');
+  });
+
+  $("#deskrock").click(function() {
+    $("#appContent").append('<iframe src="http://www.gautam.cc/deskrock" id="browser"></iframe>');
+  });
+
+  $("#tweets").click(function() {
+    $("#appContent").append('<iframe src="tweets.html" id="browser"></iframe>');
+  });
+
+  $("#googlePlus").click(function() {
+    $("#appContent").append('<iframe src="googleplus.html" id="browser"></iframe>');
+  });
+
+  $("#githubProf").click(function() {
+    $("#appContent").append('<iframe src="github.html" id="browser"></iframe>');
+  });
+  
+  $("#pressLinks").click(function() {
+    $("#appContent").append('<iframe src="press.html" id="browser"></iframe>');
+  });
+
+  $("#mail").click(function() {
+    $("#appContent").append('<iframe src="contact.html" id="browser"></iframe>');
+  });
+  
+  function startTime () {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var amPm = "AM";
+  m = checkTime(m);
+  s = checkTime(s);
+
+  if (h >= 12) {
+  amPm = "PM";
+  } else {
+  amPm = "AM";
+  }
+
+  if (h>12) {
+  h = h-12;
+  }
+
+  if (h == 0) {
+  h = 12;
+  }
+
+
+  document.getElementById('time').innerHTML=h+"<span class='blue'>:</span>"+m+" "+amPm;
+
+  t=setTimeout(function(){startTime()},500);
+
+  }
+  
+  function checkTime (i) {
+  if (i < 10) {
+	  i = "0"+i;
+	  }
+	  return i;
+  }
+</script>
+</body>
+</html>
