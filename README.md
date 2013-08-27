@@ -1,4 +1,4 @@
-<a href="http://www.gautam.cc/"></a>Gautam.cc</a> Blog
+<a href="http://www.gautam.cc/">Gautam.cc</a> Blog
 =========
 
 Copyright (c) 2013 Gautam Mittal
