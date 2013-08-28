@@ -387,7 +387,6 @@ hr.style-one {
   $(document).ready(function () {
   startTime();
   prettify();
-
   // setTimeout(function(){startTime()},500);
 
   });
@@ -430,43 +429,67 @@ hr.style-one {
 
 
   $("#homeButton").click(function() {
-    $("#browser").remove();
+    $("#browser").fadeOut("fast");
+    setTimeout(removeBrowser, 500);
   });
+
+  function removeBrowser() {
+    $("#browser").remove();
+  }
 
   $("#blend").click(function() {
     $("#appContent").append('<iframe src="http://www.gautam.cc/beta/" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
+
   });
 
   $("#mathninja").click(function() {
     $("#appContent").append('<iframe src="http://www.gautam.cc/mathninja/phonegap/www/" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#smartcodes").click(function() {
     $("#appContent").append('<iframe src="http://www.gautam.cc/smartcodes/phonegap/www/" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#deskrock").click(function() {
     $("#appContent").append('<iframe src="http://www.gautam.cc/deskrock" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#tweets").click(function() {
     $("#appContent").append('<iframe src="tweets.html" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#googlePlus").click(function() {
     $("#appContent").append('<iframe src="googleplus.html" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#githubProf").click(function() {
     $("#appContent").append('<iframe src="github.html" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
   
   $("#pressLinks").click(function() {
     $("#appContent").append('<iframe src="press.html" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
 
   $("#mail").click(function() {
     $("#appContent").append('<iframe src="contact.html" id="browser"></iframe>');
+    $("#browser").hide();
+    $("#browser").fadeIn("fast");
   });
   
   function startTime () {
