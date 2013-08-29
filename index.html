@@ -387,6 +387,8 @@ hr.style-one {
   //   $(.appIcon).style = ""
   // });
 
+  var iphoneColor = "black";
+
   $(document).ready(function () {
   startTime();
   prettify();
@@ -398,8 +400,10 @@ hr.style-one {
     var chooseWrapper = Math.random();
     if (chooseWrapper <= 0.50) {
       $("#appWrapper").css( "background-image", "url('media/ipod4.png')" );
+      iphoneColor = "white";
     } else {
       $("#appWrapper").css( "background-image", "url('media/iphone4.png')" );
+      iphoneColor = "black";
     }
 
     var chooseWallpaper = Math.random();
@@ -413,6 +417,16 @@ hr.style-one {
       $("#appContent").css( "background-image", "url('media/iosbg4.png')" );
     }
   }
+
+  $("#homeButton").dblclick(function() {
+      if (iphoneColor == "white") {
+        $("#appWrapper").css( "background-image", "url('media/iphone4.png')" );
+        iphoneColor = "black";
+      } else {
+        $("#appWrapper").css( "background-image", "url('media/ipod4.png')" );
+        iphoneColor = "white";
+      }
+  });
 
   $('#about').click(function () {
   $('#aboutModal').modal({
@@ -492,7 +506,7 @@ hr.style-one {
   });
 
   $("#mail").click(function() {
-    $("#appContent").append('<iframe src="pages/contact.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="contact.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
