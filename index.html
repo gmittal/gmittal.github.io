@@ -13,6 +13,8 @@ body {
   padding-right:10px;
   color:rgb(255,255,255);
   background-color: rgb(241,241,241);
+  /*background-image: url('media/bgpattern.png');*/
+  /*background-size: 100%;*/
 }
 
 @font-face {
@@ -372,7 +374,8 @@ hr.style-one {
 <br /><br />
 <hr class="style-one">
 <a href="mailto:gautam@mittal.net" class="flatButton flatRed">Want a cool website like this?</a>
-<a href="https://www.twitter.com/gthinkin/" class="flatButton flatBlue">Follow @gthinkin</a><br /><br /><br />
+<a href="https://www.twitter.com/gthinkin/" class="flatButton flatBlue">Follow @gthinkin</a><br /><br />
+<span style="color:black;">Copyright 2013 Gautam Mittal. All rights reserved.</span>
 
 
 </center>
@@ -400,12 +403,14 @@ hr.style-one {
     }
 
     var chooseWallpaper = Math.random();
-    if (chooseWallpaper <= 0.33) {
+    if (chooseWallpaper <= 0.25) {
       $("#appContent").css( "background-image", "url('media/iosbg1.png')" );
-    } else if (chooseWallpaper > 0.33 && chooseWallpaper < 0.66) {
+    } else if (chooseWallpaper > 0.25 && chooseWallpaper < 0.50) {
       $("#appContent").css( "background-image", "url('media/iosbg2.png')" );
-    } else {
+    } else if (chooseWallpaper > 0.50 && chooseWallpaper < 0.75) {
       $("#appContent").css( "background-image", "url('media/iosbg3.png')" );
+    } else {
+      $("#appContent").css( "background-image", "url('media/iosbg4.png')" );
     }
   }
 
@@ -463,31 +468,31 @@ hr.style-one {
   });
 
   $("#tweets").click(function() {
-    $("#appContent").append('<iframe src="tweets.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="pages/tweets.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
 
   $("#googlePlus").click(function() {
-    $("#appContent").append('<iframe src="googleplus.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="pages/googleplus.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
 
   $("#githubProf").click(function() {
-    $("#appContent").append('<iframe src="github.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="pages/github.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
   
   $("#pressLinks").click(function() {
-    $("#appContent").append('<iframe src="press.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="pages/press.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
 
   $("#mail").click(function() {
-    $("#appContent").append('<iframe src="contact.html" id="browser"></iframe>');
+    $("#appContent").append('<iframe src="pages/contact.html" id="browser"></iframe>');
     $("#browser").hide();
     $("#browser").fadeIn("fast");
   });
