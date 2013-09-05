@@ -2,7 +2,7 @@ var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs")
-    port = process.argv[2] || 8000;
+    port = process.argv[2] || 8080;
 
 http.createServer(function(request, response) {
 
@@ -34,4 +34,4 @@ http.createServer(function(request, response) {
   });
 }).listen(parseInt(port, 10));
 
-console.log("Webserver running at http://localhost:" + port + "/\nCTRL + C to shutdown.");
+console.log("Hello there, kind developer! I, your humble assistant is running your beautiful webpage at http://localhost:" + port + "/\nIf you wish to close the server, press the following keys: CTRL + C to shutdown.");
