@@ -1,12 +1,13 @@
 <html>
 <head>
-<title>Portfolio</title>
+<title>Gautam Mittal</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script src="js/jquery-10.1.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<link rel="shortcut icon" href="favicons/favicon.png" />
 <style>
 body {
   padding-left:10px;
@@ -18,7 +19,7 @@ body {
 }
 
 @font-face {
-  font-family: 'Circula'; src: url('media/circula.ttf')
+  font-family: 'Circula'; src: url('portfolio-media/circula.ttf')
 }
 
 h1 {
@@ -33,12 +34,12 @@ h1 {
       height:609px;
       padding-top:130px;
       padding-left:30px;
-      background-image:url('media/iphone4.png');
+      background-image:url('portfolio-media/ipod4.png');
       position:relative;
 }
 
 #appContent {
-      background-image:url('media/iosbg1.png');
+      background-image:url('portfolio-media/mav.jpg');
       height:481px;
       width:320px;
       float:left;
@@ -334,8 +335,8 @@ hr.style-one {
 <span id="batteryCap"></span>
 </div>
 <div id="apps">
-  <img id="blend" src="media/icons/blend.png" class="appIcon first topRow" />
-  <img id="mathninja" src="media/icons/icon.png" class="appIcon two topRow" />
+  <img id="blend" src="portfolio-media/icons/blend.png" class="appIcon first topRow" />
+  <img id="mathninja" src="portfolio-media/icons/icon.png" class="appIcon two topRow" />
   <img id="smartcodes" src="http://www.gautam.cc/images/smartcodesico.png" class="appIcon third topRow" />
   <img id="deskrock" src="http://www.gautam.cc/images/rockico.png" class="appIcon fourth topRow" />
   <br />
@@ -345,7 +346,7 @@ hr.style-one {
 <span class="iconName fourthText">DeskRock</span>
 <br />
   <img id="tweets" src="http://www.redmagnetmedia.com/wp-content/uploads/2013/03/twitter_neue_ios_icon_by_theintenseplayer-d5fwil3.png" class="appIcon first" />
-  <img id="googlePlus" src="media/icons/googlesocial.png" class="appIcon two" />
+  <img id="googlePlus" src="portfolio-media/icons/googlesocial.png" class="appIcon two" />
   <img id="githubProf" src="http://chrismwayne.com/wp-content/uploads/2012/10/github-logo.png" class="appIcon third" />
   <img id="pressLinks" src="http://www.iphonefaq.org/images/archives/app-newsstand-icon.jpg" class="appIcon fourth" />
   <br />
@@ -372,11 +373,9 @@ hr.style-one {
 <div id="homeButton" class="ios"></div>
 </div>
 <br /><br />
-<hr class="style-one">
-<a href="mailto:gautam@mittal.net" class="flatButton flatRed">Want a cool website like this?</a>
-<a href="https://www.twitter.com/gthinkin/" class="flatButton flatBlue">Follow @gthinkin</a><br /><br />
-<span style="color:black;">Copyright 2013 Gautam Mittal. All rights reserved.</span>
+<span id="footerMenuArea">
 
+</span>
 
 </center>
 
@@ -392,38 +391,49 @@ hr.style-one {
   $(document).ready(function () {
   startTime();
   prettify();
+
+  $("#appWrapper").hide();
+  setTimeout(awesomeStartup, 800);
+  // $("#appWrapper").effect("bounce");
   // setTimeout(function(){startTime()},500);
 
   });
+
+  function awesomeStartup() {
+    $("#appWrapper").effect("slide", "slow");
+    $("#footerMenuArea").html("<hr class=\"style-one\"><a href=\"mailto:gautam@mittal.net\" class=\"flatButton flatRed\">Want a cool website like this?</a><a href=\"https://www.twitter.com/gthinkin/\" class=\"flatButton flatBlue\">Follow @gthinkin</a><br /><br /><span style=\"color:black;\">Copyright 2013 Gautam Mittal. All rights reserved.</span>").hide().fadeIn();
+    
+  }
   
   function prettify() {
     var chooseWrapper = Math.random();
     if (chooseWrapper <= 0.50) {
-      $("#appWrapper").css( "background-image", "url('media/ipod4.png')" );
+      $("#appWrapper").css( "background-image", "url('portfolio-media/ipod4.png')" );
       iphoneColor = "white";
     } else {
-      $("#appWrapper").css( "background-image", "url('media/iphone4.png')" );
+      $("#appWrapper").css( "background-image", "url('portfolio-media/ipod4.png')" );
+      // $("#appWrapper").css( "background-image", "url('portfolio-media/iphone4.png')" );
       iphoneColor = "black";
     }
 
     var chooseWallpaper = Math.random();
     if (chooseWallpaper <= 0.25) {
-      $("#appContent").css( "background-image", "url('media/iosbg1.png')" );
+      $("#appContent").css( "background-image", "url('portfolio-media/mav.jpg')" );
     } else if (chooseWallpaper > 0.25 && chooseWallpaper < 0.50) {
-      $("#appContent").css( "background-image", "url('media/iosbg2.png')" );
+      $("#appContent").css( "background-image", "url('portfolio-media/mav.jpg')" );
     } else if (chooseWallpaper > 0.50 && chooseWallpaper < 0.75) {
-      $("#appContent").css( "background-image", "url('media/iosbg3.png')" );
+      $("#appContent").css( "background-image", "url('portfolio-media/mav.jpg')" );
     } else {
-      $("#appContent").css( "background-image", "url('media/iosbg4.png')" );
+      $("#appContent").css( "background-image", "url('portfolio-media/mav.jpg')" );
     }
   }
 
   $("#homeButton").dblclick(function() {
       if (iphoneColor == "white") {
-        $("#appWrapper").css( "background-image", "url('media/iphone4.png')" );
+        $("#appWrapper").css( "background-image", "url('portfolio-media/iphone4.png')" );
         iphoneColor = "black";
       } else {
-        $("#appWrapper").css( "background-image", "url('media/ipod4.png')" );
+        $("#appWrapper").css( "background-image", "url('portfolio-media/ipod4.png')" );
         iphoneColor = "white";
       }
   });
@@ -550,4 +560,3 @@ hr.style-one {
 </script>
 </body>
 </html>
-html>
