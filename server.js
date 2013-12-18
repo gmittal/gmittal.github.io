@@ -34,4 +34,4 @@ http.createServer(function(request, response) {
   });
 }).listen(parseInt(port, 10));
 
-console.log("Hello there, kind developer! I, your humble assistant is running your beautiful webpage at http://localhost:" + port + "/\nIf you wish to close the server, press the following keys: CTRL + C to shutdown.");
+console.log("Server running at http://localhost:" + port + "/\n CTRL + C to shutdown.");
