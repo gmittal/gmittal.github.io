@@ -18,8 +18,11 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
     <style>
+    @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+
     body {
         margin-top: -30px;
+        font-family: 'Raleway';
     }
 
     .headerIntro {
@@ -73,7 +76,8 @@
 
     h3 {
         color:#3498db;
-        font-weight: 900;
+        font-weight: 800;
+        font-family: 'Raleway';
     }
 
     .socialLinks img {
@@ -93,8 +97,9 @@
 
     h5 {
         color:#3498db;
-        font-weight: 900;
-    
+        font-weight: 800;
+        font-family: 'Raleway';
+        /*display: inline-block;*/
         }
 
         .talkToGautam {
@@ -115,7 +120,53 @@
             /*font-weight: ;*/
         }
 
+        .whatsNew {
+            /*float:left;*/
+            /*display: inline-block;*/
+        }
+
+        .recentUpdates {
+            /*float:right;*/
+            /*margin-top: -575px;*/
+            /*display:inline-block;*/
+        }
+
+        /*.projects {*/
+            /*float:left;*/
+            /*display: inline-block;*/
+        /*}*/
+
+        #returnConfirmHide {
+            height: 0;
+            width: 0;
+            border: 0;
+            /*margin-top: -100px;*/
+        }
+
+        .iPhoneDisplay {
+            background-image: url('media/iphonebg.png');
+            height: 474px;
+            width:227px;
+            background-size:100%;
+            padding-top:68px;
+            padding-left:2px;
+            display: inline-block;
+
+        }
+
+        .appScreenshot {
+            height:340px;
+        }
+
+        h6 {
+            font-weight: 800;
+            font-family: 'Raleway';
+            line-height: 1;
+        }
+
     @media only screen and (max-device-width: 480px) {
+        @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+
         body {
         margin-top: -30px;
         }
@@ -172,13 +223,16 @@
 
         h3 {
         color:#3498db;
-        font-weight: 900;
+        font-weight: 800;
+        font-family: 'Raleway';
     
         }
 
         h5 {
         color:#3498db;
-        font-weight: 900;
+        font-weight: 800;
+        font-family: 'Raleway';
+
     
         }
 
@@ -218,21 +272,57 @@
         <img src="media/android.png" class="img-responsive" id="profilePic" />
         <p class="h1">Gautam Mittal.</p>
         <p class="description lead">13, Student, Martial Artist, Hacker.<br />
-            Palo Alto, California.</p>
+            <strong>Palo Alto, California</strong></p>
     </div>
     
     <div class="midContainer">
+        <div class="whatsNew">
             <h3>What's New?</h3>
-            <p>Fresh from <a href="https://twitter.com/gthinkin/">@gthinkin</a></p>
+            <p>Fresh from <a href="https://twitter.com/gthinkin/">@gthinkin</a>.</p>
             <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+        </div>
+        <br />
 
             
+            <div id="projects">
+                <h3>Projects</h3>
+                <p>I enjoy building cool apps, games, and websites. Here are some of my recent projects.</p>
+                <center>
+                <span id="iPhoneArea">
+                    
+                    <div class="iPhoneDisplay" id="sc2">
+                        <img src="media/gautamsc.png" class="appScreenshot"/>
+                    </div>
+                    
+                </span>
+                <br />
+                    <span style="margin-left:10px;">
+                        <h5>Some Things I've Built:</h5>
+                        <p style="width:75%;">I've been building apps and websites for over 3 years, and mobile apps for about 1.5 years now. Here are a few of my recent projects:<br />
+                            <h6>Blend: Fruity Insanity</h6>
+                            <span style="margin-top:-10px;">A fast-paced matching game built during the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> <a href="http://www.makegameswith.us/summer-academy/">Internship</a></span><br /><br />
+                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+                            <img src="media/badges/playstore.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en');" />
+                            </p><br />
 
-            <h3>Projects</h3>
-            <p>Hello again.</p>
-        </div>
+                            <h6>jQRy: Easy QR Code Generation</h6>
+                            <span style="margin-top:-10px;">A simple JavaScript-based microlibrary to easily generate 2D QR codes, 1D Barcodes, and Data Matrixes.</span><br /><br />
+                            <img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/jqry/');" />
+                            </p>
+
+                            <br />
+
+                            <h6>MathNinja</h6>
+                            <span style="margin-top:-10px;">A cross-platform math game, with a cool martial arts twist.</span><br /><br />
+                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+                            <img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe');" />
+                            </p>
+
+                            <br />
+                    </span>
+                </center>
+            </div>
     </div>
             
             
@@ -246,26 +336,26 @@
             <div class="talkToGautam">
                 <p class="lead titleText">Reach Out</p>
                 <p style="margin-top:-30px;">This form sends me a message directly.</p>
-                <form action="https://docs.google.com/forms/d/1JQ2S37I8c0RFGrAW7iREN3o05gkMNlONBHueH9ppviw/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol style="padding-left: 0">
+                <form action="https://docs.google.com/forms/d/1JQ2S37I8c0RFGrAW7iREN3o05gkMNlONBHueH9ppviw/formResponse" method="POST" id="ss-form" target="returnConfirmHide" onsubmit=""><ol style="padding-left: 0">
 <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_387460702"><div class="ss-q-title">Name:
 </div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<input type="text" name="entry.387460702" value="" class="ss-q-short form-control" id="entry_387460702" dir="auto" aria-label="Name  " title="">
+<input type="text" name="entry.387460702" value="" class="ss-q-short form-control flat" id="entry_387460702" dir="auto" aria-label="Name  " title="">
 <div class="error-message"></div>
 
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1225958278"><div class="ss-q-title">Email (for my reply):
 <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<input type="text" name="entry.1225958278" value="" class="ss-q-short form-control" placeholder="Required" id="entry_1225958278" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+<input type="text" name="entry.1225958278" value="" class="ss-q-short form-control flat" placeholder="Required" id="entry_1225958278" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
 <div class="error-message"></div>
 
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1352669808"><div class="ss-q-title">Message:
 <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<textarea name="entry.1352669808" rows="8" cols="0" class="ss-q-long form-control" placeholder="Required" id="entry_1352669808" dir="auto" aria-label="Message  " aria-required="true" required="" style="resize:none; height:150px;"></textarea>
+<textarea name="entry.1352669808" rows="8" cols="0" class="ss-q-long form-control flat" placeholder="Required" id="entry_1352669808" dir="auto" aria-label="Message  " aria-required="true" required="" style="resize:none; height:150px;"></textarea>
 <div class="error-message"></div>
 
 </div></div></div>
@@ -275,10 +365,9 @@
 
 <input type="hidden" name="fbzx" value="-7676158585936928951">
 
-<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr"><br />
-<input type="submit" name="submit" value="Send" id="ss-submit" class="btn btn-primary btn-hg" />
-<div class="ss-secondary-text"></div></td>
-</tr></tbody></table></div></ol></form>
+<!-- <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr" style="width:100%;"> --> <br />
+<center><input type="submit" name="submit" value="Send" id="ss-submit" class="btn btn-danger btn-hg" style="width:80%;"/></center><!-- </td>
+</tr></tbody></table></div> --></ol></form>
             </div></center>
             <br />
             <center>
@@ -288,6 +377,7 @@
                 <img src="media/github-icon.png" class="img-responsive" onclick="window.open('https://github.com/gmittal/');"/>
                 <img src="media/email-icon.png" class="img-responsive" onclick="window.open('mailto:gautam@mittal.net');"/>
             </span>
+            <iframe id="returnConfirmHide" name="returnConfirmHide"></iframe>
         </center>
         <br />
         </div>
@@ -313,6 +403,29 @@
         screenHeight = $(window).height;
         screenWidth = $(window).width;
     }
+
+    $(document).ready(function() {
+        // alert($(window).width());
+        if ($(window).width() > 480) {
+        $("#iPhoneArea").prepend('<div class="iPhoneDisplay" id="sc1"><img src="media/blendsc.png" class="appScreenshot"/></div>');
+        $("#iPhoneArea").append('<div class="iPhoneDisplay" id="sc3"><img src="media/mathninjasc.jpeg" class="appScreenshot"/></div>');
+        }
+    });
+
+
+    $("#ss-submit").click(function() {
+        if (document.getElementById("entry_1225958278").value != "" && document.getElementById("entry_1352669808").value = "") {
+        setTimeout(function() {
+           // alert("It made it to Mr. Mittal");
+           $(".talkToGautam").prepend("<div class=\"alert alert-success alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button><b>Thanks!</b> I'll get back to you ASAP</div>");
+        document.getElementById("entry_387460702").value = "";
+        document.getElementById("entry_1225958278").value = "";
+        document.getElementById("entry_1352669808").value = ""; 
+    }, 1000)
+    }
+        
+
+    });
     </script>
   </body>
 </html>
