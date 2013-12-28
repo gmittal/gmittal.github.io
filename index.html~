@@ -2,11 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="dns-prefetch" href="//gautam.cc/revamp/about">
-    <link rel="dns-prefetch" href="//gautam.cc/revamp/projects">
-    <link rel="dns-prefetch" href="//gautam.cc/revamp/contact">
-    <link rel="prefetch" href="bay-area-bg.jpg" />
-    
     <title>Gautam Mittal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,113 +18,369 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
     <style>
-    html {
-    padding:0;
-    margin:0;
-    }
-    
+    @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+
     body {
-   margin-top:-30px;
+        margin-top: -30px;
+        font-family: 'Raleway';
     }
 
-    .contentBox {
-   
-  }
-    
-    .nav {
-    
+    .headerIntro {
+        background-color: #34495e; /* #2c3e50; */
+        color:#ecf0f1;
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-right:15%;
+        padding-left:15%;
     }
 
-    .navBackground {
-    height: 40px;
-    width:310px;
-    background-color:rgb(28, 148, 179);
-    z-index:-5;
-    margin-top: -35px;
-    border-radius: 3px;
-    }
-
-    .nav a {
-    color:#ecf0f1;
-    }
-
-    .nav a:hover {
-    color:#f1c40f;
-    }
-
-    #cHeader h1 {
-   color:#ecf0f1;
-    }
-
-    #cHeader p.lead {
-    color:#ecf0f1;
+    .headerIntro .h1 {
+        font-weight: 900;
+        font-size:55px;
+        margin-top:20px;
     }
 
     #profilePic {
-   
+        margin-top: 20px;
+        border-radius: 50%;
+        height: 200px;
     }
 
-    .social {
-    height:100px;
-    display:inline-block;
-    -moz-transition: all .3s/* linear; 
-    -webkit-transition: all .3s linear; 
-    -ms-transition: all .3s linear;  
-    -o-transition: all .3s linear; 
-    transition: all .3s linear; 
+    .boxShadow {
+                box-shadow: 0 3px 15px #000;
+        -moz-box-shadow: 0 3px 15px #000;
+        -o-box-shadow: 0 3px 15px #000;
     }
 
-    .social:hover {
-    opacity: 0.5;  
+    .headerIntro .description {
+        font-size:25px;
     }
 
-    #cHeader { 
-/* background: url('stanfordbg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-   background-size: cover;*/
-
-   
+    .midContainer {
+        background-color: #ecf0f1;
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-right:15%;
+        padding-left:15%;
     }
 
-    .footer {
-    float:bottom;
+    .contactAboutSection {
+        /*background-color:#2c3e50;*/
+        /*color:#ecf0f1;*/
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-right:15%;
+        padding-left:15%;
+
     }
+
+    h3 {
+        color:#3498db;
+        font-weight: 800;
+        font-family: 'Raleway';
+    }
+
+    .socialLinks img {
+        height:75px;
+        display: inline-block;
+        border: 3px solid #3498db;
+        border-radius: 15px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+    }
+
+    .socialLinks img:hover {
+        border: 3px solid #c0392b;
+    }
+
+    h5 {
+        color:#3498db;
+        font-weight: 800;
+        font-family: 'Raleway';
+        /*display: inline-block;*/
+        }
+
+        .talkToGautam {
+            background-color:#ecf0f1;
+            width: 550px;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #reachOutForm input {
+             
+        }
+
+        .titleText {
+            color:#3498db;
+            /*font-weight: ;*/
+        }
+
+        .whatsNew {
+            /*float:left;*/
+            /*display: inline-block;*/
+        }
+
+        .recentUpdates {
+            /*float:right;*/
+            /*margin-top: -575px;*/
+            /*display:inline-block;*/
+        }
+
+        /*.projects {*/
+            /*float:left;*/
+            /*display: inline-block;*/
+        /*}*/
+
+        #returnConfirmHide {
+            height: 0;
+            width: 0;
+            border: 0;
+            /*margin-top: -100px;*/
+        }
+
+        .iPhoneDisplay {
+            background-image: url('media/iphonebg.png');
+            height: 474px;
+            width:227px;
+            background-size:100%;
+            padding-top:68px;
+            padding-left:2px;
+            display: inline-block;
+
+        }
+
+        .appScreenshot {
+            height:340px;
+        }
+
+        h6 {
+            font-weight: 800;
+            font-family: 'Raleway';
+            line-height: 1;
+        }
+
+    @media only screen and (max-device-width: 480px) {
+        @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+
+        body {
+        margin-top: -30px;
+        }
+
+        .headerIntro {
+        background-color: #2c3e50;
+        color:#ecf0f1;
+        padding-top:40px;
+        padding-bottom: 20px;
+        padding-right:15%;
+        padding-left:15%;
+        text-align: center;
+        }
+
+        .headerIntro .h1 {
+        font-weight: 900;
+        font-size:55px;
+        margin-top:10px;
+        }
+
+      #profilePic {
+        margin-top: 15px;
+        border-radius: 50%;
+        height: 150px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+        .boxShadow {
+                border:1px;
+        }
+
+        .headerIntro .description {
+        font-size:25px;
+        }
+
+            .midContainer {
+        background-color: #ecf0f1;
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-right:15%;
+        padding-left:15%;
+        }
+
+        .contactAboutSection {
+        /*background-color:#2c3e50;*/
+        /*color:#ecf0f1;*/
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-right:15%;
+        padding-left:15%;
+
+        }
+
+        h3 {
+        color:#3498db;
+        font-weight: 800;
+        font-family: 'Raleway';
     
-    .container {
-  
+        }
+
+        h5 {
+        color:#3498db;
+        font-weight: 800;
+        font-family: 'Raleway';
+
+    
+        }
+
+        .socialLinks img {
+        height:60px;
+        display: inline-block;
+        border: 3px solid #3498db;
+        border-radius: 15px;
+        }
+
+        .socialLinks img:hover {
+            border: 3px solid #c0392b;
+        }
+
+        .talkToGautam {
+            background-color:#ecf0f1;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        #reachOutForm input {
+             
+        }
+
+        .titleText {
+            color:#3498db;
+
+        }
+
     }
     </style>
   </head>
   <body>
-  <div id="cHeader" style="margin-top: -0px; background-color:black; background: url('bay-area-bg.jpg') no-repeat center center;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-   background-size: 100% 100%;">
-<center><br /><h1 id="headerText"><img id="profilePic" src="android2.png" style="height:200px; margin-top:5px;"><br />Gautam Mittal</h1>
-    <p class="lead">Teenage Developer</p>
-    <span class="nav"><a id="homeNav" href="#">Home</a>&nbsp; &nbsp; &nbsp;<a id="aboutNav" href="#">About</a>&nbsp; &nbsp; &nbsp;<a id="projectsNav" href="#">Projects</a>&nbsp; &nbsp; &nbsp;<a id="contactNav" href="#">Contact</a></span><div class="navBackground"></div></center>
-<hr style="width:100%;"/>
+    <div class="headerIntro">
+        <img src="media/android.png" class="img-responsive" id="profilePic" />
+        <p class="h1">Gautam Mittal.</p>
+        <p class="description lead">13, Student, Martial Artist, Hacker.<br />
+            <strong>Palo Alto, California</strong></p>
     </div>
-    <div class="container">
-    <div class="contentBox">
-    <center><h4>Gautam = Student + Hacker + Martial Artist.</h4>
-    <p align="center">Hi! I'm a student developer from Silicon Valley. Feel free to check out my code and personal accounts:</p><br />
-<span><img class="img-responsive social" src="http://www.guildfordandwaverleyccg.nhs.uk/website/X09413/files/twitter-icon.png" onclick="window.open('https://twitter.com/gthinkin');" /><img class="img-responsive social" src="http://isource.com/wp-content/uploads/2013/05/google-plus-ios-icon.png" onclick="window.open('https://plus.google.com/+GautamMittal');" /><img class="img-responsive social" src="http://idiap.github.io/bob/img/github.png" onclick="window.open('https://github.com/gmittal/');" /></span>
-</center>
-<br />
-<br />
-<div class="footer">
-<hr />
-&copy; 2013 Gautam Mittal | <a href="mailto:gautam@mittal.net">gautam@mittal.net</a> | <a href="https://twitter.com/gthinkin/">@gthinkin</a>
+    
+    <div class="midContainer">
+        <div class="whatsNew">
+            <h3>What's New?</h3>
+            <p>Fresh from <a href="https://twitter.com/gthinkin/">@gthinkin</a>.</p>
+            <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <br />
+
+            
+            <div id="projects">
+                <h3>Projects</h3>
+                <p>I enjoy building cool apps, games, and websites. Here are some of my recent projects.</p>
+                <center>
+                <span id="iPhoneArea">
+                    
+                    <div class="iPhoneDisplay" id="sc2">
+                        <img src="media/gautamsc.png" class="appScreenshot"/>
+                    </div>
+                    
+                </span>
+                <br />
+                    <span style="margin-left:10px;">
+                        <h5>Some Things I've Built:</h5>
+                        <p style="width:75%;">I've been building apps and websites for over 3 years, and mobile apps for about 1.5 years now. Here are a few of my recent projects:<br />
+                            <h6>Blend: Fruity Insanity</h6>
+                            <span style="margin-top:-10px;">A fast-paced matching game built during the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> <a href="http://www.makegameswith.us/summer-academy/">Internship</a></span><br /><br />
+                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+                            <img src="media/badges/playstore.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en');" />
+                            </p><br />
+
+                            <h6>jQRy: Easy QR Code Generation</h6>
+                            <span style="margin-top:-10px;">A simple JavaScript-based microlibrary to easily generate 2D QR codes, 1D Barcodes, and Data Matrixes.</span><br /><br />
+                            <img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/jqry/');" />
+                            </p>
+
+                            <br />
+
+                            <h6>MathNinja</h6>
+                            <span style="margin-top:-10px;">A cross-platform math game, with a cool martial arts twist.</span><br /><br />
+                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+                            <img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe');" />
+                            </p>
+
+                            <br />
+                    </span>
+                </center>
+            </div>
+    </div>
+            
+            
+            
+            
+
+        <div class="contactAboutSection">
+            <h3>Say Hello!</h3>
+            <p align="justify"><b>Feel free to send me an <a href="mailto:gautam@mittal.net">email!</a></b> I also occasionally check my various social accounts, so don't be hesistant to contact me through those as well.</p><br />
+            <center>
+            <div class="talkToGautam">
+                <p class="lead titleText">Reach Out</p>
+                <p style="margin-top:-30px;">This form sends me a message directly.</p>
+                <form action="https://docs.google.com/forms/d/1JQ2S37I8c0RFGrAW7iREN3o05gkMNlONBHueH9ppviw/formResponse" method="POST" id="ss-form" target="returnConfirmHide" onsubmit=""><ol style="padding-left: 0">
+<div class="ss-form-question errorbox-good">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_387460702"><div class="ss-q-title">Name:
 </div>
-<br />
-<br />
-<br />
-    </div>
-    </div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
+<input type="text" name="entry.387460702" value="" class="ss-q-short form-control flat" id="entry_387460702" dir="auto" aria-label="Name  " title="">
+<div class="error-message"></div>
+
+</div></div></div> <div class="ss-form-question errorbox-good">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1225958278"><div class="ss-q-title">Email (for my reply):
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
+<input type="text" name="entry.1225958278" value="" class="ss-q-short form-control flat" placeholder="Required" id="entry_1225958278" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+<div class="error-message"></div>
+
+</div></div></div> <div class="ss-form-question errorbox-good">
+<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1352669808"><div class="ss-q-title">Message:
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
+<textarea name="entry.1352669808" rows="8" cols="0" class="ss-q-long form-control flat" placeholder="Required" id="entry_1352669808" dir="auto" aria-label="Message  " aria-required="true" required="" style="resize:none; height:150px;"></textarea>
+<div class="error-message"></div>
+
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-7676158585936928951&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<input type="hidden" name="fbzx" value="-7676158585936928951">
+
+<!-- <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr" style="width:100%;"> --> <br />
+<center><input type="submit" name="submit" value="Send" id="ss-submit" class="btn btn-danger btn-hg" style="width:80%;"/></center><!-- </td>
+</tr></tbody></table></div> --></ol></form>
+            </div></center>
+            <br />
+            <center>
+            <span class="socialLinks">
+                <img src="media/google-plus-icon.png" class="img-responsive" onclick="window.open('https://plus.google.com/+GautamMittal');"/>
+                <img src="media/twitter-icon.png" class="img-responsive" onclick="window.open('https://twitter.com/gthinkin/');"/>
+                <img src="media/github-icon.png" class="img-responsive" onclick="window.open('https://github.com/gmittal/');"/>
+                <img src="media/email-icon.png" class="img-responsive" onclick="window.open('mailto:gautam@mittal.net');"/>
+            </span>
+            <iframe id="returnConfirmHide" name="returnConfirmHide"></iframe>
+        </center>
+        <br />
+        </div>
     <!-- /.container -->
 
 
@@ -144,46 +395,37 @@
     <script src="js/flatui-radio.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
-    <script src="oridomi.min.js"></script>
     <script>
-    $(".container").hide();
-       $(document).ready(function() {
-	 setTimeout(function() { $(".container").fadeIn(); }, 1000);
-	 
-         $("#homeNav").click(function() {
-	 //do nothing!	 
-	 });
+    var screenHeight;
+    var screenWidth;
 
-	 $("#aboutNav").click(function() {
-var folded = new OriDomi(document.getElementsByClassName('container')[0]);
-	 folded.foldUp();
-	 setTimeout(function() {
-	 location.href = '/revamp/about';
-	 }, 500);
+    function checkScreenSize() {
+        screenHeight = $(window).height;
+        screenWidth = $(window).width;
+    }
 
-	 });
-
-	 $("#projectsNav").click(function() {
-var folded = new OriDomi(document.getElementsByClassName('container')[0]);
-	 folded.foldUp();
-	 setTimeout(function() {
-	 location.href = '/revamp/projects';
-	 }, 500);
-
-	 });
-
-	 $("#contactNav").click(function() {
-	 var folded = new OriDomi(document.getElementsByClassName('container')[0]);
-	  folded.foldUp();
-	   setTimeout(function() {
-	    location.href = '/revamp/contact';
-	     }, 500);
-
-	      });
+    $(document).ready(function() {
+        // alert($(window).width());
+        if ($(window).width() > 480) {
+        $("#iPhoneArea").prepend('<div class="iPhoneDisplay" id="sc1"><img src="media/blendsc.png" class="appScreenshot"/></div>');
+        $("#iPhoneArea").append('<div class="iPhoneDisplay" id="sc3"><img src="media/mathninjasc.jpeg" class="appScreenshot"/></div>');
+        }
+    });
 
 
+    $("#ss-submit").click(function() {
+        if (document.getElementById("entry_1225958278").value != "" && document.getElementById("entry_1352669808").value = "") {
+        setTimeout(function() {
+           // alert("It made it to Mr. Mittal");
+           $(".talkToGautam").prepend("<div class=\"alert alert-success alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button><b>Thanks!</b> I'll get back to you ASAP</div>");
+        document.getElementById("entry_387460702").value = "";
+        document.getElementById("entry_1225958278").value = "";
+        document.getElementById("entry_1352669808").value = ""; 
+    }, 1000)
+    }
+        
 
-       });
+    });
     </script>
   </body>
 </html>
