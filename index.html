@@ -11,7 +11,7 @@
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="favicons/favicon.png">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -35,7 +35,7 @@
     }
 
     .headerIntro .h1 {
-        font-weight: 900;
+        font-weight: 800;
         font-size:55px;
         margin-top:20px;
     }
@@ -167,7 +167,20 @@
 
         .appScreenshot {
             height:340px;
+	    -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.1s linear;
+-moz-transition: all 0.1s linear;
+-o-transition: all 0.1s linear;
+-ms-transition: all 0.1s linear;
         }
+
+	.appScreenshot:hover {
+	-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+filter: grayscale(0%);
+	}
 
         h6 {
             font-weight: 800;
@@ -175,14 +188,24 @@
             line-height: 1;
         }
 
+	.projectDescrip {
+
+	
+	}
+
     @media only screen and (max-device-width: 480px) {
         @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+
+	.row {
+	text-align:center;
+	margin:0;
+	}
 
         body {
         margin-top: -30px;
         }
 
-        o.headerIntro {
+        .headerIntro {
         background-color: #2c3e50;
         color:#ecf0f1;
         padding-top:40px;
@@ -317,49 +340,57 @@
                     </div>
                     
                 </span>
-                <br />
-                    <span style="margin-left:10px;">
+                <br /><br />
+                    <span>
                         <h5>Some Things I've Built:</h5>
-                        <p style="width:75%;">I've been building apps and websites for over 3 years, and mobile apps for about 1.5 years now. Here are a few of my recent projects:<br />
-                            <h6>Blend: Fruity Insanity</h6>
-                            <span style="margin-top:-10px;">A fast-paced matching game built during the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> <a href="http://www.makegameswith.us/summer-academy/">Internship</a></span><br /><br />
-                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
-                            <img src="media/badges/playstore.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en');" />
-                            </p><br />
+                        <p style="width:75%;">I've been building apps and websites for over 3 years, and mobile apps for about 1.5 years now. Here are a few of my recent projects:<br /><br />
 
-                            <h6>MITTAL.NET</h6>
-                            <span style="margin-top:-10px;">A revamp of <a href="http://mittal.net/">mittal.net</a>, my dad's old website.</span><br /><br />
-                            <img src="media/badges/ontheweb.png" onclick="window.open('http://mittal.net');" />
-                            </p>
+			<div class="row">
+        <div class="col-md-4">
+          <h6>Blend: Fruity Insanity!</h6>
+          <p>A fast-paced matching game built during the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> <a href="http://www.makegameswith.us/summer-academy/">Internship</a></p>
+          <p><img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+                            <img src="media/badges/playstore.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en');" /><br /><br /><a class="btn btn-primary" href="https://app.io/cFJOZT" role="button">View now &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h6>MITTAL.NET</h6>
+          <p>A revamp of <a href="http://mittal.net/">mittal.net</a>, my dad's old website.</p>
+          <p><img src="media/badges/ontheweb.png" onclick="window.open('http://mittal.net');" /><br /><br /><a class="btn btn-primary" href="http://www.mittal.net" role="button">View now &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h6>jQRy: Easy QR Code Generation</h6>
+          <p>A simple JavaScript-based microlibrary to easily generate 2D QR codes, 1D Barcodes, and Data Matrixes.</p>
+          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/jqry/');" /></p>
+        </div>
+      </div>
 
-                            <br />
-
-                            <h6>jQRy: Easy QR Code Generation</h6>
-                            <span style="margin-top:-10px;">A simple JavaScript-based microlibrary to easily generate 2D QR codes, 1D Barcodes, and Data Matrixes.</span><br /><br />
-                            <img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/jqry/');" />
-                            </p>
-
-                            <br />
-
-                            <h6>Bison Run</h6>
-                            <span style="margin-top:-10px;">A simple dodge-the-falling-objects game written in Objective C (as a part of the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> 2012 Internship)</span><br /><br />
-                            <img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/bison-run/');" />
-                            </p>
-
-                            <br />
-
-                            <h6>SmartCodes</h6>
-                            <span style="margin-top:-10px;">A speed-hack written in half an hour with a few cool APIs. Acted as inspiration for jQRy.</span><br /><br />
-                            <img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/smartcodes/khahfiplfeanacmefgeegielgpddcfmj');" />
-                            </p><br />
-
-                            <h6>MathNinja</h6>
-                            <span style="margin-top:-10px;">A cross-platform math game, with a cool martial arts twist.</span><br /><br />
-                            <img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
+<div class="row">
+        <div class="col-md-4">
+          <h6>Bison Run</h6>
+          <p>A simple dodge-the-falling-objects game written in Objective C (as a part of the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> 2012 Internship)</p>
+          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/bison-run/');" /></p>
+        </div>
+        <div class="col-md-4">
+          <h6>SmartCodes</h6>
+          <p>A speed-hack written in half an hour with a few cool APIs. Acted as inspiration for jQRy.</p>
+          <p><img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/smartcodes/khahfiplfeanacmefgeegielgpddcfmj');" /><br /><br /><a class="btn btn-primary" href="http://www.gautam.cc/smartcodes/" role="button">View now &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h6>MathNinja</h6>
+          <p>A cross-platform math game, with a cool martial arts twist.</p>
+          <p><img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
                             <img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe');" />
-                            </p>
+<br /><br /><a class="btn btn-primary" href="http://www.gautam.cc/mathninja/" role="button">View now &raquo;</a></p>
+        </div>
+      </div>
 
-                            <br />
+<div class="row">
+        <div class="col-md-4">
+          <h6>Flexiwatch: A Gesture-based Stopwatch</h6>
+          <p>A simple, flexible, gesture-based stopwatch written in HTMl5 + JavaScript. Built in an attempt to make a more running friendly stopwatch. Coming soon to the App Store.</p>
+          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/js-stopwatch/');" /></p>
+        </div>
+</div>
                     </span>
                 </center>
             </div>
@@ -416,6 +447,7 @@
                 <img src="media/twitter-icon.png" class="img-responsive" onclick="window.open('https://twitter.com/gthinkin/');"/>
                 <img src="media/github-icon.png" class="img-responsive" onclick="window.open('https://github.com/gmittal/');"/>
 <img src="media/hn-icon.png" class="img-responsive" onclick="window.open('https://news.ycombinator.com/user?id=gthinkin');"/>
+<img src="media/wordpress-icon.png" class="img-responsive" onclick="window.open('http://gthinkin.wordpress.com/');"/>
                 <img src="media/email-icon.png" class="img-responsive" onclick="window.open('mailto:gautam@mittal.net');"/>
             </span>
             <iframe id="returnConfirmHide" name="returnConfirmHide"></iframe>
