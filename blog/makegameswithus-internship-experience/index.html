@@ -25,26 +25,32 @@
         font-family: 'Raleway';
     }
 
-    .headerIntro {
-        background-color: #34495e; /* #2c3e50; */
+.headerIntro {
+        background-color: #2c3e50; /* #2c3e50; */
         color:#ecf0f1;
         padding-top:40px;
         padding-bottom: 40px;
         padding-right:15%;
         padding-left:15%;
+    text-align:center;
     }
 
     .headerIntro .h1 {
         font-weight: 800;
         font-size:55px;
         margin-top:20px;
+    text-align:center;
+    font-family: 'Helvetica Neue', 'Raleway';
     }
 
     #profilePic {
+        margin-left:auto;
+    margin-right:auto;
         margin-top: 20px;
         border-radius: 50%;
         height: 200px;
     }
+
 
     .boxShadow {
                 box-shadow: 0 3px 15px #000;
@@ -193,17 +199,7 @@ filter: grayscale(0%);
 	
 	}
 
-    .postTitle {
-        font-family: 'Raleway';
-        font-weight: 800;
-        font-size: 40px;
-        color:#3498db;
-    }
 
-    .date {
-        margin-top:-20px;
-        font-weight: 700;
-    }
 
     #post {
         width: 100%;
@@ -333,17 +329,15 @@ filter: grayscale(0%);
   <body>
     <div class="headerIntro">
         <img src="avatar.png" class="img-responsive" id="profilePic" />
-        <p class="h1">Gautam Mittal.</p>
-        <p class="description lead"><span id="status">13, Student, Martial Artist, Hacker.</span><br />
-            <strong><span id="location">Palo Alto, California</span></strong></p>
+        <p class="h1 postTitle">Gautam Mittal</p>
+        <p class="description lead"><span class="date">13, Student, Martial Artist, Hacker</span><br />
+            <span>by <strong><a href="http://www.gautam.cc/" style="color:white;">Gautam Mittal</a></strong></span><p>
 
             <p><a class="btn btn-primary" href="http://www.gautam.cc/">Return to Home &raquo;</a></p>
     </div>
     
     <div class="midContainer">
         <!-- <center> -->
-            <p class="postTitle">First Blog Post</p>
-            <p class="date">January 1st, 2013</p><br />
             <p id="post">Loading...</p>
         <!-- </center> -->
     </div>

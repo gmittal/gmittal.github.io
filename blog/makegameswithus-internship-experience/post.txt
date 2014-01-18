@@ -1,4 +1,4 @@
-<img src="mgwu-workspace.jpg" class="img-reponsive" style="border-radius: 7px;"/><br /><br />
+<center><img src="mgwu-workspace.jpg" class="img-reponsive" style="border-radius: 7px;"/></center><br /><br />
 
 This summer, I spent a large portion of the time interning for a small startup in Palo Alto known as <a href="http://www.makegameswith.us/">MakeGamesWithUs</a>.
 <br /><br />

@@ -26,21 +26,27 @@
     }
 
     .headerIntro {
-        background-color: #34495e; /* #2c3e50; */
+        background-color: #2c3e50; /* #2c3e50; */
         color:#ecf0f1;
         padding-top:40px;
         padding-bottom: 40px;
         padding-right:15%;
         padding-left:15%;
+	text-align:center;
+	background-image:url('chalkboardbg.png');
     }
 
     .headerIntro .h1 {
         font-weight: 800;
         font-size:55px;
         margin-top:20px;
+	text-align:center;
+	font-family: 'Helvetica Neue', 'Raleway';
     }
 
     #profilePic {
+        margin-left:auto;
+	margin-right:auto;
         margin-top: 20px;
         border-radius: 50%;
         height: 200px;
@@ -62,6 +68,14 @@
         padding-bottom: 40px;
         padding-right:15%;
         padding-left:15%;
+    }
+
+    #newOnGithub {
+    border: 0;
+    width: 100%;
+    height: 420px;
+    border-radius: 6px;
+
     }
 
     .contactAboutSection {
@@ -110,6 +124,10 @@
             display: inline-block;
             text-align: left;
         }
+
+	.tweets {
+	margin-top: 20px;
+	}
 
         #reachOutForm input {
              
@@ -314,20 +332,31 @@ filter: grayscale(0%);
   <body>
     <div class="headerIntro">
         <img src="media/android.png" class="img-responsive" id="profilePic" />
-        <p class="h1">Gautam Mittal.</p>
+        <p class="h1">Gautam Mittal</p>
         <p class="description lead"><span id="status">13, Student, Martial Artist, Hacker.</span><br />
             <strong><span id="location">Palo Alto, California</span></strong></p>
     </div>
     
     <div class="midContainer">
         <div class="whatsNew">
-            <h3>What's New?</h3>
-            <p>Fresh from <a href="https://twitter.com/gthinkin/">@gthinkin</a>.</p><center>
-            <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></center>
+            <h3>Blog</h3>
+	    <hr />
+	    <a href="http://www.gautam.cc/blog/learning-how-to-code/"><h6>Learning How To Code</h6></a>
+            <p><b>January 5th, 2014</b></p>
+            <p>So you want to learn how to code. It's not that hard when you actually get up and running with it...</p><br />
+            <a href="http://www.gautam.cc/blog/makegameswithus-internship-experience/"><h6>My Experience With MakeGamesWithUs</h6></a>
+            <p><b>October 18th, 2013</b></p>
+            <p>This summer, I spent a large portion of the time interning for a small startup in Palo Alto known as MakeGamesWithUs...</p><br />
+            <a href="http://www.gautam.cc/blog/first-blog-post/"><h6>First Blog Post</h6></a>
+            <p><b>October 13th, 2013</b></p>
+            <p>Hey Everyone! I'm Gautam, a developer living in Silicon Valley, California...</p><br />
+
+	    <br />
+	    <a class="btn btn-primary" href="http://www.gautam.cc/blog/">View Archives &raquo;</a>
+
         </div>
         <br />
-
+	<hr style="background-color:grey; height: 1px;">
             
             <div id="projects">
                 <h3>Projects</h3>
@@ -404,6 +433,7 @@ filter: grayscale(0%);
             <h3>Say Hello!</h3>
             <p align="justify"><b>Feel free to send me an <a href="mailto:gautam@mittal.net">email!</a></b> I also occasionally check my various social accounts, so don't be hesistant to contact me through those as well.</p><br />
             <center>
+	    <div style="clear:none;">
             <div class="talkToGautam">
                 <p class="lead titleText">Reach Out</p>
                 <p style="margin-top:-30px;">This form sends me a message directly.</p>
@@ -439,8 +469,14 @@ filter: grayscale(0%);
 <!-- <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr" style="width:100%;"> --> <br />
 <center><input type="submit" name="submit" value="Send" id="ss-submit" class="btn btn-danger btn-hg" style="width:80%;"/></center><!-- </td>
 </tr></tbody></table></div> --></ol></form>
-            </div></center>
-            <br />
+<span style="height:20px;"></span>
+            </div><br /><br />
+<span class="talkToGautam">
+<a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
+</div>
+</center><br />
+            
             <center>
             <span class="socialLinks">
                 <img src="media/google-plus-icon.png" class="img-responsive" onclick="window.open('https://plus.google.com/+GautamMittal');"/>
