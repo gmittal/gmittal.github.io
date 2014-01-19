@@ -1,5 +1,3 @@
-<center><img src="mgwu-workspace.jpg" class="img-reponsive" style="border-radius: 7px;"/></center><br /><br />
-
 This summer, I spent a large portion of the time interning for a small startup in Palo Alto known as <a href="http://www.makegameswith.us/">MakeGamesWithUs</a>.
 <br /><br />
 Firstly, let me tell you a bit about what a normal day is like at the MakeGamesWithUs Headquarters. The internship was held inside a house close to the border of East Palo Alto and Palo Alto. Most interns got to the “office” around 10am, and left around 5pm. The schedule for the internship went a bit like this: interns work on game until about 1pm, lunch served via food truck at 1pm, occasionally some entrepreneur of a well known startup would give an inspiring talk (Reddit Founder <a href="http://alexisohanian.com/">Alexis Ohanian</a> even spoke!), and from then on until 5pm interns work on their games. The workspace is very relaxed (as you can see in the picture), and that is one of the key things I really enjoyed. There is always lively talk about some new code snippet, iOS game, gadget, or product taking place.
