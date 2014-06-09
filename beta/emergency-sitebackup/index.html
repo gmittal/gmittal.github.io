@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="dns-prefetch" href="//twitter.com">
+<link rel="dns-prefetch" href="//www.gautam.cc">
+<link rel="dns-prefetch" href="//google.com">
+<link rel="dns-prefetch" href="//www.w3.org">
+<link rel="dns-prefetch" href="//docs.google.com">
+<link rel="dns-prefetch" href="//p.twitter.com">
+<link rel="subresource" href="jquery.min.js">
+<link rel="subresource" href="bootstrap/bootstrap.js">
+<link rel="subresource" href="bootstrap/bootstrap.css">
+<link rel="subresource" href="bootstrap/bootstrap-responsive.css">
+<link rel="prefetch" href="bg.png">
+<link rel="prefetch" href="favicon.png">
+<link rel="prefetch" href="vibhu.png">
+<link rel="prefetch" href="acknowledgements.jpg">
+<link rel="prefetch" href="html5-badge-h-css3-graphics-multimedia-performance-semantics.png">
+<link rel="prefetch" href="photo.png">
+<link rel="prefetch" href="ninjaico.png">
+<link rel="prefetch" href="smartcodesico.png">
+<link rel="prefetch" href="rockico.png">
+<link rel="prefetch" href="chromewebstore.png">
+<link rel="prefetch" href="appstore.png">
+<link href="bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.png" />
+<script src="jquery.min.js"></script>
+<script src="bootstrap/bootstrap.js"></script>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+<title>Gautam Mittal</title>
+<style>
+body {
+  background-image:url('bg.png');
+  background-size: 100%;
+  padding:0;
+  margin:0;
+}
+
+#profilePic {
+  border-radius: 7px;
+  -webkit-transition: all 0.2s linear;
+-moz-transition: all 0.2s linear;
+-o-transition: all 0.2s linear;
+-ms-transition: all 0.2s linear;
+height: 250px;
+}
+
+img {
+-webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
+-ms-transition: all 0.5s linear;
+}
+
+.hover:hover {
+  border-radius: 7px;
+box-shadow: 0 7px 25px #000;
+-moz-box-shadow: 0 7px 25px #000;
+-o-box-shadow: 0 7px 25px #000;
+}
+
+.well {
+  background-color:white;
+  text-align:center;
+  width:520px;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  height: 450px;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+-ms-transition: all 0.25s linear;
+ /* box-shadow: 0 25px 25px #000;
+-moz-box-shadow: 0 25px 25px #000;
+-o-box-shadow: 0 25px 25px #000 ; */
+  opacity: 1;
+}
+
+#display {
+  height:450px;
+  box-shadow: 0 25px 25px #000;
+-moz-box-shadow: 0 25px 25px #000;
+-o-box-shadow: 0 25px 25px #000;
+}
+
+#stop {
+border: 1px solid grey;
+  border-radius: 10px;
+}
+
+#navbar {
+text-align:center;
+}
+
+li {
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+-ms-transition: all 0.25s linear;
+}
+
+.mobile {
+height: 480px;
+width: 320px;
+margin: 0;
+}
+
+#name {  
+
+}
+
+.modalImg {
+  height: 180px;
+}
+
+
+</style>
+</head>
+<body>
+  <center>
+   <div class="well" id="display">
+     <img id="profilePic" class="hover" src="vibhu.png" height="250" />
+     <h1 id="name">Gautam Mittal</h1>
+     <p class="lead">Teenage iOS and Web Developer</p>
+   </div><!--/.well -->
+  </center>
+  
+ 
+<!-- Modal -->
+<div id="aboutModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="aboutModalLabel">About Gautam</h3>
+  </div>
+  <div class="modal-body">
+	 <img class="modalImg" src="photo.png">
+		  <img src="html5-badge-h-css3-graphics-multimedia-performance-semantics.png" width="261" height="64" >
+		  <br /><br />
+		      <p align="justify">
+		            I have been learning HTML, JavaScript, and CSS for about 3 years now, and have been writing iOS apps for about 1 year. I started developing gautam.cc over 2 years ago. I have had some experience with Objective-C using the Kobold2D (simplified cocos2d) library and have had quite a bit of experience with Adobe's Cordova (formerly known as PhoneGap). I am also a big martial arts enthusiast and in my free time I enjoy making music and experimenting with my android phone. <br /><br />I have also designed websites such as <a href="http://www.mittal.net/">mittal.net</a>, so if you have would like your own custom written HTML5 website, send me an email.</p>    
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+  
+  
+  <div id="appModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="appModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="aboutModalLabel">Applications</h3>
+  </div>
+  <div class="modal-body">
+   <table class="table table-striped">
+		 <thead>
+		   <th>Icon</th>
+		     <th>Name</th>
+		       <th>Markets</th>
+		         <th>Year</th>
+			   </thead>
+			     <tbody>
+			       <tr>
+			               <td><img src="ninjaico.png" /></td>
+				           <td><a href="http://www.gautam.cc/mathninja/">MathNinja</a></td>
+					       <td><a href="https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe">Chrome Web Store</a>,<br /> <a href="https://itunes.apple.com/us/app/math.ninja/id535310117?mt=8&ign-mpt=uo%3D4">Apple App Store</a><td>
+					           <td>2011</td>
+						     </tr>
+						                 <tr>
+								                   <td><img src="smartcodesico.png" /></td>
+										       <td><a href="http://www.gautam.cc/smartcodes/">SmartCodes</a></td>
+										                   <td><a href="https://chrome.google.com/webstore/detail/smartcodes/khahfiplfeanacmefgeegielgpddcfmj">Chrome Web Store</a><td>
+												       <td>2012</td>
+												                 </tr>
+														                     <tr>
+																                           <td><img src="rockico.png" /></td>
+																			               <td><a href="http://www.gautam.cc/deskrock/">DeskRock</a></td>
+																				                   <td><a href="https://chrome.google.com/webstore/detail/deskrock/ipdkgmholpmgigmmimiececlobcpndii">Chrome Web Store</a><td>
+																						               <td>2010</td>
+																							                 </tr>
+
+																									 </tbody>
+																									 </table>
+																									 <h3>Gautam on:</h3>
+																									     <a href="https://chrome.google.com/webstore/search/gautam.cc"><img src="chromewebstore.png" /></a><br />
+																									         <a href="https://itunes.apple.com/sa/app/math.ninja/id535310117?mt=8"><img src="appstore.png" /></a>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+  
+  <div id="projModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="projModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="projModalLabel">Projects</h3>
+  </div>
+  <div class="modal-body">
+   <h3>2013</h3>
+		       <li><a href="http://www.mittal.net">mittal.net</a>'s design is restored</li>
+		           <li>MathNinja 1.1 is published online</li>
+			       <li>MathNinja 1.1 is submitted to the App Store</li>
+				<li>MathNinja 1.1 is accepted and live on the App Store</li>
+			           <br />
+				   <h3>2012</h3>
+				         <li>gautam.cc apps reach a total of 3,600 users on the <a href="https://chrome.google.com/webstore/search/gautam.cc">Chrome</a> and <a href="https://itunes.apple.com/app/math.ninja/id535310117?ign-mpt=uo%3D5">Apple</a> App Stores</li>
+					       <li><a href="https://itunes.apple.com/app/math.ninja/id535310117?ign-mpt=uo%3D5">MathNinja</a> launched on the Apple App Store</li>
+					             <li><a href="http://www.gautam.cc/projects/jqry/">jQRy JavaScript Library</a> is released on gautam.cc and on <a href="http://www.github.com/gmittal/jqry/">Github</a></li>
+						           <li><a href="http://www.gautam.cc/smartcodes/">SmartCodes QR Code Generator</a> is released on the <a href="https://chrome.google.com/webstore/detail/smartcodes/khahfiplfeanacmefgeegielgpddcfmj">Chrome Web Store</a></li>
+							   <br />
+							   <h3>2011</h3>
+							   <li>First prototype of SmartCodes is released</li>
+							   <li>MathNinja is published on the <a href="https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe">Chrome Web Store</a></li>
+							   <li>DeskRock is published on the <a href="https://chrome.google.com/webstore/detail/deskrock/ipdkgmholpmgigmmimiececlobcpndii">Chrome Web Store</a></li>
+							   <li><a href="http://www.gautam.cc/mathninja/">MathNinja</a> is released on gautam.cc</li>
+							   <li><a href="http://www.gautam.cc/deskrock/">DeskRock</a> is released on gautam.cc</li>
+							   <li>gautam.cc is established</li>
+							   <br />
+							   <h3>2010 and before</h3>
+							   <li><a href="http://www.gautam.cc/deskrock/">DeskRock</a> is created</li>  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<div id="twitterModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="twitterModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="twitterModalLabel">Recent Chirps: Fresh from <a href="https://www.twitter.com/gthinkin/">@gthinkin</a></h3>
+  </div>
+  <div class="modal-body">
+   <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="341594848475889665">Tweets by @gthinkin</a>
+			   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-info" onclick="window.open('https://www.twitter.com/gthinkin');">Follow @gthinkin</button><button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+  <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="contactModalLabel">Contact</h3>
+  </div>
+  <div class="modal-body">
+     You can follow me on Twitter at <a href="https://www.twitter.com/gthinkin/">@gthinkin</a> or contact me through <a href="mailto:gautam@mittal.net">gautam-AT-mittal-DOT-net</a>.<br />
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+  
+  
+  <div id="expModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="expModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="expModalLabel">Grants</h3>
+  </div>
+  <div class="modal-body">
+   <table class="table table-striped">
+		            <thead>
+			                <tr>
+					              <th>Title</th>
+						                    <th>Organization</th>
+								                  <th>Years</th>
+										                <th>Location</th>
+
+												            </tr>
+													              </thead>
+														                <tbody>
+																  <tr>
+																            <td>Co-founder</td>
+																	      <td><a href="http://www.tigerlilyinnovations.com">Tiger Lily Innovations</a></td>
+																	                <td>2013</td>
+																			          <td>Palo Alto, CA</td>
+																				            </tr>
+																					      <tr>
+																					        <td>Summer Programming Intern</td>
+																						  <td><a href="http://www.makegameswith.us">MakeGamesWithUs</a></td>
+																						    <td>2012-2013</td>
+																						      <td>Palo Alto, CA</td>
+																						        </tr>
+
+																							  <tr>
+																							            <td>Chief Web Developer</td>
+																								      <td>Mittal Household</td>
+																								                <td>2010-present</td>
+																										          <td>Palo Alto, CA</td>
+																											            </tr>
+
+																												              </tbody></table>
+																													        <br />
+																														    <img src="mgwuLogo.png" style="width: 550px;"/><br />
+																														      <span style="height:8px;" /></span><br />
+																														          <img src="summer_interns.jpeg" style="border-radius:7px; width: 550px;" />
+															  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+  </div>  
+
+
+<script>
+$(document)
+    .ready(function() {
+    $("#display").height(450);
+    $("#display").width(520);
+    checkMobile();
+    $("#display")
+        .append('<center><div id="navbar"><hr id="stop"><ul class="nav nav-pills"><li id="homeButton"><a href="#">Home</a></li><li><a href="#aboutModal" data-toggle="modal">About</a></li><li><a href="#appModal" data-toggle="modal">Applications</a></li><li><a href="#projModal" data-toggle="modal">Projects</a></li><li><a href="#expModal" data-toggle="modal">Experience</a></li><li><a href="https://www.github.com/gmittal/">GitHub</a></li><li><a href="#twitterModal" data-toggle="modal">Recent Chirps</a></li><li><a href="#contactModal" data-toggle="modal">Contact</a></li></ul></div></center>');
+});
+
+$(window).resize(function() {
+  checkMobile();
+});
+
+function checkMobile() {
+    if ($(document).width() < 600) {
+    $("#display").addClass("mobile");
+    $("#profilePic").height(200);
+    $("#display").height($(window).height() - 50);
+    $("#display").width($(window).width() - 50);
+  } else {
+    $("#profilePic").height(250);
+    $("#display").height(450);
+    $("#display").width(520);
+  $("#display").removeClass("mobile");
+  }
+}
+</script>
+</body>
+</html>
