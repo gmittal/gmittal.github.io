@@ -1,556 +1,482 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Gautam Mittal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gautam Mittal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="import" href="components/paper-elements/paper-elements.html"> -->
 
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="favicons/favicon.png">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+          .header h1 {
+            text-align:center;
+            font-family: 'Roboto';
+            font-weight:100;
+            font-size: 50px;
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <style>
-    @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
+            /*padding-bottom: 0;*/
+          }
 
-    body {
-        margin-top: -30px;
-        font-family: 'Raleway';
-    }
+          .header {
+            padding-top: 40px;
+            padding-bottom: 35px;
 
-    .headerIntro {
-        background-color: #2c3e50; /* #2c3e50; */
-        color:#ecf0f1;
-        padding-top:40px;
-        padding-bottom: 40px;
-        padding-right:15%;
-        padding-left:15%;
-	text-align:center;
-	background-image:url('chalkboardbg.png');
-    }
+          }
 
-    .headerIntro .h1 {
-        font-weight: 800;
-        font-size:55px;
-        margin-top:20px;
-	text-align:center;
-	font-family: 'Helvetica Neue', 'Raleway';
-    }
+          .header .lead {
+            text-align:center;
+            margin-top: -35px;
+            /*line-height:*/
+            /*width: 50%;*/
+          }
 
-    #profilePic {
-        margin-left:auto;
-	margin-right:auto;
-        margin-top: 20px;
-        border-radius: 50%;
-        height: 200px;
-    }
+          .lead {
+            font-size: 20px;
+            font-family: 'Roboto Slab';
+            font-weight: 300;
+            color: grey;
+            line-height: 110%;
+            text-align: justify;
+          }
 
-    .boxShadow {
-                box-shadow: 0 3px 15px #000;
-        -moz-box-shadow: 0 3px 15px #000;
-        -o-box-shadow: 0 3px 15px #000;
-    }
+          .social img {
+            height: 45px;
+            padding-left: 2px;
+            padding-right: 2px;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
 
-    .headerIntro .description {
-        font-size:25px;
-    }
+          }
 
-    .midContainer {
-        background-color: #ecf0f1;
-        padding-top:40px;
-        padding-bottom: 40px;
-        padding-right:15%;
-        padding-left:15%;
-    }
+          .social img:hover {
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
 
-    #newOnGithub {
-    border: 0;
-    width: 100%;
-    height: 420px;
-    border-radius: 6px;
+          .nav {
+            /*text-align:center;*/
+            width: 1000px;
+          }
 
-    }
-
-    .contactAboutSection {
-        /*background-color:#2c3e50;*/
-        /*color:#ecf0f1;*/
-        padding-top:40px;
-        padding-bottom: 40px;
-        padding-right:15%;
-        padding-left:15%;
-
-    }
-
-    h3 {
-        color:#3498db;
-        font-weight: 800;
-        font-family: 'Raleway';
-    }
-
-    .socialLinks img {
-        height:75px;
-        display: inline-block;
-        border: 3px solid #3498db;
-        border-radius: 15px;
-        -webkit-transition: all 0.1s linear;
-        -moz-transition: all 0.1s linear;
-        -o-transition: all 0.1s linear;
-        -ms-transition: all 0.1s linear;
-    }
-
-    .socialLinks img:hover {
-        border: 3px solid #c0392b;
-    }
-
-    h5 {
-        color:#3498db;
-        font-weight: 800;
-        font-family: 'Raleway';
-        /*display: inline-block;*/
-        }
-
-        .talkToGautam{
-            background-color:#ecf0f1;
-            width: 490px;
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
-            text-align: left;
-        }
-
-	.tweets {
-	margin-top: 20px;
-	}
-
-        #reachOutForm input {
-             
-        }
-
-        .titleText {
-            color:#3498db;
-            /*font-weight: ;*/
-        }
-
-        .whatsNew {
-            /*float:left;*/
-            /*display: inline-block;*/
-        }
-
-        .recentUpdates {
-            /*float:right;*/
-            /*margin-top: -575px;*/
-            /*display:inline-block;*/
-        }
-
-        /*.projects {*/
-            /*float:left;*/
-            /*display: inline-block;*/
-        /*}*/
-
-        #returnConfirmHide {
-            height: 0;
-            width: 0;
-            border: 0;
-            /*margin-top: -100px;*/
-        }
-
-        .iPhoneDisplay {
-            background-image: url('media/iphonebg.png');
-            height: 474px;
-            width:227px;
-            background-size:100%;
-            padding-top:68px;
-            padding-left:2px;
-            display: inline-block;
-
-        }
-
-	.iPhoneDisplayBlack {
-            background-image: url('media/iphonebgblack.png');
-	        height: 474px;
-            width:227px;
-	        background-size:100%;
-            padding-top:68px;
-            padding-left:2px;
-            display: inline-block;
-
-	    }
-
-        .appScreenshot {
-            height:340px;
-	    -webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
-filter: grayscale(100%);
--webkit-transition: all 0.1s linear;
--moz-transition: all 0.1s linear;
--o-transition: all 0.1s linear;
--ms-transition: all 0.1s linear;
-        }
-
-	.appScreenshot:hover {
-	-webkit-filter: grayscale(0%);
--moz-filter: grayscale(0%);
-filter: grayscale(0%);
-	}
-
-        h6 {
-            font-weight: 800;
-            font-family: 'Raleway';
-            line-height: 1;
-        }
-
-	.projectDescrip {
-
-	
-	}
-
-    @media only screen and (max-device-width: 480px) {
-        @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,800,900,200);
-
-	.row {
-	text-align:center;
-	margin:0;
-	}
-
-        body {
-        margin-top: -30px;
-        }
-
-        .headerIntro {
-        background-color: #2c3e50;
-        color:#ecf0f1;
-        padding-top:40px;
-        padding-bottom: 20px;
-        padding-right:15%;
-        padding-left:15%;
-        text-align: center;
-        }
-
-        .headerIntro .h1 {
-        font-weight: 900;
-        font-size:55px;
-        margin-top:10px;
-        }
-
-      #profilePic {
-        margin-top: 15px;
-        border-radius: 50%;
-        height: 150px;
-        margin-left:auto;
-        margin-right:auto;
-        }
-
-        .boxShadow {
-                border:1px;
-        }
-
-        .headerIntro .description {
-        font-size:25px;
-        }
-
-            .midContainer {
-        background-color: #ecf0f1;
-        padding-top:40px;
-        padding-bottom: 40px;
-        padding-right:15%;
-        padding-left:15%;
-        }
-
-        .contactAboutSection {
-        /*background-color:#2c3e50;*/
-        /*color:#ecf0f1;*/
-        padding-top:40px;
-        padding-bottom: 40px;
-        padding-right:15%;
-        padding-left:15%;
-
-        }
-
-        h3 {
-        color:#3498db;
-        font-weight: 800;
-        font-family: 'Raleway';
-    
-        }
-
-        h5 {
-        color:#3498db;
-        font-weight: 800;
-        font-family: 'Raleway';
-
-    
-        }
-
-        .socialLinks img {
-        height:60px;
-        display: inline-block;
-        border: 3px solid #3498db;
-        border-radius: 15px;
-        }
-
-        .socialLinks img:hover {
-            border: 3px solid #c0392b;
-        }
-
-        .talkToGautam {
-            background-color:#ecf0f1;
+          .navRule {
             width: 100%;
-            padding: 10px;
-            border-radius: 10px;
+            padding:0;
+            margin:0;
+            /*background-color: grey;*/
+            /*border:0;*/
+          }
+
+          .navButton {
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed';
+            color: rgb(204, 204, 204);
+            /*border-top: 1px solid black;*/
+            /*margin-top: 20px;*/
+          }
+
+
+
+          .active {
+            border-top: 1px solid black;
+            color: black;
+          }
+
+          .navbar {
+            margin-top: 14px;
+          }
+
+          .content {
+            width: 1000px;
+            padding-top: 70px;
+            /*padding-left: 15px;*/
+            /*padding-right: 15px;*/
+            text-align:left;
+          }
+
+
+          .card {
+            margin-top: 20px;
+            width: 92%;
+            padding:4%;
+            /*padding-left: 20px;*/
+            /*padding-right: 10px;*/
+            /*margin-top: 20px;*/
+            box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            background-color:white;
             text-align: left;
+            line-height: 5px;
+            font-family: 'Roboto Slab';
+            border-radius: 3px;
+            position:relative;
+
+            /*overflow:auto;*/
+
+
+           white-space: pre-wrap;      /* CSS3 */
+           white-space: -moz-pre-wrap; /* Firefox */
+           white-space: -pre-wrap;     /* Opera <7 */
+           white-space: -o-pre-wrap;   /* Opera 7 */
+           word-wrap: break-word;      /* IE */
+
+
+          }
+
+          .date {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 19px;
+            color:grey;
+            margin-top: 0px;
+          }
+
+          .title {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            /*text-align: justify;*/
+
+            /*margin-left: 20px;*/
+
+            /*margin: 0 20px 0px 0px;*/
+            /*margin-top: -20px;*/
+            /*vertical-align:none;*/
+            /*line-height: 110%;*/
+            margin: 0px 0 0 0;
+            padding:0;
+            /*margin-right:100px;*/
+            /*line-height: 10px;*/
+          }
+
+          .title a {
+            color: rgb(226, 44, 41);
+            text-decoration: none;
+          }
+
+          .title a:hover {
+            color: rgb(226, 44, 41);
+            text-decoration: underline;
+          }
+
+          .card img {
+            margin:0;
+            padding:0;
+            display:inline-block;
+            position:absolute;
+            height: 90%;
+            top: 7px;
+            left: 7px;
+            border-radius: 3px;
+            float:left;
+          }
+
+          .nav a {
+            text-decoration:none;
+            color: rgb(204, 204, 204);
+
+          }
+
+          .nav a:visited {
+            text-decoration: none;
+            color: rgb(204, 204, 204);
+          }
+
+          .active a {
+            color: black;
+          }
+
+          .active a:visited {
+            color: black;
+          }
+
+          a {
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
+          }
+
+          .nav a:hover {
+            /*text-decoration:none;*/
+            color: black;
+
+          }
+
+
+          .blogPosts {
+            float:left;
+            width: 49%;
+            /*margin-top: -15px;*/
+
+          }
+
+          .tweets {
+            float:right;
+            width: 49%;
+          }
+
+          .writeMe {
+            padding: 10px 15px 10px 15px;
+            font-size: 15px;
+            border: 1px solid grey;
+            color:grey;
+            background-color:transparent;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border-radius: 18px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
+          }
+
+          .writeMe:hover {
+            border: 1px solid #1abc9c;
+            color:#1abc9c;
+          }
+
+
+          @media only screen and (max-width: 1024px) {
+            .nav {
+              width: 90%;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            /*.card {
+              width: 90%;
+            }*/
+
+
+          }
+
+          @media only screen and (max-width: 768px) {
+            .nav {
+              width: 95%;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            .blogPosts {
+            float:left;
+            width: 100%;
+
+          }
+
+          .tweets {
+            float:left;
+            width: 100%;
+          }
+
+            /*.card {
+              width: 95%;
+            }*/
+          }
+
+          @media only screen and (max-width: 480px) {
+            .nav {
+              width: 100%;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            .header h1 {
+              font-size: 40px;
+            }
+
+            .header .lead {
+              font-size: 16px;
+              margin-top: -25px;
+            }
+
+
+            .writeMe {
+              visibility: hidden;
+            }
+
+            /*.card {*/
+              /*width: 90%;*/
+            /*}*/
+
+            /*.card {
+              width:100%;
+            }*/
+          }
+
+        #profileHeader {
+          height: 42px;
+          width: 42px;
+          border-radius: 50%;
+          position:absolute;
+          top: 15px;
+          left:15px;
+
         }
 
-        #reachOutForm input {
-             
-        }
 
-        .titleText {
-            color:#3498db;
 
-        }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    }
-
-    @media only screen and (max-device-width: 768px) {
-    .talkToGautam {
-    background-color:#ecf0f1;
-    width:100%;
-    padding:10px;
-    border-radius:10px;
-    text-align:left;
-    }
-    }
-    </style>
-  </head>
-  <body>
-    <div class="headerIntro">
-        <img src="media/android.png" class="img-responsive" id="profilePic" />
-        <p class="h1">Gautam Mittal</p>
-        <p class="description lead"><span id="status">13, Student, Martial Artist, Hacker.</span><br />
-            <strong><span id="location">Palo Alto, California</span></strong></p>
-    </div>
-    
-    <div class="midContainer">
-        <div class="whatsNew">
-            <h3>Blog</h3>
-	    <hr />
-	    <a href="http://www.gautam.cc/blog/learning-how-to-code/"><h6>Learning How To Code</h6></a>
-            <p><b>January 5th, 2014</b></p>
-            <p>So you want to learn how to code. It's not that hard when you actually get up and running with it...</p><br />
-            <a href="http://www.gautam.cc/blog/makegameswithus-internship-experience/"><h6>My Experience With MakeGamesWithUs</h6></a>
-            <p><b>October 18th, 2013</b></p>
-            <p>This summer, I spent a large portion of the time interning for a small startup in Palo Alto known as MakeGamesWithUs...</p><br />
-            <a href="http://www.gautam.cc/blog/first-blog-post/"><h6>First Blog Post</h6></a>
-            <p><b>October 13th, 2013</b></p>
-            <p>Hey Everyone! I'm Gautam, a developer living in Silicon Valley, California...</p><br />
-
-	    <br />
-	    <a class="btn btn-primary" href="http://www.gautam.cc/blog/">View Archives &raquo;</a>
+        <!-- Add your site or application content here -->
+        <img src="https://media.licdn.com/media/p/5/005/086/1d9/1ae7ee8.jpg" id="profileHeader" />
+        <button class="writeMe" onclick="window.open('mailto:gautam@mittal.net');">Send me a note</button>
+        <div class="header">
+          <h1>Gautam Mittal</h1>
+          <p class="lead">Student, Developer, Martial Artist, Musician.<p>
+            <center>
+              <span class="social">
+                <img src="http://www.gautam.cc/beta/icons/google+@2x.png" onclick="window.open('http://www.google.com/+GautamMittal');">
+                <img src="http://www.gautam.cc/beta/icons/twitter@2x.png" onclick="window.open('http://www.twitter.com/gthinkin/');">
+                <img src="http://www.gautam.cc/beta/icons/facebook@2x.png" onclick="window.open('https://www.facebook.com/gautam.mittal.792');">
+                <img src="http://www.gautam.cc/beta/icons/github@2x.png" onclick="window.open('https://github.com/gmittal');">
+                <img src="http://www.gautam.cc/beta/icons/linked.png" onclick="window.open('https://www.linkedin.com/in/mittalgautam');" />
+              </span>
+            </center>
 
         </div>
-        <br />
-	<hr style="background-color:grey; height: 1px;">
-            
-            <div id="projects">
-                <h3>Projects</h3>
-                <p>I enjoy building cool apps, games, and websites. Here are some of my recent projects.</p>
-                <center>
-                <span id="iPhoneArea">
-                    
-                    <div class="iPhoneDisplayBlack" id="sc2">
-                        <img src="media/gautamsc.png" class="appScreenshot"/>
-                    </div>
-                    
-                </span>
-                <br /><br />
-                    <span>
-                        <h5>Some Things I've Built:</h5>
-                        <p style="width:75%;">I've been building apps and websites for over 3 years, and mobile apps for about 1.5 years now. Here are a few of my recent projects:<br /><br />
 
-			<div class="row">
-        <div class="col-md-4">
-          <h6>Blend: Fruity Insanity!</h6>
-          <p>A fast-paced matching game built during the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> <a href="http://www.makegameswith.us/summer-academy/">Internship</a></p>
-          <p><img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
-                            <img src="media/badges/playstore.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en');" /><br /><br /><a class="btn btn-primary" href="https://app.io/cFJOZT" role="button">View now &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h6>MITTAL.NET</h6>
-          <p>A revamp of <a href="http://mittal.net/">mittal.net</a>, my dad's old website.</p>
-          <p><img src="media/badges/ontheweb.png" onclick="window.open('http://mittal.net');" /><br /><br /><a class="btn btn-primary" href="http://www.mittal.net" role="button">View now &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h6>jQRy: Easy QR Code Generation</h6>
-          <p>A simple JavaScript-based microlibrary to easily generate 2D QR codes, 1D Barcodes, and Data Matrixes.</p>
-          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/jqry/');" /></p>
-        </div>
-      </div>
 
-<div class="row">
-        <div class="col-md-4">
-          <h6>Bison Run</h6>
-          <p>A simple dodge-the-falling-objects game written in Objective C (as a part of the <a href="http://www.makegameswith.us/">MakeGamesWithUs</a> 2012 Internship)</p>
-          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/bison-run/');" /></p>
-        </div>
-        <div class="col-md-4">
-          <h6>SmartCodes</h6>
-          <p>A speed-hack written in half an hour with a few cool APIs. Acted as inspiration for jQRy.</p>
-          <p><img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/smartcodes/khahfiplfeanacmefgeegielgpddcfmj');" /><br /><br /><a class="btn btn-primary" href="http://www.gautam.cc/smartcodes/" role="button">View now &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h6>MathNinja</h6>
-          <p>A cross-platform math game, with a cool martial arts twist.</p>
-          <p><img src="media/badges/appstore.png" onclick="window.open('https://itunes.apple.com/us/app/blend-fruity-insanity!/id725766849');" />
-                            <img src="media/badges/chromewebstore.png" onclick="window.open('https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe');" />
-<br /><br /><a class="btn btn-primary" href="http://www.gautam.cc/mathninja/" role="button">View now &raquo;</a></p>
-        </div>
-      </div>
+        <center>
+          <div class="nav">
+            <hr class="navRule"/>
+            <div class="navbar" style="float:left;">
 
-<div class="row">
-        <div class="col-md-4">
-          <h6>Flexiwatch: A Gesture-based Stopwatch</h6>
-          <p>A simple, flexible, gesture-based stopwatch written in HTMl5 + JavaScript. Built in an attempt to make a more running friendly stopwatch. Coming soon to the App Store.</p>
-          <p><img src="media/badges/github-badge.png" onclick="window.open('https://github.com/gmittal/js-stopwatch/');" /></p>
-        </div>
-</div>
-                    </span>
-                </center>
+              <span class="navButton active">
+                <a href="#">Blog</a>
+              </span>
+              <span class="navButton">
+                <a href="#">Projects</a>
+              </span>
+              <span class="navButton">
+                <a href="#">About</a>
+              </span>
             </div>
-    </div>
-            
-            
-            
-            
-
-        <div class="contactAboutSection">
-            <h3>Say Hello!</h3>
-            <p align="justify"><b>Feel free to send me an <a href="mailto:gautam@mittal.net">email!</a></b> I also occasionally check my various social accounts, so don't be hesistant to contact me through those as well.</p><br />
-            <center>
-	    <div style="clear:none;">
-            <div class="talkToGautam">
-                <p class="lead titleText">Reach Out</p>
-                <p style="margin-top:-30px;">This form sends me a message directly.</p>
-                <form action="https://docs.google.com/forms/d/1JQ2S37I8c0RFGrAW7iREN3o05gkMNlONBHueH9ppviw/formResponse" method="POST" id="ss-form" target="returnConfirmHide" onsubmit=""><ol style="padding-left: 0">
-<div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_387460702"><div class="ss-q-title">Name:
-</div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<input type="text" name="entry.387460702" value="" class="ss-q-short form-control flat" id="entry_387460702" dir="auto" aria-label="Name  " title="">
-<div class="error-message"></div>
-
-</div></div></div> <div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1225958278"><div class="ss-q-title">Email (for my reply):
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<input type="text" name="entry.1225958278" value="" class="ss-q-short form-control flat" placeholder="Required" id="entry_1225958278" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
-<div class="error-message"></div>
-
-</div></div></div> <div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1352669808"><div class="ss-q-title">Message:
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br />
-<textarea name="entry.1352669808" rows="8" cols="0" class="ss-q-long form-control flat" placeholder="Required" id="entry_1352669808" dir="auto" aria-label="Message  " aria-required="true" required="" style="resize:none; height:150px;"></textarea>
-<div class="error-message"></div>
-
-</div></div></div>
-<input type="hidden" name="draftResponse" value="[,,&quot;-7676158585936928951&quot;]
-">
-<input type="hidden" name="pageHistory" value="0">
-
-<input type="hidden" name="fbzx" value="-7676158585936928951">
-
-<!-- <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr" style="width:100%;"> --> <br />
-<center><input type="submit" name="submit" value="Send" id="ss-submit" class="btn btn-danger btn-hg" style="width:80%;"/></center><!-- </td>
-</tr></tbody></table></div> --></ol></form>
-<span style="height:20px;"></span>
-            </div><br /><br />
-<span class="talkToGautam">
-<a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
-</div>
-</center><br />
-            
-            <center>
-            <span class="socialLinks">
-                <img src="media/google-plus-icon.png" class="img-responsive" onclick="window.open('https://plus.google.com/+GautamMittal');"/>
-                <img src="media/twitter-icon.png" class="img-responsive" onclick="window.open('https://twitter.com/gthinkin/');"/>
-                <img src="media/github-icon.png" class="img-responsive" onclick="window.open('https://github.com/gmittal/');"/>
-<img src="media/hn-icon.png" class="img-responsive" onclick="window.open('https://news.ycombinator.com/user?id=gthinkin');"/>
-<img src="media/wordpress-icon.png" class="img-responsive" onclick="window.open('http://gthinkin.wordpress.com/');"/>
-                <img src="media/email-icon.png" class="img-responsive" onclick="window.open('mailto:gautam@mittal.net');"/>
-            </span>
-            <iframe id="returnConfirmHide" name="returnConfirmHide"></iframe>
+          </div>
         </center>
-        <br />
-        </div>
-    <!-- /.container -->
+
+        <center>
+          <div class="content">
 
 
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script>
-    var screenHeight;
-    var screenWidth;
-
-    function checkScreenSize() {
-        screenHeight = $(window).height;
-        screenWidth = $(window).width;
-    }
-
-    $(document).ready(function() {
-        // alert($(window).width());
-        if ($(window).width() > 768) {
-        $("#iPhoneArea").prepend('<div class="iPhoneDisplay" id="sc1"><img src="media/blendsc.png" class="appScreenshot"/></div>');
-        $("#iPhoneArea").append('<div class="iPhoneDisplay" id="sc3"><img src="media/mathninjasc.jpeg" class="appScreenshot"/></div>');
-        }
-    });
+          <div class="blogPosts">
 
 
-    $("#ss-submit").click(function() {
-        if (document.getElementById("entry_1225958278").value.length != 0 && document.getElementById("entry_1352669808").value.length != 0) {
-        setTimeout(function() {
-           // alert("It made it to Mr. Mittal");
-           $(".talkToGautam").prepend("<div class=\"alert alert-success alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button><b>Thanks!</b> I'll get back to you ASAP</div>");
-        document.getElementById("entry_387460702").value = "";
-        document.getElementById("entry_1225958278").value = "";
-        document.getElementById("entry_1352669808").value = ""; 
-	 }, 1000);
-       }
-    });
 
-    // LOAD file and split line by line and append divs
-$.get('status.txt', function(data) {    
-    var lines = data.split("\n");
+            <br />
+          </div>
 
-    $.each(lines, function(n, elem) {
-       $('#status').html(elem);
-    });
-});
 
-$.get('location.txt', function(data) {
-    var lines = data.split("\n");
+          <div class="tweets">
+          <div class="info">
+            <b style="font-size: 22px; font-family:'Roboto';">Hi there!</b>
+            <hr class="navRule" />
+            <p>I'm <b>Gautam Mittal</b>, a student at Henry M. Gunn High School who loves music, martial arts, and code.</p>
+            <img src="img/me.JPG" style="width: 100%; border-radius: 5px;"/>
+          </div><br />
+          <center>
+            <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </center>
+          <br />
+          </div>
 
-    $.each(lines, function(n, elem) {
-       $('#location').html(elem);
-    });
-});
 
-    </script>
-  </body>
+          <!-- <br /><br /> -->
+          <hr class="navRule"/>
+          <br />
+          <center>
+          <p class="lead" style="text-align: center; font-family:'Roboto'; font-weight: 100; font-size: 15px;">&copy; 2011-2014 Gautam Mittal. All Rights Reserved.</p><br />
+          </center>
+
+            <!-- <div class="card">
+              <p class="title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</a></p>
+              <p class="date">September 1, 2014</p>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="card">
+              <p class="title"><a href="#">Lorem ipsum</a></p>
+              <p class="lead">Everything you need to know.</p>
+            </div>
+            <div class="card">
+              <p class="title"><a href="#">Lorem ipsum</a></p>
+              <p class="lead">Everything you need to know.</p>
+            </div> -->
+
+          </div>
+        </center>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.firebase.com/js/client/1.1.3/firebase.js"></script>
+        <script>
+          var db = new Firebase('https://gautam-io-ytl20luvjp.firebaseio.com/');
+          db.once('value', function (snapshot) {
+            var count = 0;
+            snapshot.forEach(function (e) {
+              var link = e.val().url;
+              // alert(link);
+              var title = e.val().title;
+              var date = e.val().date;
+
+              if (count == 0) {
+                $(".blogPosts").prepend('<span class="post"><p class="title"><a href=\''+link+'\'>'+ title +'</a></p><p class="date">'+ date +'</p></span>');
+              } else {
+                $(".blogPosts").prepend('<span class="post"><p class="title"><a href="'+link+'">'+ title +'</a></p><p class="date">'+ date +'</p></span>');
+
+              }
+
+              count++;
+
+            });
+
+            $(".blogPosts").prepend('<b style="font-size: 22px; font-family:\'Roboto\';">Thoughts</b><hr class="navRule" /><br />');
+          });
+
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
