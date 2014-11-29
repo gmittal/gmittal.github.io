@@ -60,9 +60,9 @@
             height: 45px;
             padding-left: 2px;
             padding-right: 2px;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            filter: grayscale(100%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
             -webkit-transition: all 0.1s linear;
             -moz-transition: all 0.1s linear;
             -o-transition: all 0.1s linear;
@@ -71,9 +71,9 @@
           }
 
           .social img:hover {
-            -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            filter: grayscale(0%);
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
           }
 
           .nav {
@@ -267,7 +267,7 @@
           font-size: 40px;
           color: #2980b9;
           margin-top: -5px;
-          margin-bottom: 45px;
+          /*margin-bottom: 45px;*/
 
 
         }
@@ -276,6 +276,7 @@
 
         .call {
           text-align: center;
+          padding-bottom: 45px;
         }
 
         #awesomeTag {
@@ -284,6 +285,32 @@
 
         #tag {
           color:#c0392b;
+        }
+
+        .about {
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom:45px;
+          font-family: 'Roboto';
+
+
+
+        }
+
+        p {
+          /*text-align: justify;*/
+          font-family: 'Roboto';
+          font-size: 17px;
+          width:90%;
+
+        }
+
+        .headersBig {
+          /*text-align: center;*/
+          /*width:100%;*/
+          font-family: 'Roboto Condensed';
+          font-size: 40px;
+          font-weight: 700;
         }
 
 
@@ -399,6 +426,14 @@
 }
 
 
+code {
+  font-family: 'Monaco';
+  color:#c0392b;
+  /*border: 1px solid grey;*/
+  /*padding: 2px;*/
+  /*border-radius: 3px;*/
+
+}
 
         </style>
     </head>
@@ -451,8 +486,17 @@
           <div class="call">
             <span id="callToAwesome">I <span id="awesomeTag"></span></span>
           </div>
-          <!-- <hr class="navRule"/> -->
+          <hr class="navRule"/>
+          <div class="about">
+          <span class="headersBig">ABOUT</span>
+          <center>
+            <p>
+              I build <code>awesome stuff</code>. Lorem ipsum dolor sit amet.... I like to <code>code</code>. I like to eat. Mangos are yummy. I'm a freshman at <code>Henry M. Gunn High School</code>
+            </p>
+          </center>
 
+          </div>
+          <hr class="navRule"/>
 
           <div class="blogPosts">
 
@@ -536,7 +580,7 @@
         <script>
           $(function(){
               $("#awesomeTag").typed({
-                strings: ["enjoy <span id='tag'>learning.</span>", "attend <span id='tag'>hackathons.</span>", "make <span id='tag'>music.</span>", "create <span id='tag'>apps.</span>", "study at <span id='tag'>Gunn HS</span>"],
+                strings: ["enjoy <span id='tag'>learning.</span>", "attend <span id='tag'>hackathons.</span>", "make <span id='tag'>music.</span>", "create <span id='tag'>apps.</span>", "study at <span id='tag' onclick='window.open(\'http://gunn.pausd.org\');'>Gunn HS.</span>"],
                 typeSpeed:100,
                 cursorChar: "|",
                 loop: true,
