@@ -331,6 +331,10 @@
         }
 
 
+        .open-source img {
+          height: 25px;
+        }
+
         .third {
           height: 200px;
           width: 30%;
@@ -396,6 +400,11 @@
           color:#c0392b;
           /*text-align: left;*/
           /*margin-top: 30px;*/
+        }
+
+        .itemTitle:hover {
+          cursor:pointer;
+          color:#2980b9;
         }
 
         .itemInfo {
@@ -681,7 +690,7 @@ code {
               <img src="http://placehold.it/150x150" class="itemImage" />
 
               <span class="itemDetails">
-                <span class="itemTitle">MathNinja</span>
+                <span class="itemTitle" onclick="window.open('http://www.gautam.cc/mathninja/');">MathNinja</span>
                 <hr class="navRule" style="padding-bottom: 5px;"/>
                 <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
               </span>
@@ -692,7 +701,7 @@ code {
               <img src="http://placehold.it/150x150" class="itemImage" />
 
               <span class="itemDetails">
-                <span class="itemTitle">Blend: Fruity Insanity!</span>
+                <span class="itemTitle" onclick="window.open('http://www.gautam.cc/mathninja/');">Blend: Fruity Insanity!</span>
                 <hr class="navRule" style="padding-bottom: 5px;"/>
                 <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
               </span>
@@ -703,7 +712,7 @@ code {
               <img src="http://placehold.it/150x150" class="itemImage" />
 
               <span class="itemDetails">
-                <span class="itemTitle">Flexiwatch</span>
+                <span class="itemTitle" onclick="window.open('http://www.gautam.cc/flexiwatch/');">Flexiwatch</span>
                 <hr class="navRule" style="padding-bottom: 5px;"/>
                 <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
               </span>
@@ -714,7 +723,12 @@ code {
               <img src="http://placehold.it/150x150" class="itemImage" />
 
               <span class="itemDetails">
-                <span class="itemTitle">MMS QR Code Scanner</span>
+                <span class="itemTitle" onclick="window.open('http://www.gautam.cc/mathninja/');">MMS QR Code Scanner</span>
+                
+                <span class="social open-source" style="float:right;">
+                  <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/mms-qr-code');">
+                </span>
+
                 <hr class="navRule" style="padding-bottom: 5px;"/>
                 <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
               </span>
