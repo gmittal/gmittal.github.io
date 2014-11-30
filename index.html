@@ -346,6 +346,24 @@
           font-weight: 300;
         }
 
+        .projectItem {
+          width: 100%;
+          height: 150px;
+        }
+
+        .projectItem .itemImage {
+          float:left;
+          width:149px;
+          height: 149px;
+          border-radius: 3px 0px 0px 3px;
+
+        }
+
+        .itemTitle {
+          font-size: 20px;
+          font-family: 'Roboto';
+          font-weight: 100;
+        }
 
           @media only screen and (max-width: 1024px) {
             .nav {
@@ -462,7 +480,10 @@
         }
 
         .materialized {
-          
+          box-shadow: 0px 2px 1px 0px grey;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          border-radius: 2px;
+
         }
 
 
@@ -596,9 +617,15 @@ code {
           <div class="about">
           <span class="headersBig" style="margin-left: -60px;">Projects</span>
           <center>
-            <p>
-              <b>Here are my amazing projects.</b> I build <code>awesome stuff</code>. Lorem ipsum dolor sit amet.... I like to <code>code</code>. I like to eat. Mangos are yummy. I'm a freshman at <code>Henry M. Gunn High School</code>
-            </p>
+            <div class="materialized projectItem">
+              <img src="http://placehold.it/150x150" class="itemImage" />
+
+              <span class="itemDetails">
+                <span class="itemTitle">Lorem ipsum dolor sit amet blah blah blah blah blah blah blah</span><br />
+                <span class="itemInfo">Mangos are awesome. I can spell Lorem ipsum. Yayayayayayayyayayayayayayayayayyayayayayay.</span>
+              </span>
+
+            </div>
 
           </center>
           </div>
