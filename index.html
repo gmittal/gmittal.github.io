@@ -328,6 +328,7 @@
           border-radius: 2px;
           /*border: 1px solid black;*/
           display: inline-block;
+          margin-top: 10px;
         }
 
         .statBold {
@@ -342,7 +343,7 @@
           text-transform: uppercase;
           color:black;
           font-family: 'Roboto';
-          font-weight: 100;
+          font-weight: 300;
         }
 
 
@@ -387,7 +388,34 @@
             }*/
           }
 
+          @media only screen and (max-width: 500px) {
+            .statBold {
+              font-size: 35px;
+
+            }
+
+            .statMin {
+              font-size: 15px;
+
+            }
+
+            /*.third {*/
+              /*display:block;*/
+              /*width:100%;*/
+            /*}*/
+          }
+
+
           @media only screen and (max-width: 480px) {
+            .third {
+              width: 100%;
+              display:block;
+              height: 170px;
+
+            }
+
+
+
             .nav {
               width: 100%;
             }
@@ -433,6 +461,9 @@
 
         }
 
+        .materialized {
+          
+        }
 
 
         .typed-cursor{
@@ -533,7 +564,7 @@ code {
           </div>
 
            <hr class="navRule"/>
-          <div class="about">
+          <div class="about" style="padding-top: 0; padding-bottom: 20px;">
           <!-- <span class="headersBig" style="margin-left: -60px;">Fun Facts</span> -->
           <center>
           <div class="third">
