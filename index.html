@@ -349,6 +349,7 @@
         .projectItem {
           width: 100%;
           height: 150px;
+          position:relative;
         }
 
         .projectItem .itemImage {
@@ -360,9 +361,29 @@
         }
 
         .itemTitle {
-          font-size: 20px;
+          font-size: 23px;
           font-family: 'Roboto';
           font-weight: 100;
+          color:#c0392b;
+          /*text-align: left;*/
+          /*margin-top: 30px;*/
+        }
+
+        .itemInfo {
+          font-family: 'Roboto Slab';
+          text-align: left;
+          font-weight: 300;
+          /*margin-top: 1000px;*/
+        }
+
+        .itemDetails {
+          float:left;
+          position:absolute;
+          text-align:left;
+          left:165px;
+          right: 10px;
+          top: 10px;
+          /*margin-top: 10px;*/
         }
 
           @media only screen and (max-width: 1024px) {
@@ -483,7 +504,16 @@
           box-shadow: 0px 2px 1px 0px grey;
           border: 1px solid rgba(0, 0, 0, 0.05);
           border-radius: 2px;
+          margin-top: 10px;
+          -webkit-transition: all 0.1s linear;
+          -moz-transition: all 0.1s linear;
+          -o-transition: all 0.1s linear;
+          -ms-transition: all 0.1s linear;
 
+        }
+
+        .materialized:hover {
+          box-shadow: 0px 3px 2px 0px grey;
         }
 
 
@@ -617,15 +647,51 @@ code {
           <div class="about">
           <span class="headersBig" style="margin-left: -60px;">Projects</span>
           <center>
+            
             <div class="materialized projectItem">
               <img src="http://placehold.it/150x150" class="itemImage" />
 
               <span class="itemDetails">
-                <span class="itemTitle">Lorem ipsum dolor sit amet blah blah blah blah blah blah blah</span><br />
-                <span class="itemInfo">Mangos are awesome. I can spell Lorem ipsum. Yayayayayayayyayayayayayayayayayyayayayayay.</span>
+                <span class="itemTitle">MathNinja</span>
+                <hr class="navRule" style="padding-bottom: 5px;"/>
+                <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
               </span>
 
             </div>
+
+            <div class="materialized projectItem">
+              <img src="http://placehold.it/150x150" class="itemImage" />
+
+              <span class="itemDetails">
+                <span class="itemTitle">Blend: Fruity Insanity!</span>
+                <hr class="navRule" style="padding-bottom: 5px;"/>
+                <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
+              </span>
+
+            </div>
+
+            <div class="materialized projectItem">
+              <img src="http://placehold.it/150x150" class="itemImage" />
+
+              <span class="itemDetails">
+                <span class="itemTitle">Flexiwatch</span>
+                <hr class="navRule" style="padding-bottom: 5px;"/>
+                <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
+              </span>
+
+            </div>
+
+            <div class="materialized projectItem">
+              <img src="http://placehold.it/150x150" class="itemImage" />
+
+              <span class="itemDetails">
+                <span class="itemTitle">MMS QR Code Scanner</span>
+                <hr class="navRule" style="padding-bottom: 5px;"/>
+                <span class="itemInfo">The PicoCTF was truly awesome... plus it was a good excuse to stay up until 2am.</span>
+              </span>
+
+            </div>
+
 
           </center>
           </div>
