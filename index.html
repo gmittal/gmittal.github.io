@@ -340,6 +340,10 @@
           /*border: 1px solid black;*/
           display: inline-block;
           margin-top: 10px;
+          -webkit-transition: all 0.1s linear;
+          -moz-transition: all 0.1s linear;
+          -o-transition: all 0.1s linear;
+          -ms-transition: all 0.1s linear;
         }
 
         .statBold {
@@ -355,6 +359,20 @@
           color:black;
           font-family: 'Roboto';
           font-weight: 300;
+        }
+
+        .third:hover {
+          background-color:#e74c3c;
+          box-shadow: 0px 5px 1px 0px grey;
+          /*margin-top: -4px;*/
+        }
+
+        .third:hover .statBold {
+          color:white;
+        }
+
+        .third:hover .statMin {
+          color:white;
         }
 
         .projectItem {
