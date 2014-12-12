@@ -194,6 +194,7 @@
           .nav a {
             text-decoration:none;
             color: rgb(204, 204, 204);
+            outline: none;
 
           }
 
@@ -276,6 +277,37 @@
         .call {
           text-align: center;
           padding-bottom: 45px;
+        }
+
+        .epicButton {
+          padding: 20px;
+          font-family: 'Roboto Condensed';
+          font-weight:400;
+          text-transform: uppercase;
+          color:white;
+          background-color: #1abc9c;
+          font-size: 25px;
+          border: 0;
+          border-radius: 10px;
+          box-shadow: 0px 10px 0px 0px #16a085;
+          position:absolute;
+          margin-left: -67px;
+          outline: none;
+          /*bottom: 40px;*/
+          /*margin-right: auto;*/
+
+        }
+
+        .epicButton:hover {
+          margin-top: 4px;
+          box-shadow: 0px 6px 0px 0px #16a085;
+
+        }
+
+        .epicButton:active {
+          margin-top: 10px;
+          box-shadow: 0px 0px 0px 0px #16a085;
+
         }
 
         #awesomeTag {
@@ -670,13 +702,17 @@ code {
             <div class="navbar" style="float:left;">
 
               <span class="navButton active">
-                <a href="#">Blog</a>
+                <a href="#" id="aboutButton">ABOUT ME</a>
               </span>
               <span class="navButton">
-                <a href="#">Projects</a>
+                <a href="#" id="projectsButton">Projects</a>
               </span>
               <span class="navButton">
-                <a href="#">About</a>
+                <a href="#" id="thoughtsButton">Thoughts</a>
+              </span>
+
+              <span class="navButton">
+                <a href="#" id="contactButton">Contact</a>
               </span>
             </div>
           </div>
@@ -684,7 +720,7 @@ code {
         <!-- <center>WOAH</center> -->
 
         <center>
-          <div class="content">
+          <div class="content" id="aboutArea">
 
           <div class="call">
             <span id="callToAwesome">I <span id="awesomeTag"></span></span>
@@ -732,7 +768,7 @@ code {
           </div>
 
           <!-- <hr class="navRule"/> -->
-          <div class="parentProject">
+          <div class="parentProject" id="projectsArea">
             <div class="about content" style="">
             <span class="headersBig">Projects</span><br />
             <center style="margin-top: 45px;">
@@ -989,7 +1025,7 @@ code {
             </div>
           </div>
 
-          <div class="content" style="padding-top:0px;">
+          <div class="content" style="padding-top:0px;" id="thoughtsArea">
           <!-- <hr class="navRule"/> -->
           <div class="about" style="padding-bottom: 10px;">
           <span class="headersBig">Thoughts</span><br />
@@ -1003,12 +1039,16 @@ code {
           </div>
 
 
-          <hr class="navRule"/>
+          <hr class="navRule" id="contactArea"/>
           <div class="about">
           <span class="headersBig">Contact</span><br />
           <center style="margin-top: 45px;">
             <p class="headerPro">
-              The fastest and most efficient way of reaching me is through email. Shoot me a message <a href="mailto:gautam@mittal.net">here</a>.
+              The fastest and most efficient way of reaching me is through email. Pinging my social profiles is not going to get you an instant response.
+              <br /><br />
+              <button class="epicButton" onclick="window.open('mailto:gautam@mittal.net');">
+              EMAIL ME
+              </button>
             </p>
 
           </center>
@@ -1041,7 +1081,7 @@ code {
 
 
           <!-- <br /><br /> -->
-          <hr class="navRule"/>
+          <hr class="navRule" style="margin-top: 50px;"/>
           <br />
           <center>
           <p class="lead" style="text-align: center; font-family:'Roboto'; font-weight: 100; font-size: 15px;">&copy; 2011-2014 Gautam Mittal. All Rights Reserved.</p><br />
@@ -1097,6 +1137,32 @@ code {
         <!-- // <script src="jquery.js"></script> -->
         <script src="js/typed.js"></script>
         <script>
+
+        $("#aboutButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#aboutArea").offset().top
+            }, 500);
+        });
+
+        $("#projectsButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#projectsArea").offset().top
+            }, 750);
+        });
+
+        $("#thoughtsButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#thoughtsArea").offset().top
+            }, 750);
+        });
+
+        $("#contactButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#contactArea").offset().top
+            }, 1000);
+        });
+
+
           $(function(){
               $("#awesomeTag").typed({
                 strings: ["enjoy <span id='tag'>learning.</span>", "attend <span id='tag'>hackathons.</span>", "make <span id='tag'>music.</span>", "create <span id='tag'>apps.</span>", "study at <span id='tag' onclick='window.open(\'http://gunn.pausd.org\');'>Gunn HS.</span>"],
