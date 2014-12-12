@@ -34,6 +34,9 @@
             background-image: url('img/50.png');
             background-size:cover;
             color:white;
+            -webkit-animation: lavalamp 30s infinite;
+            -moz-animation: lavalamp 30s infinite;
+            animation: lavalamp 30s infinite;
 
           }
 
@@ -667,6 +670,29 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+@keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+@-webkit-keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+@-moz-keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+
 
 
 code {
