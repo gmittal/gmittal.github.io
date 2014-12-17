@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Gautam Mittal - Developer - @gthinkin
 
 # THANKS
 
-    <name>
+    Boilerplate
 
 # TECHNOLOGY COLOPHON
 
