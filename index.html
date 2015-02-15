@@ -246,6 +246,9 @@
           .blogPosts {
             float:left;
             width: 49%;
+            position:relative;
+            /*margin-left:50px;*/
+            /*text-align:right;*/
             /*margin-top: -15px;*/
 
           }
@@ -253,7 +256,22 @@
           .tweets {
             float:right;
             width: 49%;
+            position:relative;
+            /*text-align:left;*/
           }
+
+          .vDivide {
+            position:absolute;
+            border:0;
+            width:1px;
+            background-color:black;
+            height: 550px;
+            /*margin-left:auto;*/
+            /*margin-right:auto;*/
+            left:50%;
+          }
+
+
 
           .writeMe {
             padding: 10px 15px 10px 15px;
@@ -1162,6 +1180,8 @@ code {
             </div>
           </div>
 
+          
+
 
           <!-- https://www.facebook.com/makegameswithus/posts/495237420617379 -->
 
@@ -1170,13 +1190,37 @@ code {
           <div class="about" style="padding-bottom: 10px;">
           <span class="headersBig">Thoughts</span><br />
           <center style="margin-top: 45px;">
-            <p>
-              <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <span class="lead">I like to write and tweet when I can. Check it out!</span><br /><br />
+          <p class="blogPosts">
+          <!-- <center> -->
+            <!-- <div> -->
+
+
+
+
+                <script async src="https://static.medium.com/embed.js"></script>
+                <a class="m-profile" data-width="100%" href="https://medium.com/@gmittal">Gautam Mittal</a>
+            <!-- </div> -->
+            <!-- </center> -->
+
+          </p>
+          <!-- <hr class="vDivide" /> -->
+
+            <p class="tweets">
+            <!-- <center> -->
+              <!-- <div> -->
+                <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <!-- </div> -->
+              <!-- </center> -->
             </p>
 
           </center>
           </div>
+
+   
+             
+
 
 
           <hr class="navRule" id="contactArea"/>
@@ -1193,6 +1237,8 @@ code {
 
           </center>
           </div>
+
+
 
 
           <!-- <hr class="navRule"/> -->
