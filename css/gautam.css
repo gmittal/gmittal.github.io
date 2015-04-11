@@ -1,6 +1,20 @@
+          @font-face {
+            font-family: 'Canter Bold'; src: url('../img/Canter Bold.otf')
+          }
+
+          @font-face {
+            font-family: 'Canter'; src: url('../img/Canter Light.otf')
+          }
+
+          @font-face {
+            font-family: 'Phantasm'; src: url('../img/PhantasmAllCaps.ttf.otf')
+          }
+
+          
+
           #header h1 {
             text-align:center;
-            font-family: 'Roboto Condensed';
+            font-family: 'Roboto Slab';
             font-weight:700;
             font-size: 60px;
             background-image: url('../img/50.png');
@@ -12,16 +26,20 @@
             -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
            /*text-shadow: 2px 2px 3px rgba(255,255,255,0.1);*/
-           text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-            /*padding-bottom: 0;*/
+           /*letter-spacing: -1px;*/
+
+
           }
+
+
+
 
           #header {
             padding-top: 40px;
             padding-bottom: 35px;
             /*background-size: cover;*/
             background-repeat:repeat;
-            background-image:url('../img/SubtlePatterns/triangles.png'); /*dark_leather.pngurl('../img/space.jpg');*/
+            background-image:url('../img/SubtlePatterns/dark_leather.png'); /*dark_leather.pngurl('../img/space.jpg');*/
             
             position:relative;
             z-index:4;
@@ -48,7 +66,7 @@
 
           .lead {
             font-size: 20px;
-            font-family: 'Roboto Slab';
+            font-family: 'Roboto';
             font-weight: 300;
             color: grey;
             line-height: 110%;
@@ -59,9 +77,9 @@
             height: 45px;
             padding-left: 2px;
             padding-right: 2px;
-            -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            filter: grayscale(0%);
+            -webkit-filter: grayscale(90%);
+            -moz-filter: grayscale(90%);
+            filter: grayscale(90%);
             -webkit-transition: all 0.1s linear;
             -moz-transition: all 0.1s linear;
             -o-transition: all 0.1s linear;
@@ -70,9 +88,9 @@
           }
 
           .social img:hover {
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            filter: grayscale(100%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
           }
 
           .nav {

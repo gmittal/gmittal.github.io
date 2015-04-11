@@ -1,3 +1,8 @@
+	$(document).ready(function() {
+		$(".name").lettering();
+	});
+	
+
 
 	$("#aboutButton").click(function() {
 	  $('html, body').animate({
@@ -22,6 +27,8 @@
 	        scrollTop: $("#contactArea").offset().top
 	    }, 1000);
 	});
+
+
 
 
 	  $(function(){
@@ -99,6 +106,6 @@
 	  retina_detect: true
 	});
 
-	
+
 */
 
