@@ -1,6 +1,6 @@
           #header h1 {
             text-align:center;
-            font-family: 'Roboto';
+            font-family: 'Roboto Condensed';
             font-weight:700;
             font-size: 60px;
             background-image: url('../img/50.png');
@@ -11,7 +11,8 @@
             animation: lavalamp 15s infinite;
             -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
-
+           /*text-shadow: 2px 2px 3px rgba(255,255,255,0.1);*/
+           text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
             /*padding-bottom: 0;*/
           }
 
@@ -19,9 +20,9 @@
             padding-top: 40px;
             padding-bottom: 35px;
             /*background-size: cover;*/
-            background-repeat;
-            background-image: url('../img/symphony.png');
-            /*display:inline-block;*/
+            background-repeat:repeat;
+            background-image:url('../img/SubtlePatterns/triangles.png'); /*dark_leather.pngurl('../img/space.jpg');*/
+            
             position:relative;
             z-index:4;
 
@@ -271,6 +272,7 @@
             -moz-transition: all 0.1s linear;
             -o-transition: all 0.1s linear;
             -ms-transition: all 0.1s linear;
+            z-index: 10;
           }
 
           .writeMe:hover {
@@ -678,6 +680,7 @@
           position:absolute;
           top: 15px;
           left:15px;
+          z-index: 10;
 
         }
 
