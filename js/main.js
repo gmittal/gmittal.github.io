@@ -37,7 +37,7 @@
 	  });
 
 
-
+/*
 	particlesJS('header', {
 	  particles: {
 	    color: '#c0392b',
@@ -96,8 +96,9 @@
 	      }
 	    }
 	  },
-	  /* Retina Display Support */
 	  retina_detect: true
 	});
 
+	
+*/
 

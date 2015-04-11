@@ -63,7 +63,7 @@
                 margin: 1em 0;
             }
 
-            .container {
+            #container {
                 max-width: 380px;
                 _width: 380px;
                 margin: 0 auto;
@@ -137,21 +137,36 @@
                 padding: 0;
                 border: 0;
             }
+
+            canvas{
+                z-index:-1;
+                position:absolute;
+                top:0;
+                /*vertical-align:bottom;*/
+            }
         </style>
     </head>
     <body>
-        <div class="container">
-            <h1>Not found <span>:(</span></h1>
-            <p>Sorry, but the page you were trying to view does not exist.</p>
+        <div id="container" style="position:relative;">
+        <center>
+         <img src="http://www.google.com/images/errors/robot.png"/>
+        </center>
+            <h1>#Err404</span></h1>
+         
+            <p>I'm not sure what you were looking for, but it doesn't seem to exist.</p>
             <p>It looks like this was the result of either:</p>
             <ul>
                 <li>a mistyped address</li>
                 <li>an out-of-date link</li>
+                <li>too much coffee</li>
+
             </ul>
             <script>
                 var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
             </script>
             <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+ 
         </div>
+
     </body>
 </html>
