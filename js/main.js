@@ -1,7 +1,4 @@
-	$(document).ready(function() {
-		$(".name").lettering();
-	});
-	
+
 
 
 	$("#aboutButton").click(function() {
