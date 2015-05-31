@@ -11,20 +11,58 @@
           }
 
           
+          .coin {
+            /*padding: 10px;*/
+            border: 2px solid rgb(234, 175, 0);;
+            width: 200px;
+
+            /*height: 180px;*/
+            padding-top: 29px;
+            padding-bottom: 21px;
+            border-radius: 50%;
+            position:relative;
+
+            /*background-image: url('');*/
+            /*background-size: cover;*/
+            /*border-radius: 50%;*/
+
+          }
+
+          .coin img {
+            position:absolute;
+            top: 0;
+            left:0;
+            border-radius: 50%;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+          }
 
           #header h1 {
             text-align:center;
-            font-family: 'Roboto Slab';
+            font-family: 'Roboto Condensed';
             font-weight:700;
-            font-size: 60px;
-            background-image: url('../img/50.png');
-            background-size:cover;
-            color:white;
-            -webkit-animation: lavalamp 15s infinite;
-            -moz-animation: lavalamp 15s infinite;
-            animation: lavalamp 15s infinite;
-            -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
+            font-size: 90px;
+            padding:0;
+            margin-top: 0;
+            margin-bottom: 20px;
+            /*width: ;*/
+            /*background-image: url('../img/50.png');*/
+            /*background-size:cover;*/
+            /*text-shadow: 10px 10px 10px 10px red;*/
+            /*text-shadow: 0px 2px 3px #555;*/
+
+            /*border: 1px solid black;*/
+            /*width: 100px;*/
+            text-shadow: -4px 3px 0px #fff, 9px 100px 0px rgba(0,0,0,0.15);
+            color:rgb(234, 175, 0);
+            /*-webkit-animation: lavalamp 15s infinite;*/
+            /*-moz-animation: lavalamp 15s infinite;*/
+            /*animation: lavalamp 15s infinite;*/
+            /*-webkit-background-clip: text;*/
+           /*-webkit-text-fill-color: transparent;*/
            /*text-shadow: 2px 2px 3px rgba(255,255,255,0.1);*/
            /*letter-spacing: -1px;*/
 
@@ -74,9 +112,9 @@
           }
 
           .social img {
-            height: 45px;
-            padding-left: 2px;
-            padding-right: 2px;
+            height: 30px;
+            padding-left: 1px;
+            padding-right: 1px;
             -webkit-filter: grayscale(90%);
             -moz-filter: grayscale(90%);
             filter: grayscale(90%);
