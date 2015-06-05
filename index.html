@@ -1,70 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Gautam Mittal</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/gautam.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gautam Mittal</title>
+        <meta name="description" content="Blog of Gautam Mittal">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.png">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
 
 
-     <div class="row" style="margin-top: 20%;">
-           <div class="three columns">
-             <img src="../img/wwdc-icon.jpg" id="profilePicture" />
-           </div>
-      
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="css/gautam.min.css">       
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-          <div class="five columns">
-            <h1>
-              <span style="text-align:right;">
-                Gautam<br />
-                Mittal
-              </span>
-            </h1>
-              
-            <p class="main" style="margin-top: -10px;">Student, Developer, Martial Artist<br />
-            Palo Alto, CA - United States</p>
-
+        <!-- Add your site or application content here -->
+        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALcAAAAJGE5Mjk3ZWE3LTVjYmQtNDRhMS04MTJhLWVlOGRkYzZhMjI4Zg.jpg" id="profileHeader" />
+     
+        <div id="header">
+          <h1 class="name">
+              Gautam Mittal
+          </h1>
+          <center><p class="lead">Student, Developer, Martial Artist, Musician.<p></center>
+            <center>
               <span class="social">
-                <img src="../img/social/google+@2x.png" onclick="window.open('http://www.google.com/+GautamMittal');">
-                <img src="../img/social/twitter@2x.png" onclick="window.open('http://www.twitter.com/gthinkin/');">
-                <img src="../img/social/facebook@2x.png" onclick="window.open('https://www.facebook.com/gautam.mittal.792');">
-                <img src="../img/social/github@2x.png" onclick="window.open('https://github.com/gmittal');">
-                <img src="../img/social/linked.png" onclick="window.open('https://www.linkedin.com/in/mittalgautam');" />
+                <img src="img/social/google+@2x.png" onclick="window.open('http://www.google.com/+GautamMittal');">
+                <img src="img/social/twitter@2x.png" onclick="window.open('http://www.twitter.com/gthinkin/');">
+                <img src="img/social/facebook@2x.png" onclick="window.open('https://www.facebook.com/gautam.mittal.792');">
+                <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal');">
+                <img src="img/social/linked.png" onclick="window.open('https://www.linkedin.com/in/mittalgautam');" />
               </span>
+            </center>
+
+        </div>
+
+
+        <center>
+          <div class="nav">
+            
+            <div class="navbar">
+
+              <span class="navButton active">
+                <a href="#" id="aboutButton">About</a>
+              </span>
+              <span class="navButton">
+                <a href="#" id="projectsButton">Projects</a>
+              </span>
+              <span class="navButton">
+                <a href="#" id="thoughtsButton">Thoughts</a>
+              </span>
+
+              <span class="navButton">
+                <a href="#" id="contactButton">Contact</a>
+              </span>
+            </div>
+          </div>
+        </center>
+        <!-- <center>WOAH</center> -->
+
+        <center>
+          <div class="content" id="aboutArea">
+
+          <div class="call">
+            <span id="callToAwesome">I <span id="awesomeTag"></span></span>
+          </div>
+          <!-- <hr class="navRule"/> -->
+          <div class="about" style="padding-top: 0px; margin-top: -15px;">
+          <!-- <span class="headersBig" style="margin-left:-35px;">About</span> -->
+          <center>
+            <p class="headerPro">
+              Currently a freshman at Henry M. Gunn High School in Palo Alto, CA. I enjoy learning how things work as well as building web, mobile, and hardware applications.
+            </p>
+
+          </center>
+
           </div>
 
+           <hr class="navRule"/>
+          <div class="about" style="padding-top: 0; padding-bottom: 20px;">
+          <!-- <span class="headersBig" style="margin-left: -60px;">Fun Facts</span> -->
+          <center>
+          <div class="third">
 
-          <div class="four columns">
-                             <div class="materialized projectItem">
+            <p class="statBold">15</p>
+            <p class="statMin">years</p>
+
+          </div>
+          <div class="third">
+            <p class="statBold">15</p>
+            <p class="statMin">countries</p>
+
+          </div>
+          <div class="third">
+            <p class="statBold">12</p>
+            <p class="statMin">languages</p>
+
+          </div>
+          <br />
+          <br /><br /><br />
+          <span class="headersBig">In the News</span><br /><br />
+          <img src="http://www.sthelena.com/wp-content/uploads/2014/05/SF-Chronicle-logo.png" class="newsIcon" onclick="window.open('http://www.sfgate.com/technology/article/MakeGamesWithUs-gives-young-developers-a-home-4692431.php');"/>
+          <img src="http://www.paloaltoonline.com/art/weekly_logo.gif" class="newsIcon" onclick="window.open('http://www.paloaltoonline.com/print/story/2013/07/19/game-making-internship-summer-fun-with-a-possibility-of-profit');" />
+          <img src="http://wadhwa.com/wp-content/uploads/2014/02/knowledgewharton.gif" class="newsIcon" onclick="window.open('http://kwhs.wharton.upenn.edu/2013/08/gamers-get-their-apps-on-at-an-internship-in-silicon-valley/');" />
+          <img src="https://cdn.rawgit.com/MakeSchool-Tutorials/News/5486ee9046104519efeddefede39d38477c2ea9a/70923cab-38a3-4c1c-a6c7-6308702b340e/cover_photo.png" class="newsIcon" onclick="window.open('https://www.facebook.com/makeschool/posts/495237420617379');"/>
+
+         <!--    <p>
+              I build <code>awesome stuff</code>. Lorem ipsum dolor sit amet.... I like to <code>code</code>. I like to eat. Mangos are yummy. I'm a freshman at <code>Henry M. Gunn High School</code>
+            </p> -->
+
+          </center>
+
+          </div>
+          </div>
+
+          <!-- <hr class="navRule"/> -->
+          <div class="parentProject" id="projectsArea">
+            <div class="about content" style="">
+            <span class="headersBig">Projects</span><br />
+            <center style="margin-top: 45px;">
+              
+
+	                    <div class="materialized projectItem">
                 <img src="img/wwdc-scholars2.png" class="itemImage" />
 
                 <span class="itemDetails">
@@ -451,19 +518,102 @@
                 </span>
 
               </div>
+
+
+            </center>
+            </div>
+          </div>
+
+          
+
+
+          <!-- https://www.facebook.com/makegameswithus/posts/495237420617379 -->
+
+          <div class="content" style="padding-top:0px;" id="thoughtsArea">
+          <!-- <hr class="navRule"/> -->
+          <div class="about" style="padding-bottom: 10px;">
+          <span class="headersBig">Thoughts</span><br />
+          <center style="margin-top: 45px;">
+          <span class="lead">I like to write and tweet when I can. Check it out!</span><br /><br />
+          <p class="blogPosts">
+          <!-- <center> -->
+            <!-- <div> -->
+
+
+
+
+                <script async src="https://static.medium.com/embed.js"></script>
+                <a class="m-profile" data-width="100%" href="https://medium.com/@gmittal">Gautam Mittal</a>
+            <!-- </div> -->
+            <!-- </center> -->
+
+          </p>
+          <!-- <hr class="vDivide" /> -->
+
+            <p class="tweets">
+     
+                <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+            </p>
+
+          </center>
+          </div>
+
+   
+             
+
+
+          <hr class="navRule" id="contactArea" style="border:0;"/>
+          <div class="about">
+          <span class="headersBig">Contact</span><br />
+          <center style="margin-top: 45px;">
+            <p class="headerPro">
+              The fastest and most efficient way of reaching me is through email. Pinging my social profiles is not going to get you an instant response.
+              <br /><br />
+              <button class="epicButton" onclick="window.open('mailto:gautam@mittal.net');">
+              EMAIL ME
+              </button>
+            </p>
+
+          </center>
           </div>
 
 
 
-    </div>
-
-    </div>
-  </div>
+          <div class="blogPosts">
 
 
-  <script src="http://livejs.com/live.js"></script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+          </div>
+
+          <hr class="navRule" style="margin-top: 50px;"/>
+          <br />
+          <center>
+          <p class="lead" style="text-align: center; font-family:'Roboto'; font-weight: 100; font-size: 15px;">&copy; 2011-2015 Gautam Mittal. All Rights Reserved.</p><br />
+          </center>
+
+
+          </div>
+        </center>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/particles.min.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/jquery.lettering-0.6.min.js"></script>
+        <script src="js/main.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-35192434-1');ga('send','pageview');
+        </script>
+        <script src="js/instantclick.min.js" data-no-instant></script>
+        <script data-no-instant>InstantClick.init();</script>
+    </body>
 </html>
