@@ -10,13 +10,14 @@
             font-family: 'Phantasm'; src: url('../img/PhantasmAllCaps.ttf.otf')
           }
 
-          
+
 
           #header h1 {
             text-align:center;
             font-family: 'Roboto';
             font-weight:100;
             font-size: 60px;
+            /*margin-top:0px;*/
             /*background-image: url('../img/50.png');
             background-size:cover;*/
             color:#E64A19;
@@ -31,16 +32,18 @@
 
           }
 
-
+          h2 {
+            font-family: "Roboto";
+            font-weight: 700;
+          }
 
 
           #header {
-            padding-top: 40px;
-            padding-bottom: 35px;
+            /*padding-bottom: 35px;*/
             /*background-size: cover;*/
-            background-repeat:repeat;
-            background-image:url('../img/SubtlePatterns/dark_leather.png'); /*dark_leather.pngurl('../img/space.jpg');*/
-            
+            /*background-repeat:repeat;*/
+            /*background-image:url('../img/SubtlePatterns/dark_leather.png'); /*dark_leather.pngurl('../img/space.jpg');*/*/
+            margin:0;
             position:relative;
             z-index:4;
 
@@ -330,7 +333,7 @@
 
         }
 
-        
+
 
         .call {
           text-align: center;
@@ -369,7 +372,7 @@
         }
 
         #awesomeTag {
-          
+
         }
 
         #tag {
@@ -616,7 +619,7 @@
 
             }
 
-            
+
 
             .itemDetails {
               left:10px;
@@ -789,4 +792,3 @@ canvas{
   /*height:100%;*/
   /*background:#b61924*/
 }
-
