@@ -17,37 +17,37 @@ html {
 }
 
 @font-face {
-  src:url("../img/proximanova-bold-webfont.ttf");
+  src:url("../fonts/proximanova-bold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 700;
 }
 
 @font-face {
-  src:url("../img/proximanova-semibold-webfont.ttf");
+  src:url("../fonts/proximanova-semibold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 500;
 }
 
 @font-face {
-  src:url("../img/proximanova-light-webfont.ttf");
+  src:url("../fonts/proximanova-light-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 300;
 }
 
 @font-face {
-  src:url("../img/proximanova-regular-webfont.ttf");
+  src:url("../fonts/proximanova-regular-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 400;
 }
 
 @font-face {
-  src:url("../img/Circular-Book.ttf");
+  src:url("../fonts/Circular-Book.ttf");
   font-family: 'Circular'; font-weight: 400;
 }
 
 @font-face {
-  src:url("../img/Circular-Bold.ttf");
+  src:url("../fonts/Circular-Bold.ttf");
   font-family: 'Circular'; font-weight: 700;
 }
 
 @font-face {
-  src: url('../img/Block.ttf');
+  src: url('../fonts/Block.ttf');
   font-family: 'Block';
 }
 
