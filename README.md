@@ -2,7 +2,7 @@
 ![awesome_badge](https://img.shields.io/badge/awesome-true-brightgreen.svg)
 ![sleep_badge](https://img.shields.io/badge/sleep-a%20bit...-blue.svg)
 
-This is the source code for my personal website and blog. If you have something to say, either [email me](gautam@mittal.net) or [file an issue](/gmittal/gautam.cc/issues).
+This is the source code for my personal website and blog. If you have something to say, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
 ### Up and Running
 This site isn't really intended to serve as a template for your own blog. If you're looking for a blog template, check out my other project [Nano](https://github.com/gmittal/nano). This website was built on top of Nano, but I've customized and refactored some aspects of it to fulfill my own needs.
