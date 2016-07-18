@@ -12,11 +12,6 @@ var request = require('request');
 var app = express();
 
 app.use(compression());
-app.use("/client", express.static(__dirname+"/client"))
-app.use("/css", express.static(__dirname+'/client/css'));
-app.use("/img", express.static(__dirname+'/client/img'));
-app.use("/js", express.static(__dirname+'/client/js'));
-app.use("/doc", express.static(__dirname+'/client/doc'));
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -81,7 +76,7 @@ app.get('/', function (req, res) {
   res.setHeader('Content-Type', 'text/html');
   walk(__dirname + "/_posts", function (e, r) {
     // retrieve the template
-    fs.readFile(__dirname+"/client/index.html", 'utf-8', function (err, fileData) {
+    fs.readFile(__dirname+"/static/index.html", 'utf-8', function (err, fileData) {
       if (err) {
         console.log("There was an error serving the article template file.".red);
         res.send("An error occurred.");
@@ -114,7 +109,7 @@ app.get('/', function (req, res) {
 // Read articles from other publishers "hosted" on the news site
 app.get('/:uid', function (req, res) {
   res.setHeader('Content-Type', 'text/html');
-  fs.readFile(__dirname+"/client/article.html", 'utf-8', function (err, fileData) {
+  fs.readFile(__dirname+"/static/article.html", 'utf-8', function (err, fileData) {
 		if (err) {
       console.log("There was an error serving the article template file.".red);
 			res.send("An error occurred.");
@@ -161,7 +156,7 @@ app.get('/:uid', function (req, res) {
               });
           });
         } else {
-          res.sendFile(__dirname + "/client/404.html");
+          res.sendFile(__dirname + "/static/404.html");
         }
       });
 
@@ -170,11 +165,14 @@ app.get('/:uid', function (req, res) {
   });
 });
 
+// Serve everything else as static resources
+app.use("/", express.static(__dirname+'/static'))
+
 
 app.listen(port, function () {
   refJSON();
   fs.readFile(__dirname + "/config.json", "utf-8", function (e, d) {
     configOptions = JSON.parse(d);
   });
-  console.log(('Blog server running at localhost:'+port).blue);
+  console.log("Gautam Mittal's ".magenta + ("awesome site running at ").blue +("0.0.0.0:"+port).green);
 });
