@@ -1,4 +1,4 @@
-var port = 3001;
+var port = 3000;
 var configOptions = {};
 
 var colors = require('colors');
@@ -59,13 +59,15 @@ function refJSON() {
     walk(__dirname+"/_posts", function (e, r) {
       var j = {};
       for (var i = 0; i < r.length; i++) {
-        var d = fs.readFileSync(r[i], "utf-8");
-        var metaDataStart = d.indexOf("---START_METADATA---");
-        var metaDataEnd = d.indexOf("---END_METADATA---");
-        var jstart = d.substr(metaDataStart, metaDataEnd).indexOf("{");
-        var metadataStr = d.substr(jstart, metaDataEnd-jstart);
-        var metadata = JSON.parse(metadataStr); // object of metadata parsed out of markdown file
-        j[r[i].split("/")[r[i].split("/").length-1].substr(11, r[i].length-14)] = {"title": metadata.title, "summary": metadata.summary};
+        if (r[i].indexOf(".DS_Store") == -1) {
+          var d = fs.readFileSync(r[i], "utf-8");
+          var metaDataStart = d.indexOf("---START_METADATA---");
+          var metaDataEnd = d.indexOf("---END_METADATA---");
+          var jstart = d.substr(metaDataStart, metaDataEnd).indexOf("{");
+          var metadataStr = d.substr(jstart, metaDataEnd-jstart);
+          var metadata = JSON.parse(metadataStr); // object of metadata parsed out of markdown file
+          j[r[i].split("/")[r[i].split("/").length-1].substr(11, r[i].length-14)] = {"title": metadata.title, "summary": metadata.summary};
+        }
       }
 
       fs.writeFile(__dirname + "/ref.json", JSON.stringify(j));
@@ -87,13 +89,15 @@ app.get('/', function (req, res) {
           // populate template with data
           var htmlData = [];
           for (var j = 0; j < r.length; j++) {
-            r[j] = r[j].split("/")[r[j].split("/").length-1];
-            var slug = r[j].substr(11, r[j].length-14);
-            var time = moment(r[j].substr(0, 10), [configOptions.dateFormat]).format("LL");
-            var k = slug + ".md";
-            var listTemplate = configOptions.listTemplate;
-            listTemplate = listTemplate.replace(/{POST-SLUG}/g, slug).replace(/{POST-TITLE}/g, ref[k].title).replace(/{POST-TIME}/g, time).replace(/{POST-DESCRIPTION}/g, ref[k].summary);
-            htmlData.unshift(listTemplate);
+            if (r[j].indexOf(".DS_Store") == -1) {
+              r[j] = r[j].split("/")[r[j].split("/").length-1];
+              var slug = r[j].substr(11, r[j].length-14);
+              var time = moment(r[j].substr(0, 10), [configOptions.dateFormat]).format("LL");
+              var k = slug + ".md";
+              var listTemplate = configOptions.listTemplate;
+              listTemplate = listTemplate.replace(/{POST-SLUG}/g, slug).replace(/{POST-TITLE}/g, ref[k].title).replace(/{POST-TIME}/g, time).replace(/{POST-DESCRIPTION}/g, ref[k].summary);
+              htmlData.unshift(listTemplate);
+            }
           }
 
           fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
