@@ -160,11 +160,11 @@ a:hover {
 }
 
 .content {
-  margin-top: 10px;
+  margin-top: -20px;
 }
 
 #header {
-  color:black;
+  color:#999;
   padding-top: 40px;
   padding-bottom: 40px;
   /*background-color:rgb(30, 30, 30);*/
@@ -219,6 +219,7 @@ input:focus {
 }
 
 .story a {
+  color: #333;
   display:block;
   text-align:left;
   font-size: 15pt;
@@ -469,6 +470,8 @@ blockquote {
   color: rgba(33, 33, 33, 0.8);
   line-height: 160%;
   font-style:italic;
+  font-family: "Roboto";
+  font-weight: 300;
 
 }
 
