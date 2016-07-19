@@ -1,31 +1,25 @@
 ---START_METADATA---
 {
-  "title": "Example Hello World Post",
+  "title": "First Blog Post",
   "author": "Gautam Mittal",
-  "summary": "An example post written with Nano.",
+  "summary": "Hello, world!",
   "tags":[
-    "nano"
+    "me"
   ]
 }
 ---END_METADATA---
-___Note:___ _This example post was modified from Jekyll's example post (oh the irony!)._
+![hello](http://wallpaperswa.com/thumbnails/detail/20120827/video%20games%20little%20big%20planet%20hello%201920x1080%20wallpaper_wallpaperswa.com_1.jpg)
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `node app.js`, which launches a web server and auto-regenerates your site when a file is updated.
+_Note: The image above isn't actually me._
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.md` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+__Hello, World__! I’m Gautam Mittal, a student at [Henry M. Gunn High School](http://gunn.pausd.org) in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.
 
-Nano also offers powerful support for code snippets:
+My main intent in starting this blog is to share my thoughts, ideas, and stories. After trying out other blogging platforms (with much frustration and inconsistency), such as [Medium](http://medium.com) and [Wordpress](http://wordpress.org), I finally decided it was time to host my own blog. My primary goal is to create content that's interesting and to share my thoughts on the world around me. The life of a high school student is more eventful than you may think! I also want to write more and continue to develop and improve my style of writing.
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Here's some ```LOLCODE``` to say Hi.
 ```
-
-Check out the [Github repo](https://github.com/gmittal/nano) to learn more and file all bugs/feature requests for Nano. If you have questions, you can ping [@gmittal](https://github.com/gmittal).
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+HAI
+CAN HAS STDIO?
+VISIBLE "HAI WORLD!"
+KTHXBYE
+```

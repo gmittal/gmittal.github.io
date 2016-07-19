@@ -458,6 +458,19 @@ img {
   background-color: #ccc;
 }
 
+blockquote {
+  font-size: 16pt;
+  color: rgba(33, 33, 33, 0.8);
+  line-height: 160%;
+  font-style:italic;
+
+}
+
+lead {
+  color: rgba(33, 33, 33, 0.5);
+}
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
