@@ -96,8 +96,8 @@ a:hover {
 }
 
 #mainTitle {
-  font-family: "Proxima Nova";
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 300;
   color:#333;
   line-height: 110%;
   text-align:center;
@@ -165,8 +165,8 @@ a:hover {
 
 #header {
   color:black;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   /*background-color:rgb(30, 30, 30);*/
 }
 
@@ -178,8 +178,14 @@ a:hover {
 
 h2 {
   font-family: "Proxima Nova";
-  line-height: 110%;
+  line-height: 120%;
   margin-top:0px;
+}
+
+h3 {
+  font-family: "Proxima Nova";
+  border-bottom: 1px solid rgba(37, 36, 37, 0.1);
+  line-height: 120%;
 }
 
 .date {
@@ -230,7 +236,7 @@ input:focus {
 
 .articleBody {
   font-size: 13pt;
-  font-family: "Circular", "Proxima Nova", "leitura-news", "Adobe Caslon", sans-serif;
+  font-family: "Proxima Nova", "Circular", "leitura-news", "Adobe Caslon", sans-serif;
   line-height: 160%;
 }
 

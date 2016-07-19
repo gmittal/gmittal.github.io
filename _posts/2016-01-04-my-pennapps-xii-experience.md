@@ -31,10 +31,10 @@ Our flight was scheduled to leave San Francisco at 7am. Personally, I wasn’t s
 When we arrived at the Wells Fargo Center a few hours later, the amount of energy, people, and swag circulating around was incredible.
 
 ![opening_ceremony](https://cdn-images-1.medium.com/max/800/1*NMDHXEbIv_biV1Ax554ggg.jpeg)
-_PennApps XII Opening Ceremony_
+<lead>_PennApps XII Opening Ceremony_<lead>
 
 ![enter_hackathon](https://cdn-images-1.medium.com/max/800/1*AgLsefacDK33EUGLy5Q6kg.jpeg)
-_Sponsor tables getting set up for the event._
+<lead>_Sponsor tables getting set up for the event._<lead>
 
 After listening to some talks by various software engineers, CEOs, and Penn faculty, we began building our app.
 
@@ -48,10 +48,10 @@ On the flight over, I had spent some time thinking about how the app would work.
 Within a couple of hours of the hackathon’s start, our iOS frontend was well underway, and we had a working prototype of our backend. We decided to reward ourselves for this first success by heading down to the hardware lab to checkout some cool tech to play around with. Half of the attendees must have been standing in that line. The line went on forever. Things started to clear up when dinner started, as people began to give up and leave the line in hopes to reach the dinner buffet before another gigantic line for food formed. I decided to hold our spot in the hardware line while my teammate went off to grab dinner for both of us.
 
 ![meal](https://cdn-images-1.medium.com/max/800/1*v2B-LfCczry34MieEBvLOA.jpeg)
-_A "normal" meal at PennApps._
+<lead>_A "normal" meal at PennApps._<lead>
 
 ![first_supper](https://cdn-images-1.medium.com/max/800/1*acwiPRRIXlM_2Mi8U4wKdw.jpeg)
-_The first dinner at PennApps XII: Pasta, salad, and string beans._
+<lead>_The first dinner at PennApps XII: Pasta, salad, and string beans._<lead>
 
 The food was pretty good, we met a lot of cool people, and we continued working on our hack.
 
@@ -69,7 +69,7 @@ We even practiced our product pitch a few times.
 Finally, the PennApps XII Expo began. The stadium floor was packed with tired, excited hackers and the energy level was absolutely incredible.
 
 ![dave_fontenot](https://cdn-images-1.medium.com/max/800/1*Kr3Cx-zjVxWGcMn-EpWX2Q.jpeg)
-_An excited Dave Fontenot tries to make his way through the crowded exhibition._
+<lead>_An excited Dave Fontenot tries to make his way through the crowded exhibition._<lead>
 
 We had all sorts of people show up to our table to learn more about our hack. Some were skeptical of our claim that we could gather calorie data from a picture of food, and were convinced that we had preprogrammed the app to already know the nutrition facts for the food that we had brought for our demo. Our app was truly put to test when one of the judges ran off and came back a few minutes later holding an old M&M wrapper which she had found in the trash. As we had predicted (and to her amazement) the app successfully returned the nutrition facts.
 
@@ -80,10 +80,10 @@ I’m going to leave you on a cliffhanger from my previous statement for just a 
 Finally, the most second most exciting moment of the hackathon was about to begin. The top ten hacks were about to be announced. One of the PennApps organizers jumped on the main stage with a list, and began reading off team names. We heard him call “Kenko” to the stage. We were completely awestruck. We had achieved what we had never expected to achieve. We were even more shocked when the PennApps team told us we had to present first. We immediately started practicing our on-stage demo.
 
 ![proud_hackers](https://cdn-images-1.medium.com/max/800/1*IIvFnYbcvFXzZT69LtsGSQ.jpeg)
-_Taking the stage at PennApps XII._
+<lead>_Taking the stage at PennApps XII._<lead>
 
 ![words_cannot_describe](https://cdn-images-1.medium.com/max/800/1*QduOVJRb1A95M1swuh06xw.jpeg)
-_Words could not express how happy and nervous we were._
+<lead>_Words could not express how happy and nervous we were._<lead>
 
 Here’s a video of our demo on stage ([9:59](https://youtu.be/TvjwUh9taOA?t=9m59s)). It wasn’t perfect, but we’re still pretty happy.
 
