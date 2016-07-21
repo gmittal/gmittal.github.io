@@ -236,7 +236,7 @@ a:hover {
 #header {
   color:#999;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   /*background-color:rgb(30, 30, 30);*/
 }
 
@@ -244,6 +244,7 @@ a:hover {
   font-family: "Open Sans", "Roboto";
   font-weight: 300;
   color: black;
+  font-size: 22pt;
 }
 
 .articleTitle {
