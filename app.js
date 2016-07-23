@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var marked = require('marked');
 var moment = require('moment');
-var request = require('request');
 var app = express();
 
 app.use(compression());
