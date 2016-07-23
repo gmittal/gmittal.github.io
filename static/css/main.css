@@ -204,8 +204,8 @@ a:hover {
 }
 
 #header a {
-  color: rgba(231, 76, 60, 1.0);
-  border-bottom: 1px dotted rgba(231, 76, 60, 1.0);
+  color: #3498db;
+  border-bottom: 1px dotted #3498db;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
@@ -297,7 +297,7 @@ input:focus {
 
 .articleBody {
   font-size: 13pt;
-  font-family: "Proxima Nova", "Circular", "leitura-news", "Adobe Caslon", sans-serif;
+  font-family: "Franklin Book", "Proxima Nova", "Circular", sans-serif;
   line-height: 160%;
 }
 
@@ -343,6 +343,14 @@ input:focus {
   display:block;
   margin-top: 10px;
   border: 1px dashed black;
+}
+
+.blogArea {
+  margin-top: 10px!important;
+}
+
+.contentArea {
+  margin-top: -30px;
 }
 
 img {
@@ -547,6 +555,19 @@ lead {
    ========================================================================== */
 
 @media only screen and (max-width: 600px) {
+
+  .navLinks a {
+    display:block;
+    float:left;
+    clear:left;
+    margin-bottom: 15px;
+  }
+
+  #header {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   #volumeNumber {
     display: none;
   }
@@ -577,6 +598,15 @@ lead {
 
   pre {
     font-size: 11pt;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .navLinks a {
+    display: block;
+    clear: left;
+    float:left;
+    margin-bottom: 15px;
   }
 }
 
