@@ -100,9 +100,13 @@ app.get('/', function (req, res) {
             }
           }
 
+          var greetings = ["Hi", "Hello", "Hey"];
+          var greeting = greetings[Math.floor(Math.random()*greetings.length)+0];
+
           fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
           fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
           fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
+          fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
           res.send(fileData);
         });
       }
