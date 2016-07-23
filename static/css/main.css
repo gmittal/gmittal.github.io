@@ -166,10 +166,25 @@ a:hover {
   font-size: 22pt;
 }
 
+#header a {
+  color: rgba(231, 76, 60, 1.0);
+  border-bottom: 1px dotted rgba(231, 76, 60, 1.0);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+}
+
+#header a:hover {
+  color:black;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+}
+
 p.lead {
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 14pt;
+    font-family: "Franklin Book", "Roboto";
+    /*font-weight: 300;*/
+    font-size: 13pt;
 }
 
 .articleTitle {
@@ -179,19 +194,21 @@ p.lead {
 }
 
 h2 {
-  font-family: "Proxima Nova";
+  font-family: "Roboto";
+  font-weight: 300;
   line-height: 120%;
-  margin-top:0px;
+  border-bottom: 1px solid rgba(37, 36, 37, 0.1);
 }
 
 h3 {
   font-family: "Proxima Nova";
   border-bottom: 1px solid rgba(37, 36, 37, 0.1);
   line-height: 120%;
+
 }
 
 .date {
-  font-family: 'Proxima Nova';
+  font-family: "Franklin Book", 'Proxima Nova';
   font-weight: 300;
   color: rgba(37, 36, 37, 0.7);
   font-size: 12pt;
@@ -224,7 +241,7 @@ input:focus {
   color: #333;
   display:block;
   text-align:left;
-  font-size: 15pt;
+  font-size: 14pt;
   font-family:"Proxima Nova", sans-serif;
   font-weight: 700;
 }
@@ -232,7 +249,7 @@ input:focus {
 
 .description {
   margin-right: 10px;
-  font-family: "Proxima Nova", "Helvetica", sans-serif;
+  font-family: "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
   font-weight: 400;
   display:block;
 }
