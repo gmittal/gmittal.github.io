@@ -4,6 +4,10 @@ html {
     line-height: 1.4;
 }
 
+body {
+  padding-bottom: 40px;
+}
+
 @font-face {
   src:url("../fonts/proximanova-bold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 700;
