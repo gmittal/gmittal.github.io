@@ -95,6 +95,25 @@ a:hover {
   color: #999;
 }
 
+.lavaLamp {
+    height: 3px;
+    width: 100%;
+    background-color:#333;
+    /*animation: lavalamp 5s infinite;*/
+    position:absolute;
+    top:0;
+}
+
+@keyframes lavalamp {
+  0% {
+    background-color: #c0392b;
+  }
+  100% {
+    background-color: #8e44ad;
+  }
+}
+
+
 #mainTitle {
   font-family: "San Francisco";
   font-weight: 300;
