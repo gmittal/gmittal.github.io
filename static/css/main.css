@@ -189,6 +189,13 @@ a:hover {
   /*background-color:rgb(30, 30, 30);*/
 }
 
+#header .navLinks a {
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-right: 25px;
+  font-size: 14pt;
+}
+
 #header h1 {
   font-family: "San Francisco", "Roboto";
   font-weight: 300;
