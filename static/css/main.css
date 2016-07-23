@@ -88,6 +88,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.quote {
+  margin-top: 40px;
+  text-align:center;
+  font-family: "Franklin Book";
+  color: #999;
+}
+
 #mainTitle {
   font-family: "San Francisco";
   font-weight: 300;

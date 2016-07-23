@@ -26,6 +26,9 @@ marked.setOptions({
   }
 });
 
+// TODO: use a better method of loading quotes
+var inspirationQuotes = [];
+
 function randNumericKey() {
   var n = new Date().getUTCMilliseconds()*Math.random()*Math.random()*Math.random();
   return n;
@@ -101,12 +104,14 @@ app.get('/', function (req, res) {
           }
 
           var greetings = ["Hi", "Hello", "Hey"];
-          var greeting = greetings[Math.floor(Math.random()*greetings.length)+0];
+          var greeting = greetings[Math.floor(Math.random()*greetings.length)];
+          var quote = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
 
           fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
           fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
           fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
           fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
+          fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
           res.send(fileData);
         });
       }
@@ -179,6 +184,9 @@ app.use("/", express.static(__dirname+'/static'))
 
 app.listen(port, function () {
   refJSON();
+  fs.readFile(__dirname + "/data/quotes.json", "utf-8", function (e, d) {
+    inspirationQuotes = JSON.parse(d).slice();
+  });
   fs.readFile(__dirname + "/config.json", "utf-8", function (e, d) {
     configOptions = JSON.parse(d);
   });
