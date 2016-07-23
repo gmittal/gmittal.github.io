@@ -105,7 +105,8 @@ app.get('/', function (req, res) {
 
           var greetings = ["Hi", "Hello", "Hey"];
           var greeting = greetings[Math.floor(Math.random()*greetings.length)];
-          var quote = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
+          var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
+          var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
 
           fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
           fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
