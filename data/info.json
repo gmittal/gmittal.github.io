@@ -1,8 +1,20 @@
 {
   "projects": [
-
+    {
+      "name": "MathNinja",
+      "description": "A simple cross-platform game allowing children to practice their basic arithmetic skills. Has been used in school districts across the United States.",
+      "link": "/mathninja",
+      "stores": [
+        {"chrome": "webstore-link"},
+        {"apple": "appstore-link"}
+      ]
+    }
   ],
   "news_articles": [
-
+    {
+      "title": "Awesomeness Spreads Across the Valley",
+      "source": "Palo Alto Weekly",
+      "link": "https://asdfasfasfasf"
+    }
   ]
 }
