@@ -7,5 +7,5 @@ $(window).resize(function() {
 });
 
 $("#goHome").click(function() {
-	location.href("/");
+	location.href = "/";
 });

@@ -287,6 +287,10 @@ input:focus {
   font-weight: 700;
 }
 
+#goHome:hover {
+  cursor:pointer;
+}
+
 
 .description {
   margin-right: 10px;

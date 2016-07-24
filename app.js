@@ -156,6 +156,8 @@ app.get('/:uid', function (req, res) {
                 var title = metadata.title;
                 var author = metadata.author;
                 var date = time;
+                var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
+                var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
 
                 fileData = fileData.replace(/{POST-TITLE}/g, title);
                 fileData = fileData.replace(/{POST-DATE}/g, date);
@@ -165,6 +167,7 @@ app.get('/:uid', function (req, res) {
                 fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
                 fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
                 fileData = fileData.replace(/{DISQUS-LINK}/g, configOptions.disqusCommentLink);
+                fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
                 res.send(fileData);
               });
           });
