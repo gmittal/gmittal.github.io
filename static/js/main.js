@@ -5,3 +5,7 @@ function initTwitter() {
 $(window).resize(function() {
 	$(".twitter-timeline").height($("#pictureOfMe").height()+20);
 });
+
+$("#goHome").click(function() {
+	location.href("/");
+});
