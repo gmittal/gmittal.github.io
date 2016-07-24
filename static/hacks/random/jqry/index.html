@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="An adaptive library for generating codes that are machine readable. This library is under the Creative Commons Unported 3.0 License." />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
+<link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+  <script src="http://www.gautam.cc/projects/jqry/jqry.js"></script>
+  <script language="text/javascript">
+create2dcode("QR", 110, "L", "qrserver", "code");
+create2dmatrix("DM", 10.5, "code2");
+create1dbarcode("Barcode", 100, 100, 1, 2, "code3");
+create2dcode("This is awesome", 180, "M", "qrserver", "myCode");
+
+  </script>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="http://www.gautam.cc/favicons/favicon.png">
+<title>jQRy JavaScript Library</title>
+<style>  
+  body {
+    padding-left: 60px;
+    paddint-right: 60px;
+  }
+  
+  pre {
+    width: 560px;
+  }
+  
+  p {
+    padding-left: 20px;
+    padding-right:20px;
+  }
+</style>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35192434-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body onload="prettyPrint();">
+  <h1>jQRy JavaScript Library</h1>
+  <img id="code" src="http://api.qrserver.com/v1/create-qr-code/?size=110x110&ecc=L&data=QR"/><img id="code2" src="http://datamatrix.kaywa.com/img.php?s=10.5&d=D" /><img id="code3" src="http://www.barcodesinc.com/generator/image.php?code=Barcode&style=453&type=C128B&width=150&height=100&xres=1&font=10"/><br /><br />
+  <input type="text" id="testBase" onkeyup="create2dcode(this.value, 110, L, qrserver, 'code'); create2dmatrix(this.value, 10.5, 'code2'); create1dbarcode(this.value, 300, 200, 1, 10, 'code3');"/><br />
+<b>GitHub Actions:</b><br />
+<iframe src="http://ghbtns.com/github-btn.html?user=gmittal&repo=jqry&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="92" height="20"></iframe><br />
+<iframe src="http://ghbtns.com/github-btn.html?user=gmittal&repo=jqry&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe><br />
+  <h3>Documentation</h3>
+  The following functions create 2d qr codes, 2d data matrices, and 1d barcodes using the api of your choice. Currently, Google Chart, QRserver, and Kaywa are supported.<br /><br />
+  QR Codes:<br />
+  <code>create2dcode(<i>data, size, ecc, api, id</i>);</code><br /><br />
+  Data Matrices:<br />
+  <code>create2dmatrix(<i>data, size, id</i>);</code><br /><br />
+  Barcodes:<br />
+  <code>create1dbarcode(<i>data, width, height, res, font size, id</i>);</code>
+  
+  <h4>Data</h4>
+  <p>This parameter allows you to place any piece of text you want. This could be a URL, or a simple string. Data must be in quotes.</p><br /><br />
+  <h4>Size</h4>
+  <p>As you may have guessed this allows you to alter the size of the generated QR code. When using Google Chart API, codes can have a maximum size of 547 pixels. When using QRServer, codes can have a maximum size of 1000 pixels.</p><br /><br />
+  <h4>ECC</h4>
+  <p>This parameter does not affect the QR code generated with Google Chart, but does affect codes generated with QRserver. You can set the ECC to L (low), M (medium), Q (quality), and H (high) quality settings. This is useful for when you want to print out QR codes, because they could be damaged in the process. Each setting allows a certain percentage of the QR code to be damaged and still have it read by the scanner. ECC must be in quotes.</p><br />
+  <b><li>L - ~7% can be damaged</li>
+    <li>M - ~15% can be damaged</li>
+    <li>Q - ~25% can be damaged</li>
+    <li>H - ~30% can be damaged</li></b>
+  <br />
+  <br />
+  
+  <h4>API</h4>
+  <p>This determines which API should be used to generate the code. So far, jQRy will only accept google, qrserver, and kaywa. API must be in quotes</p><br /><br />
+  
+  <h4>ID</h4>
+  <p>This allows you to specify which image should display the code. The image's ID should be in quotes.</p><br /><br />
+  <b>NOTE:</b> When generating multiple codes, the APIs should be the same. Otherwie, only one code will be generated successfully.<br /><br />
+  
+  <h4>Live Example</h4>
+  <p>Well, now that you know how to use the API, lets show a live example with JavaScript code and a real QR code.<br />
+    Lets, say I want to build a QRserver code that contains the text "This is awesome", has an ECC that is Medium, and is 180 pixels. My image's id is set to "myCode". Here is how I would generate the code using jQRy.</p><br />
+  <code>create2dcode("This is awesome", 180, "M", "qrserver", "myCode");</code><br /><br />
+  <h5>Generated QRServer Code</h5>
+  <img id="myCode" src="http://api.qrserver.com/v1/create-qr-code/?size=180x180&ecc=M&data=This%20is%20awesome"/>
+  
+  <br />
+  <br />
+  <a class="btn btn-primary btn-large" href="jqry.js" onclick="showCode();">Download the .js file!</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  &copy; 2013 Gautam Mittal | <a href="http://www.gautam.cc/">http://www.gautam.cc/</a><br /><br />
+  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">jQRy Library</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br /><br /><br />
+</body>
+</html>

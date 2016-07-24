@@ -1,0 +1,891 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Momentum</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- build:css styles/components/main.min.css -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/dropzone.js"></script>
+
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/components/components.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+      body {
+        font-family:'Roboto Slab';
+      }
+
+      .logo {
+        font-family:'Roboto Slab';
+      }
+
+            .primary-btn {
+
+        padding: 20px 30px 20px 30px;
+        font-size: 15pt;
+        border:1px solid white;
+        border-radius: 40px;
+        background-color: transparent;
+        color:white;
+        font-family:'Roboto Slab';
+      }
+
+      .form-btn {
+        background-color: #16a085;
+        border:0;
+      }
+
+      .post-btn {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding:5px;
+        text-align: center;
+        position:relative;
+        width: 70px;
+        height: 70px;
+        border: 3px solid white;
+        background-color: #16a085;
+        font-size: 12pt;
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 5px hsl(168, 75.8%, 35.7%);
+            /*0 0 0 15px hsl(0, 0%, 90%);*/
+      }
+
+      .cancel-btn {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding:5px;
+        text-align: center;
+        position:relative;
+        width: 70px;
+        height: 70px;
+        border: 3px solid white;
+        background-color: rgb(192, 57, 43);
+        font-size: 12pt;
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 5px rgb(192, 57, 43) /*hsl(168, 75.8%, 35.7%)*/;
+            /*0 0 0 15px hsl(0, 0%, 90%);*/
+      }
+
+/*      .post-btn:before {
+         content: " ";
+         position: absolute;
+         z-index: -1;
+         top: 5px;
+         left: 5px;
+         right: 5px;
+         bottom: 5px;
+         border: 5px solid #16a085;
+      }
+*/
+      .primary-btn:hover {
+        background-color: white;
+        color:black;
+      }
+
+      button {
+        width:160px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+      }
+
+      @media(max-width:640px) {
+        button {
+          width: 100px;
+        }
+
+        .primary-btn {
+          padding: 10px 15px 10px 15px;
+          font-size: 12pt;
+        }
+      } 
+
+      input {
+        /*height: 40px;*/
+        padding: 20px;
+        width: 300px;
+        border-radius: 10px;
+        border:0;
+        margin-top: 10px;
+        font-family: 'Roboto Slab';
+        font-size: 12pt;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+      }
+
+      input:focus {
+        outline-style: none;
+        outline-color: transparent;
+        /*background-color: 3px solid #16a085;*/
+      }
+
+      button:focus {
+        outline-style: none;
+        outline-color: transparent;
+        /*background-color: 3px solid #16a085;*/
+      }
+
+      .err {
+        color:red;
+        font-size: 15pt;
+        /*margin-top:20px;*/
+        font-weight: bold;
+        font-family: 'Roboto Slab';
+      }
+
+
+
+          .card {
+            width: 450px;
+            padding:0px;
+            margin-top: 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color:white; 
+            text-align: left;
+            font-family: 'Roboto Slab';
+            overflow:auto;
+
+          
+         white-space: pre-wrap;      /* CSS3 */   
+         white-space: -moz-pre-wrap; /* Firefox */    
+         white-space: -pre-wrap;     /* Opera <7 */   
+         white-space: -o-pre-wrap;   /* Opera 7 */    
+         word-wrap: break-word;      /* IE */
+
+
+          }
+
+          .card h3 {
+            padding:20px 20px 0px 20px;
+            font-weight:bold;
+            text-transform:uppercase;
+            font-family:'Roboto Slab';
+
+          }
+
+          .card p.postDate {
+            padding:0px 20px 0px 20px;
+            /*font-weight: bold;*/
+            font-family: 'Roboto Condensed';
+            color:grey;
+          }
+
+          .card p.displayContent {
+            padding:6px 20px 20px 20px;
+          }
+
+          .card img {
+            margin-top: 20px;
+            /*padding:10px 0px 0px 0px;*/
+            border-top: 1px solid grey;
+            width:100%;
+          }
+
+          textarea {
+            margin-top: -20px;
+            border:0;
+            width:100%;
+            height: 135px;
+            padding: 20px;
+            resize:none;
+          }
+
+          textarea:focus {
+            outline-color: transparent;
+            outline-style: none;
+          }
+
+          .imageDropZone {
+            background-color:black;
+
+            width: 100%;
+            height: 200px;
+          }
+
+          .postTitle {
+            padding:10px 20px 0px 20px;
+            font-weight: bold;
+            width:100%;
+          }
+
+          #dropZoneArea {
+            background-color:blue;
+            height: 50px;
+            width:100%;
+          }
+
+          #drop_zone {
+            padding-top:25px;
+            padding-bottom: 25px;
+            width: 90%;
+            border: 3px dashed grey;
+            text-align: center;
+          }
+
+          .postImageContent {
+            /*border-top: 2px solid black;*/
+
+          }
+
+          #main {
+            text-align: center;
+            vertical-align: middle;
+            height: 100%;
+            /*display: inline-block;*/
+          }
+
+          #header {
+            vertical-align: middle;
+            display: inline-block;
+          }
+
+          h1 {
+            font-size: 48pt;
+          }
+
+          .subTitleString {
+
+          }
+
+          .logout {
+            font-weight: bold;
+            cursor:pointer;
+          }
+
+          .left {
+            float: left;
+            width: 60%;
+          }
+          .right {
+            float: right;
+            width: 35%;
+            overflow-x: hidden;
+          }
+          @media only screen and (max-width: 800px) {
+            .left,
+            .right {
+              float: none;
+              width: 100%;
+            }
+          }
+
+          @media(max-width: 485px) {
+            .card {
+              width:98%;
+            }
+
+            input {
+              width: 100%;
+            }
+
+
+
+          }
+
+          @media(max-width: 640px) {
+            .cancel-btn {
+              /*font-size: 7pt;*/
+              text-indent: 200%;
+              white-space: nowrap;
+              overflow: hidden;
+              /*margin-top: -10px;*/
+            }
+
+            .post-btn {
+              /*font-size: 7pt;*/
+              text-indent: 200%;
+              white-space: nowrap;
+              overflow: hidden;
+              /*margin-top: -10px;*/
+            }
+
+          }
+
+    </style>
+    <!-- endbuild -->
+  </head>
+  <body style="background-color:#ecf0f1;">
+    <header class="app-bar promote-layer" style="background-color:#34495e;">
+      <div class="app-bar-container" style="background-color:#34495e;">
+        <!-- <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button> -->
+        <h1 class="logo"><b>momentum</b></h1>
+        <section class="app-bar-actions">
+        <!-- Put App Bar Buttons Here -->
+        </section>
+      </div>
+    </header>
+
+    <nav class="navdrawer-container promote-layer" style="background-color:#2c3e50">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#" onclick="location.reload();">Feed</a></li>
+        <li><a href="#">@<span id="navUsername">username</span></a></li>
+        <!-- <li><a href="styleguide/index.html">Style Guide</a></li> -->
+      </ul>
+    </nav>
+
+    <main>
+
+    <center>
+      <div id="header">
+      <!-- <a class="logout" style="float:right;">LOG OUT</a><br /> -->
+            <nav class="startButtons" style="margin-top:10px;">
+              <h2><b>Capture that one moment.</b><br />Share it with the world.</h2>
+              <p align="justify">Momentum is a new kind of anonymous social network. Momentum is special in the way that it lets you post. You get one chance each day to post that one awesome moment you lived. You can either post 140 characters, or one image. After that, you're not allowed to post for 24 hours. This allows Momentum's feed to stay thoughtful, without unnecessary posts that clutter most modern social streams.</p><br /><br />
+              <button class="primary-btn form-btn" id="signUpBTN">Sign Up</button><br /><br />
+              <button class="primary-btn form-btn" id="logInBTN">Log In</button>
+            </nav>
+
+            <div class="signUp" style="margin-top: 40px;">
+              <input type="text" placeholder="Username" id="newUsername"><br />
+              <input type="password" placeholder="Password" id="newPassword"><br />
+              <input type="password" placeholder="Confirm Password" id="newConfirmPassword"><br /><br />
+              <span class="errBoxSignUp err">Passwords don't match.</span><br /><br />
+              <button class="primary-btn form-btn" id="signUpNewUser">Sign Up</button>
+
+            </div>
+
+            <div class="logIn" style="margin-top: 40px;">
+              <input type="text" placeholder="Username" id="username"><br />
+              <input type="password" placeholder="Password" id="password"><br /><br />
+              <span class="errBoxLogIn err">Invalid password or username.</span><br /><br />
+              <button class="primary-btn form-btn" id="logInUser">Log In</button>
+
+            </div>
+
+
+
+          </div>
+      </center>
+    </main>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <script src="cookies.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script type="text/javascript" src="http://momentjs.com/downloads/moment.min.js"></script>
+    <script>
+
+    var canceledPostBool = false;
+    var timerStarted = false;
+
+      var db = new Firebase('https://momentum-db.firebaseIO.com/');
+      var loggedInUserName;
+
+      $(".signUp").hide();
+      $(".logIn").hide();
+      $(".err").hide();
+
+      $("#signUpBTN").click(function() {
+        // $("nav").hide();
+        $(".startButtons").hide();
+        $(".signUp").fadeIn();
+      });
+
+      $("#logInBTN").click(function() {
+        // $("nav").hide();
+        $(".startButtons").hide();
+        $(".logIn").fadeIn();
+      });
+
+      // var test = getCookie("loggedInUserName");
+      // if (test != "" || test != null) {
+      //   loggedInUserName = getCookie("loggedInUser");
+      //   redirectToFeed();
+      // }
+
+
+
+
+      $("#newConfirmPassword").keydown(function(evt) {
+        if (evt.which == 13) {
+          var username = document.querySelector("#newUsername").value;
+          var password = document.querySelector("#newPassword").value;
+          var confPassword = document.querySelector("#newConfirmPassword").value;
+          createUserAccount(username, password, confPassword);
+
+        }
+      });
+
+
+      $("#password").keydown(function(evt) {
+        if (evt.which == 13) {
+          var username = document.querySelector("#username").value;
+          var password = document.querySelector("#password").value;
+          logInUserAccount(username, password);
+
+        }
+      });
+
+
+
+      $("#signUpNewUser").click(function() {
+        var username = document.querySelector("#newUsername").value;
+        var password = document.querySelector("#newPassword").value;
+        var confPassword = document.querySelector("#newConfirmPassword").value;
+        createUserAccount(username, password, confPassword);
+      });
+
+      $("#logInUser").click(function() {
+        var username = document.querySelector("#username").value;
+        var password = document.querySelector("#password").value;
+        logInUserAccount(username, password);
+      });
+
+
+      function createUserAccount(usernameString, passwordString, confirmedPasswordString) {
+        $(".errBoxSignUp").hide();
+
+        var user = new Firebase('https://momentum-db.firebaseIO.com/users/' + usernameString);
+
+        var userAlreadyCreated = false; // firebase has a tendency to loop through the .on method multiple times. This prevents it from doing that
+        
+
+        user.on("value", function(data) {
+          if (userAlreadyCreated == false) {
+            userAlreadyCreated = true;
+
+              var username = data.val() ? data.val().username : null;
+              // alert(username);
+              if (username == null) {
+                
+                console.log("User doesn't exist, so I'll create one.");
+
+                if (passwordString == confirmedPasswordString) {
+                  user.set({'username': usernameString, 'password': passwordString});
+                  document.querySelector("#newUsername").value = "";
+                  document.querySelector("#newPassword").value = "";
+                  document.querySelector("#newConfirmPassword").value = "";
+
+                  loggedInUserName = usernameString;
+                  redirectToFeed();
+                } else {
+                  $('.errBoxSignUp').html('Passwords do not match.');
+                  $('.errBoxSignUp').show();
+                }
+
+              } else {
+
+                $('.errBoxSignUp').html('Username is already taken.');
+                $('.errBoxSignUp').show();
+              }
+            } 
+        });
+        
+      } // end createUser
+
+
+      function logInUserAccount(usernameString, passwordString) {
+        $(".errBoxLogIn").hide();
+
+        var user = new Firebase('https://momentum-db.firebaseIO.com/users/' + usernameString);
+
+        var userAlreadyCreated = false; // firebase has a tendency to loop through the .on method multiple times. This prevents it from doing that
+        
+
+        user.on("value", function(data) {
+          if (userAlreadyCreated == false) {
+            userAlreadyCreated = true;
+
+
+              var username = data.val() ? data.val().username : null;
+              var password = data.val() ? data.val().password : null;
+              // alert(username);
+              if (username == null) {
+                
+                $('.errBoxLogIn').html('User does not exist.');
+                $('.errBoxLogIn').show();
+
+              } else {
+
+                if (usernameString == username && passwordString == password) {
+                  loggedInUserName = usernameString;
+                  // setCookie("loggedInUser", loggedInUserName, 30);
+
+
+                  redirectToFeed();
+                } else {
+                  $('.errBoxLogIn').html('Invalid username or password.');
+                  $('.errBoxLogIn').show();
+
+                }
+              }
+            } 
+        });
+        
+      } // end logIn
+
+
+      function cancelCreatePost() {
+        console.log("Post was successfully canceled.")
+        $(".postView").remove();
+
+                $("#header").append('<div class="postView"><center><div class=\"feed\"><div class="card poster"><input type="text" class="postTitle" placeholder="Title of your post" maxlength="100"/><hr id="textareaDropZoneDivide"/><textarea placeholder="What was your one awesome moment today? (140 characters max)" maxlength="140"></textarea><hr /><br /><center><div id="drop_zone">Drop your image here</div><output id="list"></output></center><br /><br /><button class="primary-btn post-btn" onclick="javascript: postMoment();">Post</button><button class="primary-btn cancel-btn" id="cancelBTN" onclick="javascript: cancelCreatePost();">Cancel</button></div><div class=\"publicFeed\"></div></div></center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>');
+
+        loadFeedCards();
+        // $("#header").append('<script type="text/javascript"\>var publicFeed = new Firebase("https://momentum-db.firebaseio.com/feed"); publicFeed.on(\'child_added\', function (snapshot) { if (snapshot.val().type == "text") { $(".publicFeed").prepend(\'<div class="card"><h3>\' + snapshot.val().title + \'</h3><p class="postDate">\' + snapshot.val().date + \'</p><p style="color:black;" class="displayContent">\' + snapshot.val().content + \'</p></div>\'); } else if (snapshot.val().type == "image") { $(".publicFeed").prepend(\'<div class="card"><h3>\' + snapshot.val().title + \'</h3><p class="postDate">\' + snapshot.val().date + \'</p><img class="postImageContent" src="\' + snapshot.val().content + \'"/></div>\'); } }); <\/script>');
+
+      }
+
+      function wipeFeed() {
+        console.log("Feed wiped.")
+        $(".postView").remove();
+
+                $("#header").append('<div class="postView"><center><div class=\"feed\"><div class="card poster"><input type="text" class="postTitle" placeholder="Title of your post" maxlength="100"/><hr id="textareaDropZoneDivide"/><textarea placeholder="What was your one awesome moment today? (140 characters max)" maxlength="140"></textarea><hr /><br /><center><div id="drop_zone">Drop your image here</div><output id="list"></output></center><br /><br /><button class="primary-btn post-btn" onclick="javascript: postMoment();">Post</button><button class="primary-btn cancel-btn" id="cancelBTN" onclick="javascript: cancelCreatePost();">Cancel</button></div><div class=\"publicFeed\"></div></div></center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>');
+
+      }
+
+      function postMoment() {
+        // alert("Hi");
+        var feed = new Firebase('https://momentum-db.firebaseio.com/feed/');
+        var personalFeed = new Firebase ('https://momentum-db.firebaseio.com/users/' + loggedInUserName + '/feed');
+
+        // alert(loggedInUserName);
+        var userInfo = new Firebase('https://momentum-db.firebaseio.com/users/' + loggedInUserName + '/lastTime');
+
+        var postTitleContent = document.querySelector(".postTitle").value;
+        var postContent = document.querySelector("textarea").value;
+
+        if (postTitleContent.length != 0) {
+
+          var image = imageUploadedString;
+          var date = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+          var alreadyPushed = false;
+
+          if ($("textarea").is(":visible") == true) {
+            if (alreadyPushed == false && postContent.length != 0) {
+              alreadyPushed = true;
+                      feed.push({"title": postTitleContent, "content": postContent, "date": date, "type": "text", "likes": 0});
+                      personalFeed.push({"title": postTitleContent, "content": postContent, "date": date, "type": "text", "likes": 0});
+
+                      var time =  new Date().toString();
+                      // alert(time);
+
+                      userInfo.set({"time": time});
+                      // alert("yo");
+
+                      cancelCreatePost();
+                      startTimer();
+
+                    }
+
+                } else {
+                  // alert("what");
+                  if (alreadyPushed == false) {
+                    alreadyPushed = true;
+                    feed.push({"title": postTitleContent, "content": image, "date": date, "type": "image", "likes": 0});
+                      personalFeed.push({"title": postTitleContent, "content": image, "date": date, "type": "image", "likes": 0});
+
+                      var time =  new Date().toString();
+                      // alert(time);
+
+                      userInfo.set({"time": time});
+
+                      cancelCreatePost();
+                      startTimer();
+                    }
+
+                }
+
+              } 
+        
+
+      }
+
+      function redirectToFeed() {
+        // alert("YO");
+        // $(".logout").show();
+
+        $("#header").animate({height: '100%'}, 1000);
+        // $("#header").animate({width: '100%'}, 1000);
+        $("#header").css("overflow", "hidden");
+        // $("#header").css("margin-top", "40px").append("<br /><br />");
+        // $("#header").css("overflow", "visible");
+        $(".signUp").hide();
+        $(".logIn").hide();
+        // $("#header").append("<hr style=\"width:80%\" />");
+
+        // loadFeedCards();
+
+        $("#navUsername").html(loggedInUserName);
+        $("#header").append('<div class="timeRemaining card" style="padding:15px;"><center><h2 id="untilNextTime" style="margin-top:-30px; color:#1abc9c;">00:00:00</h2></center></div><div class="postView"><center><div class=\"feed\"><div class="card poster"><input type="text" class="postTitle" placeholder="Title of your post" maxlength="100"/><hr id="textareaDropZoneDivide"/><textarea placeholder="What was your one awesome moment today? (140 characters max)" maxlength="140"></textarea><hr /><br /><center><div id="drop_zone">Drop your image here</div><output id="list"></output></center><br /><br /><button class="primary-btn post-btn" onclick="javascript: postMoment();">Post</button><button class="primary-btn cancel-btn" id="cancelBTN" onclick="javascript: cancelCreatePost();">Cancel</button></div><div class=\"publicFeed\"></div></div></center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>');
+        // $("#header").append('<script type="text/javascript"\><\/script>');
+
+
+        loadFeedCards();
+
+        var userTest = new Firebase('https://momentum-db.firebaseio.com/users/' + loggedInUserName + '/lastTime');
+
+        userTest.on("value", function (snapshot) {
+          if (snapshot.val() != null) {
+            startTimer();
+          }
+        });
+
+        // startTimer();
+
+
+
+
+        
+
+
+
+      }
+
+      function loadFeedCards() {
+        // alert("YO");
+        var cancelPost = false;
+
+        var publicFeed = new Firebase("https://momentum-db.firebaseio.com/feed"); 
+
+        publicFeed.on("value", function (data_snapshot) { 
+          wipeFeed();
+          if (cancelPost == false) {
+            // cancelCreatePost();
+            // wipeFeed();
+            console.log("Hi");
+            $(".publicFeed").html("");
+            var dropZone = document.querySelector('#drop_zone');
+          dropZone.addEventListener('dragover', handleDragOver, false);
+          dropZone.addEventListener('drop', handleFileSelect, false);
+            cancelPost = true;
+          }
+          // alert("&0");
+          data_snapshot.forEach(function (snapshot) {
+            // cancelCreatePost();
+
+            if (snapshot.val().type == "text") {
+
+              $(".publicFeed").prepend('<div class="card"><h3>' + snapshot.val().title + '</h3><p class="postDate">' + snapshot.val().date + '</p><p style="color:black;" class="displayContent">' + snapshot.val().content + '</p></div>'); 
+            } else if (snapshot.val().type == "image") { 
+              $(".publicFeed").prepend('<div class="card"><h3>' + snapshot.val().title + '</h3><p class="postDate">' + snapshot.val().date + '</p><img class="postImageContent" src="' + snapshot.val().content + '"/></div>'); 
+            } 
+
+          });
+
+        }); 
+
+
+
+      }
+
+
+
+
+        var imageUploadedString;
+
+        function handleFileSelect(evt) {
+          evt.stopPropagation();
+          evt.preventDefault();
+
+          
+
+          var files = evt.dataTransfer.files; // FileList object.
+          // alert(file[0]);
+
+          // files is a FileList of File objects. List some properties.
+          var output = [];
+          for (var i = 0, f; f = files[i]; i++) {
+            
+              $("textarea").hide();
+              document.querySelector("textarea").value = "";
+
+                  if (!f.type.match('image.*')) {
+                continue;
+              }
+
+              output.push('<li><span style="color:green; font-family:\'Roboto Slab\';">Image successfully uploaded.</span></li>');
+
+              var reader = new FileReader();
+
+              // Closure to capture the file information.
+              reader.onload = (function(theFile) {
+                return function(e) {
+                  // Render thumbnail.
+                  var span = document.createElement('span');
+
+                  span.innerHTML = [e.target.result].join('');
+
+                  imageUploadedString = e.target.result;
+
+                  // document.getElementById('list').insertBefore(span, null);
+                };
+              })(f);
+
+              // Read in the image file as a data URL.
+              reader.readAsDataURL(f);
+        
+
+
+          }
+          
+          document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+          $("#drop_zone").hide();
+          $("#textareaDropZoneDivide").hide();
+
+        }
+
+
+        function handleDragOver(evt) {
+          evt.stopPropagation();
+          evt.preventDefault();
+          evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+        }
+
+        // Setup the dnd listeners.
+        
+
+
+        function startTimer() {
+
+        var timeSinceLastPost = new Firebase("https://momentum-db.firebaseio.com/users/" + loggedInUserName + "/lastTime");
+
+        var lastTime;
+
+        timeSinceLastPost.on("value", function(snapshot) {
+          // alert(JSON.stringify(snapshot.val()));
+          lastTime = new Date(snapshot.val().time);
+          // alert(lastTime);
+        });
+
+// 
+
+        var end = new Date(lastTime.getTime() + (24 * 60 * 60 * 1000));
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+
+                $(".poster").hide();
+
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.querySelector('#untilNextTime').innerHTML = "YOU CAN POST";
+                    $(".poster").show();
+
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+
+
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+            if ($(window).width() <= 730) {
+              if (days < 10) {
+                    // document.querySelector('#untilNextTime').innerHTML = '0' + days + ' Days<br />';
+                  } else {
+                    // document.querySelector('#untilNextTime').innerHTML = days + ' Days<br />';
+                  }
+
+            } else {
+              if (days < 10) {
+                    // document.querySelector('#untilNextTime').innerHTML = '0' + days + ' Days -';
+                  } else {
+                    // document.querySelector('#untilNextTime').innerHTML = days + ' Days -';
+                  }
+            }
+                
+                if (hours < 10) {
+                  document.querySelector('#untilNextTime').innerHTML = '0' + hours + ':';
+              } else {
+                document.querySelector('#untilNextTime').innerHTML = hours + ':';
+              }
+
+              if (minutes < 10) {
+                  document.querySelector('#untilNextTime').innerHTML += '0' + minutes + ':';
+              } else {
+                document.querySelector('#untilNextTime').innerHTML += minutes + ':';
+              }
+
+              if (seconds < 10) {
+                  document.querySelector('#untilNextTime').innerHTML += '0' + seconds;
+                } else {
+                  document.querySelector('#untilNextTime').innerHTML += seconds;
+                }
+            }
+
+            showRemaining();
+
+            timer = setInterval(showRemaining, 1000);
+
+          }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>

@@ -123,6 +123,14 @@ app.get('/', function (req, res) {
   });
 });
 
+
+app.use("/hacks", express.static(__dirname+"/static/hacks"));
+app.use("/deskrock", express.static(__dirname+"/static/apps/deskrock"));
+app.use("/mathninja", express.static(__dirname+"/static/apps/mathninja"));
+app.use("/momentum", express.static(__dirname+"/static/apps/momentum"));
+app.use("/smartcodes", express.static(__dirname+"/static/apps/smartcodes"));
+
+
 // Read articles from other publishers "hosted" on the news site
 app.get('/:uid', function (req, res) {
   res.setHeader('Content-Type', 'text/html');

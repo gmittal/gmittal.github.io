@@ -1,0 +1,154 @@
+
+<html>
+<head>
+<link rel="icon"
+      type="image/png"
+      href="http://www.gautam.cc/favicons/rocko.png">
+<style language="css">
+    #mainApp {
+      height:480px;
+      width:320px;
+      background-color:black;
+      margin:0;
+    }
+  #appWrapper {
+      width:350px;
+      height:609px;
+      padding-top:131px;
+      padding-left:30px;
+      background-image:url('http://play.wordjoustapp.com/static/images/iphone4.png');
+      float:left;
+      position:relative;
+    }
+
+#rock {
+margin:200px;
+}
+div.ex
+{
+width:1528px;
+border:5px solid gray;
+border-radius:10px;
+}
+
+button {
+border-radius: 10px;
+height: 91;
+width: 75;
+}
+
+img {
+border-radius: 10px;
+}
+
+#audioal  {
+margin-left:1200px;;
+}
+</style>
+<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold&v1' rel='stylesheet' type='text/css'>
+<title>DeskRock</title>
+<script type="text/javascript">
+
+var sndEl="http://www.gautam.cc/deskrock/Falling Games 03.mp3"
+
+function toggleSound(){
+if (document.all&&document.all.sound&&document.all.sound.src!=='')
+document.all.sound.src=''
+else if (document.getElementById&&document.getElementById('snd')){
+sndEl=document.getElementById('snd')
+document.getElementById('sndC').removeChild(sndEl)
+}
+else if (document.all&&document.all.sound&&document.all.sound.src=='')
+document.all.sound.src=sndEl
+else if (document.getElementById)
+document.getElementById('sndC').appendChild(sndEl)
+}
+
+</script>
+
+<script language="javascript" src="JS/exp.js"></script>
+<script language="javascript" src="JS/log.js"></script>
+<script language="javascript" src="JS/tan.js"></script>
+<script language="javascript" src="JS/sqrt.js"></script>
+<script language="javascript" src="JS/cos.js"></script>
+<script language="javascript" src="JS/sin.js"></script>
+<script language="javascript" src="JS/randn.js"></script>
+<script language="javascript" src="JS/pi.js"></script>
+<script language="javascript" src="JS/rockcf.js"></script>
+<script language="javascript" src="JS/rockfc.js"></script>
+<script language="javascript" src="JS/calcadd.js"></script>
+<script language="javascript" src="JS/calcsub.js"></script>
+<script language="javascript" src="JS/calcdivide.js"></script>
+<script language="javascript" src="JS/spacec.js"></script>
+<script language="javascript" src="JS/clock.js"></script>
+<script language="javascript" src="JS/calcmul.js"></script>
+<script language="javascript">
+function touchRock() {
+var userName = prompt ("What's your name?", "Enter Your name here");
+if (userName) {
+alert("It is nice to meet you, "+ userName +"");
+rock.src="http://www.gautam.cc/images/deskrockg2.png";
+
+}
+}
+
+</script>
+
+<body onload="showClock()" bgcolor="black" >
+<audio autoplay="true">
+<source src="http://www.gautam.cc/deskrock/deskrock_sfx_start.mp3" />
+</audio>
+<input type="button" value="Music Setting" onclick="toggleSound()" />
+
+<center><font face="Cabin Sketch" color="white" size="50px">DeskRock</font>&reg;
+<br>
+<font color="White">&copy; 2011 Gautam.CC<br></font></center>
+<p></p>
+
+<div id="appWrapper">
+<div id="mainApp">
+<button onClick="rockAdd()"><img id="Calc" src="images/DeskRockCalc.png" height="58" width="51" /><br>Add.<br>Calculator</button>
+<button onClick="rockSub()"><img id="Calc" src="images/DeskRockCalc.png" height="58" width="51" /><br>Sub.<br>Calculator</button>
+<button onClick="touchMul()"><img id="Calc" src="images/DeskRockCalc.png" height="58" width="51" /><br>Mul.<br>Calculator</button>
+<button onClick="rockDivi()"><img id="CalcAdd" src="images/DeskRockCalc.png" height="58" width="51" /><br>Div.<br>Calculator</button><br>
+<button onClick="rockFc()"><img id="Calc" src="images/DeskRockTemp.png" height="58" width="51" /><br>F&deg; - C&deg;<br>Calculator</button>
+<button onClick="rockCf()"><img id="Calc" src="images/DeskRockTemp.png" height="58" width="51" /><br>C&deg; - F&deg;<br>Calculator</button>
+<button onClick="mathSin()"><img id="Calc" src="images/sin.png" height="58" width="51" /><br>Sin<br>Calculator</button>
+<button onClick="mathCos()"><img id="Calc" src="images/sin.png" height="58" width="51" /><br>Cos<br>Calculator</button><br>
+<button onClick="mathTan()"><img id="Calc" src="images/sin.png" height="58" width="51" /><br>Tan<br>Calculator</button>
+<button onClick="mathLog()"><img id="Calc" src="images/log.png" height="58" width="51" /><br>Log<br>Calculator</button>
+<button onClick="mathSqrt()"><img id="Calc" src="images/sqrt.png" height="58" width="51" /><br>S. Root<br>Calculator</button>
+<button onClick="calcE()"><img id="Calc" src="images/exp.png" height="58" width="51" /><br>E^x<br>Calculator</button><br>
+<button onClick="alert( rand ( 100000 ) )"><img id="Calc" src="images/num.png" height="58" width="51" /><br>  Random  <br>  Number  </button>
+<button onClick="rockPi()"><img id="Calcpi" src="images/pi.png" height="58" width="51" /><br>Pi (#)<br>Emitter</button>
+<button onClick="calSpace(onclick)"><img id="Calc" src="images/DeskRockSpaceIcon.png" height="58" width="51" /><br>S. W.<br>Calculator</button>
+<button><img id="Clockdr" src="images/DeskRockClock.png" height="58" width="51" /><br>Clock<br><div id="showText"></div></button><br>
+</div></div>
+
+<center><img id="rock" src="http://www.gautam.cc/images/deskrockg1.png" onclick="touchRock()" /></center><br>
+
+
+<p>
+<font face="Arial"><a href="http://www.gautam.cc">Go Back to Home</a></font><br>
+<p>
+<div id="audioal">
+<!-- Begin Toggle Sound Code -->
+<!--[if IE]>
+<script type="text/javascript">
+document.write('<bgsound id="sound" src="'+sndEl+'" loop="-1">')
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+if (document.getElementById&&!document.getElementById('sound')){
+document.write('<div id="sndC" style="position:absolute;top:-1000px:left:-1000px;visibility:hidden;">')
+document.write('<embed id="snd" src="'+sndEl+'" autostart="true" hidden="true" loop="true">')
+document.write('</div>')
+}
+</script>
+<!-- End Toggle Sound Code -->
+
+</div>
+
+</body>
+</html>

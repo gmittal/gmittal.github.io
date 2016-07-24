@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>MathNinja</title>
+<script language="javascript" src="problems.js"></script>
+<script language="javascript" src="cookies.js"></script>
+<script type="text/javascript" src="cordova-2.2.0.js"></script>
+<script type="text/javascript">
+        app.initialize();
+</script>
+
+<style language="css">
+img:hover {
+   cursor: pointer;
+}
+
+
+#problembutton {
+background-image:url('parchment.jpeg');
+width: 225px;
+height: 70px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+position: relative;
+border-radius: 8px;
+padding: 10px;
+background-color: white;
+border: 2px solid black;
+}
+
+#problembutton:hover {
+width: 225px;
+height: 70px;
+margin-left:auto;
+margin-right:auto;
+position: relative;
+border-radius: 8px;
+padding: 10px;
+border: 2px solid orange;
+}
+
+#answer{
+   font-family: Korean;
+   font-size: 36px;
+}
+
+#NinjaImage{
+   position: relative;
+   top: -80;
+   left:-90;
+   width: 90;
+   height: 100;
+   }
+
+#ScoreArea{
+   position: absolute;
+   top: 165;
+   left:263;
+   height:25px;
+   width:35px;
+   background-color:solid silver;
+   border-radius: 10px;
+   font-family: Korean;
+}
+
+#ProblemArea{
+   width: 270;
+   height: 50;
+   font-family: Korean;
+   font-size: 32px;
+
+}
+
+#AnswerArea{
+   width: 240;
+   height: 70;
+   font-family: Korean;
+   font-size: 36px;
+   border-radius: 20px;
+}
+
+
+
+#mainApp {
+      height:100%;
+      width:100%;
+      margin:0;
+      background-color:white;
+    }
+
+#appWrapper {
+      width:100%;
+      height:100%;
+      padding-top:0px;
+      position:relative;
+    }
+
+#homeButton {
+      position:absolute;
+      width:69px;
+      height:69px;
+      bottom:32px;
+      left:155px;
+    }
+
+#homeButton:hover {
+      cursor:pointer;
+}
+
+#buttontext {
+     float:left;
+}
+
+a:vlink {
+ color: black ;
+ text-decoration: none ;
+ margin-left: 80px;
+}
+
+a:link {
+  color: black ;
+  text-decoration: none ;
+  margin-left: 80px;
+}
+
+
+a:hover {
+  margin-left: 65px;
+}
+
+#levelPlate {
+     position: absolute;
+     top: 165;
+     left: 15;
+}
+
+
+#levelArea {
+     position: absolute;
+     font-family: Korean;
+     top: 165;
+     left: 100;
+}
+
+#scoreNamePlate {
+     position: absolute;
+     height: 25px;
+     width: 25px;
+     top: 165;
+     left:210;
+}
+
+#answerbutton:hover {
+width: 225px;
+height: 70px;
+margin-left:auto;
+margin-right:auto;
+position: relative;
+border-radius: 8px;
+padding: 10px;
+border: 2px solid orange;
+}
+
+#answerbutton {
+background-image:url('parchment.jpeg');
+width: 225px;
+height: 70px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+position: relative;
+border-radius: 8px;
+padding: 10px;
+border: 2px solid black;
+background-color: transparent;
+}
+
+#badgeId {
+      margin-left: none;
+      margin-right: none;
+}
+
+#notePage {
+border: 2px solid black;
+border-radius: 7px;
+height: 40px;
+width: 420px;
+background-color: #FFFD9C;
+}
+
+#notePage:hover {
+border: 3px solid black;
+border-radius: 7px;
+height:40px;
+width: 420px;
+}
+
+h1 {
+      font-siz:1.9em;
+      font-family:'Korean';
+}
+
+#afterPhone {
+height: 28px;
+}
+
+@font-face {
+  font-family: 'Korean'; src: url('koreancali.otf')
+}
+
+@font-face {
+  font-family: 'IM Fell English SC'; src: url('Fell.ttf')
+}
+
+.rightColumn {
+      width:400px;
+      margin-top:40px;
+      float:right;
+      color:white;
+}
+
+#title {
+      font-family: 'Korean';
+      font-size: 2.6em;
+      text-align:center;
+      }
+
+hr {
+     background-color: black;
+     width: 400px;
+     border: 1px solid black;
+} 
+
+#googleFont {
+     font-size: 1.6em;
+     }
+
+#titleSpace {
+	height: 20px;
+	}
+    
+    
+#beltSign {
+    height: 12px;
+    width: 200px;
+    postion:absolute;
+    background-color: white;
+    top: 100;
+    left: 50;
+    }
+
+#beltImg {
+border-radius: 6px;
+    height: 60px;
+    width: 200px;
+    }
+
+#inputNumber {
+display: inline-block;
+}
+
+body {
+background-color:rgb(255,255,255);
+}
+
+</style>
+</head>
+<body>
+<div id="appWrapper">
+<div id="mainApp">
+<center>
+<div id="titleSpace"></div>
+<b><div id="title">MathNinja</div></b><br>
+<div id="beltSign"><img id="beltImg" src="whitebelt.png" /></div>
+<div id = "NinjaImage">
+</div>
+<center>
+<div id="status">
+<div id="levelPlate"><font face="IM Fell English SC">Belt Level:</font></div><br>
+<div id="levelArea">White Belt</div>
+<div id="scoreNamePlate"><font face="IM Fell English SC">Score:</font></div><br>
+<div id="ScoreArea">0</div>
+</div>
+</center>
+<div id="ProblemArea"><img src="ninja.png" id="ninja" height="200" width="200" /><br></div>
+<div id="AnswerArea">
+ <form name="AnswerForm">
+<div id="inputNumber">    
+<input
+    TYPE="text"
+    ID = "answer"
+    NAME="answer"
+    SIZE="5"
+    VALUE="Ans?"
+    STYLE="color: green; border-radius: 20px; border: 3px solid black;"
+    onSubmit="evaluate_answer();"
+    onkeypress="entsub()" />
+</div>
+ </form>
+</div>
+
+<div class="ButtonDivCSS">
+<button type="submit" id="problembutton" onClick="OneProblem();"><h2><font face="Korean"><div id="buttontext">Generate a Problem for me</div></h2><br></font></button><br>
+<button type="submit" id="answerbutton" onClick="evaluate_answer();"><h2><font face="Korean"><div id="buttontext">Check my Answer</div></h2><br></font></button><br>
+</div>
+
+
+<script>
+document.getElementById("AnswerArea").style.visibility = "hidden";
+document.getElementById("answerbutton").style.display = "none";
+checkCookie();
+document.getElementById("ScoreArea").innerHTML = _user_score_;
+score = _user_score_;
+checkBelt();
+</script>
+</center>
+</div>
+</div>
+</body>
+</html>
