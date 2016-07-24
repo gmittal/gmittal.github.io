@@ -21,6 +21,11 @@ Install the dependencies through ```npm```.
 ```shell
 $ [sudo] npm install
 ```
+Populate ```.env``` file in project root with the following information:
+```
+PORT=XXXX
+GOOGLE_ANALYTICS_SITE_ID=UA-XXXXX-X
+```
 Fire it up.
 ```
 $ node app.js

@@ -1,7 +1,7 @@
-var port = 3000;
 var configOptions = {};
 
 var colors = require('colors');
+var dotenv = require('dotenv');
 var compression = require('compression');
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -10,9 +10,12 @@ var marked = require('marked');
 var moment = require('moment');
 var app = express();
 
+dotenv.load();
 app.use(compression());
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
+
+var port = process.env.PORT;
 
 // Markdown compilation with sytax highlighting
 marked.setOptions({
@@ -112,6 +115,7 @@ app.get('/', function (req, res) {
           fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
           fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
           fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
+          fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
           res.send(fileData);
         });
       }
@@ -168,6 +172,7 @@ app.get('/:uid', function (req, res) {
                 fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
                 fileData = fileData.replace(/{DISQUS-LINK}/g, configOptions.disqusCommentLink);
                 fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
+                fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
                 res.send(fileData);
               });
           });
