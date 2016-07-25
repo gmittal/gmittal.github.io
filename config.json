@@ -2,6 +2,6 @@
   "name": "Gautam Mittal",
   "description": "Writings of a 16-year-old student developer.",
   "dateFormat": "YYYY-MM-DD",
-  "listTemplate": "<div class=\"story\"><a href=\"/{POST-SLUG}\">{POST-TITLE}</a><span class=\"date\">{POST-TIME}. {POST-DESCRIPTION}</span></div>",
+  "listTemplate": "<div class=\"story\"><a href=\"{POST-SLUG}\">{POST-TITLE}</a><span class=\"date\">{POST-TIME}. {POST-DESCRIPTION}</span></div>",
   "disqusCommentLink": "gmittal.disqus.com"
 }

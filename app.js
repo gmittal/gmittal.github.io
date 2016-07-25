@@ -100,7 +100,7 @@ app.get('/', function (req, res) {
               var time = moment(r[j].substr(0, 10), [configOptions.dateFormat]).format("LL");
               var k = slug + ".md";
               var listTemplate = configOptions.listTemplate;
-              listTemplate = listTemplate.replace(/{POST-SLUG}/g, slug).replace(/{POST-TITLE}/g, ref[k].title).replace(/{POST-TIME}/g, time).replace(/{POST-DESCRIPTION}/g, ref[k].summary);
+              listTemplate = listTemplate.replace(/{POST-SLUG}/g, "/"+slug).replace(/{POST-TITLE}/g, ref[k].title).replace(/{POST-TIME}/g, time).replace(/{POST-DESCRIPTION}/g, ref[k].summary);
               htmlData.unshift(listTemplate);
             }
           }
