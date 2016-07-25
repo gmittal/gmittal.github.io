@@ -12,9 +12,34 @@
   ],
   "news_articles": [
     {
-      "title": "Awesomeness Spreads Across the Valley",
+      "title": "MakeGamesWithUs Gives Young Developers A Home",
+      "source": "San Francisco Chronicle",
+      "link": "http://www.sfgate.com/technology/article/MakeGamesWithUs-gives-young-developers-a-home-4692431.php"
+    },
+    {
+      "title": "Game-making Internship: Summer Fun, with A Possibility of Profit",
       "source": "Palo Alto Weekly",
-      "link": "https://asdfasfasfasf"
+      "link": "http://www.paloaltoonline.com/print/story/2013/07/19/game-making-internship-summer-fun-with-a-possibility-of-profit"
+    },
+    {
+      "title": "Gamers Get their Apps On at an Internship in Silicon Valley",
+      "source": "Knowledge@Wharton",
+      "link": "http://kwhs.wharton.upenn.edu/2013/08/gamers-get-their-apps-on-at-an-internship-in-silicon-valley/"
+    },
+    {
+      "title": "Summer Program Helps Students Create Apps",
+      "source": "San Jose Mercury News",
+      "link": "http://www.mercurynews.com/mosaic/ci_28423484/summer-program-helps-students-create-apps"
+    },
+    {
+      "title": "Internally Featured - Apple WWDC 2015",
+      "source": "Apple",
+      "link": "#"
+    },
+    {
+      "title": "Smartphones for the Blind and More Awesome Inventions from Philly Hackathon",
+      "source": "BizPhilly",
+      "link": "http://www.phillymag.com/business/2015/09/08/smartphones-for-the-blind-and-more-awesome-inventions-from-philly-hackathon/"
     }
   ]
 }

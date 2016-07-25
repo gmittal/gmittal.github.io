@@ -105,18 +105,32 @@ app.get('/', function (req, res) {
             }
           }
 
-          var greetings = ["Hi", "Hello", "Hey"];
-          var greeting = greetings[Math.floor(Math.random()*greetings.length)];
-          var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
-          var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
+          fs.readFile(__dirname+"/data/info.json", "utf-8", function (infoErr, infoFile) {
+            var info = JSON.parse(infoFile);
 
-          fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
-          fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
-          fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
-          fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
-          fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
-          fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
-          res.send(fileData);
+            var newsHtmlData = [];
+            for (var j = 0; j < info.news_articles.length; j++) {
+                var listTemplate = configOptions.listTemplate;
+                listTemplate = listTemplate.replace(/{POST-SLUG}/g, info.news_articles[j].link).replace(/{POST-TITLE}/g, info.news_articles[j].title).replace(/{POST-TIME}/g, info.news_articles[j].source).replace(/{POST-DESCRIPTION}/g, "");
+                newsHtmlData.unshift(listTemplate);
+            }
+
+
+            var greetings = ["Hi", "Hello", "Hey"];
+            var greeting = greetings[Math.floor(Math.random()*greetings.length)];
+            var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
+            var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
+
+            fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
+            fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
+            fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
+            fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
+            fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
+            fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
+            fileData = fileData.replace(/{BLOG-NEWS-LIST}/g, newsHtmlData.join(""));
+
+            res.send(fileData);
+          });
         });
       }
     });
