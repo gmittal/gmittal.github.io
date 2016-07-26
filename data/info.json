@@ -8,6 +8,82 @@
         {"chrome": "webstore-link"},
         {"apple": "appstore-link"}
       ]
+    },
+    {
+      "name": "Blend: Fruity Insanity!",
+      "description": "A fast paced matching game involving fruits of different colors getting matched into the correct sectors. Made in collaboration with MakeGamesWithUs.",
+      "link": "https://itunes.apple.com/app/id725766849",
+      "stores": [
+        {"android": "https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en"},
+        {"apple": "https://itunes.apple.com/app/id725766849"}
+      ]
+    },
+    {
+      "name": "Paychecks",
+      "description": "Send money over SMS. Built during HSHacks 2014. Won Venmo API Prize.",
+      "link": "http://hshacks.devpost.com/submissions/21454-paychecks",
+      "stores": []
+    },
+    {
+      "name": "Octo",
+      "description": "iOS game involving colored octagons and swift reflexes. Written in first week following Swift release.",
+      "link": "https://itunes.apple.com/us/app/octo-game-reaction-octagons/id918703215?mt=8",
+      "stores": [
+        {"apple": "https://itunes.apple.com/us/app/octo-game-reaction-octagons/id918703215?mt=8"}
+      ]
+    },
+    {
+      "name": "India News",
+      "description": "Newly designed version of the popular Indian news site. Built in collaboration with Ketan Kothari.",
+      "link": "http://www.indianews.com",
+      "stores":[]
+    },
+    {
+      "name": "Hiruko",
+      "description": "iOS app for local taekwondo school. Provides access to schedules, real-time announcements, and sparring gear purchases.",
+      "link": "https://itunes.apple.com/us/app/hiruko/id905566028?mt=8",
+      "stores":[
+        {"android": "https://play.google.com/store/apps/details?id=cc.gautam.Hiruko"},
+        {"apple": "https://itunes.apple.com/us/app/hiruko/id905566028?mt=8"}
+      ]
+    },
+    {
+      "name": "Omnus",
+      "description": "Twilio-based service that allows one to stream music. Top 10 at MHacks V with Tejas Manohar. 200+ stars on GitHub.",
+      "link": "http://github.com/tejasmanohar/omnus",
+      "stores":[]
+    },
+    {
+      "name": "PartySync",
+      "description": "Turntable.fm for YouTube videos. Originally built at YCHacks 2014.",
+      "link": "http://github.com/partysync",
+      "stores":[]
+    },
+    {
+      "name": "WWDC 2015",
+      "description": "(Winning) application for the Apple WWDC 2015 Student Scholarship.",
+      "link": "http://github.com/gmittal/wwdc-2015",
+      "stores": []
+    },
+    {
+      "name": "WWDCScholars",
+      "description": "Portfolio of successful 2015 WWDC Scholarship applications. Built at WWDC.",
+      "link": "http://wwdcscholars.com/",
+      "stores": [
+        {"apple": "https://itunes.apple.com/us/app/scholars-of-wwdc/id999731893?mt=8"}
+      ]
+    },
+    {
+      "name": "Ringo",
+      "description": "API and web client built around Xcode. Allows for in-browser native iOS app development.",
+      "link": "https://github.com/useringo/ringo",
+      "stores": []
+    },
+    {
+      "name": "Kenko",
+      "description": "Take a picture of some food, and get its nutrition facts. Top 10 + Best Cloud-based App with Kevin Frans at PennApps XII.",
+      "link": "https://github.com/gmittal/kenko",
+      "stores":[]
     }
   ],
   "news_articles": [
