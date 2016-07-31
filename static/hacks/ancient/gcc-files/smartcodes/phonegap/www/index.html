@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- OFFICIAL LITE VERSION OF SMARTCODES -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+        <style language="text/css">
+            /* Import the main CSS Document */
+            @import url("sc-stylesheet.css");
+            
+            /* Add any additional CSS after this */
+            /* PLACE CODE HERE */
+            
+            </style>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <title>SmartCodes</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    </head>
+    
+    <body onload="javascript: displayChar(); document.body.addEventListener('touchmove', function(e){ e.preventDefault(); }); createCode();">
+        <div id="appContainer1"><img src="images/smartcodes-logo.png" id="logo" width="300" /></div>
+        <div id="appContainer2">
+            <div id="hrefSpacer"></div>
+            <a class="btn btn-primary btn-large" href="qr-gen.html">Build a Code</a><br>
+            <div id="hrefSpacer"></div>
+            <a class="btn btn-primary btn-large" href="#">Scan a Code</a><br>
+            <div id="hrefSpacer"></div>
+            <a class="btn btn-primary btn-large" href="instructions.html">Instructions</a><br>
+            <div id="hrefSpacer"></div>
+            <br />
+            <img src="images/qr-code-hand.png" width="164" height="225" />
+        </div>
+        
+        <!-- Speed up app by strategically placing le JavaScript at le bottom-->
+        <!--   <script type="text/javascript" charset="utf-8" src="sc-generator-main.js"></script> -->
+        <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!--      <script type="text/javascript" charset="utf-8" src="jquery-qrcode/jquery.qrcode.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery-qrcode/src/jquery.qrcode.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery-qrcode/src/qrcode.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            var stopSpamSeq = 0;
+            
+            // Wait for Cordova to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // Cordova is loaded and it is now safe to make calls Cordova methods
+            //
+            function onDeviceReady() {
+                checkConnection();
+                notifyDataCharge();
+                createCode();
+            }
+            
+            function vibrateDevice() {
+                navigator.notification.vibrate(1000);
+            }
+            
+            function beepDevice() {
+                navigator.notification.beep(2);
+            }
+            
+            //Connectivity function
+            // iOS devices will always return CELL_2G when connected to cell data, and will return Wifi, Ethernet, or Offline when those variables are true
+            
+            function checkConnection() {
+                var statLabel = "Network Status: ";
+                var networkState = navigator.network.connection.type;
+                
+                var states = {};
+                states[Connection.UNKNOWN]  = 'Offline';
+                states[Connection.ETHERNET] = 'Ethernet';
+                states[Connection.WIFI]     = 'WiFi';
+                states[Connection.CELL_2G]  = 'Cell Data';
+                states[Connection.CELL_3G]  = 'Cell Data';
+                states[Connection.CELL_4G]  = 'Cell Data';
+                states[Connection.NONE]     = 'Offline';
+                
+                var curState = states[networkState];
+                var displayCurState = statLabel + curState;
+                
+                netStatus.innerHTML=displayCurState;
+                
+                
+                if (networkState == Connection.UNKNOWN) {
+                    showErrorMsg();
+                    //   disableInput();
+                    imgGET.src = "question-qr.jpeg";
+                    stopSpamSeq ++;
+                }
+                
+                if (networkState == Connection.NONE) {
+                    showErrorMsg();
+                    //            disableInput();
+                    imgGET.src = "question-qr.jpeg";
+                    stopSpamSeq ++;
+                }
+                
+            }
+            
+            // Write now this has major bugs, do not comment out until fully resolved! This will prevent the user from using the app until
+            //   function disableInput() {
+            // Make sure that the user cannot input anything when offline. COMMENT OUT FUNCTION() WHEN OFFLINE API IS TRUE!!
+            // disabledOffline.innerHTML = " ";
+            // disabledOffline.innerHTML = "<textarea onFocus=\"window.scrollTo(0, 0);\" rows=\"6\" cols=\"35\" id=\"txt\" onkeyup=\"javascript: displayChar(); createCode(); checkConnection();\" maxlength=\"1431\" value=\"Device Offline\"></textarea>";
+            //   }
+            
+            // Dismiss alert function
+            function alertDismissed() {
+                //Do nothing (this dismisses the alert
+            }
+            
+            // If connectivity is lost call this function
+            function showErrorMsg() {
+                // Use the Cordova's built in alert plugin.
+                // Do not spam user
+                if (stopSpamSeq != 0) {
+                    // Carry on
+                }
+                else {
+                    beepDevice();
+                    navigator.notification.alert(
+                                                 'Device Offline. Please check network connectivity.',  // message
+                                                 alertDismissed,         // callback
+                                                 'Connection Lost',            // title
+                                                 'OK'                  // buttonName
+                                                 );
+                    vibrateDevice();
+                }
+            }
+            
+            function notifyDataCharge() {
+                // Use the Cordova's built in alert plugin.
+                beepDevice();
+                navigator.notification.alert(
+                                             'This app requires data connectivity, we are not responsible for any data charges you may gain.',  // message
+                                             alertDismissed,         // callback
+                                             'Data Charges',            // title
+                                             'OK'                  // buttonName
+                                             );
+                vibrateDevice();
+            }
+            
+            
+            // Character allowance is crucial, as if there is more than 1431 characters in the text field, the API fails, and stops creating QR Codes.
+            const char_allowance = 1431;
+            
+            var createCode = function() {
+                const sizeData = 150;
+                var sData = txt.value;
+                
+                var sURL = "http://api.qrserver.com/v1/create-qr-code/?size="; /* QRSERVER API */
+                var urlParam = sizeData + "x" + sizeData + "&data=";
+                var finalLink = urlParam + sData;
+                var QRsource = sURL + finalLink;
+                imgGET.src=QRsource;
+                
+                if(sizeData.length == 0) {
+                    charDisplay.innerHTML = "<font color=\"red\">Size Specification Required</font>";
+                }
+                
+                if(sizeData < 100) {
+                    charDisplay.innerHTML = "<font color=\"red\">Size Specification Required - Size too Small</font>";
+                }
+                
+                if(sizeData > 547) {
+                    charDisplay.innerHTML = "<font color=\"red\">Cannot Generate QR Code - Size too Big, 547px<sup>2</sup> Max</font>";
+                }
+                
+                if(isNaN(sizeData)) {
+                    charDisplay.innerHTML = "<font color=\"red\">Size Specification Required - Size must be a Numeric Value</font>";
+                }
+                
+                // If there is no data input within the text field, display a blank QR Code ( this works offline )
+                if(sData.length == 0) {
+                    imgGET.src = "images/create-qr-code.png";
+                }
+                
+                if(sData.length == 1431) {
+                    // Do not give an undefined image
+                    imgGET.src = "images/question-qr.jpeg";
+                    
+                }
+            }
+            
+            
+            
+            // Function to display the amount of characters left
+            
+            var displayChar = function() {
+                var currentChar = txt.value;
+                var numChar = currentChar.length;
+                var charLeft = (char_allowance - numChar);
+                var charLabelStat = "Characters Left: ";
+                var fullCharString = charLabelStat + charLeft;
+                charDisplay.innerHTML = fullCharString;
+                
+                /*	if(charLeft < 0) {
+                 charDisplay.innerHTML = "Cannot Generate QR Code";
+                 } */
+            }
+            
+            </script> -->
+        <script src="assets/js/bootstrap-transition.js"></script>
+        <script src="assets/js/bootstrap-alert.js"></script>
+        <script src="assets/js/bootstrap-modal.js"></script>
+        <script src="assets/js/bootstrap-dropdown.js"></script>
+        <script src="assets/js/bootstrap-scrollspy.js"></script>
+        <script src="assets/js/bootstrap-tab.js"></script>
+        <script src="assets/js/bootstrap-tooltip.js"></script>
+        <script src="assets/js/bootstrap-popover.js"></script>
+        <script src="assets/js/bootstrap-button.js"></script>
+        <script src="assets/js/bootstrap-collapse.js"></script>
+        <script src="assets/js/bootstrap-carousel.js"></script>
+        <script src="assets/js/bootstrap-typeahead.js"></script>
+        
+        
+    </body>
+</html>

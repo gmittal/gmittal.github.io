@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>gautam.cc Apps</title>
+<link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shanti' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Wire+One&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Varela&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+<link rel="icon"
+      type="image/png"
+      href="http://www.gautam.cc/favicons/favicon.png">
+
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+newwindow=window.open(url,'name','height=850,width=500');
+if (window.focus) {newwindow.focus()}
+return false;
+}
+
+// -->
+</script>
+<style type="text/css" media="all">
+body {
+        margin: 0px;
+        padding: 0px;
+
+
+        color: #333333;
+        font-family: Helvetica, Arial;
+}
+
+#afterPage {
+height: 375px;
+}
+
+div.ex
+{
+width:700px;
+border:1px solid black;
+border-radius:7px;
+padding: 20px;
+height: 200px;
+}
+
+
+a:link {
+text-decoration: none;
+}
+
+
+
+#menu {
+margin-left: 500px;
+}
+
+#button1 {
+background-color: black;
+height: 38px;
+width: 60px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+font-size: 1em;
+font-color:white;
+}
+
+#button2 {
+height: 38px;
+width: 60px;
+font-size: 1em;
+background-color:black;
+}
+
+#button4 {
+height: 38px;
+width: 110px;
+font-size: 1em;
+background-color:black;
+}
+
+#button3 {
+height:38px;
+width: 80px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+font-size: 1em;
+background-color: black;
+}
+
+
+h1 {
+        color: #fc8524;
+        border-bottom: 1px solid #cccccc;
+        font-weight: normal;
+        font-size: 1.6em;
+        padding: 5px 0 10px;
+        margin: 0px;
+}
+
+p {
+        padding-top: 15px;
+        margin: 0px;
+        line-height: 1.5em;
+        font-size: 0.9em;
+}
+
+#center {
+        width: 740px;
+        margin: 0px auto;
+}
+
+#box1 {
+
+        height: 8px;
+        width: 740px;
+        font-size: 0.1em; /*ie6 */
+        margin-top: 21px;
+}
+
+#box2 {
+        width: 692px;
+        padding: 24px;
+        border-radius: 10px;
+
+}
+
+#g {
+border-radius: 8px;
+}
+
+#box3 {
+
+        width: 740px;
+        height: 22px;
+}
+
+#logotxt {
+margin-left: 80px;
+}
+
+#links {
+        text-align: center;
+}
+
+#links a {
+        padding: 0 20px;
+}
+
+hr {
+        border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="center">
+
+<div id="logo">
+
+
+
+<p></p>
+<p></p>
+
+ <a href="http://www.gautam.cc/">
+<img src="http://www.gautam.cc/images/g-logo.png" id="g" />
+</a>
+
+<div id="menu">
+<a href="http://www.gautam.cc/">
+<button id="button1">
+<font color="white" face="Love Ya Like a Sister">
+Home
+</font>
+</button>
+</a>
+<a href="http://www.gautam.cc/apps/">
+<button id="button2">
+<font color="white" face="Love Ya Like a Sister">
+Apps
+</font>
+</button>
+</a>
+<a href="http://www.gautam.cc/support/">
+<button id="button3">
+<font color="white" face="Love Ya Like a Sister">
+Support
+</font>
+</button>
+</a>
+</div>
+ <hr></hr>
+</div>
+<div id="box3">
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<div style="margin-left:80px; margin-top: -25px;"><div class="fb-like" id="fb" data-href="http://www.gautam.cc" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div></div>
+
+<div style="margin-top: 10px;">
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-url="http://www.gautam.cc" data-counter="right"></Script>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.gautam.cc">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<p></p>
+<p></p>
+<center><font face="Shanti">Ready. Set. Test.<br>
+<p></p>
+Test One of Our New Apps to See if it is<br>the right one for you.<br>
+<p>
+<p>
+<center>
+<div class="ex" style="text-align: left;" >
+ <img src="http://www.gautam.cc/images/rockico.png" style="float: left;" />
+<b><font size="72px" face="Cabin Sketch" style="float:left;">
+DeskRock
+</font></b>
+<br>
+<p>
+<p>
+<p>
+<p>
+ <font face="Shanti">
+<div style="margin-left:30px;">
+<div style="float:right;"><b>"Who Knew A Rock Could Be This Smart?"</b></div></div> <br>
+<p></p>
+<p></p>
+<hr></hr>
+<a href="http://www.gautam.cc/deskrock/"><img src="http://www.root-1.com/media/images/xwords/playnow.png" /></a>
+       <a href="https://chrome.google.com/webstore/detail/ipdkgmholpmgigmmimiececlobcpndii"><img src="http://www.root-1.com//media/images/badges/chromewebstore.png" style="float:right;" /></a>
+</div>
+<p></p>
+<p></p>
+<div class="ex" style="text-align: left;" >
+ <img src="http://www.gautam.cc/images/ninjaico.png" style="float: left;" />
+<b><font size="72px" face="Cabin Sketch" style="float:left;">
+MathNinja</font></b>
+<br>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+ <font face="Shanti">
+<div style="margin-left:30px;"></div>
+<div style="float:right;">
+<b>"Mathematics within your Qi."</b></div> <br>
+<p></p>
+<p></p>
+<hr></hr>
+<a href="http://www.gautam.cc/mathninja/"><img src="http://www.root-1.com/media/images/xwords/playnow.png" /></a>
+<a href="https://chrome.google.com/webstore/detail/jhgopabfnnaefocnhggodmfonjhbcbbe?hl=en-US"><img src="http://www.root-1.com//media/images/badges/chromewebstore.png" style="float:right;" /></a>
+</div>
+<p></p>
+<p></p>
+<div class="ex" style="text-align: left;" >
+ <img src="http://www.gautam.cc/images/cubeico.png" style="float: left;" />
+<b><font size="72px" face="Cabin Sketch" style="float:left;">
+Cube<sup>3</sup></font></b>
+<br>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+ <font face="Shanti">
+<div style="margin-left:30px;"></div>
+<div style="float:right;">
+<b>"To Be Revealed."</b></div> <br>
+<p></p>
+<p></p>
+<hr></hr>
+<h1>
+<font face="Cabin Sketch">
+Coming Summer 2012 ...
+</font>
+</h1>
+</div>
+<p></p>
+<p></p>
+<center>
+<font face="Cabin Sketch">Coming Soon with Offline Apps.</font><br>
+<p></p>
+<p></p>
+<font face="Cabin Sketch">Want to Test Our Web Apps on Your Smartphone or Tablet? Scan the Barcode Bellow to Test An App.</font><br>
+<p></p>
+<img src="http://qrcode.kaywa.com/img.php?s=6&d=http%3A%2F%2Fwww.gautam.cc%2Fmathninja" alt="qrcode"  />
+<div id="afterPage">
+</div>
+</div>
+</body></html>
+
+
+
+

@@ -1,0 +1,5 @@
+function calcE() {
+var x = prompt ("What would you like me to find the exp to?","Type Here!");
+alert(Math.exp(x));
+
+}

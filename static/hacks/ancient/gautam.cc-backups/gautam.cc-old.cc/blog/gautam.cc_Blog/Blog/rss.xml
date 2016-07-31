@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>confidential</title>
+    <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Blog.html</link>
+    <description>Welcome to the gautam.cc Blog! Hope you enjoy reading my posts.</description>
+    <generator>iWeb 3.0.4</generator>
+    <image>
+      <url>http://www.gautam.cc/gautam.cc_Blog/Blog/Blog_files/HTML5-Guy-BBeanie.png</url>
+      <title>confidential</title>
+      <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Blog.html</link>
+    </image>
+    <item>
+      <title>SmartCodes QR Codes</title>
+      <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/6/12_SmartCodes_QR_Codes.html</link>
+      <guid isPermaLink="false">d4e1e874-ef14-4cc9-8693-e2ebdf927351</guid>
+      <pubDate>Tue, 12 Jun 2012 20:06:48 -0700</pubDate>
+      <description>SmartCodes QR Codes Launched a few weeks ago and I hope you all enjoy it. For all of you non-techie people I suggest you close this post now. The QR Code generator runs on the open-source Google Chart API, and so far can only run online. We are working on an offline version, but we might have to move away from the Google API and start using another QR code API known as QR Server, which can run offline with some help from C++ and PHP.</description>
+    </item>
+    <item>
+      <title>gautam.cc Blog Opening</title>
+      <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/5/28_gautam.cc_Blog_Opening.html</link>
+      <guid isPermaLink="false">7b831c20-718f-4a53-907d-5a206cbfc6ff</guid>
+      <pubDate>Mon, 28 May 2012 14:18:38 -0700</pubDate>
+      <description>&lt;a href=&quot;http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/5/28_gautam.cc_Blog_Opening_files/HTML5-Guy-BBeanie.png&quot;&gt;&lt;img src=&quot;http://www.gautam.cc/gautam.cc_Blog/Blog/Media/object002_1.png&quot; style=&quot;float:left; padding-right:10px; padding-bottom:10px; width:128px; height:165px;&quot;/&gt;&lt;/a&gt;Hi Everyone, I thought it might be useful to have a blog on gautam.cc just so everyone can know what events are happening around the site. Sorry this doesn’t look like the regular gautam.cc interface because this was made using Apple’s iWeb. If you see any HTML5 logos like the one above, that means that the post is from me.</description>
+      <enclosure url="http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/5/28_gautam.cc_Blog_Opening_files/HTML5-Guy-BBeanie.png" length="59675" type="image/png"/>
+    </item>
+  </channel>
+</rss>

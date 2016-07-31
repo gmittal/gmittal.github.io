@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EverBounce</title>
+<style type="text/css">
+
+  body{
+  	background: #111111;
+	font-family: 'Cabin';
+  }
+  
+  #gameContainer{
+  	width: 320px;
+  	height: 480px;
+  	background: #fff;
+  	overflow: hidden;
+  	/* margin: 40px auto 10px auto; */
+  	position: relative;
+	border-radius: 6px;
+  }
+  
+  #gameInners{
+  	width: 320px;
+  	height: 480px;
+  	position: absolute;
+  }
+  
+  .platform{
+  	width: 60px;
+  	height: 15px;
+  	position: absolute;
+  	z-index: 10;
+	border-radius: 6px;
+  }
+  
+  .standard_platform{
+  	width: 60px;
+  	height: 13px;
+  	position: absolute;
+  	z-index: 10;
+  	border: 1px solid black;
+	background: #FFFFFF;
+	border-radius: 6px;
+  }
+  
+  .spring_platform{
+  	 width: 60px;
+  	 height: 13px;
+  	 position: absolute;
+   	 z-index: 10;
+ 	 background: orange;
+	 border-radius: 6px;
+	 border: 1px solid black;
+  }
+  
+  .broken_platform{
+  	 width: 60px;
+  	 height: 13px;
+     	 position: absolute;
+  	 z-index: 10;
+ 	 background: red;
+	 border-radius: 6px; 
+	 border: 1px solid black; 
+}
+  
+  #jumper{
+  	width: 45px;
+  	width: 37px;
+  	height: 40px;
+  	height: 50px;
+  	background-image: url("images/littleDude.png");
+  	position: absolute;
+  	z-index: 25;
+  }
+  
+  #jumper.jumperRight{
+  	background-position: -37px 0px;
+  }
+  
+  #jumper.jumberBrokeIt{
+  	background-position: -74px 0px;
+  }
+  
+  #jumper.jumperRight.jumberBrokeIt{
+  	background-position: -111px 0px;
+  }
+  
+  #jumper.jumperSpring, jumper.jumberBrokeIt.jumperSpring{
+  	background-position: -148px 0px;
+  }
+  
+  #jumper.jumperRight.jumperSpring, jumper.jumperRight.jumberBrokeIt.jumperSpring{
+  	background-position: -185px 0px;
+  }
+  
+  #scoreBoard{
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	height: 38px;
+  	background: rgba(110,134,188, 0.5);
+  	z-index: 10000;
+  	width: 100%;
+  }
+  
+   #score{
+  	position: absolute;
+  	top: 15px;
+  	left: 10px;
+	font-family: 'Cabin';
+  }
+
+  #clock{
+  	position: absolute;
+  	top: 10px;
+  	right: 15px;
+	font-family: 'Cabin'; 
+ }	 
+
+  
+  #startHolder{
+  	width: 320px;
+  	
+	
+	margin-top: 10px;
+  	position: relative;
+  }
+  
+  a {
+  	border-radius: 6px 6px 6px 6px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;	
+    padding: 6px 20px; 
+  }
+	
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(http://tinyurl.com/googlecabin) format('woff');
+}
+
+@font-face {
+  font-family: 'Shadows Into Light Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light Two'), local('ShadowsIntoLightTwo-Regular'), url(http://www.tinyurl.com/googlesitl2) format('woff');
+}
+	
+   a:hover{
+  	background: #99cc00;
+  	color: #fff;
+  }
+
+	#startHolder span{
+		color: #fff;
+		font-size: 12px;
+		/* margin-left: 20px; */
+	}
+
+#title {
+font-family: 'Shadows Into Light Two';
+font-size: 56px;
+color: #FFFFFF;
+padding: 5px;
+}
+
+#title:hover {
+font-family: 'Shadows Into Light Two';
+font-size: 56px;
+color: #99cc00;
+}
+	 
+</style>
+<script text="text/javascript" src="mootools-yui-compressed1.2.4.js"></script>
+<script text="text/javascript" src="game.js"></script>
+<script>
+	window.addEvent("domready", function(){
+		
+		loadDemo();
+		
+	});
+</script>
+</head>
+<body >
+	<div id="title">EverBounce (Hacked)</div>
+	<div id="wrap">
+	 
+		<div id="main">
+	 			 <div id="gameContainer">
+	 			 	<div id="scoreBoard">
+	 			 		<div id="clock">
+	 			 			0
+	 			 		</div>
+	 			 		<div id="score">
+	 			 			0
+	 			 		</div>
+	 			 	</div>
+	 			 	<div id="gameInners">
+	 			 	 
+	 			 		
+	 			 		
+	 			 	</div>
+	 			 	
+	 			 </div>
+	 			 <div id="startHolder">
+	 				 <a id="start" href="javascript:moojumper.initialize();">start</a>
+					 <a href="javascript: alert('Controls: Left/Right Arrow Keys in Browser and Tilt on Device');">controls</a>
+					 <a href="http://www.gautam.cc/">gautam.cc</a>
+	 			 </div>
+		  		
+
+		</div>
+	
+	</div>
+
+</body>
+</html>

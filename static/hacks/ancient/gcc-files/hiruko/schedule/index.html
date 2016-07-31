@@ -1,0 +1,295 @@
+<html>
+<head>
+<title>Hiruko Announcements Panel</title>
+<style>
+#content {
+	width:100%;
+}
+
+input {
+	width:60%;
+	border-radius:10px;
+	padding: 12px;
+	font-size: 12pt;
+
+	border: 2px solid rgb(238, 94, 55);
+	font-family: 'Avenir Next';
+	font-weight: 700;
+}
+
+input:focus {
+	outline-color: none;
+	outline-style: none;
+	border: 2px solid blue;
+
+}
+
+textarea {
+	margin-top:10px;
+	margin-bottom: 10px;
+	width:60%;
+	border-radius:10px;
+	padding: 12px;
+	font-size: 12pt;
+
+	border: 2px solid rgb(238, 94, 55);
+	height: 200px;
+	font-family: 'Avenir Next';
+}
+
+textarea:focus {
+	outline-color: none;
+	outline-style: none;
+	border: 2px solid blue;
+
+}
+
+body {
+	font-family: 'Avenir Next';
+}
+
+@media(max-width: 768px) {
+	input {
+		width:90%;
+	}
+
+	textarea {
+		width:90%;
+	}
+}
+
+button {
+	height: 50px;
+	width: 60%;
+	border: 0;
+	background-color: rgb(255, 94, 55);
+	color:white;
+	font-family: 'Avenir Next';
+	font-size: 14pt;
+	border-radius: 10px;
+	box-shadow: black 0px 12px 0px 0px;
+
+}
+
+button:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+
+button:hover {
+	margin-top:6px;
+	box-shadow: black 0px 6px 0px 0px;
+
+}
+
+button:active {
+	margin-top:12px;
+	box-shadow: black 0px 0px 0px 0px;
+
+}
+
+select {
+   width: 60%;
+   height: 54px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   font-weight: bold;
+   font-size: 15pt;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="content"><br />
+<img src="logo-hd.png" /><br />
+<p>Hiruko Schedule Panel</p><br />
+<br />
+<select id="ddlViewBy">
+<option value="1">KD Tigers</option>
+<option value="2">KD White</option>
+<option value="3">KD Orange</option>
+<option value="4">KD Gold</option>
+<option value="5">KD Green</option>
+<option value="6">KD Purple</option>
+<option value="7">KD Blue</option>
+<option value="8">KD Brown</option>
+<option value="9">KD Red</option>
+<option value="10">KD Black</option>
+<option value="11">JR White</option>
+<option value="12">JR Orange</option>
+<option value="13">JR Gold</option>
+<option value="14">JR Green</option>
+<option value="15">JR Purple</option>
+<option value="16">JR Blue</option>
+<option value="17">JR BlueI</option>
+<option value="18">JR Brown</option>
+<option value="19">JR BrownI</option>
+<option value="20">JR Red</option>
+<option value="21">JR RedI</option>
+<option value="22">JR RedBlack</option>
+<option value="23">JR Black</option>
+<option value="24">Teen</option>
+<option value="25">Mastery Journey</option>
+
+</select><br /><br />
+
+
+<input type="text" class="classDay" id="zeroday" placeholder="Day"/><input type="text" class="classTime" id="zerotime" placeholder="Time"/><br /><br />
+<input type="text" class="classDay" id="1day" placeholder="Day"/><input type="text" class="classTime" id="1time" placeholder="Time"/><br /><br />
+<input type="text" class="classDay" id="2day" placeholder="Day"/><input type="text" class="classTime" id="2time" placeholder="Time"/><br /><br />
+<input type="text" class="classDay" id="3day" placeholder="Day"/><input type="text" class="classTime" id="3time" placeholder="Time"/><br /><br />
+
+<input type="text" class="classDay" id="4day" placeholder="Day"/><input type="text" class="classTime" id="4time" placeholder="Time"/><br /><br />
+
+<!-- <textarea id="contentArea" placeholder="Content" style="resize:none;"></textarea><br /> -->
+<button id="submitAnnouncement" onclick="submit();">Submit</button><br /><br />
+</div>
+</center>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="http://momentjs.com/downloads/moment.min.js"></script> -->
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script type="text/javascript">
+    
+	function firstToLowerCase( str ) {
+	    return str.substr(0, 1).toLowerCase() + str.substr(1);
+	}
+
+
+    function submit() {
+    	var e = document.getElementById("ddlViewBy");
+	    var strUser = e.options[e.selectedIndex].value;
+	    var str = e.options[e.selectedIndex].text;
+    		
+    	// alert(str);
+
+    	var group;
+
+    	if (strUser < 11) {
+    		group = "kd";
+    	} else {
+    		group = "jr";
+    	}
+
+    	if (str == "Mastery Journey") {
+    		var belt = "mj";
+    	} else {
+	    	var belt = firstToLowerCase(str.substr(str.indexOf(' ')+1));
+    	}
+	    
+    	// alert(belt);
+    	// alert(group);
+
+    	
+
+
+    	var item0 = {
+    		time: document.getElementById("zerotime").value,
+    		day: document.getElementById("zeroday").value
+    	}
+
+    	var item1 = {
+    		time: document.getElementById("1time").value,
+    		day: document.getElementById("1day").value
+    	}
+
+    	var item2 = {
+    		time: document.getElementById("2time").value,
+    		day: document.getElementById("2day").value
+    	}
+
+    	var item3 = {
+    		time: document.getElementById("3time").value,
+    		day: document.getElementById("3day").value
+    	}
+
+    	var item4 = {
+    		time: document.getElementById("4time").value,
+    		day: document.getElementById("4day").value
+    	}
+
+
+
+    	if (item0.time) {
+    		var index = 0;
+    		var announcements = new Firebase('https://hiruko-schedule.firebaseIO.com/' + group + "/" + belt + "/" + index.toString());
+
+    		var string = "<span style=\"font-weight:700;\">" + item0.day.toUpperCase() + "</span> <b>" + item0.time.toUpperCase() + "</b><br />";
+    		announcements.set(string);
+
+    		alert("The schedule has been updated.");
+
+    	}
+
+    	if (item1.time) {
+    		var index = 1;
+    		var announcements = new Firebase('https://hiruko-schedule.firebaseIO.com/' + group + "/" + belt + "/" + index.toString());
+
+    		var string = "<span style=\"font-weight:700;\">" + item0.day.toUpperCase() + "</span> <b>" + item0.time.toUpperCase() + "</b><br />";
+    		announcements.set(string);
+
+    		alert("The schedule has been updated.");
+
+    	}
+
+    	if (item2.time) {
+    		var index = 2;
+    		var announcements = new Firebase('https://hiruko-schedule.firebaseIO.com/' + group + "/" + belt + "/" + index.toString());
+
+    		var string = "<span style=\"font-weight:700;\">" + item0.day.toUpperCase() + "</span> <b>" + item0.time.toUpperCase() + "</b><br />";
+    		announcements.set(string);
+
+    		alert("The schedule has been updated.");
+
+    	}
+
+    	if (item3.time) {
+    		var index = 3;
+    		var announcements = new Firebase('https://hiruko-schedule.firebaseIO.com/' + group + "/" + belt + "/" + index.toString());
+
+    		var string = "<span style=\"font-weight:700;\">" + item0.day.toUpperCase() + "</span> <b>" + item0.time.toUpperCase() + "</b><br />";
+    		announcements.set(string);
+
+    		alert("The schedule has been updated.");
+
+    	}
+
+    	if (item4.time) {
+    		var index = 4;
+    		var announcements = new Firebase('https://hiruko-schedule.firebaseIO.com/' + group + "/" + belt + "/" + index.toString());
+
+    		var string = "<span style=\"font-weight:700;\">" + item0.day.toUpperCase() + "</span> <b>" + item0.time.toUpperCase() + "</b><br />";
+    		announcements.set(string);
+
+    		alert("The schedule has been updated.");
+
+    	}
+
+
+
+
+    	// alert(moment().format('LL'));
+
+    	// alert(document.querySelector("#announcementTitle").value);
+    	// alert(document.querySelector("#contentArea").value);
+
+    	// currentTime = new Date();
+
+    }
+
+    // announcements.child('announcements').on('value', function(snapshot) {
+    //   // alert(snapshot.val());  // Alerts 'San Francisco'
+    //   $(".displayAnnouncements").append('<h4 class="announcementTitle">' + snapshot.val().title + '</h4><p>' + snapshot.val().content + '</p><hr /><br />');
+    // });
+
+
+
+    // window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline?410453165654278145'), '_blank', 'location=no');
+
+    	// $(".calendarView").attr('height', $(window).height() - 95);
+
+    </script>
+
+</body>
+</html>

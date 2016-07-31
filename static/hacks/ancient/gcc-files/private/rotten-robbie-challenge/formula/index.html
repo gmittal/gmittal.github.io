@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Rotten Robbie Challenge</title>
+<link rel="shortcut icon" href="http://www.gautam.cc/favicons/favicon.png">
+<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="http://twitter.github.com/bootstrap/assets/css/docs.css" rel="stylesheet">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<script type="text/javascript" src="solution.js"></script>
+<style language="text/css">
+h1 {
+padding-left:2px;
+padding-top:0;
+}
+
+#burgerShadow {
+padding: 10px;
+position:relative;
+-webkit-transition: all 1s linear;
+-moz-transition: all 1s linear;
+-o-transition: all 1s linear;
+-ms-transition: all 1s linear;
+}
+
+#burgerRotate {
+padding: 10px;
+position:relative;
+-webkit-transition: all 1s linear;
+-moz-transition: all 1s linear;
+-o-transition: all 1s linear;
+-ms-transition: all 1s linear;
+}
+
+#burgerFadeOut {
+padding: 10px;
+position:relative;
+-webkit-transition: all 1s linear;
+-moz-transition: all 1s linear;
+-o-transition: all 1s linear;
+-ms-transition: all 1s linear;
+}
+
+#burgerShadow:hover {
+box-shadow: 0 3px 25px #000;
+-moz-box-shadow: 0 3px 25px #000;
+-o-box-shadow: 0 3px 25px #000;
+}
+
+#burgerRotate:hover {
+-webkit-transform: rotate(720deg);
+-moz-transform: rotate(720deg);
+-o-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+
+#burgerFadeOut:hover {
+opacity: 0;
+}
+
+
+img {
+border-radius: 6px;
+}
+
+body {
+padding-left: 6px;
+}
+
+.contentBox {
+
+}
+
+#creditBy {
+
+}
+</style>
+</head>
+<body onload="touchRock();">
+<span class="title">
+<h1>Rotten Robbie Challenge Problem</h1>
+<img id="burgerShadow" src="burger.png" height="149" width="140" />
+<img id="burgerRotate" src="burger.png" height="149" width="140" />
+<img id="burgerFadeOut" src="burger.png" height="149" width="140" /><br />
+<span id="creditBy"><strong>by Gautam Mittal <br />
+September 27, 2012 <br />
+Period 3
+</strong></span>
+</span>
+<br />
+<span class="contentBox">
+Number of Students in Line (including Robbie): <input type="text" size="6" id="numStudents" name="numStudents" value="0" onkeyup="touchRock();" /><br />
+Number of Student Served Before Robbie: <span id="numServed"></span><br />
+<br />
+The document containing the original problem can be found <a onclick="window.open('challenge.pdf');" style="cursor:pointer;">Here</a>
+</span>  
+<hr />
+<div id="jsCode">
+<p>
+Below is the formula for finding how many students have been served before Robbie. numServed is the variable for how many students were served before. numStudents is the user's input or the number of students entered. Math.floor() is indicating that the variable numStudents divided by 3 should be rounded down to lowest whole number.<br /><br /> <strong>For example:<br /> 10/3 = 3.33, Math.floor(10/3) = 3<br />  11/3 = 3.66, Math.floor(11/3) = 3</strong></p>
+<xmp>
+// The line of JavaScript Code computing how many students have been served first.
+	var numServed = Math.floor((numStudents)/3);
+ 
+</xmp>
+<a href="solution.js" class="btn btn-primary btn" onlick="displayCode();">Show Full JavaScript &raquo;</a><br /><br />
+</div>
+<strong>How I developed my formula</strong><br />
+I drew the line of kids using dots. Each dot represented a kid in line. Robbie was the last dot in the line<br />
+Here is an example:<br />
+<img src="robbie-line-jumping-method.png" /><br />
+Every red dot in the line represents a kid that has already been served. Every green dot represents a kid that has<br />
+not been served. Those lines going from dot to dot represent how Robbie is cutting two students every time a kid is<br />
+served. I used this method with several other different line sizes, and came to a conclusion that the number of kids<br />
+served is equal to the number kids in line divided by three and rounded down to the nearest whole number.<br /><strong> Example: <br />
+17/3 = 5.66, Math.floor(17/3) = 5</strong><br /><br />
+<strong>If at some point it is only possible for Robbie to move one place, at which point in time does he do it?</strong><br />
+Robbie must move one space once he is at the very front of the line. He cuts the one kid in front of him when<br />
+the lunch lady turns around to get the food (as seen in the diagram above).<br/><br />
+<strong>How many students were served before Robbie in a line of 50 students?</strong><br />
+16 Students were served before Robbie.<br /><br />
+<strong>How many students were served before Robbie in a line of 37 students?</strong><br />
+37 Students were served before Robbie.<br /><br />
+<strong>How many students were served before Robbie in a line of 296 students?</strong><br />
+98 Students were served before Robbie.<br /><br />
+<strong>How many students were served before Robbie in a line of 1000 students?</strong><br />
+333 Students were served before Robbie.<br /><br />
+<strong>BONUS: How does the rule change if Robbie gets impatient?</strong>
+<li><strong>3 at a time?</strong></li>
+The rule changes to <xmp>Math.ceil((numStudents)/6);</xmp> Just like how Math.floor( ) rounds down.<br />
+Math.ceil( ) rounds up.<br /><br />
+<li><strong>4 at a time?</strong></li>
+The rule changes to <xmp>Math.round((numStudents)/6);</xmp> Math.round( ) rounds to the nearest whole number.<br />
+<br />
+<br />
+<br />
+
+
+<!-- JavaScript -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://twitter.github.com/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-affix.js"></script>
+    <script src="http://twitter.github.com/assets/js/application.js"></script>
+</body>
+</html>

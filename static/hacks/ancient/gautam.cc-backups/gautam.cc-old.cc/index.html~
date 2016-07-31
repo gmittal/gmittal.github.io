@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>gautam.cc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Home Page">
+    <meta name="author" content="Gautam Mittal">
+
+    <!-- Le styles -->
+    <link href="http://www.gautam.cc/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      @font-face {
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nosifer'), local('Nosifer-Regular'), url(http://themes.googleusercontent.com/static/fonts/nosifer/v2/7n0ZFTD4V11-kkhjuR2UIwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+    img {
+    padding: 5px;
+    position:relative;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    border-radius: 7px;
+    }
+
+    img:hover {
+    box-shadow: 0 3px 25px #000;
+    -moz-box-shadow: 0 3px 25px #000;
+    -o-box-shadow: 0 3px 25px #000;
+    }
+
+    </style>
+    <script language="text/javascript" charset="utf-8">
+    // Doesn't work properly :(
+
+    function access_pro() {
+    var access_code = document.getElementById("access").value;
+    code = "oSLKWsX-V6Am";
+
+    // Check input
+    if (access_code === code) {
+        alert("Permission Granted");
+        window.open("http://www.gautam.cc/private/admin/private_links/premium/site/");
+    } else {
+        alert("Permission Denied.");
+    }
+    }
+    </script>
+    <link href="http://www.gautam.cc/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.gautam.cc/favicons/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gautam.cc/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.gautam.cc/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.gautam.cc/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.gautam.cc/assets/ico/apple-touch-icon-57-precomposed.png">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35192434-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">gautam.cc</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="http://www.gautam.cc/about/">About</a></li>
+              <li><a href="http://www.gautam.cc/apps/">Apps</a></li>
+	      <li><a href="http://www.gautam.cc/dev/">Developer</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xperiments <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+		  <li class="nav-header">Admin Xperiments</li>
+                  <li><a href="http://www.gautam.cc/asteroids/">Kick Asteroids</a></li>
+                  <li><a href="http://www.gautam.cc/smartcodes/">SmartCodes<sup>BETA</sup></a></li>
+		  <li class="dropdown-submenu">
+		    <a tabindex="-1" href="#">EverBounce</a>
+		    <ul class="dropdown-menu">
+                    <li><a href="http://www.gautam.cc/everbounce/">EverBounce Classic</a></li>
+		    <li><a href="http://www.gautam.cc/everbounce/hack/">EverBounce Hacked (ForEverBounce)</a></li> 
+                  </ul>
+		  </li>
+                  <li class="divider"></li>
+                  <li><a href="#">Submit an Xperiment</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" id="access" name="access" placeholder="Access Code">
+              <button type="submit" class="btn btn-primary btn" onclick="access_pro();">Enter</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1><img src="http://www.shophalloweenadventure.com/images/pumpkin3-720064.gif" height="100" width="100" style="border-radius: 200px;" /><font face="Abeat"> gautam.cc </font><font face="Nosifer" color="#C40233">halloween</font></h1>
+        <p>Welcome to gautam.cc! Be sure to check out our new apps and Xperiments!</p>
+        <p><a class="btn btn-primary btn-large">Look around! &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+<img src="http://www.gautam.cc/images/mac-app-store.png" height="200px" width="200px" style="padding-bottom: 20px;" />
+          <h2>Apps</h2>
+          <p>On gautam.cc you can find a variety of apps made for iOS and Web technologies. Some of the most recent apps include SmartCodes, MathNinja, and DeskRock.</p>
+          <p><a class="btn btn-primary btn" href="http://www.gautam.cc/apps/">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+<img src="http://www.gautam.cc/images/xcode_icon.png" height="200px" width="200px" style="padding-bottom: 20px;" />
+          <h2>Developer</h2>
+          <p>gautam.cc will soon have developer resources including tutorials for building iOS apps using Adobe&reg; PhoneGap and building native apps for the browser.</p>
+          <p><a class="btn btn-primary btn" href="http://www.gautam.cc/dev/">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+<img src="http://www.gautam.cc/images/Package-Open.png" height="220px" width="220px" />
+          <h2>Xperiments</h2>
+          <p>The admin of the site will occasionally add an applet that is in beta under the Xperiments dropdown menu, if you would like to submit an Xperiment, please send an email to the developer.</p>
+          <p><a class="btn btn-primary btn" href="javascript:var i,s,ss=['http://kathack.com/js/kh.js','http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'];for(i=0;i!=ss.length;i++){s=document.createElement('script');s.src=ss[i];document.body.appendChild(s);}void(0);">Xperiments!
+ &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2012 Gautam Mittal | Xcode and the Mac App Store are products of Apple Inc.<br>
+	</p>
+      </footer><br />
+    <center><img src="http://www.root-1.com/media/images/logo2.png" onclick="window.open('http://www.root-1.com/');" /></center>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://www.gautam.cc/assets/js/jquery.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-transition.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-alert.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-modal.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-tab.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-popover.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-button.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://www.gautam.cc/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>SmartCodes QR Generator</title>
+    <script type="text/javascript" src="sc-generator-google.js">
+    </script>
+<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="http://www.gautam.cc/favicons/favicon.png">
+
+    <style language="text/css">
+	
+	body {
+	padding: 6px;
+	}
+
+	@font-face {
+	font-family: "Cabin";
+	src:url('cabin-reg.ttf');
+	}
+	
+	#txt {
+	border-radius: 6px;
+	border: `px solid black;
+	font-family: "Helvetica Neue";
+	font-size: 11pt;
+	resize: none;
+	height: 200px;
+	width: 400px;
+	}	
+
+	#charDisplay {
+	font-family: "Helvetica Neue";
+	color:#59595A;
+	float: left;
+	}
+	
+	a {
+	text-decoration: none;
+	color: blue;
+	}
+
+	a:hover {
+	text-decoration: none;
+	color: red;
+	}
+
+	#sizeInput {
+	border-radius: 6px;
+	border: 1px solid black;
+	height: 25px;
+	width: 40px;
+	
+	}
+
+	#InputFields {
+	
+	height: 300px;
+	width: 370px;
+	
+	}
+
+	#SizeField {
+	float: left;
+	}
+
+	#GenWrapper {
+	padding-top: 20px;
+	}
+
+	#imgGET {
+	border-radius: 6px;	
+
+    </style>
+  </head>
+
+  <body>
+      <img src="smartcodes-logo.png" id="logo" height="105px" width="679px" /><br>
+      PROJECT<sup>BETA</sup><br> 
+      <font color="#59595A">Version 1.1.3</font><br>
+      <p></p>
+      Powered by <a href="https://developers.google.com/chart/infographics/">Google Chart</a> API<br>
+      and <a href="http://www.qrserver.com/api/">QR Server</a> API<br>
+      <p></p>
+      <font color="red">NOTE:</font> QR Code Generation Speeds may vary Depending on Application Programming Interface (API). SmartCodes is powered<br>
+      by Google Chart API, and has backup APIs to prevent crashes. This page is still being tested, so expect generation speed variations.<br>
+      <p></p>
+      Try to Minimize the Amount of Text you write, or use a URL<br>
+      Shortener like <a href="http://www.goo.gl">Google URL Shortener</a> or <a href="http://www.j.mp">j.mp</a>. <br>
+      <p></p>
+      It is Suggested that you have a QR code size of at least 100px<sup>2</sup> for best results.<br>
+      <p></p>
+      <i>Have A Code, but not a Scanner? Click the following links for <a href="http://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8">iPhone or</a><a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android&hl=en"> Android</a></i><br>
+      <p></p>
+      <p></p>
+      <p></p> 
+      <p></p>
+      <center>
+      <div id="GenWrapper">
+      <div id="InputFields">
+      <div id="SizeField">Size: <input type="text" maxlength="3" size="3" id="sizeInput" name="sizeInput" onkeyup="javascript: createCode();" value="200" />px</div><br>
+      <p></p>
+      <textarea rows="10" cols="50" id="txt" onkeyup="javascript: displayChar(); createCode();" maxlength="1431"></textarea><br>
+      <div id="charDisplay"></div>
+      </div>
+      <div id="scanText"><i>Scan Code Below with Smartphone</i></div><br>
+      <img id="imgGET" /> 		
+      </div>     
+      </center>
+
+
+<!-- JavaScript -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://twitter.github.com/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://twitter.github.com/assets/js/bootstrap-affix.js"></script>
+    <script src="http://twitter.github.com/assets/js/application.js"></script>
+  </body>
+</html>

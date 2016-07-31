@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>QR Code Generator</title>
+
+    <script type="text/javascript">
+      function touchRock() {
+        var sData = txt.value;
+	var sURL = "https://chart.googleapis.com/chart?";
+	var urlParam = "chs=200x200&cht=qr&chl=";
+	var finalLink = urlParam + sData;
+	var QRsource = sURL + finalLink;
+	imgGET.src=QRsource;
+	
+      }
+    </script>
+  </head>
+
+  <body>
+      <h1>QR Code Generator - Google Chart API</h1><br>
+	&copy; GAUTAM.CC Products<br>
+      <textarea rows="2" cols="20" id="txt"></textArea><br>
+      <input type="button" value="Get Code" id="cmdPush" onclick="touchRock();" /><br>
+      <img id="imgGET" /> 	
+  </body>
+</html>

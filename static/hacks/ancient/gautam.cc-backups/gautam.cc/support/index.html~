@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>gautam.cc Support</title>
+<meta name="google-site-verification" content="ezW5SR-75nsRYuH03yrCBsXlVIyyAlbjM_eNCkaZlCQ" />
+<link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shanti' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Wire+One&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Varela&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+<link rel="icon"
+      type="image/png"
+      href="http://www.gautam.cc/favicons/favicon.png">
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+newwindow=window.open(url,'name','height=850,width=500');
+if (window.focus) {newwindow.focus()}
+return false;
+}
+
+// -->
+</script>
+<style type="text/css" media="all">
+body {
+        margin: 0px;
+        padding: 0px;
+
+
+        color: #333333;
+        font-family: Helvetica, Arial;
+}
+
+hr {
+        border: 1px solid black;
+}
+
+#afterPage {
+height: 375px;
+}
+
+a:link {
+text-decoration: none;
+}
+
+#menu {
+margin-left: 500px;
+}
+
+div.ex
+{
+width:700px;
+border:1px solid gray;
+border-radius:10px;
+padding: 20px;
+height: 200px;
+}
+
+#button1 {
+
+height: 38px;
+width: 60px;
+border-top-left-radius: 6px;
+border-bottom-left-radius:6px;
+font-size: 1em;
+background-color: black;
+}
+
+#button2 {
+height:38px;
+width: 60px;
+font-size: 1em;
+background-color: black;
+}
+
+#button3 {
+height:38px;
+width: 80px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+font-size: 1em;
+background-color: black;
+}
+
+
+h1 {
+        color: black;
+        font-weight: normal;
+        font-size: 1.6em;
+        padding: 5px 0 10px;
+        margin: 0px;
+}
+
+p {
+        padding-top: 15px;
+        margin: 0px;
+        line-height: 1.5em;
+        font-size: 0.9em;
+}
+
+
+#center {
+        width: 740px;
+        margin: 0px auto;
+}
+
+#box1 {
+
+        height: 8px;
+        width: 740px;
+        font-size: 0.1em; /*ie6 */
+        margin-top: 21px;
+}
+
+#box2 {
+        width: 692px;
+        padding: 24px;
+        border-radius: 10px;
+
+}
+
+
+#rockimg {
+
+border-radius: 8px;
+}
+
+#g {
+border-radius: 8px;
+}
+
+h2 {
+       color: black;
+       font-weight: normal;
+       font-size: 1.6em;
+       padding: 5px 0 10px;
+       margin: 0px;
+}
+
+#box3 {
+
+        width: 740px;
+        height: 22px;
+}
+
+#links {
+        text-align: center;
+}
+
+#links a {
+        padding: 0 20px;
+}
+
+#supportMenu {
+}
+
+#sButton {
+        height: 235px;
+	width: 210px;
+	border: 1px solid black;
+	border-radius: 9px;
+	}
+
+#sButton:hover {
+        height: 235px;
+        width: 210px;
+        border: 2px solid black;
+        border-radius: 9px;
+	}
+
+
+</style>
+</head>
+<body>
+
+<div id="center">
+
+<div id="logo">
+
+
+
+
+<p></p>
+<p></p>
+<a href="http://www.gautam.cc/">
+<img src="http://www.gautam.cc/images/g-logo.png" id="g"/>
+</a>
+<div id="menu">
+<a href="http://www.gautam.cc/">
+<button id="button1">
+<font color="white" face="Love Ya Like a Sister">
+Home
+</font>
+</button>
+</a>
+<a href="http://www.gautam.cc/apps/">
+<button id="button2">
+<font color="white" face="Love Ya Like a Sister">
+Apps
+</font>
+</button>
+</a>
+<a href="http://www.gautam.cc/support/">
+<button id="button3">
+<font color="white" face="Love Ya Like a Sister">
+Support
+</font>
+</button>
+</a>
+</div>
+ <hr></hr>
+</div>
+<div id="box3">
+<p></p>
+<p></p>
+<center>
+<font face="Varela">
+Experiences at Gautam.CC not working out?<br>
+If so, download one of the supported Browsers.</br>
+</center>
+<p></p>
+<p></p>
+<p></p>
+<center>
+<div id="supportMenu">
+<a href="https://www.google.com/chrome/">
+<img id="sButton" src="http://www.gautam.cc/images/chrome.png" />
+</a>
+<a href="http://www.apple.com/safari/download/">
+<img id="sButton" src="http://www.gautam.cc/images/safari.png" />
+</a>
+<a href="http://www.mozilla.org/en-US/firefox/new/">
+<img id="sButton" src="http://www.gautam.cc/images/foxbrowse.png" />
+</a>
+</div>
+</center>

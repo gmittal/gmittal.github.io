@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Blog</title>
+    <link>http://www.gautam.cc/gautam.cc_Blog/Blog</link>
+    <description>Welcome to the gautam.cc Blog! Hope you enjoy reading my posts.</description>
+    <item>
+      <title>SmartCodes QR Codes</title>
+      <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/6/12_SmartCodes_QR_Codes.html</link>
+      <guid isPermaLink="false">d4e1e874-ef14-4cc9-8693-e2ebdf927351</guid>
+      <pubDate>Tue, 12 Jun 2012 20:06:48 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/6/12_SmartCodes_QR_Codes.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>gautam.cc Blog Opening</title>
+      <link>http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/5/28_gautam.cc_Blog_Opening.html</link>
+      <guid isPermaLink="false">7b831c20-718f-4a53-907d-5a206cbfc6ff</guid>
+      <pubDate>Mon, 28 May 2012 14:18:38 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.gautam.cc/gautam.cc_Blog/Blog/Entries/2012/5/28_gautam.cc_Blog_Opening.html#comment_layer"></iweb:comment>
+    </item>
+    <iweb:dateFormat>EEEE, MMMM d, y</iweb:dateFormat>
+    <iweb:baseURL>http://www.gautam.cc/gautam.cc_Blog/Blog</iweb:baseURL>
+    <iweb:maximumSummaryItems>5</iweb:maximumSummaryItems>
+  </channel>
+</rss>

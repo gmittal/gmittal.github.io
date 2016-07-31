@@ -1,0 +1,17 @@
+// Sorry for the odd function name. For some reason all of the functions I made kept failing to work.
+function touchRock() {
+        var numStudents = document.getElementById('numStudents').value;
+	var numServedOutput = document.getElementById('numServed');
+	// Formula for finding how many students have been served before Robbie
+	var numServed = Math.floor(parseInt((numStudents)/3));
+	numServedOutput.innerHTML ="<font color=\"green\">" + numServed + "</font>";
+
+	// Reject Input if it is not a number
+	if (isNaN(numStudents)) {
+	numServedOutput.innerHTML ="<font color=\"red\">ERROR: Input is not a valid number</font>";
+	}
+      }
+
+function displayCode() {
+	window.open('solution.js');
+}

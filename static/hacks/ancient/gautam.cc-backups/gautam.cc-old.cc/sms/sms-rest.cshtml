@@ -1,0 +1,32 @@
+﻿@{
+    // set our AccountSid and AuthToken, from twilio.com/user/account
+    string AccountSid = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    string AuthToken = "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY";
+ 
+    // instantiate a new Twilio Rest Client
+    var client = new Twilio.TwilioRestClient(AccountSid, AuthToken);
+ 
+    // make an associative array of people we know, indexed by phone number.
+    // Feel free to change/add your own phone number and name to the list
+    Dictionary<string,string> people = new Dictionary<string,string>() { 
+        {"+14158675309","Curious George"},
+        {"+14158675310","Boots"},
+        {"+14158675311","Virgil"}
+    };
+ 
+    // iterate over all our friends. person.Key is the phone number above,
+    // person.Value is the name
+    foreach (var person in people) {
+ 
+        // Send a new outgoing SMS
+        client.SendSmsMessage(
+            "YYY-YYY-YYYY", // From a valid Twilio number
+            person.Key, // To a valid number
+            string.Format("Hey {0}, Monkey Party at 6PM. Bring Bananas!", person.Value)
+        );
+
+        // Show a confirmation message
+        Response.Write(string.Format("Sent message to {0}", person.Value));
+    }    
+}
+

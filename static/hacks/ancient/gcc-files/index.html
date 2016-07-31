@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gautam Mittal</title>
+        <meta name="description" content="Blog of Gautam Mittal">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="http://www.gautam.cc/favicons/favicon.png">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+          .header h1 {
+            text-align:center;
+            font-family: 'Roboto';
+            font-weight:700;
+            font-size: 60px;
+            background-image: url('img/50.png');
+            background-size:cover;
+            color:white;
+            -webkit-animation: lavalamp 15s infinite;
+            -moz-animation: lavalamp 15s infinite;
+            animation: lavalamp 15s infinite;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+
+            /*padding-bottom: 0;*/
+          }
+
+          .header {
+            padding-top: 40px;
+            padding-bottom: 35px;
+            /*background-size: cover;*/
+            background-repeat;
+            background-image: url('img/symphony.png');
+
+          }
+
+
+
+          .header .lead {
+            text-align:center;
+            margin-top: -35px;
+            color:white;
+            background-image: url('img/50.png');
+            background-size:cover;
+            color:white;
+            -webkit-animation: lavalamp 15s infinite;
+            -moz-animation: lavalamp 15s infinite;
+            animation: lavalamp 15s infinite;
+            -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            /*line-height:*/
+            /*width: 50%;*/
+          }
+
+          .lead {
+            font-size: 20px;
+            font-family: 'Roboto Slab';
+            font-weight: 300;
+            color: grey;
+            line-height: 110%;
+            text-align: justify;
+          }
+
+          .social img {
+            height: 45px;
+            padding-left: 2px;
+            padding-right: 2px;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
+
+          }
+
+          .social img:hover {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
+          }
+
+          .nav {
+            /*text-align:center;*/
+            width: 1000px;
+          }
+
+          .navRule {
+            width: 100%;
+            padding:0;
+            margin:0;
+            /*background-color: grey;*/
+            /*border:0;*/
+          }
+
+          .navButton {
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed';
+            color: rgb(204, 204, 204);
+            /*border-top: 1px solid black;*/
+            /*margin-top: 20px;*/
+          }
+
+
+
+          .active {
+            border-top: 1px solid black;
+            color: black;
+          }
+
+          .navbar {
+            margin-top: 14px;
+          }
+
+          .content {
+            width: 1000px;
+            padding-top: 70px;
+            /*padding-left: 15px;*/
+            /*padding-right: 15px;*/
+            text-align:left;
+          }
+
+
+          .card {
+            margin-top: 20px;
+            width: 92%;
+            padding:4%;
+            /*padding-left: 20px;*/
+            /*padding-right: 10px;*/
+            /*margin-top: 20px;*/
+            box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            background-color:white;
+            text-align: left;
+            line-height: 5px;
+            font-family: 'Roboto Slab';
+            border-radius: 3px;
+            position:relative;
+
+            /*overflow:auto;*/
+
+
+           white-space: pre-wrap;      /* CSS3 */
+           white-space: -moz-pre-wrap; /* Firefox */
+           white-space: -pre-wrap;     /* Opera <7 */
+           white-space: -o-pre-wrap;   /* Opera 7 */
+           word-wrap: break-word;      /* IE */
+
+
+          }
+
+          .date {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 19px;
+            color:grey;
+            margin-top: 0px;
+          }
+
+          .title {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            /*text-align: justify;*/
+
+            /*margin-left: 20px;*/
+
+            /*margin: 0 20px 0px 0px;*/
+            /*margin-top: -20px;*/
+            /*vertical-align:none;*/
+            /*line-height: 110%;*/
+            margin: 0px 0 0 0;
+            padding:0;
+            /*margin-right:100px;*/
+            /*line-height: 10px;*/
+          }
+
+          .title a {
+            color: rgb(226, 44, 41);
+            text-decoration: none;
+          }
+
+          .title a:hover {
+            color: rgb(226, 44, 41);
+            text-decoration: underline;
+          }
+
+          .card img {
+            margin:0;
+            padding:0;
+            display:inline-block;
+            position:absolute;
+            height: 90%;
+            top: 7px;
+            left: 7px;
+            border-radius: 3px;
+            float:left;
+          }
+
+          .nav a {
+            text-decoration:none;
+            color: rgb(204, 204, 204);
+            outline: none;
+
+          }
+
+          .nav a:visited {
+            text-decoration: none;
+            color: rgb(204, 204, 204);
+          }
+
+          .active a {
+            color: black;
+          }
+
+          .active a:visited {
+            color: black;
+          }
+
+          a {
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
+          }
+
+          .nav a:hover {
+            /*text-decoration:none;*/
+            color: black;
+
+          }
+
+
+          .blogPosts {
+            float:left;
+            width: 49%;
+            /*margin-top: -15px;*/
+
+          }
+
+          .tweets {
+            float:right;
+            width: 49%;
+          }
+
+          .writeMe {
+            padding: 10px 15px 10px 15px;
+            font-size: 15px;
+            border: 1px solid white;
+            color:white;
+            background-color:transparent;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border-radius: 20px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            -o-transition: all 0.1s linear;
+            -ms-transition: all 0.1s linear;
+          }
+
+          .writeMe:hover {
+            border: 1px solid #1abc9c;
+            color:#1abc9c;
+          }
+
+
+          .newsIcon {
+            width: 180px;
+            padding: 10px;
+            -webkit-filter: grayscale(60%);
+            -moz-filter: grayscale(60%);
+            filter: grayscale(60%);
+            -webkit-transition: all 0.1s linear;
+          -moz-transition: all 0.1s linear;
+          -o-transition: all 0.1s linear;
+          -ms-transition: all 0.1s linear;
+          }
+
+          .newsIcon:hover {
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
+            cursor:pointer;
+          }
+
+
+        #callToAwesome {
+          font-family: 'Roboto Slab';
+          font-weight: 300;
+          font-size: 40px;
+          color: #2980b9;
+          margin-top: -5px;
+          /*margin-bottom: 45px;*/
+
+
+        }
+
+        
+
+        .call {
+          text-align: center;
+          padding-bottom: 45px;
+        }
+
+        .epicButton {
+          padding: 20px;
+          font-family: 'Roboto Condensed';
+          font-weight:400;
+          text-transform: uppercase;
+          color:white;
+          background-color: #1abc9c;
+          font-size: 25px;
+          border: 0;
+          border-radius: 10px;
+          box-shadow: 0px 10px 0px 0px #16a085;
+          position:absolute;
+          margin-left: -67px;
+          outline: none;
+          /*bottom: 40px;*/
+          /*margin-right: auto;*/
+
+        }
+
+        .epicButton:hover {
+          margin-top: 4px;
+          box-shadow: 0px 6px 0px 0px #16a085;
+
+        }
+
+        .epicButton:active {
+          margin-top: 10px;
+          box-shadow: 0px 0px 0px 0px #16a085;
+
+        }
+
+        #awesomeTag {
+          
+        }
+
+        #tag {
+          color:#c0392b;
+        }
+
+        .about {
+          text-align: center;
+          padding-top: 45px;
+          padding-bottom:50px;
+          font-family: 'Roboto';
+
+
+
+        }
+
+        p {
+          /*text-align: justify;*/
+          font-family: 'Roboto';
+          font-size: 17px;
+          width:90%;
+
+        }
+
+        .headersBig {
+          /*text-align: center;*/
+          /*width:100%;*/
+          font-family: 'Roboto Condensed', 'Helvetica Neue';
+          /*color:#7f8c8d;*/
+          font-size: 35px;
+          font-weight: 700;
+          text-transform: uppercase;
+          background-color:white;
+          /*margin-top:-45px; */
+          /*margin-left:-45px; */
+          /*position:absolute;*/
+          border: 4px solid white;
+          padding: 10px 20px 10px 20px;
+          background-color:#e74c3c;
+          color:white;
+          /*margin-bottom: 100px;*/
+
+           box-shadow:
+          0 0 0 3px #e74c3c;
+            /*0 0 0 15px hsl(0, 0%, 90%);*/
+
+
+          /*margin-top: -40px;*/
+        }
+
+
+        .open-source img {
+          height: 25px;
+        }
+
+        .third {
+          height: 200px;
+          width: 32%;
+          box-shadow: 0px 2px 1px 0px grey;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          border-radius: 2px;
+          /*border: 1px solid black;*/
+          display: inline-block;
+          margin-top: 10px;
+          -webkit-transition: all 0.1s linear;
+          -moz-transition: all 0.1s linear;
+          -o-transition: all 0.1s linear;
+          -ms-transition: all 0.1s linear;
+        }
+
+        .statBold {
+          text-transform: uppercase;
+          color:#e74c3c;
+          font-family: 'Roboto';
+          font-weight: 100;
+          font-size: 50px;
+        }
+
+        .statMin {
+          text-transform: uppercase;
+          color:black;
+          font-family: 'Roboto';
+          font-weight: 300;
+          margin-top: -30px;
+        }
+
+        .third:hover {
+          background-color:#e74c3c;
+          box-shadow: 0px 5px 1px 0px grey;
+          /*margin-top: -4px;*/
+        }
+
+        .third:hover .statBold {
+          color:white;
+        }
+
+        .third:hover .statMin {
+          color:white;
+        }
+
+        .projectItem {
+          width: 100%;
+          /*padding-top: 10px;*/
+          /*padding-bottom:10px;*/
+          height: 150px;
+          position:relative;
+          background-color:white;
+
+        }
+
+        .projectItem .itemImage {
+          float:left;
+          /*width:150px;*/
+          height: 150px;
+          width:150px;
+          /*border-radius: 0px 0px 0px 0px;*/
+
+        }
+
+        .itemTitle {
+          font-size: 23px;
+          font-family: 'Roboto';
+          font-weight: 100;
+          color:#c0392b;
+          /*text-align: left;*/
+          /*margin-top: 30px;*/
+        }
+
+        .itemTitle:hover {
+          cursor:pointer;
+          color:#2980b9;
+        }
+
+        .itemInfo {
+          font-family: 'Roboto Slab';
+          text-align: left;
+          font-weight: 300;
+          /*margin-top: 1000px;*/
+        }
+
+        .itemDetails {
+          float:left;
+          position:absolute;
+          text-align:left;
+          left:165px;
+          right: 10px;
+          top: 10px;
+          /*margin-top: 10px;*/
+        }
+
+        .headerPro {
+          text-transform: uppercase;
+          font-family: 'Roboto';
+          font-weight: 300;
+          width: 80%;
+          font-size: 14px;
+          line-height: 160%;
+        }
+
+        .parentProject {
+          width:100%;
+          background-color: #ecf0f1;
+        }
+
+          @media only screen and (max-width: 1024px) {
+            .nav {
+              width: 90%;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            /*.card {
+              width: 90%;
+            }*/
+
+
+          }
+
+          @media only screen and (max-width: 768px) {
+            .header h1 {
+              font-size: 50px;
+            }
+
+            .nav {
+              width: 95%;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            .blogPosts {
+            float:left;
+            width: 100%;
+
+          }
+
+          .tweets {
+            float:left;
+            width: 100%;
+          }
+
+          .itemDetails {
+              left:10px;
+
+            }
+
+          .itemImage {
+              visibility: hidden;
+            }
+
+          .projectItem {
+            height: 200px;
+          }
+
+            /*.card {
+              width: 95%;
+            }*/
+          }
+
+          @media only screen and (max-width: 500px) {
+            .statBold {
+              font-size: 45px;
+
+            }
+
+            .statMin {
+              font-size: 15px;
+              margin-top:-25px;
+
+            }
+
+            
+
+            .itemDetails {
+              left:10px;
+
+            }
+
+            .projectItem {
+              height: 250px;
+            }
+
+            /*.itemTitle {*/
+              /*font-size: 15px;*/
+            /*}*/
+
+            /*.third {*/
+              /*display:block;*/
+              /*width:100%;*/
+            /*}*/
+          }
+
+
+          @media only screen and (max-width: 480px) {
+            .third {
+              width: 100%;
+              display:block;
+              height: 170px;
+
+            }
+
+
+            .newsIcon {
+              width: 140px;
+            }
+
+            .nav {
+              width: 100%;
+              /*text-align: center;*/
+            }
+
+            .navButton {
+              padding-left: 10px;
+              padding-right:10px;
+            }
+
+            .content {
+              width: 90%;
+            }
+
+            .header h1 {
+              font-size: 40px;
+            }
+
+            .header .lead {
+              font-size: 16px;
+              margin-top: -25px;
+            }
+
+
+            .writeMe {
+              visibility: hidden;
+            }
+
+            #callToAwesome {
+              font-size: 30px;
+            }
+
+            /*.card {*/
+              /*width: 90%;*/
+            /*}*/
+
+            /*.card {
+              width:100%;
+            }*/
+          }
+
+        #profileHeader {
+          height: 42px;
+          width: 42px;
+          border-radius: 50%;
+          position:absolute;
+          top: 15px;
+          left:15px;
+
+        }
+
+        .materialized {
+          /*box-shadow: 0px 2px 1px 0px grey;*/
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 2px;
+          margin-top: 10px;
+          -webkit-transition: all 0.1s linear;
+          -moz-transition: all 0.1s linear;
+          -o-transition: all 0.1s linear;
+          -ms-transition: all 0.1s linear;
+
+        }
+
+        .materialized:hover {
+          box-shadow: 0px 3px 2px 0px grey;
+        }
+
+
+        .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+@-webkit-keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+@-moz-keyframes lavalamp{
+    0% { background-image: url('img/50.png'); }
+    25% { background-image: url('img/55.png'); }
+    50% { background-image: url('img/40.png'); }
+    75% { background-image: url('img/30.png'); }
+    100% { background-image: url('img/50.png'); }
+}
+
+
+
+code {
+  font-family: 'Monaco';
+  color:#c0392b;
+  /*border: 1px solid grey;*/
+  /*padding: 2px;*/
+  /*border-radius: 3px;*/
+
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <img src="https://media.licdn.com/media/p/5/005/086/1d9/1ae7ee8.jpg" id="profileHeader" />
+        <button class="writeMe" onclick="window.open('mailto:gautam@mittal.net');">Send me a note</button>
+        <div class="header">
+          <h1>Gautam Mittal</h1>
+          <center><p class="lead">Student, Developer, Martial Artist, Musician.<p></center>
+            <center>
+              <span class="social">
+                <img src="img/social/google+@2x.png" onclick="window.open('http://www.google.com/+GautamMittal');">
+                <img src="img/social/twitter@2x.png" onclick="window.open('http://www.twitter.com/gthinkin/');">
+                <img src="img/social/facebook@2x.png" onclick="window.open('https://www.facebook.com/gautam.mittal.792');">
+                <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal');">
+                <img src="img/social/linked.png" onclick="window.open('https://www.linkedin.com/in/mittalgautam');" />
+              </span>
+            </center>
+
+        </div>
+
+
+        <center>
+          <div class="nav">
+            <hr class="navRule"/>
+            <div class="navbar" style="float:left;">
+
+              <span class="navButton active">
+                <a href="#" id="aboutButton">About</a>
+              </span>
+              <span class="navButton">
+                <a href="#" id="projectsButton">Projects</a>
+              </span>
+              <span class="navButton">
+                <a href="#" id="thoughtsButton">Thoughts</a>
+              </span>
+
+              <span class="navButton">
+                <a href="#" id="contactButton">Contact</a>
+              </span>
+            </div>
+          </div>
+        </center>
+        <!-- <center>WOAH</center> -->
+
+        <center>
+          <div class="content" id="aboutArea">
+
+          <div class="call">
+            <span id="callToAwesome">I <span id="awesomeTag"></span></span>
+          </div>
+          <!-- <hr class="navRule"/> -->
+          <div class="about" style="padding-top: 0px; margin-top: -15px;">
+          <!-- <span class="headersBig" style="margin-left:-35px;">About</span> -->
+          <center>
+            <p class="headerPro">
+              Currently a freshman at Henry M. Gunn High School in Palo Alto, CA. I enjoy learning how things work as well as building web, mobile, and hardware applications.
+            </p>
+
+          </center>
+
+          </div>
+
+           <hr class="navRule"/>
+          <div class="about" style="padding-top: 0; padding-bottom: 20px;">
+          <!-- <span class="headersBig" style="margin-left: -60px;">Fun Facts</span> -->
+          <center>
+          <div class="third">
+
+            <p class="statBold">5</p>
+            <p class="statMin">years</p>
+
+          </div>
+          <div class="third">
+            <p class="statBold">15</p>
+            <p class="statMin">countries</p>
+
+          </div>
+          <div class="third">
+            <p class="statBold">12</p>
+            <p class="statMin">languages</p>
+
+          </div>
+          <br />
+          <br /><br /><br />
+          <span class="headersBig">In the News</span><br /><br />
+          <img src="https://pbs.twimg.com/profile_images/423635932219060224/nyBXjuHN_400x400.jpeg" class="newsIcon" onclick="window.open('http://www.sfgate.com/technology/article/MakeGamesWithUs-gives-young-developers-a-home-4692431.php');"/>
+          <img src="http://www.paloaltoonline.com/art/weekly_logo.gif" class="newsIcon" onclick="window.open('http://www.paloaltoonline.com/print/story/2013/07/19/game-making-internship-summer-fun-with-a-possibility-of-profit');" />
+          <img src="http://wadhwa.com/wp-content/uploads/2014/02/knowledgewharton.gif" class="newsIcon" onclick="window.open('http://kwhs.wharton.upenn.edu/2013/08/gamers-get-their-apps-on-at-an-internship-in-silicon-valley/');" />
+          <img src="https://cdn.rawgit.com/MakeSchool-Tutorials/News/5486ee9046104519efeddefede39d38477c2ea9a/70923cab-38a3-4c1c-a6c7-6308702b340e/cover_photo.png" class="newsIcon" onclick="window.open('https://www.facebook.com/makegameswithus/posts/495237420617379');"/>
+
+         <!--    <p>
+              I build <code>awesome stuff</code>. Lorem ipsum dolor sit amet.... I like to <code>code</code>. I like to eat. Mangos are yummy. I'm a freshman at <code>Henry M. Gunn High School</code>
+            </p> -->
+
+          </center>
+
+          </div>
+          </div>
+
+          <!-- <hr class="navRule"/> -->
+          <div class="parentProject" id="projectsArea">
+            <div class="about content" style="">
+            <span class="headersBig">Projects</span><br />
+            <center style="margin-top: 45px;">
+              
+              <div class="materialized projectItem">
+                <img src="http://www.gautam.cc/mathninja/new-ninja.jpeg" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://www.gautam.cc/mathninja/');">MathNinja</span>
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A simple cross-platform game allowing children to practice their basic arithmetic skills. Has been used in school districts across the United States. Also available on the <a href="https://itunes.apple.com/us/app/math.ninja/id535310117?ls=1&mt=8">App Store</a> and <a href="https://chrome.google.com/webstore/detail/mathninja/jhgopabfnnaefocnhggodmfonjhbcbbe?hl=en-US">Chrome Web Store</a>.</span>
+                </span>
+
+              </div>
+
+              <div class="materialized projectItem">
+                <img src="img/mittalnet.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://www.mittal.net/');">MITTAL.NET</span>
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Simple personal family website taking advantage of extensive jQuery animation libraries.</span>
+                </span>
+
+              </div>
+
+              <div class="materialized projectItem">
+                <img src="img/bison.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/gmittal/bison-run');">Bison Run</span>
+
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/bison-run');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Simple dodge-the-falling-objects game written with Objective C and Kobold2D (cocos2d). Built as a part of the 2012 MakeGamesWithUs Summer Internship program.</span>
+                </span>
+
+              </div>
+
+              <div class="materialized projectItem">
+                <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=jQRy%20rocks!" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/gmittal/jqry/');">jQRy</span>
+
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/jqry/');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A simple JavaScript-based micro-library that generates 2D QR codes, 1D barcodes, and data matrices. Built in an attempt to simplify generating scannable codes in JavaScript.</span>
+                </span>
+
+              </div>
+
+              <div class="materialized projectItem">
+                <img src="https://static.makegameswith.us/app_icons/com_mgwu_blend@2x.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://itunes.apple.com/app/id725766849');">Blend: Fruity Insanity!</span>
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A fast paced matching game involving fruits of different colors getting matched into the correct sectors. Optimized for iPhones, iPods, iPads. Works on most <a href="https://play.google.com/store/apps/details?id=com.mgwu.blend&hl=en">Android devices as well</a>. Made in collaboration with MakeGamesWithUs (now <a href="http://www.makeschool.com">MakeSchool</a>).</span>
+                </span>
+
+              </div>
+
+
+
+              <div class="materialized projectItem">
+                <img src="img/flexi.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://www.gautam.cc/flexiwatch/');">Flexiwatch</span>
+
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/js-stopwatch');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A gesture-based mobile stopwatch. Built in an attempt to make tracking your running times more intuitive. Cross-platform; Built with HTML5, CSS3, and JavaScript, and will run on any device which has a browser.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/paychex.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://hshacks.challengepost.com/submissions/21454-paychecks');">Paychecks</span>
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Send money with SMS. Built during High School Hacks 2014 in collaboration with Rahul Kothari and <a href="http://www.kevinfrans.com">Kevin Frans</a>. Won the Venmo API Prize and received a couple of <a href="https://medium.com/@ayanonagon/what-i-learned-from-high-school-students-ff41df8a23a2">shoutouts on <i>Medium</i></a> and on <i>Hackers Under 20</i>, despite it being our first hackathon.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="http://a1.mzstatic.com/us/r30/Purple1/v4/04/de/e2/04dee284-aa25-80de-7a51-fd4642e0e406/icon175x175.jpeg" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://itunes.apple.com/us/app/octo-game-reaction-octagons/id918703215?mt=8');">Octo</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/octo');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A simple game involving colored octagons and lightning fast reactions. Written in Swift. Available on the <a href="https://itunes.apple.com/us/app/octo-game-reaction-octagons/id918703215?mt=8">App Store</a></span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/indianews.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://www.indianews.com');">India News</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/india-news');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A newly designed version of the popular Indian news site. Built in collaboration with Ketan Kothari.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/momentum.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://www.gautam.cc/momentum/');">Momentum</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/momentum');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A simple anonymous social network allowing users to post one awesome moment they lived each day.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/minasan.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/gmittal/minasan');">Minasan Messenger</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/minasan');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Whatsapp-like iOS messenger that allows conversations between iOS and SMS clients. Built with Twilio and Firebase. Built in collaboration with <a href="http://www.kevinfrans.com">Kevin Frans</a>.</span>
+                </span>
+
+              </div>
+
+              <div class="materialized projectItem">
+                <img src="http://a2.mzstatic.com/us/r30/Purple4/v4/7b/2c/64/7b2c649d-cb9d-e647-e356-7b563c612ce3/icon175x175.jpeg" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://itunes.apple.com/us/app/hiruko/id905566028?mt=8');">Hiruko</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/hiruko');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Built an app for my local taekwondo school, Hiruko. App allows users to view class schedules, see announcement updates in realtime, as well as view the calendar and order sparring gear.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/sync.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/partysync/');">PartySync</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/partysync/');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">PartySync is an app that allows partygoers to create crowdsourced video playlists that update in realtime. Built at the 2014 Y-Combinator Hackathon in collaboration with <a href="http://www.kevinfrans.com">Kevin Frans</a> and <a href="http://www.shalinshah.me">Shalin Shah</a>.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="https://s5.mzstatic.com/us/r30/Purple5/v4/88/dd/0e/88dd0e16-a6f9-4408-0444-8236fc3e2ab8/icon340x340.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/gmittal/emergency-speed-dial');">Emergency Alert</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/emergency-speed-dial');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">iOS application with a simple interface that notifies loved ones of your location during an emergency via SMS. Coming soon to an iPhone near you.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="http://a5.mzstatic.com/us/r30/Purple4/v4/e1/cc/25/e1cc2582-ef4b-add8-7aad-fd3fa884d61c/icon175x175.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://itunes.apple.com/us/app/pinpoint-single-tap-location/id910044931?mt=8');">Pinpoint</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/location-checkin');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Pinpoint: Single Tap Location Sharing is an iOS application that allows you to easily share your location with anybody (even with those who don't have a phone).</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/mmsqr.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://github.com/gmittal/mms-qr-code');">mmsQR</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/mms-qr-code');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Simple demo that allows users to scan and generate QR codes via MMS/SMS. Built using some Node.js + Twilio magic.</span>
+                </span>
+
+              </div>
+
+
+              <div class="materialized projectItem">
+                <img src="img/taptap.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('http://tap-with-friends.ngrok.com/welcome/');">Tap With Friends</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/tap-with-friends');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">A speed hack created out of my experiments with realtime connections in Node.js.</span>
+                </span>
+
+              </div>
+
+
+
+
+              <div class="materialized projectItem">
+                <img src="img/upbeat.png" class="itemImage" />
+
+                <span class="itemDetails">
+                  <span class="itemTitle" onclick="window.open('https://www.youtube.com/watch?v=wQOHUPTOtik');">Upbeat</span>
+                  
+                  <span class="social open-source" style="float:right;">
+                    <img src="img/social/github@2x.png" onclick="window.open('https://github.com/gmittal/dance-machine/');">
+                  </span>
+
+                  <hr class="navRule" style="padding-bottom: 5px;"/>
+                  <span class="itemInfo">Quick music hack that finds the tempo of the current song on Spotify, and then executes a task at the tempo. In my case, I wanted to flash Phillips Hue bulbs to the beat of my Spotify playlists.</span>
+                </span>
+
+              </div>
+
+
+            </center>
+            </div>
+          </div>
+
+
+          <!-- https://www.facebook.com/makegameswithus/posts/495237420617379 -->
+
+          <div class="content" style="padding-top:0px;" id="thoughtsArea">
+          <!-- <hr class="navRule"/> -->
+          <div class="about" style="padding-bottom: 10px;">
+          <span class="headersBig">Thoughts</span><br />
+          <center style="margin-top: 45px;">
+            <p>
+              <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </p>
+
+          </center>
+          </div>
+
+
+          <hr class="navRule" id="contactArea"/>
+          <div class="about">
+          <span class="headersBig">Contact</span><br />
+          <center style="margin-top: 45px;">
+            <p class="headerPro">
+              The fastest and most efficient way of reaching me is through email. Pinging my social profiles is not going to get you an instant response.
+              <br /><br />
+              <button class="epicButton" onclick="window.open('mailto:gautam@mittal.net');">
+              EMAIL ME
+              </button>
+            </p>
+
+          </center>
+          </div>
+
+
+          <!-- <hr class="navRule"/> -->
+
+          <div class="blogPosts">
+
+
+
+            <!-- <br /> -->
+          </div>
+
+<!-- 
+          <div class="tweets">
+          <div class="info">
+            <b style="font-size: 22px; font-family:'Roboto';">Hi there!</b>
+            <hr class="navRule" />
+            <p>I'm <b>Gautam Mittal</b>, a student at Henry M. Gunn High School who loves music, martial arts, and code.</p>
+            <img src="img/me.JPG" style="width: 100%; border-radius: 5px;"/>
+          </div><br />
+          <center>
+            <a class="twitter-timeline" href="https://twitter.com/gthinkin" data-widget-id="371098373589192704">Tweets by @gthinkin</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </center>
+          <br />
+          </div> -->
+
+
+          <!-- <br /><br /> -->
+          <hr class="navRule" style="margin-top: 50px;"/>
+          <br />
+          <center>
+          <p class="lead" style="text-align: center; font-family:'Roboto'; font-weight: 100; font-size: 15px;">&copy; 2011-2014 Gautam Mittal. All Rights Reserved.</p><br />
+          </center>
+
+            <!-- <div class="card">
+              <p class="title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</a></p>
+              <p class="date">September 1, 2014</p>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="card">
+              <p class="title"><a href="#">Lorem ipsum</a></p>
+              <p class="lead">Everything you need to know.</p>
+            </div>
+            <div class="card">
+              <p class="title"><a href="#">Lorem ipsum</a></p>
+              <p class="lead">Everything you need to know.</p>
+            </div> -->
+
+          </div>
+        </center>
+
+        <!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- // <script src="https://cdn.firebase.com/js/client/1.1.3/firebase.js"></script> -->
+        <script>
+          // var db = new Firebase('https://gautam-io-ytl20luvjp.firebaseio.com/');
+          // db.once('value', function (snapshot) {
+          //   var count = 0;
+          //   snapshot.forEach(function (e) {
+          //     var link = e.val().url;
+          //     // alert(link);
+          //     var title = e.val().title;
+          //     var date = e.val().date;
+
+          //     if (count == 0) {
+          //       $(".blogPosts").prepend('<span class="post"><p class="title"><a href=\''+link+'\'>'+ title +'</a></p><p class="date">'+ date +'</p></span>');
+          //     } else {
+          //       $(".blogPosts").prepend('<span class="post"><p class="title"><a href="'+link+'">'+ title +'</a></p><p class="date">'+ date +'</p></span>');
+
+          //     }
+
+          //     count++;
+
+          //   });
+
+          //   $(".blogPosts").prepend('<b style="font-size: 22px; font-family:\'Roboto\';">Thoughts</b><hr class="navRule" /><br />');
+          // });
+
+        </script>
+        <!-- // <script src="jquery.js"></script> -->
+        <script src="js/typed.js"></script>
+        <script>
+
+        $("#aboutButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#aboutArea").offset().top
+            }, 500);
+        });
+
+        $("#projectsButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#projectsArea").offset().top
+            }, 750);
+        });
+
+        $("#thoughtsButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#thoughtsArea").offset().top
+            }, 750);
+        });
+
+        $("#contactButton").click(function() {
+          $('html, body').animate({
+                scrollTop: $("#contactArea").offset().top
+            }, 1000);
+        });
+
+
+          $(function(){
+              $("#awesomeTag").typed({
+                strings: ["enjoy <span id='tag'>learning.</span>", "attend <span id='tag'>hackathons.</span>", "make <span id='tag'>music.</span>", "create <span id='tag'>apps.</span>", "study at <span id='tag' onclick='window.open(\'http://gunn.pausd.org\');'>Gunn HS.</span>"],
+                typeSpeed:100,
+                cursorChar: "|",
+                loop: true,
+                backDelay: 1000
+              });
+
+              // $("#verb").typed({
+              //   strings: ["make", "create", "make"],
+              //   typeSpeed:100,
+              //   cursorChar: "|",
+              //   loop: true
+              // });
+          });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-35192434-1');ga('send','pageview');
+        </script>
+        <script src="js/instantclick.min.js" data-no-instant></script>
+        <script data-no-instant>InstantClick.init();</script>
+    </body>
+</html>

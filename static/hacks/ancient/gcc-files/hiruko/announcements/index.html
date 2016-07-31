@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Hiruko Announcements Panel</title>
+<style>
+#content {
+	width:100%;
+}
+
+input {
+	width:60%;
+	border-radius:10px;
+	padding: 12px;
+	font-size: 12pt;
+
+	border: 2px solid rgb(238, 94, 55);
+	font-family: 'Avenir Next';
+	font-weight: 700;
+}
+
+input:focus {
+	outline-color: none;
+	outline-style: none;
+	border: 2px solid blue;
+
+}
+
+textarea {
+	margin-top:10px;
+	margin-bottom: 10px;
+	width:60%;
+	border-radius:10px;
+	padding: 12px;
+	font-size: 12pt;
+
+	border: 2px solid rgb(238, 94, 55);
+	height: 200px;
+	font-family: 'Avenir Next';
+}
+
+textarea:focus {
+	outline-color: none;
+	outline-style: none;
+	border: 2px solid blue;
+
+}
+
+body {
+	font-family: 'Avenir Next';
+}
+
+@media(max-width: 768px) {
+	input {
+		width:90%;
+	}
+
+	textarea {
+		width:90%;
+	}
+}
+
+button {
+	height: 50px;
+	width: 60%;
+	border: 0;
+	background-color: rgb(255, 94, 55);
+	color:white;
+	font-family: 'Avenir Next';
+	font-size: 14pt;
+	border-radius: 10px;
+	box-shadow: black 0px 12px 0px 0px;
+
+}
+
+button:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+
+button:hover {
+	margin-top:6px;
+	box-shadow: black 0px 6px 0px 0px;
+
+}
+
+button:active {
+	margin-top:12px;
+	box-shadow: black 0px 0px 0px 0px;
+
+}
+
+</style>
+</head>
+<body>
+<center>
+<div id="content"><br />
+<img src="logo-hd.png" /><br />
+<p>Hiruko Announcements Panel</p><br />
+<input type="text" id="announcementTitle" placeholder="Title"/><br />
+<textarea id="contentArea" placeholder="Content" style="resize:none;"></textarea><br />
+<button id="submitAnnouncement" onclick="submit();">Submit</button>
+</div>
+</center>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script type="text/javascript">
+    var announcements = new Firebase('https://hiruko-announcements.firebaseIO.com/announcements');
+
+    function submit() {
+    	// alert(moment().format('LL'));
+
+    	// alert(document.querySelector("#announcementTitle").value);
+    	// alert(document.querySelector("#contentArea").value);
+
+    	// currentTime = new Date();
+
+    if (document.querySelector("#announcementTitle").value.length != 0 && document.querySelector("#contentArea").value.length != 0) {
+    	announcements.push({title: document.querySelector("#announcementTitle").value, content: document.querySelector("#contentArea").value, time: moment().format('LL')});
+    	alert("Successfully Submitted");
+
+    	document.querySelector("#announcementTitle").value = "";
+    	document.querySelector("#contentArea").value = "";
+    }
+
+    }
+
+    // announcements.child('announcements').on('value', function(snapshot) {
+    //   // alert(snapshot.val());  // Alerts 'San Francisco'
+    //   $(".displayAnnouncements").append('<h4 class="announcementTitle">' + snapshot.val().title + '</h4><p>' + snapshot.val().content + '</p><hr /><br />');
+    // });
+
+
+
+    // window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline?410453165654278145'), '_blank', 'location=no');
+
+    	// $(".calendarView").attr('height', $(window).height() - 95);
+
+    </script>
+
+</body>
+</html>
