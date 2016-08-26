@@ -89,7 +89,7 @@ a:hover {
 }
 
 .quote {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align:center;
   font-family: "Franklin Book";
   color: #999;
@@ -145,6 +145,35 @@ a:hover {
 
 #mainTitle:hover {
   cursor:pointer;
+}
+
+.newsIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  margin-bottom: 10px;
+}
+
+.newsInfoIcon {
+  border: 0;
+  width: 100px;
+  margin: 0 10px 0 10px;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: white;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+}
+
+.newsInfoIcon:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
 
 /*.firstcharacter:-webkit-first-child:-webkit-first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }*/

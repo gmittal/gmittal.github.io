@@ -18,8 +18,6 @@ app.use(minify());
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
-var port = process.env.PORT;
-
 // Markdown compilation with sytax highlighting
 marked.setOptions({
   gfm: true, // by default allow Github-flavored markdown
@@ -33,11 +31,6 @@ marked.setOptions({
 
 // TODO: use a better method of loading quotes
 var inspirationQuotes = [];
-
-function randNumericKey() {
-  var n = new Date().getUTCMilliseconds()*Math.random()*Math.random()*Math.random();
-  return n;
-}
 
 var walk = function(dir, done) {
     var results = [];
@@ -113,17 +106,16 @@ app.get('/', function (req, res) {
 
             var newsHtmlData = [];
             for (var j = 0; j < info.news_articles.length; j++) {
-                var listTemplate = configOptions.listTemplate;
-                listTemplate = listTemplate.replace(/{POST-SLUG}/g, info.news_articles[j].link).replace(/{POST-TITLE}/g, info.news_articles[j].title).replace(/{POST-TIME}/g, info.news_articles[j].source).replace(/{POST-DESCRIPTION}/g, "");
-                newsHtmlData.unshift(listTemplate);
+                var infoIcon = '<a href="'+ info.news_articles[j].link +'"><img alt="'+ info.news_articles[j].source +'" src="'+ info.news_articles[j].icon +'" class="newsInfoIcon" /></a>';
+                newsHtmlData.unshift(infoIcon);
             }
 
-            var projectHtmlData = [];
-            for (var k = 0; k < info.projects.length; k++) {
-                var listTemplate = configOptions.listTemplate;
-                listTemplate = listTemplate.replace(/{POST-SLUG}/g, info.projects[k].link).replace(/{POST-TITLE}/g, info.projects[k].name).replace(/{POST-TIME}/g, info.projects[k].description).replace(/{POST-DESCRIPTION}/g, "");
-                projectHtmlData.unshift(listTemplate);
-            }
+            // var projectHtmlData = [];
+            // for (var k = 0; k < info.projects.length; k++) {
+            //     var listTemplate = configOptions.listTemplate;
+            //     listTemplate = listTemplate.replace(/{POST-SLUG}/g, info.projects[k].link).replace(/{POST-TITLE}/g, info.projects[k].name).replace(/{POST-TIME}/g, info.projects[k].description).replace(/{POST-DESCRIPTION}/g, "");
+            //     projectHtmlData.unshift(listTemplate);
+            // }
 
             var greetings = ["Hi", "Hello", "Hey"];
             var greeting = greetings[Math.floor(Math.random()*greetings.length)];
@@ -137,7 +129,7 @@ app.get('/', function (req, res) {
             fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
             fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
             fileData = fileData.replace(/{BLOG-NEWS-LIST}/g, newsHtmlData.join(""));
-            fileData = fileData.replace(/{BLOG-PROJECTS-LIST}/g, projectHtmlData.join(""));
+            // fileData = fileData.replace(/{BLOG-PROJECTS-LIST}/g, projectHtmlData.join(""));
 
             res.send(fileData);
           });
@@ -212,8 +204,6 @@ app.get('/:uid', function (req, res) {
           res.sendFile(__dirname + "/static/404.html");
         }
       });
-
-
     }
   });
 });
@@ -222,7 +212,7 @@ app.get('/:uid', function (req, res) {
 app.use("/", express.static(__dirname+'/static'))
 
 
-app.listen(port, function () {
+app.listen(process.env.PORT, function () {
   refJSON();
   fs.readFile(__dirname + "/data/quotes.json", "utf-8", function (e, d) {
     inspirationQuotes = JSON.parse(d).slice();
@@ -230,5 +220,5 @@ app.listen(port, function () {
   fs.readFile(__dirname + "/config.json", "utf-8", function (e, d) {
     configOptions = JSON.parse(d);
   });
-  console.log("Gautam Mittal's ".magenta + ("awesome site running at ").blue +("0.0.0.0:"+port).green);
+  console.log("Gautam Mittal's ".magenta + ("site loaded at ").blue +("0.0.0.0:"+process.env.PORT).green);
 });
