@@ -7,11 +7,14 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var marked = require('marked');
+var minify = require('express-minify');
 var moment = require('moment');
 var app = express();
 
 dotenv.load();
 app.use(compression());
+app.use(minify());
+
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
