@@ -1,7 +1,9 @@
 {
-  "name": "Gautam Mittal",
-  "description": "Writings of a 16-year-old student developer.",
-  "dateFormat": "YYYY-MM-DD",
-  "listTemplate": "<div class=\"story\"><a href=\"{POST-SLUG}\">{POST-TITLE}</a><span class=\"date\">{POST-TIME}. {POST-DESCRIPTION}</span></div>",
-  "disqusCommentLink": "gmittal.disqus.com"
+  "NAME": "Gautam Mittal",
+  "DESCRIPTION": "Writings of a 16-year-old student developer.",
+  "DATE_FORMAT": "YYYY-MM-DD",
+  "LIST_TEMPLATE": "<div class=\"story\"><a href=\"{POST-SLUG}\">{POST-TITLE}</a><span class=\"date\">{POST-TIME}. {POST-DESCRIPTION}</span></div>",
+  "DISQUS": "gmittal.disqus.com",
+  "GOOGLE_ANALYTICS_SITE_ID": "UA-35192434-1",
+  "PORT": 3000,
 }

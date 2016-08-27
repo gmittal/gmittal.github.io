@@ -1,7 +1,5 @@
 var configOptions = {};
-
 var colors = require('colors');
-var dotenv = require('dotenv');
 var compression = require('compression');
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -11,7 +9,6 @@ var minify = require('express-minify');
 var moment = require('moment');
 var app = express();
 
-dotenv.load();
 app.use(compression());
 app.use(minify());
 
@@ -123,11 +120,11 @@ app.get('/', function (req, res) {
             var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
 
             fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
-            fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
-            fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
+            fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.NAME);
+            fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.DESCRIPTION);
             fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
             fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
-            fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
+            fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, configOptions.GOOGLE_ANALYTICS_SITE_ID);
             fileData = fileData.replace(/{BLOG-NEWS-LIST}/g, newsHtmlData.join(""));
             // fileData = fileData.replace(/{BLOG-PROJECTS-LIST}/g, projectHtmlData.join(""));
 
@@ -192,11 +189,11 @@ app.get('/:uid', function (req, res) {
                 fileData = fileData.replace(/{POST-AUTHOR}/g, author);
                 fileData = fileData.replace(/{POST-READ-TIME}/g, timeToRead);
                 fileData = fileData.replace(/{POST-CONTENT}/g, content);
-                fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.name);
-                fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.description);
-                fileData = fileData.replace(/{DISQUS-LINK}/g, configOptions.disqusCommentLink);
+                fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.NAME);
+                fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.DESCRIPTION);
+                fileData = fileData.replace(/{DISQUS-LINK}/g, configOptions.DISQUS);
                 fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
-                fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, process.env.GOOGLE_ANALYTICS_SITE_ID);
+                fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, configOptions.GOOGLE_ANALYTICS_SITE_ID);
                 res.send(fileData);
               });
           });
@@ -212,7 +209,7 @@ app.get('/:uid', function (req, res) {
 app.use("/", express.static(__dirname+'/static'))
 
 
-app.listen(process.env.PORT, function () {
+app.listen(configOptions.PORT, function () {
   refJSON();
   fs.readFile(__dirname + "/data/quotes.json", "utf-8", function (e, d) {
     inspirationQuotes = JSON.parse(d).slice();
@@ -220,5 +217,5 @@ app.listen(process.env.PORT, function () {
   fs.readFile(__dirname + "/config.json", "utf-8", function (e, d) {
     configOptions = JSON.parse(d);
   });
-  console.log("Gautam Mittal's ".magenta + ("site loaded at ").blue +("0.0.0.0:"+process.env.PORT).green);
+  console.log("Gautam Mittal's ".magenta + ("site loaded at ").blue +("0.0.0.0:"+configOptions.PORT).green);
 });
