@@ -1,4 +1,7 @@
-var configOptions = {};
+/*
+  * 2016 Gautam Mittal
+*/
+
 var colors = require('colors');
 var compression = require('compression');
 var express = require('express');
@@ -14,6 +17,9 @@ app.use(minify());
 
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
+
+// Set up the config options
+var configOptions = JSON.parse(fs.readFileSync(__dirname + "/config.json", "utf-8"));
 
 // Markdown compilation with sytax highlighting
 marked.setOptions({
@@ -90,9 +96,9 @@ app.get('/', function (req, res) {
             if (r[j].indexOf(".DS_Store") == -1) {
               r[j] = r[j].split("/")[r[j].split("/").length-1];
               var slug = r[j].substr(11, r[j].length-14);
-              var time = moment(r[j].substr(0, 10), [configOptions.dateFormat]).format("LL");
+              var time = moment(r[j].substr(0, 10), [configOptions.DATE_FORMAT]).format("LL");
               var k = slug + ".md";
-              var listTemplate = configOptions.listTemplate;
+              var listTemplate = configOptions.LIST_TEMPLATE;
               listTemplate = listTemplate.replace(/{POST-SLUG}/g, "/"+slug).replace(/{POST-TITLE}/g, ref[k].title).replace(/{POST-TIME}/g, time).replace(/{POST-DESCRIPTION}/g, ref[k].summary);
               htmlData.unshift(listTemplate);
             }
@@ -163,7 +169,7 @@ app.get('/:uid', function (req, res) {
           }
         }
         var md = ix !== -1 ? results[ix] : "404";
-        var time = md !== "404" ? moment(md.substr(0, 10), [configOptions.dateFormat]).format("LL") : "Invalid Page";
+        var time = md !== "404" ? moment(md.substr(0, 10), [configOptions.DATE_FORMAT]).format("LL") : "Invalid Page";
 
         if (md !== "404") {
           fs.readFile(__dirname + "/_posts/" + md, 'utf-8', function (error, markdown) {
@@ -208,14 +214,10 @@ app.get('/:uid', function (req, res) {
 // Serve everything else as static resources
 app.use("/", express.static(__dirname+'/static'))
 
-
 app.listen(configOptions.PORT, function () {
   refJSON();
   fs.readFile(__dirname + "/data/quotes.json", "utf-8", function (e, d) {
     inspirationQuotes = JSON.parse(d).slice();
-  });
-  fs.readFile(__dirname + "/config.json", "utf-8", function (e, d) {
-    configOptions = JSON.parse(d);
   });
   console.log("Gautam Mittal's ".magenta + ("site loaded at ").blue +("0.0.0.0:"+configOptions.PORT).green);
 });
