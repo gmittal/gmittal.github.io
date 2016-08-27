@@ -8,6 +8,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var marked = require('marked');
+var mime = require('mime');
 var minify = require('express-minify');
 var moment = require('moment');
 var app = express();
@@ -204,7 +205,16 @@ app.get('/:uid', function (req, res) {
               });
           });
         } else {
-          res.sendFile(__dirname + "/static/404.html");
+          // hacky component to serve remaining files under site root
+          fs.readdir(__dirname+"/static/", function (e, fileList) {
+              if (e) console.log(e);
+              if (req.params.uid.indexOf(".") > -1 && fileList.indexOf(req.params.uid) > -1 && req.params.uid !== "index.html") {
+                res.setHeader('Content-Type', mime.lookup(__dirname+'/static/'+req.params.uid));
+                res.sendFile(__dirname+'/static/'+req.params.uid);
+              } else {
+                res.sendFile(__dirname+'/static/404.html');
+              }
+          });
         }
       });
     }
