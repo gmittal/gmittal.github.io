@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/gmittal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://gautam.cc
+  * I am gmittal (https://keybase.io/gmittal) on keybase.
+  * I have a public key ASDhnYTeaSmlVLfI2Ser3JC1UDly_4rOVGLOjS8CoBNFWwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010114d6ede3bc6b98b63a774442a990ca9e83df562b9ae51804f7d657550ef74d9b0a",
+            "host": "keybase.io",
+            "kid": "0120e19d84de6929a554b7c8d927abdc90b5503972ff8ace5462ce8d2f02a013455b0a",
+            "uid": "3ce7c3ba0453813040a06faf3c1c7719",
+            "username": "gmittal"
+        },
+        "service": {
+            "hostname": "gautam.cc",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1472518188,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1472518115,
+        "hash": "fd57fa417c60c6f4e5501067c4f4165d2356c096445730b1084ffe95d2431c67932830206d23c0b47ba7b2e844bd5dc7f6affbbd1a195e4385f2264afaae24bf",
+        "seqno": 608420
+    },
+    "prev": "b64d468481dfdc8679d09e05e18919b9885e1756d02ac6601ae1e2cd718d7d6e",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4Z2E3mkppVS3yNknq9yQtVA5cv+KzlRizo0vAqATRVsKp3BheWxvYWTFAvB7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMTRkNmVkZTNiYzZiOThiNjNhNzc0NDQyYTk5MGNhOWU4M2RmNTYyYjlhZTUxODA0ZjdkNjU3NTUwZWY3NGQ5YjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTE5ZDg0ZGU2OTI5YTU1NGI3YzhkOTI3YWJkYzkwYjU1MDM5NzJmZjhhY2U1NDYyY2U4ZDJmMDJhMDEzNDU1YjBhIiwidWlkIjoiM2NlN2MzYmEwNDUzODEzMDQwYTA2ZmFmM2MxYzc3MTkiLCJ1c2VybmFtZSI6ImdtaXR0YWwifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImdhdXRhbS5jYyIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTcifSwiY3RpbWUiOjE0NzI1MTgxODgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ3MjUxODExNSwiaGFzaCI6ImZkNTdmYTQxN2M2MGM2ZjRlNTUwMTA2N2M0ZjQxNjVkMjM1NmMwOTY0NDU3MzBiMTA4NGZmZTk1ZDI0MzFjNjc5MzI4MzAyMDZkMjNjMGI0N2JhN2IyZTg0NGJkNWRjN2Y2YWZmYmJkMWExOTVlNDM4NWYyMjY0YWZhYWUyNGJmIiwic2Vxbm8iOjYwODQyMH0sInByZXYiOiJiNjRkNDY4NDgxZGZkYzg2NzlkMDllMDVlMTg5MTliOTg4NWUxNzU2ZDAyYWM2NjAxYWUxZTJjZDcxOGQ3ZDZlIiwic2Vxbm8iOjExLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQEDBABnOqdO5rXLBMc+36Rz374vn1arBPhXYrDSzf4Hg8RDY2W/oObUvxtGpqy+65nwE7XSgOBCSqptNqwf9FwSoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCD4kWoNlI6wchITTDzD3jqPBWSmehPG6wQEhDXMQArWnaN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gmittal
+
+==================================================================
