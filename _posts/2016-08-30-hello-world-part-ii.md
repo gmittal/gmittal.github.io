@@ -10,8 +10,6 @@
 ---END_METADATA---
 ![Content is key.](http://imgs.xkcd.com/comics/blogging.png)
 
-> "t’s so simple really: If you say you’re going to do something, do it. If you start something, finish it.”t." ——)Epictetus
-
 It is time that I started actually writing consistently on this blog.
 
 This is my corner of the web. A place where I can share ideas, practice writing, geek out, and ruminate about interesting problems. I intend to use my blog as a medium of expression, a potpurri of selected sentences that might be thought-provoking, controversial, or just generally interesting.
