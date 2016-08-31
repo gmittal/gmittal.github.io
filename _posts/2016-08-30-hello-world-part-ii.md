@@ -10,14 +10,12 @@
 ---END_METADATA---
 ![Content is key.](http://imgs.xkcd.com/comics/blogging.png)
 
-It is time I started actually using my blog. 
+> "t’s so simple really: If you say you’re going to do something, do it. If you start something, finish it.”t." ——)Epictetus
 
-My website has evolved a lot since its inception in 2011. Initially, I used it as a fancy landing page with my basic contact information that I could hand out to people. Later on, I started using it as an online portfolio, keeping track of the various projects, hackathon awards, GarageBand mixes, and funky images that I had accumulated. It was a fun place to post my experiments and other snippets of code prior to knowing what open-source software or GitHub was.
+It is time that I started actually writing consistently on this blog.
 
-I've moved on. A large portion (if not all) of my code is now open-source (or soon to be) on [GitHub](https://github.com/gmittal/). Most of it is documented (not well, but I try to at least keep basic installation / set-up instructions in the READMEs of all of my repos). There simply isn't a need to keep a separate, fragmented portfolio site when I can simply give someone my GitHub username.
+This is my corner of the web. A place where I can share ideas, practice writing, geek out, and ruminate about interesting problems. I intend to use my blog as a medium of expression, a potpurri of selected sentences that might be thought-provoking, controversial, or just generally interesting.
 
-[So, what](https://www.youtube.com/watch?v=ylXk1LBvIqU) now? Well, I guess I could always go back to the single pager, basic contact site that most of people have. Or, I could actually start writing interesting (or at least somewhat meaningful) blog posts on this site. Personally, the latter option sounds more interesting and fun, which is why I have an announcement to make: __I'm committing myself to writing a blog post at least once a week.__ 
+I read a lot of web-based content. The difference between blogs that try to post insightful content but later devolve into a meme and the blogs that are engaging is consistency. This is not always the case, but the bloggers who have truly mastered the art of expressing themselves and their thoughts through written web content are the ones who have practiced their craft. Likewise, my hope is to get better. I don't have intentions of becoming the next Casey Neistat, but I do hope that my content will improve and become more engaging as time moves forward. 
 
-We'll see if it works out.
-
-
+This is why __I'm committing myself to writing a blog post at least once week__, forcing myself to observe, synthesize, and challenge the world around me through medium chunks of text. For those reading this, I would appreciate any constructive feedback or criticisms on future or existing posts.
