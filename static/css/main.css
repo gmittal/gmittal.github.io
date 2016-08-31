@@ -152,12 +152,12 @@ a:hover {
   flex-direction: row;
   flex-wrap:nowrap;
   margin-bottom: 10px;
+  align-items: stretch;
 }
 
 .newsInfoIcon {
   border: 0;
   width: 100px;
-  margin: 0 10px 0 10px;
   height: auto;
   flex-grow: 1;
   flex-shrink: 1;
