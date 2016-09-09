@@ -1,5 +1,4 @@
 # [Home of Gautam Mittal](http://www.gautam.cc)
-![license_badge](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
 This is the source code for my personal website and blog. If you have something to say, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
