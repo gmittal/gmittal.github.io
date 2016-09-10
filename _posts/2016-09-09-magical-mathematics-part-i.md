@@ -96,7 +96,7 @@ It turns out that an intuitively recursive sequence like the Fibonacci numbers c
 
 One way to generate an approximation of the sequence is to use the Golden Ratio. Because the Fibonacci sequence adheres to the Golden Ratio, you can find a decimal approximation for the next term in the sequence by multiplying the previous term by the Golden Ratio.
 
-<center>$$ F_\{n} = F_1 \cdot \phi ^n \quad F_1=1, $$</center>
+<center>$$ F_\{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $$</center>
 
 Given that formula, the approximation of the sequence would go:
 
