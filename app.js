@@ -75,7 +75,7 @@ function refJSON() {
         }
       }
 
-      fs.writeFile(__dirname + "/ref.json", JSON.stringify(j));
+	fs.writeFile(__dirname + "/ref.json", JSON.stringify(j, null, 2));
     });
 }
 
