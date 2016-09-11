@@ -64,12 +64,16 @@
         <script data-no-instant>InstantClick.init();</script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
         <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script>
           MathJax.Hub.Config({
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
           });
+
+	  document.getElementById("goHome").onclick = function() {
+	    location.href = "/";
+	  }
         </script>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
