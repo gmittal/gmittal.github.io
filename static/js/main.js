@@ -6,6 +6,6 @@ $(window).resize(function() {
 	$(".twitter-timeline").height($("#pictureOfMe").height()+20);
 });
 
-$("#goHome").click(function() {
-	location.href = "/";
-});
+document.getElementById("goHome").onclick = function() {
+    location.href = "/";
+}
