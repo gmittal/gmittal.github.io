@@ -1,6 +1,6 @@
 ---START_METADATA---
 {
-  "title": "Magical Mathematics: Part I",
+  "title": "Magical Mathematics",
   "author": "Gautam Mittal",
   "summary": "Searching for fibs in unexpected places.",
   "tags":[
