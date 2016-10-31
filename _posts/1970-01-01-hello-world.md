@@ -8,9 +8,7 @@
   ]
 }
 ---END_METADATA---
-![hello](http://wallpaperswa.com/thumbnails/detail/20120827/video%20games%20little%20big%20planet%20hello%201920x1080%20wallpaper_wallpaperswa.com_1.jpg)
-
-_Note: The image above isn't actually me._
+![Greetings...](http://i.giphy.com/3ornk57KwDXf81rjWM.gif)
 
 __Hello, World__! I’m Gautam Mittal, a student at [Henry M. Gunn High School](http://gunn.pausd.org) in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.
 
