@@ -294,7 +294,7 @@ textarea {
      font-weight: 700;
      color: black;
      font-size: 22pt;
-     text-transform: uppercase;
+     text-transform: none;
    }
 
    #header a {
