@@ -546,9 +546,18 @@ blockquote {
   font-style:italic;
   font-family: "Roboto";
   font-weight: 300;
-  border-left: 2px solid #3498db;
   padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:block;
+}
 
+blockquote quotee {
+  font-size: 11pt;
+  font-weight: 600;
+  font-family: "SFMoMA", sans-serif;
+  display:block;
+  font-style:normal;
 }
 
 lead {

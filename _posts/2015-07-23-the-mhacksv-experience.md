@@ -13,7 +13,7 @@
 
 This past January, I and 1000 other hackers from all over the United States converged at the University of Michigan for the fifth occurrence of their biannual hackathon. The experience was truly incredible. I met so many awesome people with a one common goal in mind: To hack the weekend away, building what could be the next Snapchat, Uber, or Tinder for Cats.
 
-> I am truly blown away by this. This is less of a hackathon and more of a rock concert. I've never seen anything like this. — Jahan Khanna, Founder and CTO of Sidecar, MHacks V Keynote Speaker
+> I am truly blown away by this. This is less of a hackathon and more of a rock concert. I've never seen anything like this.<quotee>Jahan Khanna, MHacks V Keynote Speaker</quotee>
 
 
 ### High School Hacker Ideation
@@ -44,7 +44,7 @@ What was even better was that we still had a couple of hours left before the pro
 When it was finally time to submit our hack, we realized we needed a cool, spiffy, name. We decided to translate the word “everyone” to Latin.
 
 ![name_idea](https://cdn-images-1.medium.com/max/800/1*rtQo-yqHtKwM1qhzkmQxXw.png)
-<lead>_"Everyone" --> "Omnes" --> "Omnus"_<lead>
+<lead>_"Everyone" &#8594; "Omnes" &#8594; "Omnus"_<lead>
 
 We decided to translate “everyone”, mainly because we hoped that our app would empower anyone who had a phone, regardless of whether their phone had a data connection or not, to listen to music. We decided to translate to Latin mainly because we were extremely sleep deprived, and at the time it seemed cool. We also modified the word “omnes” a bit, and changed it to “omnus”, as we thought it sounded and looked cooler.
 
@@ -55,7 +55,7 @@ After an exhausting, yet inspiring 36 hours of non-stop hacking, it was finally 
 
 I also learned something very important while presenting at the expo:
 
-> Anything that can go wrong, will go wrong. — Murphy’s Law
+> Anything that can go wrong, will go wrong. <quotee>Murphy's Law</quotee>
 
 As you have probably already noticed, this has been apparent throughout the hackathon. We had some major pitfalls throughout the event, and even when we thought we had battle-tested our hack, __something still went wrong__. In our case, our weather API started to fail. Luckily, it failed silently, and did not spit out any large error messages that the person looking at our hack could see. Also, we realized that the API we were using to handle the natural language processing side of things occasionally failed, however, we were able to fix these problems without the user knowing by restarting the server while they were asking questions.
 
