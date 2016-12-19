@@ -2,7 +2,7 @@
 {
   "title": "First Blog Post",
   "author": "Gautam Mittal",
-  "summary": "Hello, world!",
+  "summary": "Obligatory Hello, world!",
   "tags":[
     "me"
   ]

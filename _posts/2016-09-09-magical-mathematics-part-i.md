@@ -2,7 +2,7 @@
 {
   "title": "Magical Mathematics",
   "author": "Gautam Mittal",
-  "summary": "Searching for fibs in unexpected places.",
+  "summary": "Appreciating the beauty of a simple series.",
   "tags":[
     "me",
     "magic"
