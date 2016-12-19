@@ -21,9 +21,9 @@ Many of the people who ask me for advice often get the terms _programmer_ and _c
 
 ![computer science](/img/CS.png)
 
-The definitions for the two terms look very similar, but programming in fact differs quite a bit from Computer Science.
+Although related, the two are quite different.
 
-In essence, programmers make computers do things for them (e.g. search the web, grade a paper, host a website, etc.). You do not need to have a [strong math background](http://hardmath123.github.io/isprogrammingmath.html) to be a great programmer. However, having your fundamental math and computer science principles down are always an added bonus. Some great programmers include Facebook CEO Mark Zuckerberg, Linux creator Linus Torvalds, and Reddit co-founder and CEO Steve Huffman. In contrast, computer scientists study the theoretical principles behind computers (i.e. algorithms, data structures, machine learning, encryption, etc.). Having strong mathematical intuition is (in almost all cases) a requirement. Some great computer scientists include Alan Turing, self-driving car expert Sebastian Thrun, and the University of California's Brian Harvey.
+In essence, programmers make computers do things for them (e.g. search the web, grade a paper, host a website, etc.). You do not need to have a [strong math background](http://hardmath123.github.io/isprogrammingmath.html) to be a great programmer. However, having your fundamental math and computer science principles down are always an added bonus. Some great programmers include Facebook CEO [Mark Zuckerberg](#), Linux creator [Linus Torvalds](#), and Reddit co-founder and CEO [Steve Huffman](#). In contrast, computer scientists study the theoretical principles behind computers (i.e. algorithms, data structures, machine learning, encryption, etc.). Having strong mathematical intuition is (in almost all cases) a requirement. Some great computer scientists include [Alan Turing](#), self-driving car expert [Sebastian Thrun](#), and the University of California's [Brian Harvey](#).
 
 ### Hackers
 ![hackers](/img/hack.png)
@@ -44,14 +44,14 @@ In 2010, I wanted to find something new to build with. I don't remember why, but
 A lot of stuff happened in between those vital first steps. I interned at a couple of startups, did some freelance work, attended (and won) numerous hackathons, learned a variety of technologies, and won a couple of cool scholarships and awards at tech conferences and robotics competitions. Right now, I continue to learn and grow as a hacker by exploring new technologies. I'm currently trying to figure out how to effectively combine music-making and machine learning.
 
 ### Tips for Newcomers
-I'm going to keep this very short and simple. You don't need to take tons of online university courses or finish Advanced Placement BC Calculus by the time you're done with middle school in order to get good at programming. Here are some things you should try:
+I'm going to keep this short and simple. You don't need to take tons of online university courses or finish Advanced Placement BC Calculus by the time you're done with middle school in order to get good at programming. Here are some things you should try:
 
 - Think of a platform you want to build for (in my case this was the web). Once you get comfortable with one environment it reduces the learning curve when picking up other platforms.
 - [Find a language that suits the platform of your choice](http://hardmath123.github.io/after-scratch.html). Often times people get caught up in this. Just find one language, get really good at it, and I assure you that picking up any other language will be elementary.
 - Think of something you want to build. This could be an app, a website, a robot, etc. Don't worry if you don't know how to make it.
 - Build it. Don't waste times worrying about minor features and details. Use tools like StackOverflow and Google to get through roadblocks that arise from time to time.
 - Didn't work? Try building it again. Or ask for help. The hacker community is pretty diverse and chances are, someone else has encountered the same issue you have at some point before.
-- __Bonus points__: Open source your work on GitHub, allowing others to contribute and review your work.
+- __Bonus points__: Open source your work on [GitHub](https://github.com), allowing others to contribute and review your work.
 
 This is a pretty rough guide, and I'm sure it'll improve as time moves on. If you have any questions, feel free to shoot me an email or ping me on one of my social network channels.
 
