@@ -57,7 +57,8 @@ This is a pretty rough guide, and I'm sure it'll improve as time moves on. If yo
 
 > Sometimes the best way to learn to swim is to get thrown in the ocean.
 
-<hr />
+
+### References
 - _[1]: You probably can figure out my approximate age._
 - _[2]: They all started out as dorm room projects at Stanford or Harvard University._
 - _[3]: LEGO has also become a much more expensive toy in the past few years which really saddens me, because it used to be a really simple, great way to get almost any kid interested in building and creating._
