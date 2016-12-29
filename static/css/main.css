@@ -539,6 +539,22 @@ img {
   background-color: #ccc;
 }
 
+img#rss {
+  border: none;
+  background:none;
+  float:right;
+  height: 20pt;
+  -moz-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+}
+
+img#rss:hover {
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+
 blockquote {
   font-size: 16pt;
   color: rgba(33, 33, 33, 0.8);
