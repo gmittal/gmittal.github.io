@@ -91,25 +91,25 @@
       "title": "MakeGamesWithUs Gives Young Developers A Home",
       "source": "San Francisco Chronicle",
       "link": "http://www.sfgate.com/technology/article/MakeGamesWithUs-gives-young-developers-a-home-4692431.php",
-      "icon": "http://www.sfgate.com/apple-touch-icon-152x152.png"
+      "icon": "/img/sfgate.png"
     },
     {
       "title": "Gamers Get their Apps On at an Internship in Silicon Valley",
       "source": "Knowledge@Wharton",
       "link": "http://kwhs.wharton.upenn.edu/2013/08/gamers-get-their-apps-on-at-an-internship-in-silicon-valley/",
-      "icon": "https://penncurrent.upenn.edu/sites/default/files/favicons/apple-touch-icon-72x72.png"
+      "icon": "/img/upenn.png"
     },
     {
       "title": "Game-making Internship: Summer Fun, with A Possibility of Profit",
       "source": "Palo Alto Weekly",
       "link": "http://www.paloaltoonline.com/print/story/2013/07/19/game-making-internship-summer-fun-with-a-possibility-of-profit",
-      "icon": "https://mobilegallery.ca.gov/Image.ashx?H=E88QgWadAxZaUz3vP_pOog2&Sz=15463&Width=160&Height=160"
+      "icon": "/img/paweekly.png"
     },
     {
       "title": "Summer Program Helps Students Create Apps",
       "source": "San Jose Mercury News",
       "link": "http://www.mercurynews.com/mosaic/ci_28423484/summer-program-helps-students-create-apps",
-      "icon":"http://brigittedemeyer.com/savannahdemeyerroadbrigitte/wp-content/uploads/2014/04/mercurynews.png"
+      "icon":"/img/mercurynews.png"
     },
     {
       "title": "Coding for the Community",
@@ -121,13 +121,13 @@
       "title": "Internally Featured - Apple WWDC 2015",
       "source": "Apple",
       "link": "#",
-      "icon":"https://cdn0.iconfinder.com/data/icons/glyph_set/128/apple.png"
+      "icon":"/img/apple.png"
     },
     {
       "title": "Smartphones for the Blind and More Awesome Inventions from Philly Hackathon",
       "source": "BizPhilly",
       "link": "http://www.phillymag.com/business/2015/09/08/smartphones-for-the-blind-and-more-awesome-inventions-from-philly-hackathon/",
-      "icon": "https://pbs.twimg.com/profile_images/517035801360596992/z12ngZDx.jpeg"
+      "icon": "/img/bizphilly-icon.jpeg"
     }
   ]
 }

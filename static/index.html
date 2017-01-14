@@ -12,13 +12,19 @@
         <!-- Leveraging browser prefetching and caching for faster load times -->
         <link rel="prefetch" href="/img/favicon.png">
         <link rel="prefetch" href="/img/me-qi.jpg">
-        <link rel="dns-prefetch"
+        <link rel="prefetch" href="/img/flying.jpg">
+        <link rel="prefetch" href="/img/sfgate.png">
+        <link rel="prefetch" href="/img/upenn.png">
+        <link rel="prefetch" href="/img/paweekly.png">
+        <link rel="prefetch" href="/img/mercurynews.png">
+        <link rel="prefetch" href="img/verde.jpg">
+        <link rel="prefetch" href="/img/apple.png">
+        <link rel="prefetch" href="/img/bizphilly-icon.jpeg">
+        <link rel="dns-prefetch" href="//www.google-analytics.com">
 
         <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png">
         <link rel="icon" type="image/png" href="/img/favicon.png">
 
-        <link rel="stylesheet" href="css/pills.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -54,7 +60,7 @@
           <h2>
             Thoughts
             <a href="http://fetchrss.com/rss/5864f1038a93f86a600cebfb22675373102.xml">
-              <img id="rss" src="/img/rss.png" alt="Subscribe to Gautam's RSS Feed"/>
+              <img id="rss" src="/img/rss.png" title="Get your RSS"/>
             </a>
           </h2>
 
@@ -75,16 +81,12 @@
       <div class="row contentArea" style="margin-top: 10px;">
         <div class="two columns"></div>
         <div class="four columns">
-            <img src="/img/me-qi.jpg" id="pictureOfMe" alt="Why hello there."/>
+            <img src="/img/me-qi.jpg" class="pictureOfMe" title="Why hello there."/>
         </div>
         <div class="four columns">
-          <center>
-            <a class="twitter-timeline"
-              data-widget-id="341594848475889665"
-              href="https://twitter.com/gthinkin" height="300">
-              Loading Tweets by @gthinkin
-            </a>
-          </center>
+            <img src="/img/flying.jpg" class="pictureOfMe" title="I can fly too."/>
+        </div>
+        <div class="two columns"></div>
         </div>
       </div>
 
@@ -106,19 +108,6 @@
       <script src="/js/instantclick.min.js" data-no-instant></script>
       <script data-no-instant>InstantClick.init();</script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-      <script src="//code.jquery.com/jquery-1.12.0.min.js" async></script>
-      <script src="js/plugins.js"></script>
-      <script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";js.setAttribute('onload', "twttr.events.bind('rendered',function(e) {initTwitter()});");fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      <script async>
-        function initTwitter() {
-          $(".twitter-timeline").height($("#pictureOfMe").height()+20);
-        }
-
-        $(window).resize(function() {
-          $(".twitter-timeline").height($("#pictureOfMe").height()+20);
-        });
-      </script>
-
       <script>
           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
