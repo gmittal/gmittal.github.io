@@ -1,28 +1,27 @@
 {
-  "name": "india-news",
+  "name": "gautam.cc",
   "version": "1.0.0",
-  "description": "India News.",
+  "description": "Gautam Mittal's personal blog and website.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gmittal/india-news.git"
+    "url": "git+https://github.com/gmittal/gautam.cc.git"
   },
   "keywords": [
-    "india",
-    "news",
-    "india",
-    "news",
-    "newspaper"
+    "gautam",
+    "mittal",
+    "website",
+    "awesome"
   ],
   "author": "Gautam Mittal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gmittal/india-news/issues"
+    "url": "https://github.com/gmittal/gautam.cc/issues"
   },
-  "homepage": "https://github.com/gmittal/india-news#readme",
+  "homepage": "https://github.com/gmittal/gautam.cc#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
     "colors": "^1.1.2",
