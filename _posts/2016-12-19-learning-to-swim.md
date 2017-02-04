@@ -2,7 +2,7 @@
 {
   "title": "Learning to Swim",
   "author": "Gautam Mittal",
-  "summary": "Some thoughts on learning to hack.",
+  "summary": "My thoughts on how to get started with hacking.",
   "tags":[
     "me",
     "hacking",

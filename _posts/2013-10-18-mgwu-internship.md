@@ -2,7 +2,7 @@
 {
   "title": "My Internship Experience With MakeGamesWithUs (as a 13-year-old)",
   "author": "Gautam Mittal",
-  "summary": "The life of a young, hungry teenage coder.",
+  "summary": "My experience hanging out at a Silicon Valley startup.",
   "tags":[
     "me",
     "internships"
