@@ -26,10 +26,8 @@ var configOptions = JSON.parse(fs.readFileSync(__dirname + "/config.json", "utf-
 marked.setOptions({
   gfm: true, // by default allow Github-flavored markdown
   tables: true,
-  highlight: function (code, lang, callback) {
-    require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
-      callback(err, result.toString());
-    });
+  highlight: function (code) {
+    return require('highlight.js').highlightAuto(code).value;
   }
 });
 
@@ -114,13 +112,6 @@ app.get('/', function (req, res) {
                 newsHtmlData.unshift(infoIcon);
             }
 
-            // var projectHtmlData = [];
-            // for (var k = 0; k < info.projects.length; k++) {
-            //     var listTemplate = configOptions.listTemplate;
-            //     listTemplate = listTemplate.replace(/{POST-SLUG}/g, info.projects[k].link).replace(/{POST-TITLE}/g, info.projects[k].name).replace(/{POST-TIME}/g, info.projects[k].description).replace(/{POST-DESCRIPTION}/g, "");
-            //     projectHtmlData.unshift(listTemplate);
-            // }
-
             var greetings = ["Hi", "Hello", "Hey"];
             var greeting = greetings[Math.floor(Math.random()*greetings.length)];
             var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
@@ -133,7 +124,6 @@ app.get('/', function (req, res) {
             fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
             fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, configOptions.GOOGLE_ANALYTICS_SITE_ID);
             fileData = fileData.replace(/{BLOG-NEWS-LIST}/g, newsHtmlData.join(""));
-            // fileData = fileData.replace(/{BLOG-PROJECTS-LIST}/g, projectHtmlData.join(""));
 
             res.send(fileData);
           });
@@ -229,5 +219,5 @@ app.listen(configOptions.PORT, function () {
   fs.readFile(__dirname + "/data/quotes.json", "utf-8", function (e, d) {
     inspirationQuotes = JSON.parse(d).slice();
   });
-  console.log("Gautam Mittal's ".magenta + ("site loaded at ").blue +("0.0.0.0:"+configOptions.PORT).green);
+  console.log(("Loaded at ").blue +("0.0.0.0:"+configOptions.PORT).green);
 });
