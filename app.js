@@ -63,7 +63,7 @@ function refJSON() {
     walk(__dirname+"/_posts", function (e, r) {
       var j = {};
       for (var i = 0; i < r.length; i++) {
-        if (r[i].indexOf(".DS_Store") == -1) {
+        if (r[i].indexOf(".DS_Store") == -1 && r[i].indexOf(".gitignore") == -1) {
           var d = fs.readFileSync(r[i], "utf-8");
           var metaDataStart = d.indexOf("---START_METADATA---");
           var metaDataEnd = d.indexOf("---END_METADATA---");
@@ -93,7 +93,7 @@ app.get('/', function (req, res) {
           // populate template with data
           var htmlData = [];
           for (var j = 0; j < r.length; j++) {
-            if (r[j].indexOf(".DS_Store") == -1) {
+            if (r[j].indexOf(".DS_Store") == -1 && r[j].indexOf(".gitignore") == -1) {
               r[j] = r[j].split("/")[r[j].split("/").length-1];
               var slug = r[j].substr(11, r[j].length-14);
               var time = moment(r[j].substr(0, 10), [configOptions.DATE_FORMAT]).format("LL");
