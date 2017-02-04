@@ -1,5 +1,6 @@
 /*
   * 2016 Gautam Mittal
+  * TODO: Migrate to ES6
 */
 
 var colors = require('colors');
@@ -80,7 +81,7 @@ function refJSON() {
 app.get('/', function (req, res) {
   res.setHeader('Content-Type', 'text/html');
   walk(__dirname + "/_posts", function (e, r) {
-    // retrieve the template
+    // retrieve template
     fs.readFile(__dirname+"/static/index.html", 'utf-8', function (err, fileData) {
       if (err) {
         console.log("There was an error serving the article template file.".red);

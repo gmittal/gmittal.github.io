@@ -18,6 +18,6 @@ Here's some ```LOLCODE``` to say Hi.
 ```
 HAI
 CAN HAS STDIO?
-VISIBLE "HAI WORLD!"
+VISIBLE "Hello there."
 KTHXBYE
 ```

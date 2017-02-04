@@ -148,323 +148,328 @@ textarea {
 }
 
 
+ footer {
+   font-family: "Adobe Caslon";
+   font-size: 14pt;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   footer {
-     font-family: "Adobe Caslon";
-     font-size: 14pt;
-     padding-top: 20px;
-     padding-bottom: 20px;
-   }
+ a {
+   color:black;
+   text-decoration: none;
+ }
 
-   a {
-     color:black;
-     text-decoration: none;
-   }
+ a:visited {
+   color:black;
+ }
 
-   a:visited {
-     color:black;
-   }
+ a:hover {
+   text-decoration: underline;
+ }
 
-   a:hover {
-     text-decoration: underline;
-   }
+ .quote {
+   margin-top: 20px;
+   text-align:center;
+   font-family: "SFMoMA";
+   color: #999;
+ }
 
-   .quote {
-     margin-top: 20px;
-     text-align:center;
-     font-family: "SFMoMA";
-     color: #999;
-   }
+ .wallet {
+   text-align:center;
+   color: #999;
+   font-family: "Menlo";
+   margin-top: 40px;
+   font-size: 9pt;
+ }
 
-   .wallet {
-     text-align:center;
-     color: #999;
-     font-family: "Menlo";
-     margin-top: 40px;
-     font-size: 9pt;
-   }
-
-   .lavaLamp {
-       height: 3px;
-       width: 100%;
-       background-color:#333;
-       /*animation: lavalamp 5s infinite;*/
-       position:absolute;
-       top:0;
-   }
-
-   @keyframes lavalamp {
-     0% {
-       background-color: #c0392b;
-     }
-     100% {
-       background-color: #8e44ad;
-     }
-   }
-
-
-   #mainTitle {
-     font-family: "SFMoMA", "San Francisco";
-     font-weight: 300;
-     color:#333;
-     line-height: 110%;
-     text-align:center;
-     font-size: 35pt;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     -webkit-user-select: none;  /* Chrome all / Safari all */
-     -moz-user-select: none;     /* Firefox all */
-     -ms-user-select: none;      /* IE 10+ */
-     user-select: none;
-     /*margin-left: 15px;*/
-     /*margin-right: 15px;*/
-
-   }
-
-   #mainDescription {
-     font-family: 'Proxima Nova';
-     font-weight: 400;
-     color: #333;
-     text-align: center;
-     font-size: 12pt;
-     margin-top: 10px;
-     /*margin-left: 15px;*/
-     /*margin-right: 15px;*/
-   }
-
-   #mainTitle:hover {
-     cursor:pointer;
-   }
-
-   .newsIcons {
-     display: flex;
-     flex-direction: row;
-     flex-wrap:nowrap;
-     margin-bottom: 10px;
-     align-items: stretch;
-   }
-
-   .newsInfoIcon {
-     border: 0;
-     width: 100px;
-     height: auto;
-     flex-grow: 1;
-     flex-shrink: 1;
-     flex-basis: auto;
-     background-color: white;
-     filter: grayscale(100%);
-     -webkit-filter: grayscale(100%);
-     -webkit-transition: all 0.1s linear;
-     -moz-transition: all 0.1s linear;
-     -o-transition: all 0.1s linear;
-     -ms-transition: all 0.1s linear;
-   }
-
-   .newsInfoIcon:hover {
-     filter: grayscale(0%);
-     -webkit-filter: grayscale(0%);
-   }
-
-   /*.firstcharacter:-webkit-first-child:-webkit-first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }*/
-
-
-   .volumeInfoRow {
-     border-bottom: 1px solid black;
-     font-family: 'Block', sans-serif;
-     position:relative;
-   }
-
-
-   .info {
-     text-transform:uppercase;
-   }
-
-   .content {
-     margin-top: -20px;
-   }
-
-   #header {
-     color:#999;
-     padding-top: 40px;
-     padding-bottom: 10px;
-   }
-
-   #header .navLinks a {
-     font-family: "SFMoMA", sans-serif;
-     font-weight: 700;
-     margin-right: 25px;
-     font-size: 14pt;
-     text-transform: lowercase;
-   }
-
-   #header h1 {
-     font-family: "SFMoMA", "San Francisco";
-     font-weight: 700;
-     color: black;
-     font-size: 22pt;
-     text-transform: none;
-   }
-
-   #header a {
-     color: #3498db;
-     border-bottom: 1px dotted #3498db;
-     -webkit-transition: all 0.1s linear;
-     -moz-transition: all 0.1s linear;
-     -o-transition: all 0.1s linear;
-     -ms-transition: all 0.1s linear;
-   }
-
-   #header a:hover {
-     color:black;
-     border-bottom: 1px solid black;
-     text-decoration: none;
-   }
-
-   p.lead {
-       font-family: "Franklin Book", "SFMoMA", sans-serif;
-       font-size: 13pt;
-   }
-
-   .twitter-timeline {
+ .lavaLamp {
+     height: 3px;
      width: 100%;
+     background-color:#333;
+     /*animation: lavalamp 5s infinite;*/
+     position:absolute;
+     top:0;
+ }
+
+ @keyframes lavalamp {
+   0% {
+     background-color: #c0392b;
    }
-
-   .articleTitle {
-     font-size: 18pt;
-     font-family:  'SFMoMA', 'Proxima Nova';
+   100% {
+     background-color: #8e44ad;
    }
-
-   h2 {
-     font-family: "SFMoMA", "San Francisco";
-     font-weight: 600;
-     line-height: 120%;
-     border-bottom: 1px solid rgba(37, 36, 37, 0.1);
-   }
-
-   h3 {
-     font-family: "SFMoMA", "Proxima Nova";
-     border-bottom: 1px solid rgba(37, 36, 37, 0.1);
-     line-height: 120%;
-
-   }
-
-   .date {
-     font-family: "SFMoMA", "Franklin Book", 'Proxima Nova';
-     font-weight: 300;
-     color: rgba(37, 36, 37, 0.7);
-     font-size: 12pt;
-     margin-bottom: 10px;
-     display:block;
-   }
-
-   .whole .date {
-     margin-left: 10px;
-     margin-right: 10px;
-     font-size: 14pt;
-   }
-
-   .whole a {
-     font-weight: bold;
-     margin-left: 10px;
-     margin-right: 10px;
-   }
-
-   input:focus {
-     outline:none;
-     outline-style:none;
-   }
-
-   .story {
-       margin-bottom: 15px;
-   }
-
-   .story a {
-     color: #333;
-     display:block;
-     text-align:left;
-     font-size: 14pt;
-     font-family: "SFMoMA", "Proxima Nova", sans-serif;
-     font-weight: 700;
-   }
-
-   #goHome:hover {
-     cursor:pointer;
-   }
+ }
 
 
-   .description {
-     margin-right: 10px;
-     font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
-     font-weight: 400;
-     display:block;
-   }
+ #mainTitle {
+   font-family: "SFMoMA", "San Francisco";
+   font-weight: 300;
+   color:#333;
+   line-height: 110%;
+   text-align:center;
+   font-size: 35pt;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   -webkit-user-select: none;  /* Chrome all / Safari all */
+   -moz-user-select: none;     /* Firefox all */
+   -ms-user-select: none;      /* IE 10+ */
+   user-select: none;
+   /*margin-left: 15px;*/
+   /*margin-right: 15px;*/
 
-   .articleBody {
+ }
+
+ #mainDescription {
+   font-family: 'Proxima Nova';
+   font-weight: 400;
+   color: #333;
+   text-align: center;
+   font-size: 12pt;
+   margin-top: 10px;
+   /*margin-left: 15px;*/
+   /*margin-right: 15px;*/
+ }
+
+ #mainTitle:hover {
+   cursor:pointer;
+ }
+
+ .newsIcons {
+   display: flex;
+   flex-direction: row;
+   flex-wrap:nowrap;
+   margin-bottom: 10px;
+   align-items: stretch;
+ }
+
+ .newsInfoIcon {
+   border: 0;
+   width: 100px;
+   height: auto;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: auto;
+   background-color: white;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -webkit-transition: all 0.1s linear;
+   -moz-transition: all 0.1s linear;
+   -o-transition: all 0.1s linear;
+   -ms-transition: all 0.1s linear;
+ }
+
+ .newsInfoIcon:hover {
+   filter: grayscale(0%);
+   -webkit-filter: grayscale(0%);
+ }
+
+ /*.firstcharacter:-webkit-first-child:-webkit-first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }*/
+
+
+ .volumeInfoRow {
+   border-bottom: 1px solid black;
+   font-family: 'Block', sans-serif;
+   position:relative;
+ }
+
+
+ .info {
+   text-transform:uppercase;
+ }
+
+ .content {
+   margin-top: -20px;
+ }
+
+ hr#starter {
+   display: none;
+   padding: 0;
+   margin: 0;
+   height: 4px;
+   border: 0;
+   background-color: #3498db;
+ }
+
+ #header {
+   color:#999;
+   padding-top: 40px;
+   padding-bottom: 10px;
+ }
+
+ #header .navLinks a {
+   font-family: "SFMoMA", sans-serif;
+   font-weight: 700;
+   margin-right: 25px;
+   font-size: 14pt;
+   text-transform: lowercase;
+ }
+
+ #header h1 {
+   font-family: "SFMoMA", "San Francisco";
+   font-weight: 700;
+   color: black;
+   font-size: 22pt;
+   text-transform: none;
+ }
+
+ #header a {
+   color: #3498db;
+   border-bottom: 1px dotted #3498db;
+   -webkit-transition: all 0.1s linear;
+   -moz-transition: all 0.1s linear;
+   -o-transition: all 0.1s linear;
+   -ms-transition: all 0.1s linear;
+ }
+
+ #header a:hover {
+   color:black;
+   border-bottom: 1px solid black;
+   text-decoration: none;
+ }
+
+ p.lead {
+     font-family: "Franklin Book", "SFMoMA", sans-serif;
      font-size: 13pt;
-     font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Circular", sans-serif;
-     line-height: 1.8;
-     color: #181f21;
-   }
+ }
 
-   .articleBody a {
-     font-weight:normal;
-     margin:0;
-     color: #3498db;
-   }
+ .twitter-timeline {
+   width: 100%;
+ }
 
-   .articleBody h2, h3, h4 {
-     line-height: 110%;
-     margin-bottom:-10px;
-     padding:0;
-   }
+ .articleTitle {
+   font-size: 18pt;
+   font-family:  'SFMoMA', 'Proxima Nova';
+ }
 
-   .mainIntro {
-     text-align: center;
-   }
+ h2 {
+   font-family: "SFMoMA", "San Francisco";
+   font-weight: 600;
+   line-height: 120%;
+   border-bottom: 1px solid rgba(37, 36, 37, 0.1);
+ }
 
-   .mainIntro .date {
-     font-size: 13pt;
-     font-family: "Proxima Nova";
-     font-weight: 100;
-     border-top: 1px solid rgba(33, 33, 33, 0.1);
-     padding-top: 7px;
-   }
+ h3 {
+   font-family: "SFMoMA", "Proxima Nova";
+   border-bottom: 1px solid rgba(37, 36, 37, 0.1);
+   line-height: 120%;
 
-   .mainIntro a {
-     margin:0;
-     font-weight: normal;
-   }
+ }
 
-   #headline {
-     color: #333;
-     font-size: 23pt;
-     font-family: 'SFMoMA', 'Proxima Nova';
-     font-weight:700;
-     line-height: 110%;
-     margin-top: 10px;
-   }
+ .date {
+   font-family: "Proxima Nova", "Franklin Book", "SFMoMA";
+   font-weight: 400;
+   color: rgba(37, 36, 37, 0.7);
+   font-size: 12pt;
+   margin-bottom: 10px;
+   display:block;
+ }
 
-   .bannerAd {
-     display:block;
-     margin-top: 10px;
-     border: 1px dashed black;
-   }
+ .whole .date {
+   margin-left: 10px;
+   margin-right: 10px;
+   font-size: 14pt;
+ }
 
-   .blogArea {
-     margin-top: 10px!important;
-   }
+ .whole a {
+   font-weight: bold;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
 
-   .contentArea {
-     margin-top: -30px;
-   }
+ input:focus {
+   outline:none;
+   outline-style:none;
+ }
 
-   img {
-       display: block;
-       margin: auto;
-   }
+ .story {
+     margin-bottom: 15px;
+ }
+
+ .story a {
+   color: #333;
+   display:block;
+   text-align:left;
+   font-size: 14pt;
+   font-family: "SFMoMA", "Proxima Nova", sans-serif;
+   font-weight: 700;
+ }
+
+ #goHome:hover {
+   cursor:pointer;
+ }
+
+
+ .description {
+   margin-right: 10px;
+   font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
+   font-weight: 400;
+   display:block;
+ }
+
+ .articleBody {
+   font-size: 13pt;
+   font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Circular", sans-serif;
+   line-height: 1.8;
+   color: #181f21;
+ }
+
+ .articleBody a {
+   font-weight:normal;
+   margin:0;
+   color: #3498db;
+ }
+
+ .articleBody h2, h3, h4 {
+   line-height: 110%;
+   margin-bottom:-10px;
+   padding:0;
+ }
+
+ .mainIntro {
+   text-align: center;
+ }
+
+ .mainIntro .date {
+   font-size: 13pt;
+   font-family: "Proxima Nova";
+   font-weight: 100;
+   border-top: 1px solid rgba(33, 33, 33, 0.1);
+   padding-top: 7px;
+ }
+
+ .mainIntro a {
+   margin:0;
+   font-weight: normal;
+ }
+
+ #headline {
+   color: #333;
+   font-size: 23pt;
+   font-family: 'SFMoMA', 'Proxima Nova';
+   font-weight:700;
+   line-height: 110%;
+   margin-top: 10px;
+ }
+
+ .bannerAd {
+   display:block;
+   margin-top: 10px;
+   border: 1px dashed black;
+ }
+
+ .blogArea {
+   margin-top: 10px!important;
+ }
+
+ .contentArea {
+   margin-top: -30px;
+ }
+
+ img {
+     display: block;
+     margin: auto;
+ }
 
 
 
@@ -653,6 +658,10 @@ lead {
 
   pre {
     font-size: 11pt;
+  }
+
+  .wallet {
+    font-size: 7pt;
   }
 }
 
