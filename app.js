@@ -1,5 +1,5 @@
 /*
-  * 2016 Gautam Mittal
+  * 2017 Gautam Mittal
   * TODO: Migrate to ES6
 */
 
