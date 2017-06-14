@@ -12,15 +12,15 @@ __Requirements__:
 
 First, download or clone the code.
 ```shell
-$ git clone https://github.com/gmittal/gautam.cc; cd gautam.cc
+git clone https://github.com/gmittal/gautam.cc; cd gautam.cc
 ```
 Install the dependencies through ```npm```.
 ```shell
-$ [sudo] npm install
+[sudo] npm install
 ```
 Fire it up.
 ```
-$ node app.js
+node app.js
 ```
 
 
