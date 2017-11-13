@@ -4,6 +4,5 @@
   "DATE_FORMAT": "YYYY-MM-DD",
   "LIST_TEMPLATE": "<div class=\"story\"><a href=\"{POST-SLUG}\">{POST-TITLE}</a><span class=\"date\">{POST-TIME}. {POST-DESCRIPTION}</span></div>",
   "DISQUS": "gmittal.disqus.com",
-  "GOOGLE_ANALYTICS_SITE_ID": "UA-35192434-1",
   "PORT": 8080
 }

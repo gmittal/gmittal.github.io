@@ -1,5 +1,6 @@
 /*
   * 2017 Gautam Mittal
+  * TODO: Migrate to ES6
 */
 
 var colors = require('colors');
@@ -22,7 +23,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 // Set up the config options
 var configOptions = JSON.parse(fs.readFileSync(__dirname + "/config.json", "utf-8"));
 
-// Markdown compilation with sytax highlighting
 marked.setOptions({
   gfm: true, // by default allow Github-flavored markdown
   tables: true,
@@ -34,32 +34,8 @@ marked.setOptions({
 // TODO: use a better method of loading quotes
 var inspirationQuotes = [];
 
-var walk = function(dir, done) {
-    var results = [];
-    fs.readdir(dir, function(err, list) {
-      if (err) return done(err);
-      var i = 0;
-        (function next() {
-      var file = list[i++];
-      if (!file) return done(null, results);
-      file = dir + '/' + file;
-      fs.stat(file, function(err, stat) {
-          if (stat && stat.isDirectory()) {
-              walk(file, function(err, res) {
-                results = results.concat(res);
-                next();
-            });
-          } else {
-              results.push(file);
-              next();
-          }
-          });
-        })();
-  });
-};
-
 function refJSON() {
-    walk(__dirname+"/_posts", function (e, r) {
+    fs.readdirSync(__dirname+"/_posts", function (e, r) {
       var j = {};
       for (var i = 0; i < r.length; i++) {
         if (r[i].indexOf(".DS_Store") == -1 && r[i].indexOf(".gitignore") == -1) {
@@ -123,7 +99,6 @@ app.get('/', function (req, res) {
             fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
             fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
             fileData = fileData.replace(/{GOOGLE-ANALYTICS-SITE-ID}/g, configOptions.GOOGLE_ANALYTICS_SITE_ID);
-            fileData = fileData.replace(/{BLOG-NEWS-LIST}/g, newsHtmlData.join(""));
 
             res.send(fileData);
           });
@@ -132,13 +107,6 @@ app.get('/', function (req, res) {
     });
   });
 });
-
-
-app.use("/hacks", express.static(__dirname+"/static/hacks"));
-app.use("/deskrock", express.static(__dirname+"/static/apps/deskrock"));
-app.use("/mathninja", express.static(__dirname+"/static/apps/mathninja"));
-app.use("/momentum", express.static(__dirname+"/static/apps/momentum"));
-app.use("/smartcodes", express.static(__dirname+"/static/apps/smartcodes"));
 
 
 // Read articles from other publishers "hosted" on the news site
