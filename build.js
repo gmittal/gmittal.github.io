@@ -17,7 +17,12 @@ let ls = (dir) => {
     return fs.readdirSync(`${__dirname}/${dir}`).filter((f) => {return f.substr(0, 1) != `.`});
 }
 
-let slugify = (postFileName) => { return postFileName.substr(11, postFileName.length-14)) }
+let extract = (postFileName) => {
+    return {
+        'slug': postFileName.substr(11, postFileName.length-14),
+        'timestamp': moment(postFileName.substr(0, 10), [`YYYY-MM-DD`]).format(`LL`)
+    }
+}
 
 let getPostMetadata = (fileContent) => {
     const start = fileContent.indexOf(`---START_METADATA---`);
@@ -26,34 +31,25 @@ let getPostMetadata = (fileContent) => {
     return JSON.parse(fileContent.substr(jsonStart, end-jsonStart));
 }
 
-let compile = () => {
-    ls(`_posts`).forEach((post) => {
-        const metadata = getPostMetadata(fs.readFileSync(`_posts/${post}`, `utf-8`));
+let compile = (contentDir) => {
+    let postListMarkup = [];
+
+    ls(contentDir).forEach((post) => {
+        const metadata = getPostMetadata(fs.readFileSync(`${contentDir}/${post}`, `utf-8`));
+        const listTemplate = `<div class="story">
+            <a href="/${extract(post).slug}">${metadata.title}</a>
+            <span class="date">${extract(post).timestamp}. ${metadata.summary}</span></div>`;
+        postListMarkup.unshift(listTemplate);
     });
+
+    const indexTemplate = fs.readFileSync(`${__dirname}/templates/index.html`, `utf-8`)
+                            .replace(/{BLOG-POST-LIST}/g, postListMarkup.join(``));
+    fs.writeFileSync(`${__dirname}/index.html`, indexTemplate);
 }
 
-compile();
+compile(`content`);
 
-
-
-function refJSON() {
-    fs.readdirSync(__dirname+"/_posts", function (e, r) {
-        var j = {};
-        for (var i = 0; i < r.length; i++) {
-            if (r[i].indexOf(".DS_Store") == -1 && r[i].indexOf(".gitignore") == -1) {
-                var d = fs.readFileSync(r[i], "utf-8");
-                var metaDataStart = d.indexOf("---START_METADATA---");
-                var metaDataEnd = d.indexOf("---END_METADATA---");
-                var jstart = d.substr(metaDataStart, metaDataEnd).indexOf("{");
-                var metadataStr = d.substr(jstart, metaDataEnd-jstart);
-                var metadata = JSON.parse(metadataStr); // object of metadata parsed out of markdown file
-                j[r[i].split("/")[r[i].split("/").length-1].substr(11, r[i].length-14)] = {"title": metadata.title, "summary": metadata.summary};
-            }
-        }
-
-        fs.writeFileSync(__dirname + "/ref.json", JSON.stringify(j, null, 2));
-    });
-}
+// ----------------------------- the bad stuff
 
 app.get('/', function (req, res) {
     res.setHeader('Content-Type', 'text/html');
@@ -82,24 +78,10 @@ app.get('/', function (req, res) {
                     }
 
                     fs.readFile(__dirname+"/data/info.json", "utf-8", function (infoErr, infoFile) {
-                        var info = JSON.parse(infoFile);
-
-                        var newsHtmlData = [];
-                        for (var j = 0; j < info.news_articles.length; j++) {
-                            var infoIcon = '<a href="'+ info.news_articles[j].link +'"><img alt="'+ info.news_articles[j].source +'" src="'+ info.news_articles[j].icon +'" class="newsInfoIcon" /></a>';
-                            newsHtmlData.unshift(infoIcon);
-                        }
-
-                        var greetings = ["Hi", "Hello", "Hey"];
-                        var greeting = greetings[Math.floor(Math.random()*greetings.length)];
                         var quoteData = inspirationQuotes[Math.floor(Math.random()*inspirationQuotes.length)];
                         var quote = '"'+quoteData.body+'" &mdash; '+quoteData.source;
 
                         fileData = fileData.replace(/{BLOG-POST-LIST}/g, htmlData.join(""));
-                        fileData = fileData.replace(/{BLOG-NAME}/g, configOptions.NAME);
-                        fileData = fileData.replace(/{BLOG-DESCRIPTION}/g, configOptions.DESCRIPTION);
-                        fileData = fileData.replace(/{BLOG-GREETING}/g, greeting);
-                        fileData = fileData.replace(/{QUOTE-OF-THE-DAY}/g, quote);
 
                         res.send(fileData);
                     });
