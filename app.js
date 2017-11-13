@@ -1,6 +1,5 @@
 /*
   * 2017 Gautam Mittal
-  * TODO: Migrate to ES6
 */
 
 var colors = require('colors');
@@ -145,7 +144,7 @@ app.use("/smartcodes", express.static(__dirname+"/static/apps/smartcodes"));
 // Read articles from other publishers "hosted" on the news site
 app.get('/:uid', function (req, res) {
   res.setHeader('Content-Type', 'text/html');
-  fs.readFile(__dirname+"/static/article.html", 'utf-8', function (err, fileData) {
+  fs.readFile(__dirname+"/static/post.html", 'utf-8', function (err, fileData) {
 		if (err) {
       console.log("There was an error serving the article template file.".red);
 			res.send("An error occurred.");
