@@ -1,28 +1,20 @@
-# [Home of Gautam Mittal](http://www.gautam.cc)
+# Home of Gautam Mittal
 
 This is the source code for my personal website and blog. If you have something to say, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
-### Up and Running
-This site isn't really intended to serve as a template for your own blog. If you're looking for a blog template, check out my other project [Nano](https://github.com/gmittal/nano). This website was built on top of Nano, but I've customized and refactored some aspects of it to fulfill my own needs.
-
-However, if you're looking just to run the code, here are some steps that you'll need to take.
-
-__Requirements__:
-- [Node.js](https://github.com/nodejs/node)
-
-First, download or clone the code.
-```shell
-git clone https://github.com/gmittal/gautam.cc; cd gautam.cc
-```
+### Building
 Install the dependencies through ```npm```.
 ```shell
-[sudo] npm install
+npm install
 ```
-Fire it up.
+Build all of the static pages.
 ```
-node app.js
+npm run build
 ```
-
+Serve it up with your favorite static content server.
+```
+python -m SimpleHTTPServer
+```
 
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
