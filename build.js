@@ -40,7 +40,7 @@ let compile = (contentDir) => {
 
         // Build list of posts displayed on the homepage
         const listTemplate = `<div class="story">
-            <a href="/${extract(contentDir, post).slug}">${metadata.title}</a>
+            <a href="/${extract(contentDir, post).slug}.html">${metadata.title}</a>
             <span class="date">${extract(contentDir, post).timestamp}. ${metadata.summary}</span></div>`;
         postListMarkup.unshift(listTemplate);
 
@@ -54,9 +54,7 @@ let compile = (contentDir) => {
                                    .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
                                    .replace(/{POST-CONTENT}/g, content);
             // Write to disk
-            if (!fs.existsSync(`${__dirname}/${extract(contentDir, post).slug}`))
-                fs.mkdirSync(`${__dirname}/${extract(contentDir, post).slug}`);
-            fs.writeFileSync(`${__dirname}/${extract(contentDir, post).slug}/index.html`, postTemplate);
+            fs.writeFileSync(`${__dirname}/${extract(contentDir, post).slug}.html`, postTemplate);
         });
     });
 
