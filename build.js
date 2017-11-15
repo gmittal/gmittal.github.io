@@ -54,16 +54,16 @@ let compile = (contentDir) => {
                                    .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
                                    .replace(/{POST-CONTENT}/g, content);
             // Write to disk
-            if (!fs.existsSync(`${__dirname}/site/${extract(contentDir, post).slug}`))
-                fs.mkdirSync(`${__dirname}/site/${extract(contentDir, post).slug}`);
-            fs.writeFileSync(`${__dirname}/site/${extract(contentDir, post).slug}/index.html`, postTemplate);
+            if (!fs.existsSync(`${__dirname}/${extract(contentDir, post).slug}`))
+                fs.mkdirSync(`${__dirname}/${extract(contentDir, post).slug}`);
+            fs.writeFileSync(`${__dirname}/${extract(contentDir, post).slug}/index.html`, postTemplate);
         });
     });
 
     // Build home page
     const indexTemplate = fs.readFileSync(`${__dirname}/templates/index.html`, `utf-8`)
                             .replace(/{BLOG-POST-LIST}/g, postListMarkup.join(``));
-    fs.writeFileSync(`${__dirname}/site/index.html`, indexTemplate);
+    fs.writeFileSync(`${__dirname}/index.html`, indexTemplate);
 }
 
 
