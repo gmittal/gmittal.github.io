@@ -12,60 +12,45 @@ body {
 }
 
 @font-face {
-  src:url("../fonts/proximanova-bold-webfont.ttf");
+  src:url("../fonts/Proxima Nova/proximanova-bold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 700;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-semibold-webfont.ttf");
+  src:url("../fonts/Proxima Nova/proximanova-semibold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 500;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-light-webfont.ttf");
+  src:url("../fonts/Proxima Nova/proximanova-light-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 300;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-regular-webfont.ttf");
+  src:url("../fonts/Proxima Nova/proximanova-regular-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 400;
 }
 
 @font-face {
-  src:url("../fonts/Circular-Book.ttf");
-  font-family: 'Circular'; font-weight: 400;
-}
-
-@font-face {
-  src:url("../fonts/Circular-Bold.ttf");
-  font-family: 'Circular'; font-weight: 700;
-}
-
-@font-face {
-  src: url('../fonts/Block.ttf');
-  font-family: 'Block';
-}
-
-@font-face {
-  src: url('../fonts/FRABK.TTF');
+  src: url('../fonts/Franklin Book/FRABK.TTF');
   font-family: 'Franklin Book';
   font-style: normal;
 }
 
 @font-face {
-  src: url('../fonts/FRABKIT.TTF');
+  src: url('../fonts/Franklin Book/FRABKIT.TTF');
   font-family: 'Franklin Book';
   font-style: italic;
 }
 
 @font-face {
-  src: url('../fonts/SanFranciscoText-Thin.otf');
+  src: url('../fonts/San Francisco/SanFranciscoText-Thin.otf');
   font-family: 'San Francisco';
   font-weight:300;
 }
 
 @font-face {
-  src: url('../fonts/SanFranciscoText-Medium.otf');
+  src: url('../fonts/San Francisco/SanFranciscoText-Medium.otf');
   font-family: 'San Francisco';
   font-weight:bold;
 }
@@ -265,14 +250,6 @@ textarea {
  }
 
  /*.firstcharacter:-webkit-first-child:-webkit-first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }*/
-
-
- .volumeInfoRow {
-   border-bottom: 1px solid black;
-   font-family: 'Block', sans-serif;
-   position:relative;
- }
-
 
  .info {
    text-transform:uppercase;
