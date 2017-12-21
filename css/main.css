@@ -186,6 +186,9 @@ textarea {
    }
  }
 
+ *:focus {
+     outline: none;
+ }
 
  #mainTitle {
    font-family: "SFMoMA", "San Francisco";
