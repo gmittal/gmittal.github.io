@@ -31,7 +31,9 @@ let extract = (contentDir, postFileName) => {
     }
 }
 
-let compile = (contentDir) => {
+let compile = (contentDir, outputDir) => {
+    if (!fs.existsSync(contentDir)) throw `No content directory "${contentDir}" found.`;
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
     let postListMarkup = [];
 
     // Process each post
@@ -40,7 +42,7 @@ let compile = (contentDir) => {
 
         // Build list of posts displayed on the homepage
         const listTemplate = `<div class="story">
-            <a href="/${extract(contentDir, post).slug}.html">${metadata.title}</a>
+            <a href="/${outputDir}/${extract(contentDir, post).slug}">${metadata.title}</a>
             <span class="date">${extract(contentDir, post).timestamp}. ${metadata.summary}</span></div>`;
         postListMarkup.unshift(listTemplate);
 
@@ -54,7 +56,9 @@ let compile = (contentDir) => {
                                    .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
                                    .replace(/{POST-CONTENT}/g, content);
             // Write to disk
-            fs.writeFileSync(`${__dirname}/${extract(contentDir, post).slug}.html`, postTemplate);
+            const targetDir = `${__dirname}/${outputDir}/${extract(contentDir, post).slug}`;
+            if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
+            fs.writeFileSync(`${targetDir}/index.html`, postTemplate);
         });
     });
 
@@ -66,4 +70,4 @@ let compile = (contentDir) => {
 
 
 // Yesterday is history, tomorrow is a mystery, but today is a gift.
-compile(`content`);
+compile(`content`, `thoughts`);
