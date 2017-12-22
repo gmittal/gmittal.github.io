@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+   <channel>
+      <title><![CDATA[Gautam Mittal]]></title>
+      <description><![CDATA[Gautam Mittal]]></description>
+      <link>http://gmittal.github.io</link>
+      <generator>RSS for Node</generator>
+      <lastBuildDate>Fri, 22 Dec 2017 00:00:31 GMT</lastBuildDate>
+      <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+      <language><![CDATA[en]]></language>
+      <item>
+         <title><![CDATA[First Blog Post]]></title>
+         <description><![CDATA[Obligatory Hello, world! 
+
+ <p><img src="http://i.giphy.com/3ornk57KwDXf81rjWM.gif" alt="Greetings..."></p>
+<p><strong>Hello, World</strong>! I’m Gautam Mittal, a student at <a href="http://gunn.pausd.org">Henry M. Gunn High School</a> in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.</p>
+<p>My main intent in starting this blog is to share my thoughts, ideas, and stories. After trying out other blogging platforms (with much frustration and inconsistency), such as <a href="http://medium.com">Medium</a> and <a href="http://wordpress.org">Wordpress</a>, I finally decided it was time to host my own blog. My primary goal is to create content that&#39;s interesting and to share my thoughts on the world around me. The life of a high school student is more eventful than you may think! I also want to write more and continue to develop and improve my style of writing.</p>
+<p>Here&#39;s some <code>LOLCODE</code> to say Hi.</p>
+<pre><code><span class="hljs-attribute">HAI</span>
+CAN HAS STDIO?
+VISIBLE <span class="hljs-string">"Hello there."</span>
+KTHXBYE
+</code></pre>]]></description>
+         <link>http://gmittal.github.io/thoughts/hello-world</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/hello-world</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[My Internship Experience With MakeGamesWithUs (as a 13-year-old)]]></title>
+         <description><![CDATA[My experience hanging out at a Silicon Valley startup. 
+
+ <p><img src="https://cdn-images-1.medium.com/max/800/1*vf_XZYUMxJx6Q-Iqi5pPQQ.jpeg" alt="hacker_house"></p>
+<p><em>Note: This article is from <strong>October 18, 2013</strong>. In addition, MakeGamesWithUs has now formally changed their name to <strong>Make School</strong>.</em></p>
+<p>This summer, I spent a large portion of my time interning for a small startup in Palo Alto known as <a href="https://www.makeschool.com/?source=mgwu">MakeGamesWithUs</a>.</p>
+<p>  Firstly, let me tell you a bit about what a normal day is like at the MakeGamesWithUs Headquarters. The internship was held inside a house close to the border of East Palo Alto and Palo Alto. Most interns got to the “office” around 10am, and left around 5pm. The schedule for the internship went a bit like this: interns work on game until about 1pm, lunch served via food truck at 1pm, occasionally some entrepreneur of a well known startup would give an inspiring talk (Reddit Founder <a href="http://alexisohanian.com/">Alexis Ohanian</a> even spoke!), and from then on until 5pm interns work on their games. The workspace is very relaxed (as you can see in the picture), and that is one of the key things I really enjoyed. There is always lively talk about some new code snippet, iOS game, gadget, or product taking place.</p>
+<p>  Now that you know what an average day was like at the internship, let me tell you a bit about my personal experiences. Building a game is not easy. I can tell you that. But it is a great learning experience and is VERY fun. I started the internship on June 17th (the first day), and found that there were many interns like myself who had never built a game with Objective C (primary language used for building native iOS and Mac Apps) before. I had already had some prior Objective C knowledge, but had never finished a game before. The first day was quite simple. You chose a game idea, pitched the idea to the other interns, and started hacking away at the game. I chose a relatively simple matching game idea, consisting of colored balls coming from different areas of the screen, approaching a circle split into three colors. The goal of the game was to match as many of the correctly colored balls into the corresponding sector of the circle. The game idea seemed simple enough, and by the end of the first day, I had a circle on the screen split up into three colored sectors. The controls weren’t very good at the time, the user could only swipe left and right to rotate the circle, and the collision detection wasn’t perfect. During the early stages of the game I would ask one of the MakeGamesWithUs teaching assistants for debugging help, but I got myself on track soon enough. As the days went on, the game progressively got more advanced. By the end of the first week, I had most of the major algorithms thought out, and I went on from there. By the end of the second week, I had a game where the user got points based on how many colored spaceships they landed into the correct sector (at the time I was looking for a space themed game). As the weeks continued, I also made a few friends, who I would seek advice from for ideas. Gradually, the game went from a space themed game to a game about elements, and as the summer slowly went by, and as the game continued its way towards completion, the game’s theme was destined to be related juice. One of the best things about developing with MakeGamesWithUs is the fact that they provide art and sounds for your game, for a fractional amount of the revenue. They help you find an artist, and help you theme the game. This is where the theme of “juice” came from. About midway through the summer, MakeGamesWithUs held their first major event for interns, SF Day. SF Day was a day when all 80 interns from both MakeGamesWithUs locations (MakeGamesWithUs has offices in Palo Alto and in San Francisco) met up in San Francisco to hear Alexis Ohanian’s (founder of Reddit) story as an entrepreneur. As a result of SF Day, I got a chance to meet more interns, discuss ideas, and work on my game in a totally new environment. The weeks rolled on into August, and summer was coming to an end. As a grand finale to the internship, MakeGamesWithUs hosted an internship demo day. At demo day all of the interns got a chance to show off their polished games to venture capitalists, startup founders, and the general public. I had brought my family that day and had managed to bring my younger brother along to help bring people to my booth. I got a chance to meet some pretty interesting people and see some pretty awesome games at demo day, and it was an experience that was really fun. The awards ceremony was the most interesting part, when I was struck by the fact that my game actually won an award for game excellence.</p>
+<p>  As the weeks rolled on after the internship and into the school year, there was one goal I had the urge to achieve. That goal was getting my game published on the App Store through MakeGamesWithUs. MakeGamesWithUs is not only a game producer, but a game publisher, so this was a great opportunity to try and get something out on the App Store. I struggled to finish with schoolwork, but finally managed to finish my game, now known as “Blend”, last weekend.</p>
+<p>  I am also very proud to announce, that Blend was submitted for review to the App Store today. I would like to say thanks to MakeGamesWithUs, and its founders, Ashu Desai and Jeremy Rossmann, who helped me get through every step.</p>
+<p>  By the way, if you have experience with Objective C or some other object oriented programming language and are really interested in mobile games, I would highly recommend the MakeGamesWithUs internship! I would start by checking out some of MakeGamesWithUs‘s tutorials on game development!</p>
+<p>  P.S. (shamless plug alert)</p>
+<p>  <strong>You should check out Make School’s new college replacement and summer academy programs (<a href="https://www.makeschool.com">https://www.makeschool.com</a>).</strong></p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/mgwu-internship</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/mgwu-internship</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[The MHacks V Experience]]></title>
+         <description><![CDATA[Lessons learned from my first collegiate hackathon. 
+
+ <p><img src="https://cdn-images-1.medium.com/max/1200/1*LfNgYhQ9FRVtj63zQfYN2A.jpeg" alt="mhacks_expo"></p>
+<p>This past January, I and 1000 other hackers from all over the United States converged at the University of Michigan for the fifth occurrence of their biannual hackathon. The experience was truly incredible. I met so many awesome people with a one common goal in mind: To hack the weekend away, building what could be the next Snapchat, Uber, or Tinder for Cats.</p>
+<blockquote>
+<p>I am truly blown away by this. This is less of a hackathon and more of a rock concert. I&#39;ve never seen anything like this.<quotee>Jahan Khanna, MHacks V Keynote Speaker</quotee></p>
+</blockquote>
+<h3 id="high-school-hacker-ideation">High School Hacker Ideation</h3>
+<p><lead>Crazy ideas that are only dreamt up at hackathons<lead></p>
+<p>I came to the hackathon with not much more than a laptop, a backpack with some extra clothes in it, and an open mind. I was excited for the next 36 hours, and knew that it would be tiring, yet a lot of fun. My team, which consisted of one other high school hacker, had some ideas in mind, but were not entirely sure how to execute them. We decided to settle on a simple idea where a user could listen to audio files without the need for a cellular or Wifi connection. Basically, we were trying to find a way to send the audio file’s data via SMS. Our plan was rock solid. I would work on the mobile app frontend, which would parse the SMS data and convert it back into an audio file, while my teammate would work on the server-side backend, deconstructing the audio file and turning its data into a format that could be sent via SMS.</p>
+<p>Early on, we realized some flaws with our idea. The University of Michigan EECS building had no AT&amp;T coverage inside, meaning each time we wanted to test the mobile app frontend, I would have to run outside into the blistering sub-zero weather with my phone and test it there. But that was more of an inconvenience more than anything else, and it was definitely not going to stop us from building our hack.</p>
+<h3 id="tl-dr">TL;DR</h3>
+<p><lead>We came to realize why no one had ever tried sending audio over SMS before.<lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/400/1*S04JjUVFaSeBMxC-j4eVgg.jpeg" alt="words_of_wisdom"></p>
+<p>Audio files are just way too big to send in 1600 character chunks. We estimated that with audio compression, the largest song anyone would probably request would be around 5MB, or around 6 minutes in length. Doesn&#39;t sound like much to send, right? Wrong. Very, very wrong. A 5MB file is around 6.8 million characters when encoded in a single base64 string. Twilio, the SMS API we decided use, could send up to 1600 characters per SMS. We realized that Twilio would have to send 4,250 individual SMS messages just so the user could listen to a song equal in length to Bohemian Rhapsody. This was clearly not going to work. Given that Twilio could only send one SMS per second using their regular phone numbers, and three SMSs per second using their toll-free, slightly more expensive phone numbers, this process would also take an extremely long time. We estimated it would take around 25 minutes for a song to be sent and processed before the user could actually listen to their song of choice. Of course, if the song requested had been shorter in length, the user would be able to listen to it sooner, but given that nobody really wants to wait more than thirty seconds for their song to load made this idea even less feasible.</p>
+<h3 id="move-fast-and-break-things">Move Fast and Break Things</h3>
+<p><lead>Except finish what you started too.<lead></p>
+<p>Despite the challenges, we still decided to try and hack our way around these issues, which (you guessed it) did not work. We ended up spending a lot of the hackathon trying to work around these issues and build something functional yet the issues only continued to worsen. However, these kinds of problems happen at hackathons all the time, and is part of the experience. Having your project idea pivot less than hours 12 hours before the hackathon ends is not always the best thing to do, but in our case, we had no other options. We decided to revisit the overall problem we were trying to solve, which was to allow those without a strong Wifi or cellular data connection listen to music. Then, probably out of sleep deprivation, it hit us. We realized that probably the simplest and fastest method of solving this problem was to have our app dial the user and play the song over the call. Seemed simple enough, plus we could reuse more than 80% of the backend we had written for our original idea. The unfortunate part was that our mobile app frontend was now rendered useless, as the user could now just send and SMS to our server with a song name and the server would call the user back. But that was apart from the point. We decided to start hacking away at our new idea almost instantly, and had a functional prototype within 20 minutes.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*vVPzvXTC6AV0FgeP1tyZFw.jpeg" alt="booyah"></p>
+<p>Over the course of the following few hours, we spent time implementing additional features such as a way for the user to get the weather forecast, Google Maps driving directions, and much more, all through simple SMS commands. We even threw in some natural language processing magic, making the the final product much more intuitive to use.</p>
+<p>What was even better was that we still had a couple of hours left before the project submission deadline, meaning we had time to check our product for any bugs that could jeopardize the demo. We also got a chance to check out some of the other engineering buildings and spend time networking with other hackers.</p>
+<p>When it was finally time to submit our hack, we realized we needed a cool, spiffy, name. We decided to translate the word “everyone” to Latin.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*rtQo-yqHtKwM1qhzkmQxXw.png" alt="name_idea"></p>
+<p><lead><em>&quot;Everyone&quot; &#8594; &quot;Omnes&quot; &#8594; &quot;Omnus&quot;</em><lead></p>
+<p>We decided to translate “everyone”, mainly because we hoped that our app would empower anyone who had a phone, regardless of whether their phone had a data connection or not, to listen to music. We decided to translate to Latin mainly because we were extremely sleep deprived, and at the time it seemed cool. We also modified the word “omnes” a bit, and changed it to “omnus”, as we thought it sounded and looked cooler.</p>
+<h3 id="the-expo">The Expo</h3>
+<p><lead>The craziest, and probably most engaging part of the hackathon.<lead></p>
+<p>After an exhausting, yet inspiring 36 hours of non-stop hacking, it was finally time to show off our hack to the judges. It was a great experience, as we got to tell people our story about what had happened the past 36 hours: Our failures, our successes, and our learning experiences. Personally, I feel that the story of why a hack is made and how it was made is just as important when demoing the hack itself.</p>
+<p>I also learned something very important while presenting at the expo:</p>
+<blockquote>
+<p>Anything that can go wrong, will go wrong. <quotee>Murphy&#39;s Law</quotee></p>
+</blockquote>
+<p>As you have probably already noticed, this has been apparent throughout the hackathon. We had some major pitfalls throughout the event, and even when we thought we had battle-tested our hack, <strong>something still went wrong</strong>. In our case, our weather API started to fail. Luckily, it failed silently, and did not spit out any large error messages that the person looking at our hack could see. Also, we realized that the API we were using to handle the natural language processing side of things occasionally failed, however, we were able to fix these problems without the user knowing by restarting the server while they were asking questions.</p>
+<p>I also learned that freaking out about things breaking is not going to help your case. Freaking out just makes whoever is looking at your hack more aware that there is something wrong with your code. This was especially apparent with the team of hackers demoing next to our booth, as their virtual reality headset suddenly lost power and would not turn back on.</p>
+<p>All in all, we were proud of our hack, but we were certain that it wasn’t the next Spotify, WhatsApp, or Flappy Bird. Despite the fact that it wasn’t going to be the next multibillion dollar invention, it was definitely a great learning experience. We even open sourced the project so other people could check out what we had built: <a href="https://github.com/tejasmanohar/omnus">https://github.com/tejasmanohar/omnus</a></p>
+<p><strong>Overall, the MHacks experience was amazing.</strong> It gave me a bigger picture of what the collegiate hackathon scene looks like, and really proved to me that anyone, regardless of their coding experience, can build something awesome, or at the very least, leave with a great story to tell.</p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/the-mhacksv-experience</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/the-mhacksv-experience</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[Hacking Our Way To The Top]]></title>
+         <description><![CDATA[A brief reflection on my experience at PennApps XII. 
+
+ <p><img src="https://cdn-images-1.medium.com/max/800/1*8aHGZAieTmEe-TbSbib1lQ.jpeg" alt="expo"></p>
+<p>This post has been long overdue for a few months now, but while I’m on winter break in a tropical country without any Wi-Fi, I thought I’d spend some time reminiscing on my team’s experiences at the University of Pennsylvania’s premier hackathon. Also, in true hackathon spirit, I’m writing this post while sleep deprived.</p>
+<p>This past September, I was lucky enough to be selected as one of 2000 hackers to attend PennApps XII. I was super excited when I received the acceptance email in my inbox, as this would be my second hackathon outside of California. At the first out of state hackathon I attended, MHacks, I had spent an immense amount of time planning and forming a team. In the end, our hack ended up making the top ten, but the number of roadblocks we encountered during the hackathon caused most of our planning (and hours spent staying up hacking) to go to waste. If you’re curious about what happened, you can <a href="/the-mhacksv-experience">read my earlier post</a>.</p>
+<p>This time, with other priorities such as schoolwork and sports, I decided to take a more relaxed approach. I decided to team up with one of my classmates who was also well acquainted with hackathons. We didn’t really have an idea, but we thought we would just try and build something simple, but also really cool. Both of us had a broad enough experience and flexibility in a variety of technologies that it wasn’t absolutely crucial to think of an idea immediately.</p>
+<h3 id="last-minute-plans">Last Minute Plans</h3>
+<p><lead>Are Sometimes The Best<lead></p>
+<p>I didn’t even think about PennApps until probably a couple of days before the event. I had other things going on, such as cross country meets and chemistry exams. The night before our flight to Philadelphia, my teammate and I had a quick, thirty minute brainstorming session over the Internet. We both agreed that it would be really cool to implement some form of machine learning or artificial intelligence in our app, particularly something related to image processing.</p>
+<p>Since PennApps’ theme was centered around health-related hacks, we decided to focus our attention towards medical apps. At first, we thought we could try and build an app that could diagnose common injuries by taking a picture of the injury with your smartphone. That idea was quickly extinguished, as we realized there was no way to measure the depth or intensity of a wound (e.g. how does the app differentiate a minor scratch from a gash?). We continued to think up ideas, until it hit us. What if we could build a similar app, except instead of diagnosing injuries, it could glean nutritional information from a picture of food? Of course, it was still going to be a challenge to build, but it was definitely a more realistic idea. We had no clue what sponsor prizes we were going to go for, nor any idea what APIs or services we would use. We decided to call it a night and just not worry about it until the hackathon began.</p>
+<h3 id="pennapps-xii-kickoff">PennApps XII Kickoff</h3>
+<p><lead>#STACKED<lead></p>
+<p>Our flight was scheduled to leave San Francisco at 7am. Personally, I wasn’t super pleased with the timing, as it didn’t allow for an adequate amount of sleep prior to the tiresome 36 hours that were ahead of us, but it didn’t matter because we were headed to the largest hackathon in the world. Pretty much all of the hackers from Stanford, UC Berkeley, and the rest of the Bay Area were on our flight, which was a relief, because that meant we were no longer the only ones on the flight discussing popular Swift and JavaScript frameworks.</p>
+<p>When we arrived at the Wells Fargo Center a few hours later, the amount of energy, people, and swag circulating around was incredible.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*NMDHXEbIv_biV1Ax554ggg.jpeg" alt="opening_ceremony"></p>
+<p><lead><em>PennApps XII Opening Ceremony</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*AgLsefacDK33EUGLy5Q6kg.jpeg" alt="enter_hackathon"></p>
+<p><lead><em>Sponsor tables getting set up for the event.</em><lead></p>
+<p>After listening to some talks by various software engineers, CEOs, and Penn faculty, we began building our app.</p>
+<h3 id="try-new-things-meet-everyone">Try New Things, Meet Everyone</h3>
+<p><lead>Code, People, Food, and Sleep Deprivation<lead></p>
+<p>Despite the fact that the Wells Fargo Center was capable of comfortably seating over 20,000 spectators, people were scrambling to desperately find a nice place to hack. We decided to set up camp at a quiet table on the second floor of the stadium.</p>
+<p>On the flight over, I had spent some time thinking about how the app would work. The app would basically allow the user to take a picture of some food, and that picture would be uploaded to a server. The server would then have to use some API (or algorithm that we designed, though highly unlikely) to try and figure out what the food in the picture was (e.g. take a picture of a burger and have the server output “burger”). Then it would make a lookup of the food item in a nutrition database. It seemed simple enough.</p>
+<p>Within a couple of hours of the hackathon’s start, our iOS frontend was well underway, and we had a working prototype of our backend. We decided to reward ourselves for this first success by heading down to the hardware lab to checkout some cool tech to play around with. Half of the attendees must have been standing in that line. The line went on forever. Things started to clear up when dinner started, as people began to give up and leave the line in hopes to reach the dinner buffet before another gigantic line for food formed. I decided to hold our spot in the hardware line while my teammate went off to grab dinner for both of us.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*v2B-LfCczry34MieEBvLOA.jpeg" alt="meal"></p>
+<p><lead><em>A &quot;normal&quot; meal at PennApps.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*acwiPRRIXlM_2Mi8U4wKdw.jpeg" alt="first_supper"></p>
+<p><lead><em>The first dinner at PennApps XII: Pasta, salad, and string beans.</em><lead></p>
+<p>The food was pretty good, we met a lot of cool people, and we continued working on our hack.</p>
+<p>This was the cycle of events that constantly occurred. Hack. Eat. Network. Sleep (this step was usually shortened or omitted). Repeat. In my opinion, that is how everyone’s hackathon experience should be. Usually, I see a lot of people stressing out about their hack, skipping crucial steps in this cycle. My one piece of advice to any new hackers or those interested in hackathons is to never break this cycle. Things will only get worse and you’ll destroy your productivity/workflow if you skip steps in this cycle.</p>
+<h3 id="the-expo">The Expo</h3>
+<p><lead>Unexpected Surprises<lead></p>
+<p>36 hours later, we start polishing up our hack, preparing it for the PennApps expo. We submitted our project to the <a href="http://devpost.com/software/kenko-dnovlh">hackathon’s devpost</a>, and even found time to make this cool demo video:</p>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/SdfDD9xpK_0" frameborder="0" allowfullscreen></iframe></center>
+
+<p>We even practiced our product pitch a few times.</p>
+<p>Finally, the PennApps XII Expo began. The stadium floor was packed with tired, excited hackers and the energy level was absolutely incredible.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Kr3Cx-zjVxWGcMn-EpWX2Q.jpeg" alt="dave_fontenot"></p>
+<p><lead><em>An excited Dave Fontenot tries to make his way through the crowded exhibition.</em><lead></p>
+<p>We had all sorts of people show up to our table to learn more about our hack. Some were skeptical of our claim that we could gather calorie data from a picture of food, and were convinced that we had preprogrammed the app to already know the nutrition facts for the food that we had brought for our demo. Our app was truly put to test when one of the judges ran off and came back a few minutes later holding an old M&amp;M wrapper which she had found in the trash. As we had predicted (and to her amazement) the app successfully returned the nutrition facts.</p>
+<p>After about an hour of showing off our creation, we were invited by a member of the PennApps staff to a special live interview on our hack. This was one of the greatest surprises to us, as we had come to PennApps to have fun and meet new people. It had never occurred to us that our hack might actually be recognized by PennApps as an interview-worthy hack. We were thrilled. After the interview we were told to enjoy the rest of the expo, but we were not prepared for what was about to happen next.</p>
+<p>I’m going to leave you on a cliffhanger from my previous statement for just a bit, because what happened between the PennApps interview and what happened next was one of the reasons why I love to go to hackathons. While walking through the expo, I enjoyed talking with people not only about their hacks, but also about their background. I was interested to see where everyone went to college, where they went to high school, their hobbies, why the built what they built, etc. One team I talked with said they attended Princeton and had graduated from Palo Alto High School, one of the local high schools where I live. I found this to be astonishing, because the chances of this happening were extremely low. I could have completely missed this person. This is why I love networking at hackathons. You’ll always meet interesting people, and learn a lot from them.</p>
+<p>Finally, the most second most exciting moment of the hackathon was about to begin. The top ten hacks were about to be announced. One of the PennApps organizers jumped on the main stage with a list, and began reading off team names. We heard him call “Kenko” to the stage. We were completely awestruck. We had achieved what we had never expected to achieve. We were even more shocked when the PennApps team told us we had to present first. We immediately started practicing our on-stage demo.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*IIvFnYbcvFXzZT69LtsGSQ.jpeg" alt="proud_hackers"></p>
+<p><lead><em>Taking the stage at PennApps XII.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*QduOVJRb1A95M1swuh06xw.jpeg" alt="words_cannot_describe"></p>
+<p><lead><em>Words could not express how happy and nervous we were.</em><lead></p>
+<p>Here’s a video of our demo on stage (<a href="https://youtu.be/TvjwUh9taOA?t=9m59s">9:59</a>). It wasn’t perfect, but we’re still pretty happy.</p>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/TvjwUh9taOA" frameborder="0" allowfullscreen></iframe></center>
+
+<p>I hope this post gave a clear illustration of how we managed to make our way to the top ten at the world’s largest hackathon, and the mentality and attitude we had going into the competition. We’re also planning on publicly releasing Kenko on the App Store soon, so stay tuned!</p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/my-pennapps-xii-experience</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/my-pennapps-xii-experience</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[Hello World: Part II]]></title>
+         <description><![CDATA[Ruminating about blogging. 
+
+ <p><img src="http://imgs.xkcd.com/comics/blogging.png" alt="Content is key."></p>
+<p>It is time that I started actually writing consistently on this blog.</p>
+<p>This is my corner of the web. A place where I can share ideas, practice writing, geek out, and ruminate about interesting problems. I intend to use my blog as a medium of expression, a potpurri of selected sentences that might be thought-provoking, controversial, or just generally interesting.</p>
+<p>I read a lot of web-based content. The difference between blogs that try to post insightful content but later devolve into a meme and the blogs that are engaging is consistency. This is not always the case, but the bloggers who have truly mastered the art of expressing themselves and their thoughts through written web content are the ones who have practiced their craft. Likewise, my hope is to get better. I don&#39;t have intentions of becoming the next Casey Neistat, but I do hope that my content will improve and become more engaging as time moves forward.</p>
+<p>This is why <strong>I&#39;m committing<sup>1</sup> myself to writing a blog post an average of at least once a month</strong>, forcing myself to observe, synthesize, and challenge the world around me through medium blocks of text. For those reading this, I would appreciate any constructive feedback or criticisms on future or existing posts.</p>
+<p><em>[1]: Committing within reason. I&#39;m an extremely busy junior in high school who has a lot of different responsibilities. There will be times when I simply do not have time to write a post (despite the fact that I may really want to). This is why I said an <strong>average</strong> of once a month. On occasions when I don&#39;t post for a long period of time, there may be more posts in a given month to compensate for the lack thereof in previous months. The point is, I want to write and express my thoughts much more often than I currently am.</em></p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/hello-world-part-ii</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/hello-world-part-ii</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[Magical Mathematics]]></title>
+         <description><![CDATA[Appreciating the beauty of a simple series. 
+
+ <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
+<p><img src="http://imgs.xkcd.com/comics/purity.png" alt="Applied Math from XKCD"></p>
+<lead><em>The purity spectrum.</em></lead>
+
+<h3 id="fibonacci-and-the-golden-ratio">Fibonacci and The Golden Ratio</h3>
+<p>Today, I revisited a very magical series in mathematics: <a href="https://en.wikipedia.org/wiki/Fibonacci_number">The Fibonacci numbers</a>.</p>
+<center>$$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... $$</center>
+
+<p>The Fibonacci sequence is related to some of the most beautiful concepts yielded by mathematicians, such as the <a href="https://en.wikipedia.org/wiki/Golden_ratio">Golden Ratio</a> (also denoted by $$\phi$$), defined as:</p>
+<center>$$ \phi = {1 + \sqrt 5 \over 2} \approx 1.61803399 $$</center>
+
+<p>The Golden Ratio is often found in nature and is considered appealing to the human eye. It takes the form of the following spiral (Donald Trump&#39;s hair happens to fit this &quot;golden spiral&quot; as well).</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/736x/eb/a0/81/eba081c6bf916fc86d809327dea09639.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
+<h3 id="the-issue-with-a-recursive-formula">The Issue with a Recursive Formula</h3>
+<p>The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This &quot;recursive formula&quot; is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let&#39;s take this simple Scheme code to get some early terms of the sequence.</p>
+<pre><code class="lang-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> (<span class="hljs-name">fib</span> n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+      ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>) <span class="hljs-number">0</span>)
+      ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">1</span>) <span class="hljs-number">1</span>)
+      (<span class="hljs-name"><span class="hljs-builtin-name">else</span></span>
+        (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">1</span>))
+           (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">2</span>))))))
+</code></pre>
+<p>Now let&#39;s trace some example calls. If I try to find the 2nd term of the series, the computer runs something like this:</p>
+<pre><code class="lang-scheme">|(fib <span class="hljs-number">2</span>)
+| (fib <span class="hljs-number">1</span>)
+| <span class="hljs-number">1</span>
+| (fib <span class="hljs-number">0</span>)
+| <span class="hljs-number">0</span>
+
+; Our final output
+<span class="hljs-number">1</span>
+</code></pre>
+<p>As you can see, when we call <code>(fib 2)</code>, the computer has to calculate the values of <code>(fib 0)</code> and <code>(fib 1)</code>, or the addends of the 2nd term. What happens when we try a bigger number, say <code>(fib 5)</code>?</p>
+<pre><code class="lang-scheme">|<span class="hljs-string">(fib 5)
+</span>|<span class="hljs-string"> (fib 4)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 3)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 2)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 1)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|1
+|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 0)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|0
+|<span class="hljs-string"> </span>|<span class="hljs-string"> 1
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 1)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> 1
+</span>|<span class="hljs-string"> </span>|2
+|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 2)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 1)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> 1
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 0)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> 0
+</span>|<span class="hljs-string"> </span>|1
+|<span class="hljs-string"> 3
+</span>|<span class="hljs-string"> (fib 3)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 2)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 1)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> 1
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 0)
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> 0
+</span>|<span class="hljs-string"> </span>|1
+|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 1)
+</span>|<span class="hljs-string"> </span>|1
+|<span class="hljs-string"> 2
+
+; Final output
+5</span>
+</code></pre>
+<p>The execution tree is exponentially larger! In fact, my computer can barely compute <code>(fib 20)</code>, and even that takes around a minute to calculate. Clearly, this recursive formula is fairly cumbersome if we cannot compute Fibonacci terms greater than the 20th term. Now in terms of computer science, you can drastically speed up the compute process by rewriting the Fibonacci code above as an <a href="https://mitpress.mit.edu/sicp/full-text/sicp/book/node15.html">iterative procedure</a>. However, the question is, can we do this using pure mathematics?</p>
+<h3 id="jacques-binet-and-raiders-of-the-lost-explicit-formula">Jacques Binet and Raiders of The Lost Explicit Formula</h3>
+<p>This is where it starts to get interesting.</p>
+<p>It turns out that an intuitively recursive sequence like the Fibonacci numbers can be computed explicitly, or using a direct formula in terms of the $$nth$$ Fibonacci term.</p>
+<p>One way to generate an approximation of the sequence is to use the Golden Ratio. Because the Fibonacci sequence adheres to the Golden Ratio, you can find a decimal approximation for the next term in the sequence by multiplying the previous term by the Golden Ratio.</p>
+<center>$$ F_{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $$</center>
+
+<p>Given that formula, the approximation of the sequence would go:</p>
+<center>$$ 1.00, 1.62, 2.62, 4.24, 6.85, 11.09, 17.94, ... $$</center>
+
+<p>That doesn&#39;t look great, but this approximation tends to work better with larger Fibonacci numbers, because as $$ n $$ gets larger, $$ F_{n+1} / F_n  \approx  \phi $$.</p>
+<p>That&#39;s great an all, but it does not provide an explicit <em>integer</em> formula. Also, we don&#39;t just want an approximation. We want the real deal.</p>
+<p>In fact, <a href="http://mathworld.wolfram.com/BinetsFibonacciNumberFormula.html">Jacques Binet</a>, a French mathematician, created an explicit integer formula (<a href="http://math.stackexchange.com/questions/846126/base-case-in-the-binet-formula-proof-by-strong-induction">proof available here</a>) using the Golden Ratio (he, along with Euler and Bernoulli were the first to prove the ratio). He discovered this:</p>
+<center>$$ F_n = {{\phi ^n - (- \phi) ^{-n}} \over \sqrt(5)} $$</center>
+
+<p>The formula above produces something that is truly amazing (but not unexpected):</p>
+<center>$$ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... $$</center>
+
+<p>Binet produced this around 150 years ago. But <em>what if I told you there was a simpler (more profound) method</em> of generating Fibonacci numbers?</p>
+<h3 id="math-or-magic-">Math or Magic?</h3>
+<p>The rational function below produces all of the Fibonacci numbers.</p>
+<p><img src="https://puu.sh/r64k0/c2642f6d1b.png" alt="The magic generator"></p>
+<center>$$ G(x) = {{1} \over {1 - x - x^2}} $$</center>
+
+<center>$$ G(10^{-3}) = 1.0102030508132134... $$</center>
+
+<p>Woah, now that&#39;s some real wizardry. This is where I start to question my sanity. We talked about recursive formulas. Then we discussed the Golden Ratio. But how can a rational function that involves neither of those two produce the magical series once discovered by Fibonacci?</p>
+<p>This is crazy, and to be honest, I don&#39;t have the credentials to prove this sort of magic. I first saw this formula on <a href="https://paulhankin.github.io/Fibonacci/">Paul Hankin&#39;s</a> blog, and I found it particularly interesting because I had never seen it done this way before. He has a wonderful proof and explanation of how this works, and has some nice Python code which you can try for yourself.</p>
+<p>Until next time, keep observing the mystical ways of the mathematical universe.</p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/magical-mathematics</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/magical-mathematics</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[Learning to Swim]]></title>
+         <description><![CDATA[My thoughts on how to get started with hacking. 
+
+ <p>There has not been a day in my life where Google has not existed<sup>1</sup>. My generation is the first to have ubiquitous access to an enormous amount of technology and information, and people such as Mark Zuckerberg, will.i.am, and President Barack Obama are advocating for the importance of implementing universally mandated computer science education in hopes of creating the next wave of innovators.</p>
+<p>Students are slowly catching on, and events such as hackathons, the Hour of Code, and developer conferences are fueling the fire. In the Silicon Valley, the competitive culture combined with the plethora of corporate and academic giants surrounding the students increases this drive by several orders of magnitude. However, many of them have no idea where to start. I get asked questions like &quot;What online courses should I take to become a good coder?&quot; or &quot;What language should I learn to get an internship at X?&quot;. I want to clear some misconceptions as well as provide some great tips for anyone wanting to learn.</p>
+<h3 id="programmers-v-computer-scientists">Programmers v. Computer Scientists</h3>
+<p>Many of the people who ask me for advice often get the terms <em>programmer</em> and <em>computer scientist</em> confused or think of them as the same thing. Let&#39;s see what the Oxford Dictionary has to say.</p>
+<p><img src="/img/programming2.png" alt="programming"></p>
+<p><img src="/img/CS.png" alt="computer science"></p>
+<p>Although related, the two are quite different.</p>
+<p>In essence, programmers make computers do things for them (e.g. search the web, grade a paper, host a website, etc.). You do not need to have a <a href="http://hardmath123.github.io/isprogrammingmath.html">strong math background</a> to be a great programmer. However, having your fundamental math and computer science principles down are always an added bonus. Some great programmers include Facebook CEO <a href="#">Mark Zuckerberg</a>, Linux creator <a href="#">Linus Torvalds</a>, and Reddit co-founder and CEO <a href="#">Steve Huffman</a>. In contrast, computer scientists study the theoretical principles behind computers (i.e. algorithms, data structures, machine learning, encryption, etc.). Having strong mathematical intuition is (in almost all cases) a requirement. Some great computer scientists include <a href="#">Alan Turing</a>, self-driving car expert <a href="#">Sebastian Thrun</a>, and the University of California&#39;s <a href="#">Brian Harvey</a>.</p>
+<h3 id="hackers">Hackers</h3>
+<p><img src="/img/hack.png" alt="hackers"></p>
+<p>Now that we&#39;ve cleared up the difference between programmers and computer scientists, I want to talk about this strange group of people that identifies as neither computer scientist nor programmer: hackers. There are two kinds of hackers. Those that want your money, and those that like to tinker. From here on out, when I use the term <em>hacker</em>, I&#39;ll almost always be referring to the latter.</p>
+<p>Hackers can be described as make-it-happen machines. Give them an idea, and they will find a way to make it work. They are not limited by their experience, the languages or technologies they&#39;ve worked with, or the hours of sleep they sacrifice. It&#39;s because of their rapidly iterative workflow that they are able to do what they do. Hackathons are built on top of this mentality of &quot;move fast and break things&quot;. It&#39;s because of hackers that companies like Google, Facebook, and Snapchat exist<sup>2</sup>.  </p>
+<h3 id="my-story">My Story</h3>
+<p>I wouldn&#39;t call myself a super hacker or an amazing computer scientist or an ingenious programmer. I&#39;m honestly just a student who likes to build things. But, I have learned a thing or two over the last 10 years that may help someone new.</p>
+<p>Like most kids, I played with LEGO when I was young. To be fair, I would probably still be playing with LEGO today if I had the time<sup>3</sup>. At some point, I stopped following the instructions that came with the LEGO kits and I would mix and match pieces from different sets to create something different. I kept building more and more complicated things from very simple blocks. This is a very simple mentality and has stuck with me since then.</p>
+<p>This became more relevant when I started coding after my neighbor introduced me to the MIT Scratch Programming Environment in 2008. I continued building, just with a different set of (virtual) blocks. I thought I had gotten pretty good at the whole Scratch thing when I finally outgrew it in 2010, only to find that people were building insane web experiments and tools using what I thought was an environment for kids...</p>
+<p>In 2010, I wanted to find something new to build with. I don&#39;t remember why, but I decided I wanted to build a website. These were the pre-Codecademy days, so I used a hodgepodge of w3schools resources and O&#39;Reilly HTML, JavaScript, and CSS books from the late 1990s. Among the first sites that I built was DeskRock, this virtual pet rock that acted as a nifty calculator. It had a bad interface, but it had a whopping 150 users on the Chrome Webstore. I&#39;d later build an app called MathNinja that would get tens of thousands of weekly users.</p>
+<p>A lot of stuff happened in between those vital first steps. I interned at a couple of startups, did some freelance work, attended (and won) numerous hackathons, learned a variety of technologies, and won a couple of cool scholarships and awards at tech conferences and robotics competitions. Right now, I continue to learn and grow as a hacker by exploring new technologies. I&#39;m currently trying to figure out how to effectively combine music-making and machine learning.</p>
+<h3 id="tips-for-newcomers">Tips for Newcomers</h3>
+<p>I&#39;m going to keep this short and simple. You don&#39;t need to take tons of online university courses or finish Advanced Placement BC Calculus by the time you&#39;re done with middle school in order to get good at programming. Here are some things you should try:</p>
+<ul>
+<li>Think of a platform you want to build for (in my case this was the web). Once you get comfortable with one environment it reduces the learning curve when picking up other platforms.</li>
+<li><a href="http://hardmath123.github.io/after-scratch.html">Find a language that suits the platform of your choice</a>. Often times people get caught up in this. Just find one language, get really good at it, and I assure you that picking up any other language will be elementary.</li>
+<li>Think of something you want to build. This could be an app, a website, a robot, etc. Don&#39;t worry if you don&#39;t know how to make it.</li>
+<li>Build it. Don&#39;t waste times worrying about minor features and details. Use tools like StackOverflow and Google to get through roadblocks that arise from time to time.</li>
+<li>Didn&#39;t work? Try building it again. Or ask for help. The hacker community is pretty diverse and chances are, someone else has encountered the same issue you have at some point before.</li>
+<li><strong>Bonus points</strong>: Open source your work on <a href="https://github.com">GitHub</a>, allowing others to contribute and review your work.</li>
+</ul>
+<p>This is a pretty rough guide, and I&#39;m sure it&#39;ll improve as time moves on. If you have any questions, feel free to shoot me an email or ping me on one of my social network channels.</p>
+<blockquote>
+<p>Sometimes the best way to learn to swim is to get thrown in the ocean.</p>
+</blockquote>
+<h3 id="references">References</h3>
+<ul>
+<li><em>[1]: You probably can figure out my approximate age.</em></li>
+<li><em>[2]: They all started out as dorm room projects at Stanford or Harvard University.</em></li>
+<li><em>[3]: LEGO has also become a much more expensive toy in the past few years which really saddens me, because it used to be a really simple, great way to get almost any kid interested in building and creating.</em></li>
+</ul>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/learning-to-swim</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/learning-to-swim</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+      <item>
+         <title><![CDATA[Detech EdTech]]></title>
+         <description><![CDATA[Observations regarding technology and the modern classroom. 
+
+ <p>Last week, I spoke in front of teachers who work in my local school district about what I personally see as the honest truth about educational technology. The talk was part of an internal educational technology conference run by district staff, and if you&#39;re curious, <a href="https://docs.google.com/presentation/d/1vLwRHaIy_ecq1pgVkZOKQprPPeHCaJJzW1peWr5S7TQ/edit?usp=sharing">here are my slides</a>.</p>
+<p>In my school district, we use a lot of technology. A lot more than we really should. An average day might include a couple of visits to <strong>Schoology</strong>, where most of my assignment handouts are posted. Perhaps I&#39;ll check <strong>Infinite Campus</strong> as well to make sure that I&#39;m not failing any of my classes and my grades and attendance are up to date. There are a handful of teachers who don&#39;t like using either of these tools mandated by our district, and instead elect to use their own <strong>teacher website</strong> and in some cases their own <strong>hand-coded grading sites</strong>. Sometimes, I&#39;ll have to use a site like <strong>Turnitin</strong>, which acts as a digital dropbox for essays and claims that I plagiarized others&#39; work because a couple of other students in the class happened to cite the same source. <strong>SmartMusic</strong> tries to test my trombone playing ability by transcribing the notes I play in real-time and then sending the recording to my teacher. Applications like <strong>Remind101</strong> tell me to return back to our hotel or check in with my chaperone on school trips. And that&#39;s just the tip of the iceberg.</p>
+<p>In an average middle school classroom, some teachers encourage technology-guided hand-holding with behavior management software like <strong>ClassDojo</strong>. The library staff discourage use of Google for research and instead mandates that students use sources like <strong>ABC-CLIO, Safari Montage, EBSCO Information Sources, and Follett Shelf</strong> which have poorly designed interfaces that take six too many clicks to get some adequate information. <strong>Prezi</strong> actively encourages students to create presentations that spend more time transitioning from slide to slide than discussing their presentation content.</p>
+<p>In high school, I saw an explosion in technology adoption, with teachers and students using sites like <strong>Quizlet</strong>, which aims to teach me my polyatomic ions through a set of interactive flashcards, and <strong>Naviance</strong>, which attempts to keep me on track for college. Teachers throw <strong>SurveyMonkey</strong> forms at students to grade their peers on class participation, and foreign-language classes use <strong>Audacity</strong> to record and gauge students&#39; speaking and listening proficiency. <strong>MathXL</strong> tells me that my math homework is wrong, but doesn&#39;t tell me why (and in some cases says the correct answer is the same as the &quot;incorrect&quot; answer I entered). <strong>CharmsOffice</strong> facilitates communication between teachers and students, but is unreliable and does no better than existing district-mandated solutions like Infinite Campus or Schoology. During a mandatory &quot;flex&quot; period where students are allowed to visit any class they are struggling in, our administration requires that we scan our student IDs using a <strong>Flextime Appointment System</strong> because the &quot;flex&quot; period has attendance corner cases that our primary attendance system on Infinite Campus cannot handle. <strong>Calendly</strong> allows teachers to schedule out-of-class meetings with students. At the same time, the school wants every student to have a <strong>Chromebook</strong> with <strong>Securly</strong> network monitoring to watch student Internet traffic while they&#39;re off campus.</p>
+<p>That&#39;s only a small preview of the technology our district has adopted, and I&#39;m sure I&#39;ve forgotten some key components. But last time I checked our district has over twenty different student-facing technology platforms. That&#39;s way too many.</p>
+<p>While speaking to teachers, I realized that some of the discontent with our current technology situation was not unknown. In fact, there are some teachers who have similar opinions on the issue of educational technology adoption in our district. However, teachers, for the most part, seem to be unaware of some of the largest platforms used for schoolwork by students: technologies that are not sanctioned by the school district such as <strong>Facebook, Snapchat</strong>, and <strong>Instagram</strong>.</p>
+<p><img src="/img/Screen+Shot+2017-06-14+at+11.17.52+AM.png" alt="My math class&#39;s Facebook group"></p>
+<lead><em>The Facebook group for my math class this past year.</em></lead>
+
+<p>This is more common than most educators may realize. There are groups for everything from AP United States History to Biology 1. I think the primary reason why these unsanctioned platforms succeed among students is because they already have plenty of engagement and they solve the problem of educational collaboration while also providing users a steady stream of entertaining content. As shown above, you can see that students are posting in our Analysis Honors (my math class this past school year) regarding final grades being updated on Infinite Campus. In many ways, these platforms allow students to ease the burden of constantly checking the plethora of district platforms while also not having to worry about teacher intervention.</p>
+<p>Unsanctioned technology is great from a student perspective (I can&#39;t say I&#39;m opposed to it), but there are a variety of drawbacks that come with it. Because the technology is unsanctioned, the school district cannot directly regulate anything that occurs inside these study groups. As a result, offensive memes, test questions, and completed homework assignments occasionally appear in these groups, raising concerns about student well-being and academic dishonesty. In some unique cases, district staff members are added to these unsanctioned Facebook groups to help facilitate the discussions, but from what I understand, I do not think those staff members are compensated or working for directly for the district in those rare scenarios. It also creates a fine line between whether a district staff member is your friend or your teacher. Finally, the widespread use of unsanctioned technology among students blurs the line with regards to which educational technologies should be endorsed by the district and which should not.</p>
+<p>In addition, a point that several of my teachers have brought up stresses the consequences of excessive technology integration. Anderson Cooper has a report for 60 Minutes on <a href="http://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/">&quot;Brain Hacking&quot;</a>, which explores some of the psychological effects of smartphone addiction. TL;DR the effects are analogous to those caused by excessive drug use. The anxiety created by the menagerie of technology platforms used by students doesn&#39;t help. As a result, unsanctioned technology flourishes as students try to find the easiest way to keep all of their schoolwork manageable (having your primary social media source as your primary schoolwork source is very desirable). In addition, the fact that today&#39;s parents do not know how to deal with this issue should be addressed. The proliferation of Internet-based technologies and smartphones has been so rapid that very few can predict what the long-term effects may be let alone know how to parent a generation that has adopted the technology so quickly.</p>
+<p>My rant on bad technology aside. Let&#39;s talk about some positives. <strong>Email</strong> is great, and I think it&#39;s still one of the most reliable and standardized modes of communication (though most of my peers don&#39;t seem to agree). <strong>Google Apps</strong> keeps track of my documents and allows me to collaborate on larger projects. <strong>EasyBib</strong> takes care of all of my MLA citations for formal essays and research reports, and tools such as <strong>Desmos</strong> and <strong>WolframAlpha</strong> help me visualize complex math concepts. In addition, I use unsanctioned tools such as <strong>Google Calendar</strong>, <strong>Google Keep</strong>, and <strong>Facebook</strong> to keep myself sane.</p>
+<p>Fundamentally, technology is supposed to help us &mdash; that&#39;s why it exists. But in the realm of modern education, we need to rethink exactly how we&#39;re implementing it into our daily lives and whether it&#39;s actually making a reasonable impact on student productivity.</p>
+]]></description>
+         <link>http://gmittal.github.io/thoughts/state-of-edtech</link>
+         <guid isPermaLink="true">http://gmittal.github.io/thoughts/state-of-edtech</guid>
+         <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+      </item>
+   </channel>
+</rss>

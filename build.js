@@ -2,9 +2,10 @@
 * 2017 Gautam Mittal
 */
 
-var fs = require('fs');
-var marked = require('marked');
-var moment = require('moment');
+const fs = require('fs');
+const marked = require('marked');
+const moment = require('moment');
+const rss = require('rss');
 
 marked.setOptions({ gfm: true, tables: true,
     highlight: function (code) {
@@ -36,6 +37,14 @@ let compile = (contentDir, outputDir) => {
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
     let postListMarkup = [];
 
+    // Setup RSS feed
+    let feed = new rss({
+        title: `Gautam Mittal`,
+        site_url: `http://gmittal.github.io`,
+        feed_url: `http://gmittal.github.io/feed.xml`,
+        language: `en`
+    });
+
     // Process each post
     ls(contentDir).forEach((post) => {
         const metadata = extract(contentDir, post).metadata;
@@ -55,12 +64,24 @@ let compile = (contentDir, outputDir) => {
                                    .replace(/{POST-AUTHOR}/g, metadata.author)
                                    .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
                                    .replace(/{POST-CONTENT}/g, content);
-            // Write to disk
-            const targetDir = `${__dirname}/${outputDir}/${extract(contentDir, post).slug}`;
+            // Write post to disk
+            const targetDir = `${outputDir}/${extract(contentDir, post).slug}`;
             if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
             fs.writeFileSync(`${targetDir}/index.html`, postTemplate);
+
+            // Add the post to RSS
+            feed.item({
+                title: metadata.title,
+                description: `${metadata.summary} \n\n ${content}`,
+                url: `http://gmittal.github.io/${targetDir}`,
+                pubDate: metadata.timestamp,
+                author: metadata.author
+            });
         });
     });
+
+    // Write RSS feed.xml
+    fs.writeFileSync(`feed.xml`, feed.xml(`   `));
 
     // Build home page
     const indexTemplate = fs.readFileSync(`${__dirname}/templates/index.html`, `utf-8`)
