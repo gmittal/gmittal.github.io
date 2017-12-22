@@ -11,7 +11,7 @@
 ---END_METADATA---
 Mathematics is truly magical. It's also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.
 
-![Applied Math from XKCD](http://imgs.xkcd.com/comics/purity.png)
+![Applied Math from XKCD](/img/math-purity.png)
 <lead>_The purity spectrum._</lead>
 
 ### Fibonacci and The Golden Ratio
@@ -25,7 +25,7 @@ The Fibonacci sequence is related to some of the most beautiful concepts yielded
 
 The Golden Ratio is often found in nature and is considered appealing to the human eye. It takes the form of the following spiral (Donald Trump's hair happens to fit this "golden spiral" as well).
 
-![Donald Trump's hair is the Golden Spiral](https://s-media-cache-ak0.pinimg.com/736x/eb/a0/81/eba081c6bf916fc86d809327dea09639.jpg)
+![Donald Trump's hair is the Golden Spiral](/img/trump-hair.jpg)
 
 ### The Issue with a Recursive Formula
 The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This "recursive formula" is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let's take this simple Scheme code to get some early terms of the sequence.
@@ -119,7 +119,7 @@ Binet produced this around 150 years ago. But _what if I told you there was a si
 ### Math or Magic?
 The rational function below produces all of the Fibonacci numbers.
 
-![The magic generator](https://puu.sh/r64k0/c2642f6d1b.png)
+![The magic generator](/img/magic-generator.png)
 <center>$$ G(x) = {{1} \over {1 - x - x^2}} $$</center>
 
 <center>$$ G(10^{-3}) = 1.0102030508132134... $$</center>

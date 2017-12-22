@@ -8,7 +8,7 @@
   ]
 }
 ---END_METADATA---
-![Content is key.](http://imgs.xkcd.com/comics/blogging.png)
+![Content is key.](/img/blogging.png)
 
 It is time that I started actually writing consistently on this blog.
 

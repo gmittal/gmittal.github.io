@@ -41,7 +41,7 @@
             </div>
             <div class="articleBody firstcharacter">
               <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
-<p><img src="http://imgs.xkcd.com/comics/purity.png" alt="Applied Math from XKCD"></p>
+<p><img src="/img/math-purity.png" alt="Applied Math from XKCD"></p>
 <lead><em>The purity spectrum.</em></lead>
 
 <h3 id="fibonacci-and-the-golden-ratio">Fibonacci and The Golden Ratio</h3>
@@ -52,7 +52,7 @@
 <center>$ \phi = {1 + \sqrt 5 \over 2} \approx 1.61803399 $</center>
 
 <p>The Golden Ratio is often found in nature and is considered appealing to the human eye. It takes the form of the following spiral (Donald Trump&#39;s hair happens to fit this &quot;golden spiral&quot; as well).</p>
-<p><img src="https://s-media-cache-ak0.pinimg.com/736x/eb/a0/81/eba081c6bf916fc86d809327dea09639.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
+<p><img src="/img/trump-hair.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
 <h3 id="the-issue-with-a-recursive-formula">The Issue with a Recursive Formula</h3>
 <p>The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This &quot;recursive formula&quot; is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let&#39;s take this simple Scheme code to get some early terms of the sequence.</p>
 <pre><code class="lang-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
@@ -129,7 +129,7 @@
 <p>Binet produced this around 150 years ago. But <em>what if I told you there was a simpler (more profound) method</em> of generating Fibonacci numbers?</p>
 <h3 id="math-or-magic-">Math or Magic?</h3>
 <p>The rational function below produces all of the Fibonacci numbers.</p>
-<p><img src="https://puu.sh/r64k0/c2642f6d1b.png" alt="The magic generator"></p>
+<p><img src="/img/magic-generator.png" alt="The magic generator"></p>
 <center>$ G(x) = {{1} \over {1 - x - x^2}} $</center>
 
 <center>$ G(10^{-3}) = 1.0102030508132134... $</center>
@@ -138,18 +138,26 @@
 <p>This is crazy, and to be honest, I don&#39;t have the credentials to prove this sort of magic. I first saw this formula on <a href="https://paulhankin.github.io/Fibonacci/">Paul Hankin&#39;s</a> blog, and I found it particularly interesting because I had never seen it done this way before. He has a wonderful proof and explanation of how this works, and has some nice Python code which you can try for yourself.</p>
 <p>Until next time, keep observing the mystical ways of the mathematical universe.</p>
 
-              <div id="disqus_thread"></div>
-            <script>
-                (function() {  // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
+	      
+	      <div id="disqus_thread"></div>
+	      <script>
+		(function() {  
+		var d = document, s = d.createElement('script');
+		
+		// IMPORTANT: Replace EXAMPLE with your forum shortname!
+		s.src = 'https://gmittal.disqus.com/embed.js';
 
-                    s.src = '//gmittal.disqus.com/embed.js';
-
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	      </script>
+	      <noscript>
+		Please enable JavaScript to view the
+		<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+		  comments powered by Disqus.
+		</a>
+	      </noscript>
+              
             </div>
           </div>
           <div class="two columns"></div>
@@ -166,7 +174,7 @@
             }
           };
         </script>
-        <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

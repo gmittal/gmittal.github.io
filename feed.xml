@@ -4,14 +4,14 @@
       <description><![CDATA[Gautam Mittal]]></description>
       <link>http://gmittal.github.io</link>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Fri, 22 Dec 2017 19:55:36 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 22 Dec 2017 20:18:47 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
          <title><![CDATA[First Blog Post]]></title>
          <description><![CDATA[Obligatory Hello, world! 
 
- <p><img src="http://i.giphy.com/3ornk57KwDXf81rjWM.gif" alt="Greetings..."></p>
+ <p><img src="/img/obiwan-hello.gif" alt="Greetings..."></p>
 <p><strong>Hello, World</strong>! I’m Gautam Mittal, a student at <a href="http://gunn.pausd.org">Henry M. Gunn High School</a> in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.</p>
 <p>My main intent in starting this blog is to share my thoughts, ideas, and stories. After trying out other blogging platforms (with much frustration and inconsistency), such as <a href="http://medium.com">Medium</a> and <a href="http://wordpress.org">Wordpress</a>, I finally decided it was time to host my own blog. My primary goal is to create content that&#39;s interesting and to share my thoughts on the world around me. The life of a high school student is more eventful than you may think! I also want to write more and continue to develop and improve my style of writing.</p>
 <p>Here&#39;s some <code>LOLCODE</code> to say Hi.</p>
@@ -148,7 +148,7 @@ KTHXBYE
          <title><![CDATA[Hello World: Part II]]></title>
          <description><![CDATA[Ruminating about blogging. 
 
- <p><img src="http://imgs.xkcd.com/comics/blogging.png" alt="Content is key."></p>
+ <p><img src="/img/blogging.png" alt="Content is key."></p>
 <p>It is time that I started actually writing consistently on this blog.</p>
 <p>This is my corner of the web. A place where I can share ideas, practice writing, geek out, and ruminate about interesting problems. I intend to use my blog as a medium of expression, a potpurri of selected sentences that might be thought-provoking, controversial, or just generally interesting.</p>
 <p>I read a lot of web-based content. The difference between blogs that try to post insightful content but later devolve into a meme and the blogs that are engaging is consistency. This is not always the case, but the bloggers who have truly mastered the art of expressing themselves and their thoughts through written web content are the ones who have practiced their craft. Likewise, my hope is to get better. I don&#39;t have intentions of becoming the next Casey Neistat, but I do hope that my content will improve and become more engaging as time moves forward.</p>
@@ -164,7 +164,7 @@ KTHXBYE
          <description><![CDATA[Appreciating the beauty of a simple series. 
 
  <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
-<p><img src="http://imgs.xkcd.com/comics/purity.png" alt="Applied Math from XKCD"></p>
+<p><img src="/img/math-purity.png" alt="Applied Math from XKCD"></p>
 <lead><em>The purity spectrum.</em></lead>
 
 <h3 id="fibonacci-and-the-golden-ratio">Fibonacci and The Golden Ratio</h3>
@@ -175,7 +175,7 @@ KTHXBYE
 <center>$$ \phi = {1 + \sqrt 5 \over 2} \approx 1.61803399 $$</center>
 
 <p>The Golden Ratio is often found in nature and is considered appealing to the human eye. It takes the form of the following spiral (Donald Trump&#39;s hair happens to fit this &quot;golden spiral&quot; as well).</p>
-<p><img src="https://s-media-cache-ak0.pinimg.com/736x/eb/a0/81/eba081c6bf916fc86d809327dea09639.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
+<p><img src="/img/trump-hair.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
 <h3 id="the-issue-with-a-recursive-formula">The Issue with a Recursive Formula</h3>
 <p>The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This &quot;recursive formula&quot; is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let&#39;s take this simple Scheme code to get some early terms of the sequence.</p>
 <pre><code class="lang-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
@@ -252,7 +252,7 @@ KTHXBYE
 <p>Binet produced this around 150 years ago. But <em>what if I told you there was a simpler (more profound) method</em> of generating Fibonacci numbers?</p>
 <h3 id="math-or-magic-">Math or Magic?</h3>
 <p>The rational function below produces all of the Fibonacci numbers.</p>
-<p><img src="https://puu.sh/r64k0/c2642f6d1b.png" alt="The magic generator"></p>
+<p><img src="/img/magic-generator.png" alt="The magic generator"></p>
 <center>$$ G(x) = {{1} \over {1 - x - x^2}} $$</center>
 
 <center>$$ G(10^{-3}) = 1.0102030508132134... $$</center>

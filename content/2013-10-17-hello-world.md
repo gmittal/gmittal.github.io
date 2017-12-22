@@ -8,7 +8,7 @@
   ]
 }
 ---END_METADATA---
-![Greetings...](http://i.giphy.com/3ornk57KwDXf81rjWM.gif)
+![Greetings...](/img/obiwan-hello.gif)
 
 __Hello, World__! I’m Gautam Mittal, a student at [Henry M. Gunn High School](http://gunn.pausd.org) in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.
 
