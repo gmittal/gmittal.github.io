@@ -13,7 +13,7 @@
 
 This past January, I and 1000 other hackers from all over the United States converged at the University of Michigan for the fifth occurrence of their biannual hackathon. The experience was truly incredible. I met so many awesome people with a one common goal in mind: To hack the weekend away, building what could be the next Snapchat, Uber, or Tinder for Cats.
 
-> I am truly blown away by this. This is less of a hackathon and more of a rock concert. I've never seen anything like this.<quotee>Jahan Khanna, MHacks V Keynote Speaker</quotee>
+> I am truly blown away by this. This is less of a hackathon and more of a rock concert. <quotee>Jahan Khanna, MHacks V Keynote Speaker</quotee>
 
 
 ### High School Hacker Ideation
