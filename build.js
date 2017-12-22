@@ -1,5 +1,5 @@
 /*
-* 2017 Gautam Mittal
+* 2017-present Gautam Mittal
 */
 
 const fs = require('fs');
