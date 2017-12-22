@@ -313,8 +313,8 @@ textarea {
  }
 
  #header a {
-   color: #3498db;
-   border-bottom: 1px dotted #3498db;
+   color: #0f73aa;
+   border-bottom: 1px dotted #0f73aa;
    -webkit-transition: all 0.1s linear;
    -moz-transition: all 0.1s linear;
    -o-transition: all 0.1s linear;
@@ -322,8 +322,8 @@ textarea {
  }
 
  #header a:hover {
-   color:black;
-   border-bottom: 1px solid black;
+   color:#463c78;
+   border-bottom: 1px solid #463c78;
    text-decoration: none;
  }
 
@@ -365,7 +365,7 @@ textarea {
  }
 
  .date {
-   font-family: "Proxima Nova", "Franklin Book", "SFMoMA";
+   font-family:  "Franklin Book", "SFMoMA";
    font-weight: 400;
    color: rgba(37, 36, 37, 0.7);
    font-size: 12pt;
@@ -417,7 +417,7 @@ textarea {
 
  .articleBody {
    font-size: 13pt;
-   font-family: "Proxima Nova", "Helvetica", sans-serif;
+   font-family: "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
    line-height: 1.8;
    color: #181f21;
    text-rendering: optimizeLegibility;
@@ -430,7 +430,7 @@ textarea {
  .articleBody a {
    font-weight:normal;
    margin:0;
-   color: #3498db;
+   color: #0f73aa;
  }
 
  .articleBody h2, h3, h4 {
