@@ -87,6 +87,24 @@ body {
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Streetvertising";
+  src: url('../fonts/Streetvertising/streetvertising bold public.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Streetvertising";
+  src: url('../fonts/Streetvertising/streetvertising medium public.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Streetvertising";
+  src: url('../fonts/Streetvertising/streetvertising light public.ttf');
+  font-weight: 300;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -288,7 +306,7 @@ textarea {
 
  #header h1 {
    font-family: "SFMoMA", "San Francisco";
-   font-weight: 700;
+   font-weight: bold;
    color: black;
    font-size: 22pt;
    text-transform: none;
