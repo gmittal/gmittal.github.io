@@ -4,12 +4,12 @@
       <description><![CDATA[Gautam Mittal]]></description>
       <link>http://gmittal.github.io</link>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Sun, 31 Dec 2017 01:37:11 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 31 Dec 2017 06:56:49 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
          <title><![CDATA[First Blog Post]]></title>
-         <description><![CDATA[Obligatory Hello, world!
+         <description><![CDATA[Obligatory Hello, world! 
 
  <p><img src="/img/obiwan-hello.gif" alt="Greetings..."></p>
 <p><strong>Hello, World</strong>! I’m Gautam Mittal, a student at <a href="http://gunn.pausd.org">Henry M. Gunn High School</a> in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.</p>
@@ -26,7 +26,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[My Internship Experience With MakeGamesWithUs (as a 13-year-old)]]></title>
-         <description><![CDATA[My experience hanging out at a Silicon Valley startup.
+         <description><![CDATA[My experience hanging out at a Silicon Valley startup. 
 
  <p><img src="https://cdn-images-1.medium.com/max/800/1*vf_XZYUMxJx6Q-Iqi5pPQQ.jpeg" alt="hacker_house"></p>
 <p><em>Note: This article is from <strong>October 18, 2013</strong>. In addition, MakeGamesWithUs has now formally changed their name to <strong>Make School</strong>.</em></p>
@@ -45,7 +45,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[The MHacks V Experience]]></title>
-         <description><![CDATA[Lessons learned from my first collegiate hackathon.
+         <description><![CDATA[Lessons learned from my first collegiate hackathon. 
 
  <p><img src="https://cdn-images-1.medium.com/max/1200/1*LfNgYhQ9FRVtj63zQfYN2A.jpeg" alt="mhacks_expo"></p>
 <p>This past January, I and 1000 other hackers from all over the United States converged at the University of Michigan for the fifth occurrence of their biannual hackathon. The experience was truly incredible. I met so many awesome people with a one common goal in mind: To hack the weekend away, building what could be the next Snapchat, Uber, or Tinder for Cats.</p>
@@ -88,7 +88,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Hacking Our Way To The Top]]></title>
-         <description><![CDATA[A brief reflection on my experience at PennApps XII.
+         <description><![CDATA[A brief reflection on my experience at PennApps XII. 
 
  <p><img src="https://cdn-images-1.medium.com/max/800/1*8aHGZAieTmEe-TbSbib1lQ.jpeg" alt="expo"></p>
 <p>This post has been long overdue for a few months now, but while I’m on winter break in a tropical country without any Wi-Fi, I thought I’d spend some time reminiscing on my team’s experiences at the University of Pennsylvania’s premier hackathon. Also, in true hackathon spirit, I’m writing this post while sleep deprived.</p>
@@ -146,7 +146,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Hello World: Part II]]></title>
-         <description><![CDATA[Ruminating about blogging.
+         <description><![CDATA[Ruminating about blogging. 
 
  <p><img src="/img/blogging.png" alt="Content is key."></p>
 <p>It is time that I started actually writing consistently on this blog.</p>
@@ -161,7 +161,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Magical Mathematics]]></title>
-         <description><![CDATA[Appreciating the beauty of a simple series.
+         <description><![CDATA[Appreciating the beauty of a simple series. 
 
  <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
 <p><img src="/img/math-purity.png" alt="Applied Math from XKCD"></p>
@@ -267,7 +267,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Learning to Swim]]></title>
-         <description><![CDATA[My thoughts on how to get started with hacking.
+         <description><![CDATA[My thoughts on how to get started with hacking. 
 
  <p>There has not been a day in my life where Google has not existed<sup>1</sup>. My generation is the first to have ubiquitous access to an enormous amount of technology and information, and people such as Mark Zuckerberg, will.i.am, and President Barack Obama are advocating for the importance of implementing universally mandated computer science education in hopes of creating the next wave of innovators.</p>
 <p>Students are slowly catching on, and events such as hackathons, the Hour of Code, and developer conferences are fueling the fire. In the Silicon Valley, the competitive culture combined with the plethora of corporate and academic giants surrounding the students increases this drive by several orders of magnitude. However, many of them have no idea where to start. I get asked questions like &quot;What online courses should I take to become a good coder?&quot; or &quot;What language should I learn to get an internship at X?&quot;. I want to clear some misconceptions as well as provide some great tips for anyone wanting to learn.</p>
@@ -314,7 +314,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Detech EdTech]]></title>
-         <description><![CDATA[Observations regarding technology and the modern classroom.
+         <description><![CDATA[Observations regarding technology and the modern classroom. 
 
  <p>Last week, I spoke in front of teachers who work in my local school district about what I personally see as the honest truth about educational technology. The talk was part of an internal educational technology conference run by district staff, and if you&#39;re curious, <a href="https://docs.google.com/presentation/d/1vLwRHaIy_ecq1pgVkZOKQprPPeHCaJJzW1peWr5S7TQ/edit?usp=sharing">here are my slides</a>.</p>
 <p>In my school district, we use a lot of technology. A lot more than we really should. An average day might include a couple of visits to <strong>Schoology</strong>, where most of my assignment handouts are posted. Perhaps I&#39;ll check <strong>Infinite Campus</strong> as well to make sure that I&#39;m not failing any of my classes and my grades and attendance are up to date. There are a handful of teachers who don&#39;t like using either of these tools mandated by our district, and instead elect to use their own <strong>teacher website</strong> and in some cases their own <strong>hand-coded grading sites</strong>. Sometimes, I&#39;ll have to use a site like <strong>Turnitin</strong>, which acts as a digital dropbox for essays and claims that I plagiarized others&#39; work because a couple of other students in the class happened to cite the same source. <strong>SmartMusic</strong> tries to test my trombone playing ability by transcribing the notes I play in real-time and then sending the recording to my teacher. Applications like <strong>Remind101</strong> tell me to return back to our hotel or check in with my chaperone on school trips. And that&#39;s just the tip of the iceberg.</p>
