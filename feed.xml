@@ -4,7 +4,7 @@
       <description><![CDATA[Gautam Mittal]]></description>
       <link>http://gmittal.github.io</link>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Fri, 05 Jan 2018 22:39:46 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 09 Jan 2018 00:25:17 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
@@ -23,6 +23,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/hello-world</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/hello-world</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Thu, 17 Oct 2013 07:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[My Internship Experience With MakeGamesWithUs (as a 13-year-old)]]></title>
@@ -42,6 +43,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/mgwu-internship</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/mgwu-internship</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Fri, 18 Oct 2013 07:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[The MHacks V Experience]]></title>
@@ -85,6 +87,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/the-mhacksv-experience</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/the-mhacksv-experience</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Thu, 23 Jul 2015 07:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[Hacking Our Way To The Top]]></title>
@@ -143,6 +146,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/my-pennapps-xii-experience</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/my-pennapps-xii-experience</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Mon, 04 Jan 2016 08:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[Hello World: Part II]]></title>
@@ -158,6 +162,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/hello-world-part-ii</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/hello-world-part-ii</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Tue, 30 Aug 2016 07:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[Magical Mathematics]]></title>
@@ -264,6 +269,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/magical-mathematics</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/magical-mathematics</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Fri, 09 Sep 2016 07:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[Learning to Swim]]></title>
@@ -311,6 +317,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/learning-to-swim</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/learning-to-swim</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Mon, 19 Dec 2016 08:00:00 GMT</pubDate>
       </item>
       <item>
          <title><![CDATA[Detech EdTech]]></title>
@@ -334,6 +341,7 @@ KTHXBYE
          <link>http://gmittal.github.io/thoughts/state-of-edtech</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/state-of-edtech</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
+         <pubDate>Wed, 14 Jun 2017 07:00:00 GMT</pubDate>
       </item>
    </channel>
 </rss>

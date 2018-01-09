@@ -74,7 +74,7 @@ let compile = (contentDir, outputDir) => {
                 title: metadata.title,
                 description: `${metadata.summary} \n\n ${content}`,
                 url: `http://gmittal.github.io/${targetDir}`,
-                pubDate: Date(extract(contentDir, post).timestamp),
+                date: new Date(extract(contentDir, post).timestamp),
                 author: metadata.author
             });
         });
