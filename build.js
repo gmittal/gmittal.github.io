@@ -32,6 +32,11 @@ let extract = (contentDir, postFileName) => {
     }
 }
 
+/*
+  contentDir: directory of markdown files
+  outputDir: build script output of HTML files
+  ignore: file in contentDir of private markdown files
+*/
 let compile = (contentDir, outputDir, ignore) => {
     if (!fs.existsSync(contentDir)) throw `No content directory "${contentDir}" found.`;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
