@@ -57,7 +57,7 @@ let compile = (contentDir, outputDir, ignore) => {
               <a href="/${outputDir}/${extract(contentDir, post).slug}">${metadata.title}</a>
               <span class="date">${extract(contentDir, post).timestamp}. ${metadata.summary}</span></div>`;
           postListMarkup.unshift(listTemplate);
-        } 
+        }
 
         // Build individual posts from template
         marked(extract(contentDir, post).content, function (err, content) {
