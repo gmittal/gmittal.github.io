@@ -32,9 +32,11 @@ let extract = (contentDir, postFileName) => {
     }
 }
 
-let compile = (contentDir, outputDir) => {
+let compile = (contentDir, outputDir, ignore) => {
     if (!fs.existsSync(contentDir)) throw `No content directory "${contentDir}" found.`;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+    let _ignore = fs.readFileSync(`${contentDir}/${ignore}`, `utf-8`).split(`\n`);
+    _ignore.splice(-1, 1);
     let postListMarkup = [];
 
     // Setup RSS feed
@@ -50,10 +52,12 @@ let compile = (contentDir, outputDir) => {
         const metadata = extract(contentDir, post).metadata;
 
         // Build list of posts displayed on the homepage
-        const listTemplate = `<div class="story">
-            <a href="/${outputDir}/${extract(contentDir, post).slug}">${metadata.title}</a>
-            <span class="date">${extract(contentDir, post).timestamp}. ${metadata.summary}</span></div>`;
-        postListMarkup.unshift(listTemplate);
+        if (_ignore.indexOf(post) == -1) {
+          const listTemplate = `<div class="story">
+              <a href="/${outputDir}/${extract(contentDir, post).slug}">${metadata.title}</a>
+              <span class="date">${extract(contentDir, post).timestamp}. ${metadata.summary}</span></div>`;
+          postListMarkup.unshift(listTemplate);
+        } 
 
         // Build individual posts from template
         marked(extract(contentDir, post).content, function (err, content) {
@@ -70,13 +74,15 @@ let compile = (contentDir, outputDir) => {
             fs.writeFileSync(`${targetDir}/index.html`, postTemplate);
 
             // Add the post to RSS
-            feed.item({
-                title: metadata.title,
-                description: `${metadata.summary} \n\n ${content}`,
-                url: `http://gmittal.github.io/${targetDir}`,
-                date: new Date(extract(contentDir, post).timestamp),
-                author: metadata.author
-            });
+            if (_ignore.indexOf(post) == -1) {
+              feed.item({
+                  title: metadata.title,
+                  description: `${metadata.summary} \n\n ${content}`,
+                  url: `http://gmittal.github.io/${targetDir}`,
+                  date: new Date(extract(contentDir, post).timestamp),
+                  author: metadata.author
+              });
+            }
         });
     });
 
@@ -91,4 +97,4 @@ let compile = (contentDir, outputDir) => {
 
 
 // Yesterday is history, tomorrow is a mystery, but today is a gift.
-compile(`content`, `thoughts`);
+compile(`content`, `thoughts`, `.ignore`);

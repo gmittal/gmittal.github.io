@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Gautam Mittal - Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000" />
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png">
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <hr id="starter" />
+
+        <div id="header">
+          <div class="row">
+            <div class="two columns"></div>
+            <div class="eight columns">
+              <h1><span id="goHome" onclick="javascript:location.href='/';">Gautam Mittal</span></h1>
+              <p class="lead" style="margin-top: -10px;">
+                 "A goal without a plan is only a wish." — Unknown
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="content row">
+          <div class="two columns"></div>
+          <div class="eight columns">
+            <div class="mainIntro">
+              <div id="headline">
+                Portfolio
+              </div>
+              <div class="date" style="margin-left:0px!important;">By <a href="/">Gautam Mittal</a> &#183; December 31, 2017 &#183; 1 min read</div>
+            </div>
+            <div class="articleBody firstcharacter">
+              <pre><code class="lang-javascript"><span class="hljs-comment">/*
+ * http://paleyontology.com/AP_CS/rainfall.html
+*/</span>
+
+<span class="hljs-keyword">let</span> lyst = [<span class="hljs-number">-76</span>, <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">-999</span>];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rainfall</span>(<span class="hljs-params">nums</span>) </span>{
+    nums = nums.splice(<span class="hljs-number">0</span>, nums.indexOf(<span class="hljs-number">-999</span>));
+    <span class="hljs-keyword">const</span> positive = nums.filter(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> n &gt;= <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> positive.reduce(<span class="hljs-function">(<span class="hljs-params">total, n</span>) =&gt;</span> {
+    total += n;
+    <span class="hljs-keyword">return</span> total
+    })/positive.length;
+}
+
+<span class="hljs-built_in">console</span>.log(rainfall(lyst)); <span class="hljs-comment">// returns 1</span>
+</code></pre>
+
+	      
+	      <div id="disqus_thread"></div>
+	      <script>
+		(function() {  
+		var d = document, s = d.createElement('script');
+		
+		// IMPORTANT: Replace EXAMPLE with your forum shortname!
+		s.src = 'https://gmittal.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	      </script>
+	      <noscript>
+		Please enable JavaScript to view the
+		<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+		  comments powered by Disqus.
+		</a>
+	      </noscript>
+              
+            </div>
+          </div>
+          <div class="two columns"></div>
+        </div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript">
+          window.MathJax = {
+            tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            }
+          };
+        </script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-35192434-1','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
