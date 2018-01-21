@@ -1,8 +1,8 @@
 ---START_METADATA---
 {
-  "title": "Portfolio",
+  "title": "Maker Portfolio",
   "author": "Gautam Mittal",
-  "summary": "A portfolio of some projects that I sent to colleges.",
+  "summary": "A maker portfolio of some projects that I sent to colleges.",
   "tags":[
     "me"
   ]
