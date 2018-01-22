@@ -20,6 +20,8 @@ This is a public mirror of some of the materials I sent to universities through 
 
 Kenko is an iPhone app that I built at PennApps XII, one of the world's largest collegiate hackathons. The app allows a user to take a picture of any food item, packaged or not, and acquire nutritional insights about that item using artificial intelligence. The app features an easy-to-use camera interface which is connected to a Node.js web-server that processes the image, identifies the food item in the frame, searches for its nutrition data on an open database, and returns an organized, smart nutrition label to the user. The app has Yelp integration and an Apple HealthKit feature, allowing users to keep track of their calories along with the rest of their health metrics. The app placed in the Top 10 and won “Best Cloud-based App” at PennApps, was written about in an article in the Philadelphia Magazine in September 2015, and won third place in CA-18’s Congressional App Challenge. All code is available [here](https://github.com/gmittal/kenko).
 
+Co-creators: Kevin Frans.
+
 ### PartySync: Social Streaming Platform
 
 <center>
@@ -46,6 +48,8 @@ I have spent a lot of time mentoring at various educational events and hackathon
 </center>
 
 This past summer, I explored a simple question: what does it take to build a self-driving car? Unfortunately, I did not have access to a car, so four of us pitched in to buy a used golf cart shell instead. We installed a 6HP combustion engine and connected the various mechanical subsystems (initial challenges included getting the brakes and the accelerator to work, and the engine to not stall). We also couldn’t afford a LIDAR sensor, used in most modern autonomous vehicles, so we recreated the NVIDIA end-to-end approach, which uses a deep learning pipeline, written using Google’s TensorFlow, to predict steering angles from a front-facing camera image. This would allow us to keep costs low with reasonable results. The hardware and software halves of the project are now in good shape and work well separately, allowing us to experiment with learning and image processing, but we are continuing to work on connecting the two together.
+
+Co-creators: Aditya Ganapathi, Mihir Juvvadi, Zach Weiss.
 
 ### MIT Maker Portfolio Video
 This is not a project. Just a summary of everything described here in under two minutes.
