@@ -40,8 +40,7 @@ let extract = (contentDir, postFileName) => {
 let compile = (contentDir, outputDir, ignore) => {
     if (!fs.existsSync(contentDir)) throw `No content directory "${contentDir}" found.`;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
-    let _ignore = fs.readFileSync(`${contentDir}/${ignore}`, `utf-8`).split(`\n`);
-    _ignore.splice(-1, 1);
+    let _ignore = fs.readFileSync(`${contentDir}/${ignore}`, `utf-8`).split(`\n`).filter(p => p.length > 0);
     let postListMarkup = [];
 
     // Setup RSS feed
