@@ -34,26 +34,6 @@ body {
 }
 
 @font-face {
-  src:url("../fonts/Proxima Nova/proximanova-bold-webfont.ttf");
-  font-family: "Proxima Nova"; font-weight: 700;
-}
-
-@font-face {
-  src:url("../fonts/Proxima Nova/proximanova-semibold-webfont.ttf");
-  font-family: "Proxima Nova"; font-weight: 500;
-}
-
-@font-face {
-  src:url("../fonts/Proxima Nova/proximanova-light-webfont.ttf");
-  font-family: "Proxima Nova"; font-weight: 300;
-}
-
-@font-face {
-  src:url("../fonts/Proxima Nova/proximanova-regular-webfont.ttf");
-  font-family: "Proxima Nova"; font-weight: 400;
-}
-
-@font-face {
   font-family: "SFMoMA";
   src: url('../fonts/MoMA/SFMOMAText-Bold.ttf') format("truetype"),
   url('../fonts/MoMA/SFMOMAText-Bold.otf') format("otf");
@@ -183,7 +163,7 @@ a:hover {
 }
 
 #mainDescription {
-  font-family: 'Proxima Nova';
+  font-family: 'Colfax Web';
   font-weight: 400;
   color: #333;
   text-align: center;
@@ -363,7 +343,7 @@ input:focus {
 
 .articleBody {
   font-size: 13pt;
-  font-family: "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
+  font-family: "Colfax Web", "Proxima Nova", "Helvetica", sans-serif;
   line-height: 1.8;
   color: #181f21;
   text-rendering: optimizeLegibility;
@@ -391,7 +371,7 @@ input:focus {
 
 .mainIntro .date {
   font-size: 13pt;
-  font-family: "Proxima Nova";
+  font-family: "Colfax Web";
   font-weight: 100;
   border-top: 1px solid rgba(33, 33, 33, 0.1);
   padding-top: 7px;
@@ -538,7 +518,7 @@ blockquote {
   color: rgba(33, 33, 33, 0.8);
   line-height: 160%;
   font-style:italic;
-  font-family: "Proxima Nova";
+  font-family: "Colfax Web";
   font-weight: 300;
   padding-left: 10px;
   padding-top: 10px;
