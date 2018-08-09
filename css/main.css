@@ -242,8 +242,7 @@ hr#starter {
   margin: 0;
   height: 20px;
   border: 0;
-  background-image: url('/img/binding_dark_@2X.png');
-  background-repeat: repeat;
+  background-color: #0c2461;
 }
 
 #header {
