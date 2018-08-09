@@ -11,7 +11,27 @@ body {
   padding-bottom: 40px;
 }
 
+@font-face {
+  src: url("../fonts/Colfax Web/Regular.woff");
+  font-family: "Colfax Web"; font-weight: 400;
+}
 
+@font-face {
+  src: url("../fonts/Colfax Web/RegularItalic.woff");
+  font-family: "Colfax Web"; font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("../fonts/Colfax Web/Bold.woff");
+  font-family: "Colfax Web"; font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/Colfax Web/BoldItalic.woff");
+  font-family: "Colfax Web"; font-weight: 700;
+  font-style: italic;
+}
 
 @font-face {
   src:url("../fonts/Proxima Nova/proximanova-bold-webfont.ttf");
@@ -272,18 +292,15 @@ textarea {
  }
 
  p.lead {
-     font-family: "Franklin Book", "SFMoMA", sans-serif;
+     font-family: "Colfax Web", sans-serif;
      font-size: 13pt;
-     line-height: 160%;
- }
-
- .twitter-timeline {
-   width: 100%;
+     line-height: 145%;
+     hyphens: none;
  }
 
  .articleTitle {
    font-size: 18pt;
-   font-family:  'SFMoMA', 'Proxima Nova';
+   font-family:  'Colfax Web', 'SFMoMA', 'Proxima Nova';
  }
 
  h2 {
@@ -301,7 +318,7 @@ textarea {
  }
 
  .date {
-   font-family:  "Franklin Book", "SFMoMA";
+   font-family:  "Colfax Web", "SFMoMA";
    font-weight: 400;
    color: rgba(37, 36, 37, 0.7);
    font-size: 12pt;
