@@ -231,14 +231,6 @@ hr#starter {
   padding-bottom: 10px;
 }
 
-#header .navLinks a {
-  font-family: "SFMoMA", sans-serif;
-  font-weight: 700;
-  margin-right: 25px;
-  font-size: 14pt;
-  text-transform: lowercase;
-}
-
 #header h1 {
   font-family: "SFMoMA", "San Francisco";
   font-weight: bold;
@@ -401,10 +393,6 @@ input:focus {
   margin-top: 10px!important;
 }
 
-.contentArea {
-  margin-top: -30px;
-}
-
 img {
   display: block;
   margin: auto;
@@ -484,18 +472,14 @@ Helper classes
   clear: both;
 }
 
-img {
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  padding: 3px;
-  border-radius: 2px;
-  background-clip: content-box; /* support: IE9+ */
-  background-color: #ccc;
+#photo-wall img {
+    width: 100%!important;
+    /* border: 0; */
 }
 
-img.pictureOfMe {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+img {
+  padding: 3px;
+  border: 1px solid #eee;
 }
 
 img#rss {
@@ -554,16 +538,10 @@ lead {
 .hljs-strong{font-weight:bold}
 
 @media only screen and (max-width: 599px) {
-  .navLinks a {
-    display:block;
-    float:left;
-    clear:left;
-    margin-bottom: 15px;
-  }
-
   #header {
     padding-top: 0;
     margin-top: -25px;
+    margin-bottom: -40px;
   }
 
   #volumeNumber {
@@ -572,10 +550,6 @@ lead {
 
   #price {
     display: none;
-  }
-
-  #header {
-    margin-bottom: -40px;
   }
 
   .bannerAd {
@@ -594,21 +568,16 @@ lead {
     font-size: 19pt;
   }
 
+  #photo-wall .two {
+    display: none;
+  }
+
   pre {
     font-size: 11pt;
   }
 
   .wallet {
     font-size: 7pt;
-  }
-}
-
-@media only screen and (max-width: 715px) {
-  .navLinks a {
-    display: block;
-    clear: left;
-    float:left;
-    margin-bottom: 15px;
   }
 }
 
