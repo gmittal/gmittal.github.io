@@ -14,10 +14,16 @@
           <h1 id="author">
             <span id="goHome" onclick="javascript:location.href='/';">
               <img src="/img/me/me-tiled.jpg" />&nbsp;
-              Gautam Mittal
+              <span id="name">Gautam Mittal</span>
             </span>
           </h1>
+          <span id="readTime">
+            {POST-READ-TIME} min
+          </span>
         </div>
+
+        <hr id="mobileDivider" />
+
         <div class="content row" id="postArea">
           <div class="two columns"></div>
           <div class="eight columns">
@@ -25,7 +31,7 @@
               <div id="headline">
                 {POST-TITLE}
               </div>
-              <div class="date" style="margin-left:0px!important;">{POST-DATE} &#183; {POST-READ-TIME} min read</div>
+              <div class="date" style="margin-left:0px!important;">{POST-DATE}</div>
             </div>
             <div class="articleBody firstcharacter">
               {POST-CONTENT}

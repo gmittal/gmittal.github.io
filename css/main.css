@@ -354,8 +354,24 @@ input:focus {
   font-size: 14pt!important;
 }
 
+#readTime {
+  font-family: 'Colfax Web', sans-serif;
+  font-size: 14pt;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
 #postArea {
   margin-top: 60px;
+}
+
+#mobileDivider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin-top: 130px;
+  display: none;
 }
 
 .description {
@@ -499,7 +515,6 @@ Helper classes
 
 #photo-wall img {
     width: 100%!important;
-    /* border: 0; */
 }
 
 img {
@@ -571,7 +586,11 @@ lead {
   }
 
   #postArea {
-    margin-top: 100px;
+    margin-top: -30px;
+  }
+
+  #mobileDivider {
+    display: block;
   }
 
   .profile img {
