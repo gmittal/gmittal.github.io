@@ -1,4 +1,4 @@
-# Home of Gautam Mittal
+# Gautam Mittal's Home Page
 
 This is the source code for my personal website and blog. If you have any questions or concerns, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
