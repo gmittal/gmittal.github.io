@@ -217,12 +217,26 @@ a:hover {
 }
 
 hr#starter {
-  /*display: none;*/
+
   padding: 0;
   margin: 0;
   height: 20px;
   border: 0;
-  background-color: #0c2461;
+  background-color: #5e21d9;
+  background-image: linear-gradient(-90deg,#5e21d9,#12a5e2)
+}
+
+.profile img {
+  margin-top: 20px;
+  padding-right: 20px;
+  border: 0;
+}
+
+.introduction .social {
+  font-family: 'Menlo', monospace;
+  float: right;
+  font-size: 11pt;
+  font-weight: 400;
 }
 
 #header {
@@ -334,9 +348,9 @@ input:focus {
 }
 
 .articleBody {
-  font-size: 13pt;
+  font-size: 18px;
   font-family: "Colfax Web", "Proxima Nova", "Helvetica", sans-serif;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #181f21;
   text-rendering: optimizeLegibility;
   hyphens: auto;
@@ -542,6 +556,15 @@ lead {
     padding-top: 0;
     margin-top: -25px;
     margin-bottom: -40px;
+    width: 100%!important;
+  }
+
+  .profile img {
+    margin-bottom: -20px;
+  }
+
+  .row {
+    width: 90%;
   }
 
   #volumeNumber {
