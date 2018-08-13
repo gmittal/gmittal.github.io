@@ -553,6 +553,8 @@ blockquote {
 
 blockquote quotee {
   font-size: 11pt;
+  line-height: 1.5;
+  margin-top: 10px;
   font-weight: 600;
   font-family: "SFMoMA", sans-serif;
   display:block;
