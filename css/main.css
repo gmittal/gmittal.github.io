@@ -231,13 +231,6 @@ hr#starter {
   border: 0;
 }
 
-.introduction .social {
-  font-family: 'Menlo', monospace;
-  float: right;
-  font-size: 11pt;
-  font-weight: 400;
-}
-
 #header {
   color: #555;
   padding-top: 40px;
@@ -265,6 +258,42 @@ hr#starter {
   color:#463c78;
   border-bottom: 1px solid #463c78;
   text-decoration: none;
+}
+
+#header .nav {
+  position: relative;
+  height: inherit;
+}
+
+#header .nav > .social {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Menlo';
+}
+
+#header .nav > .social img {
+  height: 30px;
+  padding-left: 7px;
+  border: 0;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  filter: opacity(100%);
+  -webkit-filter: opacity(100%);
+}
+
+#header .nav > .social img:hover {
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+}
+
+#header .nav > .social a {
+  text-decoration: none;
+  border: 0;
 }
 
 p {
@@ -625,6 +654,17 @@ lead {
 
   .wallet {
     font-size: 7pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #header .nav > .social {
+    top: 6px;
+  }
+
+  #header .nav > .social img {
+    height: 25px;
+    padding-left: 4px;
   }
 }
 
