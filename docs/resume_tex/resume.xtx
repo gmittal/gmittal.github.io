@@ -1,0 +1,260 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com}\\
+\href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | 480.648.8254
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{UC Berkeley}
+\descript{B.S. Electrical Engineering \& Computer Science (EECS)}
+\location{Expected May 2022 | Berkeley, CA}
+\textbf{Regents' and Chancellor's Scholar} \\
+\sectionsep
+
+\subsection{Gunn High School}
+\descript{GPA: 4.35/4.0}
+\location{May 2018 | Palo Alto, CA}
+\textbf{CS Club} (President), \textbf{TEDx} (President), \textbf{Tri-M Music Honor Society} (President), \textbf{GunnHacks} (Lead Organizer), \textbf{APCS Teaching Assistant}, \textbf{Jazz Ensemble}, \textbf{Wind Ensemble}, \textbf{Track \& XC} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{languages}
+Python \textbullet{}
+JavaScript \textbullet{}
+Swift \textbullet{}
+Java \\
+Scheme \textbullet{}
+Objective-C \\
+\sectionsep
+
+\subsection{TOOLS}
+Keras \textbullet{}
+TensorFlow \textbullet{}
+NumPy \textbullet{}
+HTML \\
+CSS \textbullet{}
+jQuery \textbullet{}
+Node \textbullet{}
+Flask \textbullet{}
+Express \\
+SpriteKit \textbullet{}
+UIKit \textbullet{}
+Processing \textbullet{}
+Chrome Headless \textbullet{}
+AWS \textbullet{}
+UNIX \textbullet{}
+Git \textbullet{}
+Emacs
+
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+GitHub: \href{https://github.com/gmittal}{\bf github.com/gmittal} \\
+LinkedIn: \href{https://www.linkedin.com/in/mittalgautam}{\bf linkedin.com/in/mittalgautam} \\
+Portfolio: \href{https://gautam.cc}{\bf gautammittal.com}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+\subsection{Undergraduate}
+\textbf{CS61A:} Structure and Interpretation of Computer Programs\\
+\textbf{EE16A:} Designing Information Devices and Systems I\\
+\textbf{MATH53:} Multivariable Calculus \\
+\sectionsep
+\subsection{High School}
+AP CS with Data Structures \\
+AP Calculus BC \\
+AP Physics C: Electricity \& Magnetism \\
+Linear Algebra \& Discrete Math \\
+Applied Mathematics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{TotalityHacks}
+\descript{| Organizer \& Software Engineer }
+\location{November 2017 – July 2018 | Stanford, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built application-reading software with \textbf{JavaScript, HTML, CSS} and event website for collegiate hackathon in NYC.
+\item Implemented web-scraping pipelines and mail scripts with \textbf{Python, Chrome Headless, and pandas} to automate sponsor acquisition.
+\item Planned technical workshop sessions and designed systems to catalyze logistical processes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Edmodo}
+\descript{| Research Intern}
+\location{June 2017 – August 2017 | San Mateo, CA}
+\begin{tightemize}
+\item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
+\item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network.
+\item Supervised by Dr. Hannes Marais, CTO of AI.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{MakeGamesWithUs (YC S12)}
+\descript{| Game Development Intern }
+\location{Summer 2012 \& Summer 2013 | Palo Alto, CA}
+\begin{tightemize}
+\item Developed iOS games using \textbf{Objective-C and cocos2d} in studio setting.
+\item Designed and built ``Bison Run`` \& ``Blend`` (published to App Store)
+\item Featured in articles by SF Chronicle, Knowledge@Wharton, PA Weekly
+\item 2nd Place for Game Excellence at MGWU Demo Day
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Copilot}
+\descript{| Anonymous Online Peer-to-Peer Counseling Platform}
+\location{June 2016 - June 2018 | \textbf{Node, Firebase, JavaScript}}
+\begin{tightemize}
+\item Open-source full-stack web application for mental health counseling. Source: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
+\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health advocates.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{JazzML}
+\descript{| Real-time Computer Jazz Improvisation}
+\location{Summer 2016 | \textbf{Python, TensorFlow, FluidSynth}}
+\begin{tightemize}
+\item Signal processing (FFT) and RNN to generate solos with accompanist.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Kenko}
+\descript{| Computer Vision-based Mobile Nutrition Assistant}
+\location{PennApps XII — September 2015 | Node, Objective-C}
+\begin{tightemize}
+\item App that uses CV to determine nutritional content of food from a picture.
+\end{tightemize}
+
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
+2018      & top 2/480 &     Gunn High School Outstanding Student in CS \\
+2016	     & International  & 2016 MIT Zero Robotics Challenge ISS Finalist\\
+2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\
+2015     & International & Top 10 \& Best Cloud App at PennApps XII Hackathon \\
+2015     & International & Apple WWDC Scholarship\\
+2015     & International & Top 10 at MHacks V Hackathon\\
+\end{tabular}
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
