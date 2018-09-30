@@ -175,7 +175,6 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-
 \runsubsection{TotalityHacks}
 \descript{| Organizer \& Software Engineer }
 \location{November 2017 – July 2018 | Stanford, CA}
@@ -197,7 +196,7 @@ Applied Mathematics
 \end{tightemize}
 \sectionsep
 
-\runsubsection{MakeGamesWithUs (YC S12)}
+\runsubsection{Make School (YC W12)}
 \descript{| Game Development Intern }
 \location{Summer 2012 \& Summer 2013 | Palo Alto, CA}
 \begin{tightemize}
@@ -213,6 +212,7 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+
 \runsubsection{Copilot}
 \descript{| Anonymous Online Peer-to-Peer Counseling Platform}
 \location{June 2016 - June 2018 | \textbf{Node, Firebase, JavaScript}}
