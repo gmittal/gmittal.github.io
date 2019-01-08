@@ -150,8 +150,11 @@ Portfolio: \href{https://gautam.cc}{\bf gautammittal.com}
 \section{Coursework}
 \subsection{Undergraduate}
 \textbf{CS61A:} Structure and Interpretation of Computer Programs\\
+\textbf{CS61B:} Data Structures\\
 \textbf{EE16A:} Designing Information Devices and Systems I\\
-\textbf{MATH53:} Multivariable Calculus \\
+\textbf{EE16B:} Designing Information Devices and Systems II\\
+\textbf{MATH53:} Multivariable Calculus\\
+\textbf{PHYSICS7B:} Heat, Electricity, Magnetism\\
 \sectionsep
 \subsection{High School}
 AP CS with Data Structures \\
@@ -175,20 +178,10 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{TotalityHacks}
-\descript{| Organizer \& Software Engineer }
-\location{November 2017 – July 2018 | Stanford, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Built application-reading software with \textbf{JavaScript, HTML, CSS} and event website for collegiate hackathon in NYC.
-\item Implemented web-scraping pipelines and mail scripts with \textbf{Python, Chrome Headless, and pandas} to automate sponsor acquisition.
-\item Planned technical workshop sessions and designed systems to catalyze logistical processes.
-\end{tightemize}
-\sectionsep
-
 \runsubsection{Edmodo}
 \descript{| Research Intern}
 \location{June 2017 – August 2017 | San Mateo, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
 \item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network.
@@ -212,6 +205,16 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+
+\runsubsection{TotalityHacks}
+\descript{| Organizer \& Software Engineer }
+\location{November 2017 – July 2018 | \textbf{JavaScript, Python, HTML, CSS, pandas}}
+\begin{tightemize}
+\item Built application-reading software with \textbf{JavaScript, HTML, CSS} and event website for collegiate hackathon in NYC.
+\item Implemented web-scraping pipelines and mail scripts with \textbf{Python, Chrome Headless, and pandas} to automate sponsor acquisition.
+\item Planned technical workshop sessions and designed systems to catalyze logistical processes.
+\end{tightemize}
+\sectionsep
 
 \runsubsection{Copilot}
 \descript{| Anonymous Online Peer-to-Peer Counseling Platform}
