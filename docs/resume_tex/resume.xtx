@@ -250,10 +250,11 @@ Applied Mathematics
 
 \section{Awards}
 \begin{tabular}{rll}
+2019	 & top 50/2500	& Kleiner Perkins Engineering Fellow \\ 
 2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
 2018      & top 2/480 &     Gunn High School Outstanding Student in CS \\
 2016	     & International  & 2016 MIT Zero Robotics Challenge ISS Finalist\\
-2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\
+% 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
 2015     & International & Top 10 \& Best Cloud App at PennApps XII Hackathon \\
 2015     & International & Apple WWDC Scholarship\\
 2015     & International & Top 10 at MHacks V Hackathon\\
