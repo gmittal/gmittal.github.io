@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  2 FEB 2019 12:05
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  2 FEB 2019 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**resume.
+**resume.xtx
 (./resume.xtx
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
@@ -1198,11 +1198,6 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 . fontspec info: "no-scripts"
 . 
-. Font "Heiti SC Medium" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
 . Font "Heiti TC Medium" does not contain any OpenType `Script' information.
 .................................................
 .................................................
@@ -1370,12 +1365,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 23489 strings out of 492970
- 432352 string characters out of 6133938
+ 23488 strings out of 492970
+ 432351 string characters out of 6133938
  533180 words of memory out of 5000000
  27274 multiletter control sequences out of 15000+600000
  531032 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,11n,118p,10408b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,118p,10411b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).

@@ -92,8 +92,7 @@
 \sectionsep
 
 \subsection{Gunn High School}
-\descript{GPA: 4.35/4.0}
-\location{May 2018 | Palo Alto, CA}
+\location{May 2018 | Palo Alto, CA \\ GPA: 4.35 / 4.0}
 \textbf{CS Club} (President), \textbf{TEDx} (President), \textbf{Tri-M Music Honor Society} (President), \textbf{GunnHacks} (Lead Organizer), \textbf{APCS Teaching Assistant}, \textbf{Jazz Ensemble}, \textbf{Wind Ensemble}, \textbf{Track \& XC} \\
 \sectionsep
 
@@ -108,6 +107,7 @@ JavaScript \textbullet{}
 Swift \textbullet{}
 Java \\
 Scheme \textbullet{}
+SQL \textbullet{}
 Objective-C \\
 \sectionsep
 
