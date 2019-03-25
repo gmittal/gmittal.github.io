@@ -48,6 +48,7 @@ let compile = (contentDir, outputDir, ignore) => {
         title: `Gautam Mittal`,
         site_url: `http://gmittal.github.io`,
         feed_url: `http://gmittal.github.io/feed.xml`,
+        image_url: `https://gmittal.github.io/img/favicon.png`,
         language: `en`
     });
 

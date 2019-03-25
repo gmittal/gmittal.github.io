@@ -3,8 +3,13 @@
       <title><![CDATA[Gautam Mittal]]></title>
       <description><![CDATA[Gautam Mittal]]></description>
       <link>http://gmittal.github.io</link>
+      <image>
+         <url>https://gmittal.github.io/img/favicon.png</url>
+         <title>Gautam Mittal</title>
+         <link>http://gmittal.github.io</link>
+      </image>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Mon, 25 Mar 2019 23:16:43 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 25 Mar 2019 23:22:58 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
