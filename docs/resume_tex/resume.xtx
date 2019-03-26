@@ -67,7 +67,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com}\\
-\href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | 480.648.8254
+\href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | +1 (480) 648-8254
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,7 +141,7 @@ Emacs
 \section{Links}
 GitHub: \href{https://github.com/gmittal}{\bf github.com/gmittal} \\
 LinkedIn: \href{https://www.linkedin.com/in/mittalgautam}{\bf linkedin.com/in/mittalgautam} \\
-Portfolio: \href{https://gautam.cc}{\bf gautammittal.com}
+Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \sectionsep
 
 
@@ -150,19 +150,13 @@ Portfolio: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
 \subsection{Undergraduate}
-\textbf{CS61A:} Structure and Interpretation of Computer Programs\\
-\textbf{CS61B:} Data Structures\\
+\textbf{CS61A:} Structure \& Interpretation of Computer Programs\\
+\textbf{CS61B:} Data Structures \& Algorithms \\
 \textbf{EE16A:} Designing Information Devices and Systems I\\
 \textbf{EE16B:} Designing Information Devices and Systems II\\
 \textbf{MATH53:} Multivariable Calculus\\
 \textbf{PHYSICS7B:} Heat, Electricity, Magnetism\\
 \sectionsep
-\subsection{High School}
-AP CS with Data Structures \\
-AP Calculus BC \\
-AP Physics C: Electricity \& Magnetism \\
-Linear Algebra \& Discrete Math \\
-Applied Mathematics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -179,10 +173,26 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Stripe}
+\descript{| Software Engineering Intern + KP Fellow}
+\location{May 2019 – August 2019 | San Francisco, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Incoming Engineering Intern (Summer 2019)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cal Hacks}
+\descript{| Director}
+\location{February 2019 – Present | Berkeley, CA}
+\begin{tightemize}
+\item Building the largest collegiate hackathon in the world.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Edmodo}
 \descript{| Research Intern}
 \location{June 2017 – August 2017 | San Mateo, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
 \item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network.
@@ -206,16 +216,6 @@ Applied Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-
-\runsubsection{TotalityHacks}
-\descript{| Organizer \& Software Engineer }
-\location{November 2017 – July 2018 | \textbf{JavaScript, Python, HTML, CSS, pandas}}
-\begin{tightemize}
-\item Built application-reading software with \textbf{JavaScript, HTML, CSS} and event website for collegiate hackathon in NYC.
-\item Implemented web-scraping pipelines and mail scripts with \textbf{Python, Chrome Headless, and pandas} to automate sponsor acquisition.
-\item Planned technical workshop sessions and designed systems to catalyze logistical processes.
-\end{tightemize}
-\sectionsep
 
 \runsubsection{Copilot}
 \descript{| Anonymous Online Peer-to-Peer Counseling Platform}
@@ -251,7 +251,7 @@ Applied Mathematics
 
 \section{Awards}
 \begin{tabular}{rll}
-2019	 & top 50/2500	& Kleiner Perkins Engineering Fellow \\ 
+2019	 & top 50/3000	& Kleiner Perkins Engineering Fellow \\
 2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
 2018      & top 2/480 &     Gunn High School Outstanding Student in CS \\
 2016	     & International  & 2016 MIT Zero Robotics Challenge ISS Finalist\\
