@@ -67,14 +67,18 @@ let compile = (contentDir, outputDir, ignore) => {
         // Build individual posts from template
         marked(extract(contentDir, post).content, function (err, content) {
             if (err) throw err
+
+			const targetDir = `${outputDir}/${extract(contentDir, post).slug}`
+			const postUrl = `http://gmittal.github.io/${targetDir}`
+
             const postTemplate = fs.readFileSync(`${__dirname}/templates/post.html`, `utf-8`)
                                    .replace(/{POST-TITLE}/g, metadata.title)
                                    .replace(/{POST-DATE}/g, extract(contentDir, post).timestamp)
                                    .replace(/{POST-AUTHOR}/g, metadata.author)
                                    .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
                                    .replace(/{POST-CONTENT}/g, content)
+								   .replace(/{POST-URL}/g, postUrl)
             // Write post to disk
-            const targetDir = `${outputDir}/${extract(contentDir, post).slug}`
             if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir)
             fs.writeFileSync(`${targetDir}/index.html`, postTemplate)
 
@@ -83,7 +87,7 @@ let compile = (contentDir, outputDir, ignore) => {
               feed.item({
                   title: metadata.title,
                   description: `${metadata.summary} \n\n ${content}`,
-                  url: `http://gmittal.github.io/${targetDir}`,
+                  url: postUrl,
                   date: new Date(extract(contentDir, post).timestamp),
                   author: metadata.author
               })
