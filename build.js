@@ -5,9 +5,7 @@
 const fs = require('fs')
 const marked = require('marked')
 const moment = require('moment')
-const purify = require('purify-css')
 const rss = require('rss')
-
 
 marked.setOptions({ gfm: true, tables: true,
     highlight: function (code) {
@@ -32,20 +30,6 @@ let extract = (contentDir, postFileName) => {
         'metadata': JSON.parse(fileContent.substr(jsonStart, end-jsonStart)),
         'content': fileContent.substr(end+`---END_METADATA---`.length, fileContent.length)
     }
-}
-
-let minify = (cssDir) => {
-	if (!fs.existsSync(cssDir)) throw `No CSS directory "${cssDir}" found.`
-	let content = [`${__dirname}/templates/*.html`, `${__dirname}/thoughts/**/*.html`]
-  	fs.readdirSync(`${__dirname}/${cssDir}`)
-	.filter(p => p.indexOf('.css') > -1)
-	.forEach((file) => {
-		let css = fs.readFileSync(`${__dirname}/${cssDir}/${file}`, `utf-8`)
-		let p = file.split(`.`)
-		p[p.length - 2] += '.min'
-		let outputPath = `${__dirname}/${cssDir}/${p.join(`.`)}`
-		purify(content, css, {minify: true, rejected: true, output: outputPath})
-  	})
 }
 
 /*
@@ -119,4 +103,3 @@ let compile = (contentDir, outputDir, ignore) => {
 
 // Yesterday is history, tomorrow is a mystery, but today is a gift.
 compile(`content`, `thoughts`, `.ignore`)
-minify('css')
