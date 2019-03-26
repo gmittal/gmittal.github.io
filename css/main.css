@@ -319,7 +319,7 @@ h2 {
 }
 
 h3 {
-  font-family: "SFMoMA", "Proxima Nova";
+  font-family: "Inter UI", "SFMoMA", "Proxima Nova";
   border-bottom: 1px solid rgba(37, 36, 37, 0.1);
   line-height: 120%;
 
@@ -360,7 +360,7 @@ input:focus {
   display:block;
   text-align:left;
   font-size: 14pt;
-  font-family: "SFMoMA", "Proxima Nova", sans-serif;
+  font-family: "Inter UI", "Proxima Nova", "Helvetica", sans-serif;
   font-weight: 700;
 }
 
@@ -411,10 +411,11 @@ input:focus {
 }
 
 .articleBody {
-  font-size: 12pt;
-  font-family: "Colfax Web", "Proxima Nova", "Helvetica", sans-serif;
-  line-height: 1.5;
-  color: #555;
+  font-size: 10.5pt;
+  font-family: "Inter UI", "Proxima Nova", "Helvetica", sans-serif;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #111;
   text-rendering: optimizeLegibility;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -451,9 +452,9 @@ input:focus {
 }
 
 #headline {
-  color: #333;
-  font-size: 23pt;
-  font-family: 'SFMoMA', 'Proxima Nova';
+  color: #000;
+  font-size: 25pt;
+  font-family: 'Inter UI', 'SFMoMA', 'Proxima Nova';
   font-weight:700;
   line-height: 110%;
   margin-top: 10px;
@@ -572,7 +573,7 @@ blockquote {
   color: rgba(33, 33, 33, 0.8);
   line-height: 160%;
   font-style:italic;
-  font-family: "Colfax Web";
+  font-family: "Inter UI", sans-serif;
   font-weight: 300;
   padding-left: 10px;
   padding-top: 10px;
@@ -585,7 +586,7 @@ blockquote quotee {
   line-height: 1.5;
   margin-top: 10px;
   font-weight: 600;
-  font-family: "SFMoMA", sans-serif;
+  font-family: "Inter UI", sans-serif;
   display:block;
   font-style:normal;
 }
