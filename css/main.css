@@ -553,7 +553,11 @@ Helper classes
   width: 100%!important;
 }
 
-img {
+#photo-wall video {
+    width: 100%;
+}
+
+img, video {
   padding: 3px;
   border: 1px solid #eee;
 }
