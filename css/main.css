@@ -557,9 +557,13 @@ Helper classes
     width: 100%;
 }
 
-img, video {
+img, video, iframe {
   padding: 3px;
   border: 1px solid #eee;
+}
+
+iframe {
+  width: 100%;
 }
 
 img#rss {

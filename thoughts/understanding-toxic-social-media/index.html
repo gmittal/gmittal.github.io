@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Gautam Mittal - Understanding Toxic Social Media with Deep Learning</title>
-  <meta name="description" content="Obligatory Hello, world!">
-  <meta property="og:description" content="Obligatory Hello, world!">
+  <meta name="description" content="Add description about neural networks and Reddit.">
+  <meta property="og:description" content="Add description about neural networks and Reddit.">
   <meta property="og:type" content="article">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -21,7 +21,7 @@
       </span>
     </h1>
     <span id="readTime">
-      3 min
+      7 min
     </span>
   </div>
   <hr id="mobileDivider" />
@@ -33,7 +33,7 @@
           Understanding Toxic Social Media with Deep Learning
         </div>
         <div class="date" style="margin-left:0px!important;">
-	  <span id="lead">Obligatory Hello, world!</span><br />
+	  <span id="lead">Add description about neural networks and Reddit.</span><br />
 	  November 30, 2018
 	</div>
       </div>
@@ -50,10 +50,38 @@
     <span class="hljs-literal">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">words</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> obscene/<span class="hljs-keyword">words</span>
 </code></pre>
 <p>This model is only able to determine toxicity of a snippet of text and not the other five labels provided in our training set. In addition, it is unaware of additional textual features that may provide greater context in determining a more accurate toxicity metric for a social media comment.</p>
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" width="100%" border="0"></iframe>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" width="100%" border="0" scrolling="no" onload="resizeIframe(this)"></iframe>
 
 <p>To improve on this model, we use deep learning methods to enable automatic detection of robust features to determine toxicity given social media text. We trained a <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">multi-layer perceptron</a> with a word embedding layer of 256 units, a single hidden layer of 250 units, and an output layer with 6 units, one for each output label. Using the <a href="https://arxiv.org/pdf/1412.6980.pdf">Adam optimizer</a>, our network, when trained on the <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Toxic Comment Classification</a> data, converged in approximately 20 minutes on a quad-core Intel i7 CPU and achieved approximately 95% test accuracy on the Kaggle leaderboard. Although this model was able to discern the toxicity and other metrics for all of the validation samples with reasonable accuracy, this architecture inherently has no awareness of how different sequences of tokens affect the final output.</p>
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" width="100%" border="0"></iframe>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" width="100%" border="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+<p><strong>TABLE GOES HERE</strong></p>
+<p>Our final model architecture was heavily inspired by top-scoring models on the public <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Jigsaw Toxic Comment Classification Kaggle</a> challenge, and the training data for our model is the publicly available Kaggle competition training set. Our model primarily consists of <a href="https://en.wikipedia.org/wiki/Bidirectional_recurrent_neural_networks">bidirectional long short term memory (LSTM)</a> cells combined with <a href="https://blog.goodaudience.com/introduction-to-1d-convolutional-neural-networks-in-keras-for-time-sequences-3a7ff801a2cf">one-dimensional convolutional layers</a> and fully-connected layers. These layers allow the model to find sequential patterns in the training data and learn how ordered sequences affect the final toxicity metric. We use <a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">dropout</a> to regularize our model, allowing for more general predictions. The model has over 5.5 million parameters and takes approximately one hour to train on a quad-core Intel i7 CPU. Our model was trained on approximately 145,000 training samples, and achieved approximately 98% test accuracy on the Kaggle leaderboard.</p>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+<p>The data that was used for analysis was downloaded from the public Reddit Self-Post Classification Task available on Kaggle. It contains over 1000 posts from over 1000 subreddits resulting in over 1 million posts of varying length, content, and contexts to analyze using our trained model.</p>
+<h3 id="reddit-analysis">Reddit Analysis</h3>
+<p>With our model, we classified each post in the six labels mentioned above — toxic, severely toxic, obscene, insult, threat, and identity hate — each with a probability (0 meaning least-likely to be that label and 1 meaning most-likely). The basic statistics of the entire comment dataset are presented below:</p>
+<p><strong>TABLE GOES HERE</strong></p>
+<p>There are some labels that are more prevalent in the comments than others. This distinction could also result from inaccuracy in the classifier, as there are multiple comments that carry different sentiments and meanings depending on the context that they appear in. For example,
+From this classification, we can further categorize the comments into subreddits to obtain metrics on the toxicity and other labels for each subreddit. Out of the 1013 subreddits in the dataset, only one remained with the highest quantity of each metric: emojipasta. Another trend was the consistent presence of multiple specific pornographic subreddits in the 12 subreddits with the highest metric for each label, including the identity hate label. Furthermore, some comments appear multiple times in the 12 comments with the highest metric for each label, potentially indicating that these polarizing comments could have shifted the means of their subreddits in each respective label metric.</p>
+<p>Alongside the comments, we obtained another dataset with categorical info on each subreddit. By combining the datasets, we determined which categories had the highest mean metrics for each label:</p>
+<iframe src="https://gautam.cc/susa-fa18/interactive/graphs/" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+<p><strong>SHOW SOME MORE GRAPHS HERE</strong></p>
+<p>Sex/Relationships, Meta, and Writing/Stories top the metrics for each label, with drugs, politics/viewpoint, and social group behind these categories in multiple labels.</p>
+<p>Further analysis into the comments revealed other interesting trends. Based on a word analysis, the top 12 comments in identity hate label all contained the same specific racial slur. Additionally, the top 12 comments in the threat label all contained the word &quot;kill,&quot; either indicating the majority of the harshest comments contained this word, or the classifier determined that comments with this word are the most threatening.</p>
+<h3 id="proposal">Proposal</h3>
+<p>This classification system can have many applications. To start, it can be used to determine which subreddits are ones to avoid, which is especially useful for users who prefer a safer online environment.</p>
+<p>Furthermore, the system can directly be used to make every environment safe for all users via an automatic filtering system. With this system, as each comment is posted, the system can parse the comment, gather metrics for each label, and determine whether the comment should be removed or not. At the same time, with our current model, various problems could arise, as multiple inevitably non-toxic comments will be classified as toxic, therefore creating an atmosphere where individuals are unsure what they can and cannot post. This can create many problems, because it perpetuates a blurry line between what is good and bad to post, therefore creating a strict and user-unfriendly forum.</p>
+<p>The system can also be used to gather insights into human behavior. By analyzing the words in each comment word analysis, we were able to discover important trends with what racial slurs are common in identity-hating comments. This could be expanded to conversation and messaging data to see what trends are there in more interpersonal communication.</p>
+<p>The practical applications of this classifier are endless, and the trends we can discover using it can help us understand the online community a lot better than before.</p>
+<p>This project and all related <a href="https://github.com/gmittal/susa-fa18">code is open-sourced on GitHub</a>.</p>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 
 
         <div id="disqus_thread"></div>
