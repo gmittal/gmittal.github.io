@@ -2,7 +2,7 @@
 {
   "title": "Understanding Toxic Social Media with Deep Learning",
   "author": "Gautam Mittal, Adnaan Sachidanandan",
-  "summary": "Add description about neural networks and Reddit.",
+  "summary": "Learning about online interactions with data science and neural networks.",
   "tags":[
     "me"
   ]
