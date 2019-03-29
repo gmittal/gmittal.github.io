@@ -53,7 +53,7 @@ From this classification, we can further categorize the comments into subreddits
 
 Alongside the comments, we obtained another dataset with categorical info on each subreddit. By combining the datasets, we determined which categories had the highest mean metrics for each label:
 
-<iframe id="graph" src="http://127.0.0.1:8081" scrolling="no" height="600"></iframe>
+<iframe id="graph" src="https://gautam.cc/susa-fa18/interactive/graphs/" scrolling="no" height="600"></iframe>
 <script>
 var iframe = document.getElementById("graph");
 iframe.contentWindow.postMessage("Hi");
