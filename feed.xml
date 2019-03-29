@@ -9,7 +9,7 @@
          <link>http://gmittal.github.io</link>
       </image>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Fri, 29 Mar 2019 18:19:53 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 29 Mar 2019 18:22:16 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
@@ -350,7 +350,7 @@ KTHXBYE
       </item>
       <item>
          <title><![CDATA[Understanding Toxic Social Media with Deep Learning]]></title>
-         <description><![CDATA[Learning about online interactions with data science and neural networks. 
+         <description><![CDATA[Learning about online interactions with big data. 
 
  <p><em>This post was co-authored with Adnaan Sachidanandan and was written for the UC Berkeley <a href="https://susa.berkeley.edu/">Statistics Undergraduate Student Association</a>.</em></p>
 <p>The proliferation of online discourse over the past decade has enabled widespread accessibility of information and ideas, with billions of users actively using social networking platforms such as Reddit, YouTube, and Facebook. However, the popularity of Internet-based discussions has also come with greater anonymity in these conversations. In some of these online discussions, toxic environments emerge. Exploring the interactions that cause these toxic environments to develop is important in order to eliminate this problem. In addition, understanding the toxic &quot;composition&quot; of an environment, such as the relative frequencies of obscenities, insults, threats, and comments propagating identity hate, can also provide insight towards how to fight these issues. Although Internet censorship and systems that control freedom of speech are contentious issues, our research aims to investigate trends and characteristics about these toxic conversations using deep neural networks.</p>
