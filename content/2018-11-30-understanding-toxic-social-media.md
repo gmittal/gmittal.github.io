@@ -30,7 +30,7 @@ def predict(comment):
 This model is only able to determine toxicity of a snippet of text and not the other five labels provided in our training set. In addition, it is unaware of additional textual features that may provide greater context in determining a more accurate toxicity metric for a social media comment.
 
 <iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" height="250" scrolling="no"></iframe>
-<lead>Baseline manual feature detector.</lead><br /><br />
+<lead>Baseline manual feature detector.</lead><br />
 
 To improve on this model, we use deep learning methods to enable automatic detection of robust features to determine toxicity given social media text. We trained a [multi-layer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) with a word embedding layer of 256 units, a single hidden layer of 250 units, and an output layer with 6 units, one for each output label. Using the [Adam optimizer](https://arxiv.org/pdf/1412.6980.pdf), our network, when trained on the [Google Toxic Comment Classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) data, converged in approximately 20 minutes on a quad-core Intel i7 CPU and achieved approximately 95% test accuracy on the Kaggle leaderboard. Although this model was able to discern the toxicity and other metrics for all of the validation samples with reasonable accuracy, this architecture inherently has no awareness of how different sequences of tokens affect the final output.
 
@@ -55,7 +55,7 @@ To improve on this model, we use deep learning methods to enable automatic detec
 Our final model architecture was heavily inspired by top-scoring models on the public [Google Jigsaw Toxic Comment Classification Kaggle](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) challenge, and the training data for our model is the publicly available Kaggle competition training set. Our model primarily consists of [bidirectional long short term memory (LSTM)](https://en.wikipedia.org/wiki/Bidirectional_recurrent_neural_networks) cells combined with [one-dimensional convolutional layers](https://blog.goodaudience.com/introduction-to-1d-convolutional-neural-networks-in-keras-for-time-sequences-3a7ff801a2cf) and fully-connected layers. These layers allow the model to find sequential patterns in the training data and learn how ordered sequences affect the final toxicity metric. We use [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) to regularize our model, allowing for more general predictions. The model has over 5.5 million parameters and takes approximately one hour to train on a quad-core Intel i7 CPU. Our model was trained on approximately 145,000 training samples, and achieved approximately 98% test accuracy on the Kaggle leaderboard.
 
 <iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" height="250" scrolling="no"></iframe>
-<lead>Bidirectional LSTM.</lead><br /><br />
+<lead>Bidirectional LSTM.</lead><br />
 
 The data that was used for analysis was downloaded from the public Reddit Self-Post Classification Task available on Kaggle. It contains over 1000 posts from over 1000 subreddits resulting in over 1 million posts of varying length, content, and contexts to analyze using our trained model.
 
