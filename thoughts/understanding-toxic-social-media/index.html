@@ -50,29 +50,42 @@
     <span class="hljs-literal">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> all == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> obscene/all
 </code></pre>
 <p>This model is only able to determine toxicity of a snippet of text and not the other five labels provided in our training set. In addition, it is unaware of additional textual features that may provide greater context in determining a more accurate toxicity metric for a social media comment.</p>
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" height="250" scrolling="no"></iframe>
-
+<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" height="250" scrolling="no"></iframe></p>
+<p><lead>Baseline manual feature detector.</lead><br /><br /></p>
 <p>To improve on this model, we use deep learning methods to enable automatic detection of robust features to determine toxicity given social media text. We trained a <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">multi-layer perceptron</a> with a word embedding layer of 256 units, a single hidden layer of 250 units, and an output layer with 6 units, one for each output label. Using the <a href="https://arxiv.org/pdf/1412.6980.pdf">Adam optimizer</a>, our network, when trained on the <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Toxic Comment Classification</a> data, converged in approximately 20 minutes on a quad-core Intel i7 CPU and achieved approximately 95% test accuracy on the Kaggle leaderboard. Although this model was able to discern the toxicity and other metrics for all of the validation samples with reasonable accuracy, this architecture inherently has no awareness of how different sequences of tokens affect the final output.</p>
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" height="250" scrolling="no"></iframe>
+<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" height="250" scrolling="no"></iframe></p>
+<p><lead>Multilayer perceptron. This neural network runs in your browser using TensorFlow.js!</lead><br /><br /></p>
+<table>
+    <thead>
+        <tr>
+            <th><img src="/img/susa-fa18-mlp.png" height="400"></th>
+            <th><img src="/img/susa-fa18-bilstm.png" height="400"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><br />Multilayer Perceptron Architecture<br /> 24.3M parameters<br /> <strong>95% test accuracy</strong></td>
+            <td><br />Bidirectional LSTM + 1D CNN<br /> 5.5M parameters<br /> <strong>98% test accuracy</strong></td>
+        </tr>
+    </tbody>
+</table>
 
-<p><strong>TABLE GOES HERE</strong></p>
 <p>Our final model architecture was heavily inspired by top-scoring models on the public <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Jigsaw Toxic Comment Classification Kaggle</a> challenge, and the training data for our model is the publicly available Kaggle competition training set. Our model primarily consists of <a href="https://en.wikipedia.org/wiki/Bidirectional_recurrent_neural_networks">bidirectional long short term memory (LSTM)</a> cells combined with <a href="https://blog.goodaudience.com/introduction-to-1d-convolutional-neural-networks-in-keras-for-time-sequences-3a7ff801a2cf">one-dimensional convolutional layers</a> and fully-connected layers. These layers allow the model to find sequential patterns in the training data and learn how ordered sequences affect the final toxicity metric. We use <a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">dropout</a> to regularize our model, allowing for more general predictions. The model has over 5.5 million parameters and takes approximately one hour to train on a quad-core Intel i7 CPU. Our model was trained on approximately 145,000 training samples, and achieved approximately 98% test accuracy on the Kaggle leaderboard.</p>
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" height="250" scrolling="no"></iframe>
-
+<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" height="250" scrolling="no"></iframe></p>
+<p><lead>Bidirectional LSTM.</lead><br /><br /></p>
 <p>The data that was used for analysis was downloaded from the public Reddit Self-Post Classification Task available on Kaggle. It contains over 1000 posts from over 1000 subreddits resulting in over 1 million posts of varying length, content, and contexts to analyze using our trained model.</p>
 <h3 id="reddit-analysis">Reddit Analysis</h3>
 <p>With our model, we classified each post in the six labels mentioned above — toxic, severely toxic, obscene, insult, threat, and identity hate — each with a probability (0 meaning least-likely to be that label and 1 meaning most-likely). The basic statistics of the entire comment dataset are presented below:</p>
-<p><strong>TABLE GOES HERE</strong></p>
+<p><img src="/img/susa-fa18-graph.png" alt="graph"></p>
 <p>There are some labels that are more prevalent in the comments than others. This distinction could also result from inaccuracy in the classifier, as there are multiple comments that carry different sentiments and meanings depending on the context that they appear in. For example,
 From this classification, we can further categorize the comments into subreddits to obtain metrics on the toxicity and other labels for each subreddit. Out of the 1013 subreddits in the dataset, only one remained with the highest quantity of each metric: emojipasta. Another trend was the consistent presence of multiple specific pornographic subreddits in the 12 subreddits with the highest metric for each label, including the identity hate label. Furthermore, some comments appear multiple times in the 12 comments with the highest metric for each label, potentially indicating that these polarizing comments could have shifted the means of their subreddits in each respective label metric.</p>
 <p>Alongside the comments, we obtained another dataset with categorical info on each subreddit. By combining the datasets, we determined which categories had the highest mean metrics for each label:</p>
 <p><iframe id="graph" src="https://gautam.cc/susa-fa18/interactive/graphs/" scrolling="no" height="600"></iframe></p>
 <script>
 var iframe = document.getElementById("graph");
-iframe.contentWindow.postMessage("Hi");
+iframe.contentWindow.postMessage("resize");
 </script>
 
-<p><strong>SHOW SOME MORE GRAPHS HERE</strong></p>
 <p>Sex/Relationships, Meta, and Writing/Stories top the metrics for each label, with drugs, politics/viewpoint, and social group behind these categories in multiple labels.</p>
 <p>Further analysis into the comments revealed other interesting trends. Based on a word analysis, the top 12 comments in identity hate label all contained the same specific racial slur. Additionally, the top 12 comments in the threat label all contained the word &quot;kill,&quot; either indicating the majority of the harshest comments contained this word, or the classifier determined that comments with this word are the most threatening.</p>
 <h3 id="proposal">Proposal</h3>

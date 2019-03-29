@@ -566,6 +566,14 @@ iframe {
   width: 100%;
 }
 
+table {
+    width: 100%;
+}
+
+table td {
+    text-align: center;
+}
+
 img#rss {
   border: none;
   background:none;
