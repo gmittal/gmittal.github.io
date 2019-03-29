@@ -76,7 +76,7 @@ let compile = (contentDir, outputDir, ignore) => {
                                    .replace(/{POST-DATE}/g, extract(contentDir, post).timestamp)
                                    .replace(/{POST-AUTHOR}/g, metadata.author)
 	                           .replace(/{POST-DESCRIPTION}/g, metadata.summary)
-                                   .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 200))
+                                   .replace(/{POST-READ-TIME}/g, Math.ceil(content.split(` `).length / 250))
                                    .replace(/{POST-CONTENT}/g, content)
 		                   .replace(/{POST-URL}/g, postUrl)
             // Write post to disk

@@ -9,6 +9,12 @@
 }
 ---END_METADATA---
 
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
 _This post was co-authored with Adnaan Sachidanandan and was written for the UC Berkeley [Statistics Undergraduate Student Association](https://susa.berkeley.edu/)._
 
 The proliferation of online discourse over the past decade has enabled widespread accessibility of information and ideas, with billions of users actively using social networking platforms such as Reddit, YouTube, and Facebook. However, the popularity of Internet-based discussions has also come with greater anonymity in these conversations. In some of these online discussions, toxic environments emerge. Exploring the interactions that cause these toxic environments to develop is important in order to eliminate this problem. In addition, understanding the toxic "composition" of an environment, such as the relative frequencies of obscenities, insults, threats, and comments propagating identity hate, can also provide insight towards how to fight these issues. Although Internet censorship and systems that control freedom of speech are contentious issues, our research aims to investigate trends and characteristics about these toxic conversations using deep neural networks.
@@ -29,11 +35,11 @@ def predict(comment):
 
 This model is only able to determine toxicity of a snippet of text and not the other five labels provided in our training set. In addition, it is unaware of additional textual features that may provide greater context in determining a more accurate toxicity metric for a social media comment.
 
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" width="100%" border="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" width="100%" border="0" onload="resizeIframe(this)"></iframe>
 
 To improve on this model, we use deep learning methods to enable automatic detection of robust features to determine toxicity given social media text. We trained a [multi-layer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) with a word embedding layer of 256 units, a single hidden layer of 250 units, and an output layer with 6 units, one for each output label. Using the [Adam optimizer](https://arxiv.org/pdf/1412.6980.pdf), our network, when trained on the [Google Toxic Comment Classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) data, converged in approximately 20 minutes on a quad-core Intel i7 CPU and achieved approximately 95% test accuracy on the Kaggle leaderboard. Although this model was able to discern the toxicity and other metrics for all of the validation samples with reasonable accuracy, this architecture inherently has no awareness of how different sequences of tokens affect the final output.
 
-<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" width="100%" border="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" width="100%" border="0" onload="resizeIframe(this)"></iframe>
 
 **TABLE GOES HERE**
 
@@ -71,9 +77,3 @@ The system can also be used to gather insights into human behavior. By analyzing
 The practical applications of this classifier are endless, and the trends we can discover using it can help us understand the online community a lot better than before.
 
 This project and all related [code is open-sourced on GitHub](https://github.com/gmittal/susa-fa18).
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
