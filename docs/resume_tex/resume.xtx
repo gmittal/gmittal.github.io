@@ -174,11 +174,11 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Experience}
 \runsubsection{Stripe}
-\descript{| Software Engineering Intern + KP Fellow}
+\descript{| Software Engineering Intern}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Incoming Engineering Intern (Summer 2019)
+\item Engineering Intern for Summer 2019.
 \end{tightemize}
 \sectionsep
 
@@ -186,7 +186,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \descript{| Director}
 \location{February 2019 – Present | Berkeley, CA}
 \begin{tightemize}
-\item Building the largest collegiate hackathon in the world.
+\item Building infrastructure, tools for sponsorship, outreach, creating a hackerspace.
 \end{tightemize}
 \sectionsep
 
