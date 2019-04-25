@@ -66,7 +66,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com}\\
+\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com} | 
 \href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | +1 (480) 648-8254
 }
 
@@ -89,6 +89,7 @@
 \location{Expected May 2021 | Berkeley, CA \\
 	  GPA: 3.75 / 4.0	       	 }
 \textbf{Regents' and Chancellor's Scholar} \\
+Cal Hacks, SUSA, UC Jazz \\ 
 \sectionsep
 
 \subsection{Gunn High School}
@@ -178,36 +179,36 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Engineering Intern for Summer 2019.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Cal Hacks}
-\descript{| Director}
-\location{February 2019 – Present | Berkeley, CA}
-\begin{tightemize}
-\item Building infrastructure, tools for sponsorship, outreach, creating a hackerspace.
+\item Interning on the Connect team for Summer 2019.
+\item 2019 Kleiner Perkins Engineering Fellow.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Edmodo}
-\descript{| Research Intern}
+\descript{| Machine Learning Intern}
 \location{June 2017 – August 2017 | San Mateo, CA}
 \begin{tightemize}
 \item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
 \item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network.
-\item Supervised by Dr. Hannes Marais, CTO of AI.
+\item Interned on the ML + Search team, supervised by CTO of AI.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Make School (YC W12)}
-\descript{| Game Development Intern }
+\runsubsection{Copilot}
+\descript{| Executive Director}
+\location{June 2016 - June 2018 | Palo Alto, CA}
+\begin{tightemize}
+\item Online, anonymous peer-to-peer mental health counseling service. 
+\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health experts.
+\item Open-source full-stack platform. Source: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Make School}
+\descript{| iOS Game Development Intern }
 \location{Summer 2012 \& Summer 2013 | Palo Alto, CA}
 \begin{tightemize}
-\item Developed iOS games using \textbf{Objective-C and cocos2d} in studio setting.
-\item Designed and built ``Bison Run`` \& ``Blend`` (published to App Store)
-\item Featured in articles by SF Chronicle, Knowledge@Wharton, PA Weekly
-\item 2nd Place for Game Excellence at MGWU Demo Day
+\item Developed iOS games ``Bison Run`` \& ``Blend`` (published to App Store) using \textbf{Objective-C and cocos2d} in studio setting.
 \end{tightemize}
 \sectionsep
 
@@ -217,12 +218,12 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Projects}
 
-\runsubsection{Copilot}
-\descript{| Anonymous Online Peer-to-Peer Counseling Platform}
-\location{June 2016 - June 2018 | \textbf{Node, Firebase, JavaScript}}
+\runsubsection{TotalityHacks}
+\descript{| A New Collegiate Hackathon}
+\location{November 2017 - July 2018 | \textbf{JavaScript, Python, Node, MongoDB}}
 \begin{tightemize}
-\item Open-source full-stack web application for mental health counseling. Source: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
-\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health advocates.
+\item Logistics, workshops, and sponsorship operations for independent collegiate hackathon with directors from Stanford, Duke, Cal, USC, etc.
+\item Wrote application-reading software and tools to automate sponsor acquisition.
 \end{tightemize}
 \sectionsep
 
@@ -253,6 +254,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \begin{tabular}{rll}
 2019	 & top 50/3000	& Kleiner Perkins Engineering Fellow \\
 2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
+2018 	  & top 1/480 	     & US Marine Corps \& Louis Armstrong Jazz Awards \\ 
 2018      & top 2/480 &     Gunn High School Outstanding Student in CS \\
 2016	     & International  & 2016 MIT Zero Robotics Challenge ISS Finalist\\
 % 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
