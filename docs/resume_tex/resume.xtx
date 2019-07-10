@@ -110,27 +110,30 @@ Swift \textbullet{}
 Java \\
 Scheme \textbullet{}
 SQL \textbullet{}
+Ruby \textbullet{}
 Objective-C \\
 \sectionsep
 
 \subsection{TOOLS}
 Keras \textbullet{}
 TensorFlow \textbullet{}
-NumPy \textbullet{}
-HTML \\
+Jupyter \textbullet{}
+NumPy \\
+React \textbullet{}
+HTML \textbullet{}
 CSS \textbullet{}
 jQuery \textbullet{}
-Node \textbullet{}
+Node \\
 Flask \textbullet{}
-Express \\
+Express \textbullet{}
 SpriteKit \textbullet{}
-UIKit \textbullet{}
+UIKit \\
 Processing \textbullet{}
 Chrome Headless \textbullet{}
-AWS \textbullet{}
+AWS \\
+GCP \textbullet{}
 UNIX \textbullet{}
-Git \textbullet{}
-Emacs
+Git
 
 
 \sectionsep
@@ -153,9 +156,10 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \section{Coursework}
 \subsection{Undergraduate}
 \textbf{CS61A:} Structure \& Interpretation of Computer Programs\\
-\textbf{CS61B:} Data Structures \& Algorithms \\
-\textbf{EE16A:} Designing Information Devices and Systems I\\
-\textbf{EE16B:} Designing Information Devices and Systems II\\
+\textbf{CS61B:} Data Structures \& Algorithms\\
+\textbf{CS198-082:} Machine Learning DeCal\\
+\textbf{EE16A:} Linear Algebra, Devices, \& Systems I\\
+\textbf{EE16B:} Differential Equations, Devices, \& Systems II\\
 \textbf{MATH53:} Multivariable Calculus\\
 \textbf{PHYSICS7B:} Heat, Electricity, Magnetism\\
 \sectionsep
@@ -190,7 +194,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{June 2017 – August 2017 | San Mateo, CA}
 \begin{tightemize}
 \item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
-\item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network.
+\item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network of 100M+ users.
 \item Interned on the ML + Search team, supervised by CTO of AI.
 \end{tightemize}
 \sectionsep
