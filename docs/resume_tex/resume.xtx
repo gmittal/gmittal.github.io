@@ -94,7 +94,7 @@ Cal Hacks, SUSA, UC Jazz \\
 \sectionsep
 
 \subsection{Gunn High School}
-\location{May 2018 | Palo Alto, CA \\ GPA: 4.35 / 4.0}
+\location{May 2018 | Palo Alto, CA \\ GPA: 4.35 (W), 4.0 (UW)}
 \textbf{CS Club} (President), \textbf{TEDx} (President), \textbf{Tri-M Music Honor Society} (President), \textbf{GunnHacks} (Lead Organizer), \textbf{APCS Teaching Assistant}, \textbf{Jazz Ensemble}, \textbf{Wind Ensemble}, \textbf{Track \& XC} \\
 \sectionsep
 
@@ -120,17 +120,16 @@ TensorFlow \textbullet{}
 Jupyter \textbullet{}
 NumPy \\
 React \textbullet{}
+GraphQL \textbullet{}
 HTML \textbullet{}
-CSS \textbullet{}
+CSS \\
 jQuery \textbullet{}
-Node \\
+Node \textbullet{}
 Flask \textbullet{}
-Express \textbullet{}
-SpriteKit \textbullet{}
-UIKit \\
+Express \\
 Processing \textbullet{}
-Chrome Headless \textbullet{}
-AWS \\
+Chrome Headless \\
+AWS \textbullet{}
 GCP \textbullet{}
 UNIX \textbullet{}
 Git
@@ -157,6 +156,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \subsection{Undergraduate}
 \textbf{CS61A:} Structure \& Interpretation of Computer Programs\\
 \textbf{CS61B:} Data Structures \& Algorithms\\
+\textbf{CS61C:} Machine Structures (Fall 2019)\\
+\textbf{CS70:} Discrete Mathematics and Probability Theory (Fall 2019)\\
 \textbf{CS198-082:} Machine Learning DeCal\\
 \textbf{EE16A:} Linear Algebra, Devices, \& Systems I\\
 \textbf{EE16B:} Differential Equations, Devices, \& Systems II\\
@@ -184,8 +185,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Interning on the Connect team for Summer 2019.
-\item 2019 Kleiner Perkins Engineering Fellow.
+\item Working on the user-facing data pipeline for Connect, fulfilling top asks for Lyft, TaskRabbit, Blackbaud and other platforms on Stripe.
+\item Building end-to-end product features with \textbf{React, Ruby, and GraphQL}
 \end{tightemize}
 \sectionsep
 
@@ -199,18 +200,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Copilot}
-\descript{| Executive Director}
-\location{June 2016 - June 2018 | Palo Alto, CA}
-\begin{tightemize}
-\item Online, anonymous peer-to-peer mental health counseling service. 
-\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health experts.
-\item Open-source full-stack platform. Source: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
-\end{tightemize}
-\sectionsep
-
 \runsubsection{Make School}
-\descript{| iOS Game Development Intern }
+\descript{| Game Development Intern }
 \location{Summer 2012 \& Summer 2013 | Palo Alto, CA}
 \begin{tightemize}
 \item Developed iOS games ``Bison Run`` \& ``Blend`` (published to App Store) using \textbf{Objective-C and cocos2d} in studio setting.
@@ -222,13 +213,13 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-
-\runsubsection{TotalityHacks}
-\descript{| A New Collegiate Hackathon}
-\location{November 2017 - July 2018 | \textbf{JavaScript, Python, Node, MongoDB}}
+\runsubsection{Copilot}
+\descript{| Executive Director}
+\location{June 2016 - June 2018 | \textbf{JavaScript, CSS, Node}}
 \begin{tightemize}
-\item Logistics, workshops, and sponsorship operations for independent collegiate hackathon with directors from Stanford, Duke, Cal, USC, etc.
-\item Wrote application-reading software and tools to automate sponsor acquisition.
+\item Built an online, anonymous peer-to-peer mental health counseling service.
+\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health experts.
+\item Open-sourced the project: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
 \end{tightemize}
 \sectionsep
 
@@ -257,6 +248,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Awards}
 \begin{tabular}{rll}
+2019	& top 30/300   & Accel Scholar (run by Accel Partners + Berkeley EECS)\\
 2019	 & top 50/3000	& Kleiner Perkins Engineering Fellow \\
 2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
 2018 	  & top 1/480 	     & US Marine Corps \& Louis Armstrong Jazz Awards \\ 

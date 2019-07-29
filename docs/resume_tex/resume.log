@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  9 JUL 2019 21:55
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  28 JUL 2019 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,21 +1283,6 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 . fontspec info: "no-scripts"
 . 
-. Font "Helvetica" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Heiti SC Medium" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Heiti TC Medium" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
 . Font "Helvetica Light" does not contain any OpenType `Script' information.
 .................................................
 .................................................
@@ -1317,7 +1302,7 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 
 LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/bx/sc' undefined
-(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 228.
+(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 218.
 
 .................................................
 . fontspec info: "no-scripts"
@@ -1355,24 +1340,29 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/bx/sc' undefined
 . Font "Helvetica Light" does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 259.
+(Font)              <7> on input line 250.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 259.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
+(Font)              <5> on input line 250.
+
+Overfull \hbox (6.6404pt too wide) in paragraph at lines 250--262
+[][]  
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 272.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 3E6F7AFD4426609B30D87B2B581AA49A.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
  23488 strings out of 492970
