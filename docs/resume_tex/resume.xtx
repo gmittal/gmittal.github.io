@@ -93,11 +93,6 @@
 Cal Hacks, SUSA, UC Jazz \\ 
 \sectionsep
 
-\subsection{Gunn High School}
-\location{May 2018 | Palo Alto, CA \\ GPA: 4.35 (W), 4.0 (UW)}
-\textbf{CS Club} (President), \textbf{TEDx} (President), \textbf{Tri-M Music Honor Society} (President), \textbf{GunnHacks} (Lead Organizer), \textbf{APCS Teaching Assistant}, \textbf{Jazz Ensemble}, \textbf{Wind Ensemble}, \textbf{Track \& XC} \\
-\sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,31 +104,30 @@ JavaScript \textbullet{}
 Swift \textbullet{}
 Java \\
 Scheme \textbullet{}
-SQL \textbullet{}
 Ruby \textbullet{}
-Objective-C \\
+Objective-C \textbullet{}
+SQL \\
 \sectionsep
 
 \subsection{TOOLS}
-Keras \textbullet{}
-TensorFlow \textbullet{}
-Jupyter \textbullet{}
-NumPy \\
 React \textbullet{}
 GraphQL \textbullet{}
+Node.js \textbullet{}
+Flask \\
+Rails \textbullet{}
+Keras \textbullet{}
+TensorFlow \textbullet{}
+Jupyter \\
+NumPy \textbullet{}
+Flow \textbullet{}
 HTML \textbullet{}
 CSS \\
-jQuery \textbullet{}
-Node \textbullet{}
-Flask \textbullet{}
-Express \\
 Processing \textbullet{}
-Chrome Headless \\
-AWS \textbullet{}
+Chrome Headless \textbullet{}
+AWS \\
 GCP \textbullet{}
 UNIX \textbullet{}
 Git
-
 
 \sectionsep
 
@@ -185,8 +179,10 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Working on the user-facing data pipeline for Connect, fulfilling top asks for Lyft, TaskRabbit, Blackbaud and other platforms on Stripe.
-\item Building end-to-end product features with \textbf{React, Ruby, and GraphQL}
+\item Built an end-to-end data export pipeline for Connect, used daily by platforms such as Lyft, Doordash, TaskRabbit, Wix, etc.
+\item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security. 
+\item Designed and tested data infrastructure using Ruby and ElasticSearch, and Dashboard front-end with React. 
+\item Coordinated UX research study to understand user needs and adjusted engineering \& product roadmap accordingly.
 \end{tightemize}
 \sectionsep
 
@@ -194,17 +190,9 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \descript{| Machine Learning Intern}
 \location{June 2017 – August 2017 | San Mateo, CA}
 \begin{tightemize}
-\item Designed ML pipelines with \textbf{Python, TensorFlow, NLTK, and pandas} to recommend user-generated content (such as topic-based questions) for AskMo, Edmodo’s content-driven curiosity engine.
-\item Compiled datasets for training deep neural network models, and built scripts to classify and preprocess over 500K+ questions from educational social network of 100M+ users.
-\item Interned on the ML + Search team, supervised by CTO of AI.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Make School}
-\descript{| Game Development Intern }
-\location{Summer 2012 \& Summer 2013 | Palo Alto, CA}
-\begin{tightemize}
-\item Developed iOS games ``Bison Run`` \& ``Blend`` (published to App Store) using \textbf{Objective-C and cocos2d} in studio setting.
+\item Designed deep learning models with Python, TensorFlow, NLTK, and Pandas to recommend user-generated questions for content engine with 100M+ users.
+\item Implemented a training \& evaluation pipeline and wrote scripts to preprocess and classify noisy data from ElasticSearch index of world's largest educational social network.
+\item Researched and designed experiments inspired by state-of-the-art practices, working with seq2seq neural translation models, ByteNet, and denoising networks for text normalization; reported directly to CTO for AI.
 \end{tightemize}
 \sectionsep
 
@@ -215,9 +203,9 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \section{Projects}
 \runsubsection{Copilot}
 \descript{| Executive Director}
-\location{June 2016 - June 2018 | \textbf{JavaScript, CSS, Node}}
+\location{June 2016 - June 2018 | \textbf{JavaScript, Node.js, Firebase}}
 \begin{tightemize}
-\item Built an online, anonymous peer-to-peer mental health counseling service.
+\item Designed and implemented an online, anonymous peer-to-peer mental health counseling platform.
 \item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health experts.
 \item Open-sourced the project: \href{https://github.com/projectcopilot}{github.com/projectcopilot}
 \end{tightemize}
@@ -227,13 +215,13 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \descript{| Real-time Computer Jazz Improvisation}
 \location{Summer 2016 | \textbf{Python, TensorFlow, FluidSynth}}
 \begin{tightemize}
-\item Signal processing (FFT) and RNN to generate solos with accompanist.
+\item Signal processing (FFT) and recurrent neural network (RNN) to generate improvised jazz solos with live accompanist.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Kenko}
 \descript{| Computer Vision-based Mobile Nutrition Assistant}
-\location{September 2015 | Top 10 at PennApps XII | Node, Objective-C}
+\location{September 2015 | Top 10 at PennApps XII | Node.js, Objective-C, PhantomJS}
 \begin{tightemize}
 \item App that uses CV to determine nutritional content of food from a picture.
 \end{tightemize}
@@ -248,7 +236,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Awards}
 \begin{tabular}{rll}
-2019	& top 30/300   & Accel Scholar (run by Accel Partners + Berkeley EECS)\\
+2019	& top 30   & Accel Scholar (run by Accel Partners + Berkeley EECS)\\
 2019	 & top 50/3000	& Kleiner Perkins Engineering Fellow \\
 2018	     & top 200/8500  & UC Berkeley Regents' and Chancellor's Scholarship \\
 2018 	  & top 1/480 	     & US Marine Corps \& Louis Armstrong Jazz Awards \\ 

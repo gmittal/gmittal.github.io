@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  28 JUL 2019 17:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  12 AUG 2019 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,16 +1193,6 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 . fontspec info: "no-scripts"
 . 
-. Font "Helvetica" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Heiti TC Medium" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
 . Font "Helvetica Light" does not contain any OpenType `Script' information.
 .................................................
 .................................................
@@ -1234,21 +1224,6 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 . fontspec info: "no-scripts"
 . 
 . Font "Helvetica Light" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Helvetica" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Heiti SC Medium" does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Heiti TC Medium" does not contain any OpenType `Script' information.
 .................................................
 .................................................
 . fontspec info: "no-scripts"
@@ -1302,7 +1277,7 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 
 LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/bx/sc' undefined
-(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 218.
+(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 206.
 
 .................................................
 . fontspec info: "no-scripts"
@@ -1340,37 +1315,37 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/bx/sc' undefined
 . Font "Helvetica Light" does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 250.
+(Font)              <7> on input line 238.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 250.
+(Font)              <5> on input line 238.
 
-Overfull \hbox (6.6404pt too wide) in paragraph at lines 250--262
+Overfull \hbox (6.6404pt too wide) in paragraph at lines 238--250
 [][]  
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 264.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 3E6F7AFD4426609B30D87B2B581AA49A.
+(rerunfilecheck)             Checksum: DCF12FC4C7742880A212C6637F5BD63B.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
  23488 strings out of 492970
  432351 string characters out of 6133938
- 533105 words of memory out of 5000000
+ 533022 words of memory out of 5000000
  27274 multiletter control sequences out of 15000+600000
  531032 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,11n,118p,10411b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,118p,10411b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
