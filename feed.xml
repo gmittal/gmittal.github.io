@@ -9,22 +9,22 @@
          <link>http://gmittal.github.io</link>
       </image>
       <generator>RSS for Node</generator>
-      <lastBuildDate>Wed, 22 May 2019 17:53:11 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 19 Aug 2019 17:29:15 GMT</lastBuildDate>
       <atom:link href="http://gmittal.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       <language><![CDATA[en]]></language>
       <item>
          <title><![CDATA[First Blog Post]]></title>
          <description><![CDATA[Obligatory Hello, world! 
 
- <p><img src="/img/obiwan-hello.gif" width="100%" /></p>
+ <img src="/img/obiwan-hello.gif" width="100%" />
+
 <p><strong>Hello, World</strong>! I’m Gautam Mittal, a student at <a href="http://gunn.pausd.org">Henry M. Gunn High School</a> in Silicon Valley. I enjoy food, hacking, running, martial arts, and music of all genres.</p>
 <p>My main intent in starting this blog is to share my thoughts, ideas, and stories. After trying out other blogging platforms (with much frustration and inconsistency), such as <a href="http://medium.com">Medium</a> and <a href="http://wordpress.org">Wordpress</a>, I finally decided it was time to host my own blog. My primary goal is to create content that&#39;s interesting and to share my thoughts on the world around me. The life of a high school student is more eventful than you may think! I also want to write more and continue to develop and improve my style of writing.</p>
 <p>Here&#39;s some <code>LOLCODE</code> to say Hi.</p>
 <pre><code><span class="hljs-attribute">HAI</span>
 CAN HAS STDIO?
 VISIBLE <span class="hljs-string">"Hello there."</span>
-KTHXBYE
-</code></pre>]]></description>
+KTHXBYE</code></pre>]]></description>
          <link>http://gmittal.github.io/thoughts/hello-world</link>
          <guid isPermaLink="true">http://gmittal.github.io/thoughts/hello-world</guid>
          <dc:creator><![CDATA[Gautam Mittal]]></dc:creator>
@@ -63,7 +63,7 @@ KTHXBYE
 <p><lead>Crazy ideas that are only dreamt up at hackathons<lead></p>
 <p>I came to the hackathon with not much more than a laptop, a backpack with some extra clothes in it, and an open mind. I was excited for the next 36 hours, and knew that it would be tiring, yet a lot of fun. My team, which consisted of one other high school hacker, had some ideas in mind, but were not entirely sure how to execute them. We decided to settle on a simple idea where a user could listen to audio files without the need for a cellular or Wifi connection. Basically, we were trying to find a way to send the audio file’s data via SMS. Our plan was rock solid. I would work on the mobile app frontend, which would parse the SMS data and convert it back into an audio file, while my teammate would work on the server-side backend, deconstructing the audio file and turning its data into a format that could be sent via SMS.</p>
 <p>Early on, we realized some flaws with our idea. The University of Michigan EECS building had no AT&amp;T coverage inside, meaning each time we wanted to test the mobile app frontend, I would have to run outside into the blistering sub-zero weather with my phone and test it there. But that was more of an inconvenience more than anything else, and it was definitely not going to stop us from building our hack.</p>
-<h3 id="tl-dr">TL;DR</h3>
+<h3 id="tldr">TL;DR</h3>
 <p><lead>We came to realize why no one had ever tried sending audio over SMS before.<lead></p>
 <p><img src="https://cdn-images-1.medium.com/max/400/1*S04JjUVFaSeBMxC-j4eVgg.jpeg" alt="words_of_wisdom"></p>
 <p>Audio files are just way too big to send in 1600 character chunks. We estimated that with audio compression, the largest song anyone would probably request would be around 5MB, or around 6 minutes in length. Doesn&#39;t sound like much to send, right? Wrong. Very, very wrong. A 5MB file is around 6.8 million characters when encoded in a single base64 string. Twilio, the SMS API we decided use, could send up to 1600 characters per SMS. We realized that Twilio would have to send 4,250 individual SMS messages just so the user could listen to a song equal in length to Bohemian Rhapsody. This was clearly not going to work. Given that Twilio could only send one SMS per second using their regular phone numbers, and three SMSs per second using their toll-free, slightly more expensive phone numbers, this process would also take an extremely long time. We estimated it would take around 25 minutes for a song to be sent and processed before the user could actually listen to their song of choice. Of course, if the song requested had been shorter in length, the user would be able to listen to it sooner, but given that nobody really wants to wait more than thirty seconds for their song to load made this idea even less feasible.</p>
@@ -74,8 +74,8 @@ KTHXBYE
 <p>Over the course of the following few hours, we spent time implementing additional features such as a way for the user to get the weather forecast, Google Maps driving directions, and much more, all through simple SMS commands. We even threw in some natural language processing magic, making the the final product much more intuitive to use.</p>
 <p>What was even better was that we still had a couple of hours left before the project submission deadline, meaning we had time to check our product for any bugs that could jeopardize the demo. We also got a chance to check out some of the other engineering buildings and spend time networking with other hackers.</p>
 <p>When it was finally time to submit our hack, we realized we needed a cool, spiffy, name. We decided to translate the word “everyone” to Latin.</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*rtQo-yqHtKwM1qhzkmQxXw.png" alt="name_idea"></p>
-<p><lead><em>&quot;Everyone&quot; &#8594; &quot;Omnes&quot; &#8594; &quot;Omnus&quot;</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*rtQo-yqHtKwM1qhzkmQxXw.png" alt="name_idea">
+<lead><em>&quot;Everyone&quot; &#8594; &quot;Omnes&quot; &#8594; &quot;Omnus&quot;</em><lead></p>
 <p>We decided to translate “everyone”, mainly because we hoped that our app would empower anyone who had a phone, regardless of whether their phone had a data connection or not, to listen to music. We decided to translate to Latin mainly because we were extremely sleep deprived, and at the time it seemed cool. We also modified the word “omnes” a bit, and changed it to “omnus”, as we thought it sounded and looked cooler.</p>
 <h3 id="the-expo">The Expo</h3>
 <p><lead>The craziest, and probably most engaging part of the hackathon.<lead></p>
@@ -110,20 +110,20 @@ KTHXBYE
 <p><lead>#STACKED<lead></p>
 <p>Our flight was scheduled to leave San Francisco at 7am. Personally, I wasn’t super pleased with the timing, as it didn’t allow for an adequate amount of sleep prior to the tiresome 36 hours that were ahead of us, but it didn’t matter because we were headed to the largest hackathon in the world. Pretty much all of the hackers from Stanford, UC Berkeley, and the rest of the Bay Area were on our flight, which was a relief, because that meant we were no longer the only ones on the flight discussing popular Swift and JavaScript frameworks.</p>
 <p>When we arrived at the Wells Fargo Center a few hours later, the amount of energy, people, and swag circulating around was incredible.</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*NMDHXEbIv_biV1Ax554ggg.jpeg" alt="opening_ceremony"></p>
-<p><lead><em>PennApps XII Opening Ceremony</em><lead></p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*AgLsefacDK33EUGLy5Q6kg.jpeg" alt="enter_hackathon"></p>
-<p><lead><em>Sponsor tables getting set up for the event.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*NMDHXEbIv_biV1Ax554ggg.jpeg" alt="opening_ceremony">
+<lead><em>PennApps XII Opening Ceremony</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*AgLsefacDK33EUGLy5Q6kg.jpeg" alt="enter_hackathon">
+<lead><em>Sponsor tables getting set up for the event.</em><lead></p>
 <p>After listening to some talks by various software engineers, CEOs, and Penn faculty, we began building our app.</p>
 <h3 id="try-new-things-meet-everyone">Try New Things, Meet Everyone</h3>
 <p><lead>Code, People, Food, and Sleep Deprivation<lead></p>
 <p>Despite the fact that the Wells Fargo Center was capable of comfortably seating over 20,000 spectators, people were scrambling to desperately find a nice place to hack. We decided to set up camp at a quiet table on the second floor of the stadium.</p>
 <p>On the flight over, I had spent some time thinking about how the app would work. The app would basically allow the user to take a picture of some food, and that picture would be uploaded to a server. The server would then have to use some API (or algorithm that we designed, though highly unlikely) to try and figure out what the food in the picture was (e.g. take a picture of a burger and have the server output “burger”). Then it would make a lookup of the food item in a nutrition database. It seemed simple enough.</p>
 <p>Within a couple of hours of the hackathon’s start, our iOS frontend was well underway, and we had a working prototype of our backend. We decided to reward ourselves for this first success by heading down to the hardware lab to checkout some cool tech to play around with. Half of the attendees must have been standing in that line. The line went on forever. Things started to clear up when dinner started, as people began to give up and leave the line in hopes to reach the dinner buffet before another gigantic line for food formed. I decided to hold our spot in the hardware line while my teammate went off to grab dinner for both of us.</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*v2B-LfCczry34MieEBvLOA.jpeg" alt="meal"></p>
-<p><lead><em>A &quot;normal&quot; meal at PennApps.</em><lead></p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*acwiPRRIXlM_2Mi8U4wKdw.jpeg" alt="first_supper"></p>
-<p><lead><em>The first dinner at PennApps XII: Pasta, salad, and string beans.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*v2B-LfCczry34MieEBvLOA.jpeg" alt="meal">
+<lead><em>A &quot;normal&quot; meal at PennApps.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*acwiPRRIXlM_2Mi8U4wKdw.jpeg" alt="first_supper">
+<lead><em>The first dinner at PennApps XII: Pasta, salad, and string beans.</em><lead></p>
 <p>The food was pretty good, we met a lot of cool people, and we continued working on our hack.</p>
 <p>This was the cycle of events that constantly occurred. Hack. Eat. Network. Sleep (this step was usually shortened or omitted). Repeat. In my opinion, that is how everyone’s hackathon experience should be. Usually, I see a lot of people stressing out about their hack, skipping crucial steps in this cycle. My one piece of advice to any new hackers or those interested in hackathons is to never break this cycle. Things will only get worse and you’ll destroy your productivity/workflow if you skip steps in this cycle.</p>
 <h3 id="the-expo">The Expo</h3>
@@ -133,16 +133,16 @@ KTHXBYE
 
 <p>We even practiced our product pitch a few times.</p>
 <p>Finally, the PennApps XII Expo began. The stadium floor was packed with tired, excited hackers and the energy level was absolutely incredible.</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*Kr3Cx-zjVxWGcMn-EpWX2Q.jpeg" alt="dave_fontenot"></p>
-<p><lead><em>An excited Dave Fontenot tries to make his way through the crowded exhibition.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Kr3Cx-zjVxWGcMn-EpWX2Q.jpeg" alt="dave_fontenot">
+<lead><em>An excited Dave Fontenot tries to make his way through the crowded exhibition.</em><lead></p>
 <p>We had all sorts of people show up to our table to learn more about our hack. Some were skeptical of our claim that we could gather calorie data from a picture of food, and were convinced that we had preprogrammed the app to already know the nutrition facts for the food that we had brought for our demo. Our app was truly put to test when one of the judges ran off and came back a few minutes later holding an old M&amp;M wrapper which she had found in the trash. As we had predicted (and to her amazement) the app successfully returned the nutrition facts.</p>
 <p>After about an hour of showing off our creation, we were invited by a member of the PennApps staff to a special live interview on our hack. This was one of the greatest surprises to us, as we had come to PennApps to have fun and meet new people. It had never occurred to us that our hack might actually be recognized by PennApps as an interview-worthy hack. We were thrilled. After the interview we were told to enjoy the rest of the expo, but we were not prepared for what was about to happen next.</p>
 <p>I’m going to leave you on a cliffhanger from my previous statement for just a bit, because what happened between the PennApps interview and what happened next was one of the reasons why I love to go to hackathons. While walking through the expo, I enjoyed talking with people not only about their hacks, but also about their background. I was interested to see where everyone went to college, where they went to high school, their hobbies, why the built what they built, etc. One team I talked with said they attended Princeton and had graduated from Palo Alto High School, one of the local high schools where I live. I found this to be astonishing, because the chances of this happening were extremely low. I could have completely missed this person. This is why I love networking at hackathons. You’ll always meet interesting people, and learn a lot from them.</p>
 <p>Finally, the most second most exciting moment of the hackathon was about to begin. The top ten hacks were about to be announced. One of the PennApps organizers jumped on the main stage with a list, and began reading off team names. We heard him call “Kenko” to the stage. We were completely awestruck. We had achieved what we had never expected to achieve. We were even more shocked when the PennApps team told us we had to present first. We immediately started practicing our on-stage demo.</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*IIvFnYbcvFXzZT69LtsGSQ.jpeg" alt="proud_hackers"></p>
-<p><lead><em>Taking the stage at PennApps XII.</em><lead></p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*QduOVJRb1A95M1swuh06xw.jpeg" alt="words_cannot_describe"></p>
-<p><lead><em>Words could not express how happy and nervous we were.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*IIvFnYbcvFXzZT69LtsGSQ.jpeg" alt="proud_hackers">
+<lead><em>Taking the stage at PennApps XII.</em><lead></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*QduOVJRb1A95M1swuh06xw.jpeg" alt="words_cannot_describe">
+<lead><em>Words could not express how happy and nervous we were.</em><lead></p>
 <p>Here’s a video of our demo on stage (<a href="https://youtu.be/TvjwUh9taOA?t=9m59s">9:59</a>). It wasn’t perfect, but we’re still pretty happy.</p>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/TvjwUh9taOA" frameborder="0" allowfullscreen></iframe></center>
 
@@ -174,9 +174,8 @@ KTHXBYE
          <description><![CDATA[Appreciating the beauty of a simple series. 
 
  <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
-<p><img src="/img/math-purity.png" alt="Applied Math from XKCD"></p>
-<lead><em>The purity spectrum.</em></lead>
-
+<p><img src="/img/math-purity.png" alt="Applied Math from XKCD">
+<lead><em>The purity spectrum.</em></lead></p>
 <h3 id="fibonacci-and-the-golden-ratio">Fibonacci and The Golden Ratio</h3>
 <p>Today, I revisited a very magical series in mathematics: <a href="https://en.wikipedia.org/wiki/Fibonacci_number">The Fibonacci numbers</a>.</p>
 <center>$$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... $$</center>
@@ -188,27 +187,25 @@ KTHXBYE
 <p><img src="/img/trump-hair.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
 <h3 id="the-issue-with-a-recursive-formula">The Issue with a Recursive Formula</h3>
 <p>The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This &quot;recursive formula&quot; is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let&#39;s take this simple Scheme code to get some early terms of the sequence.</p>
-<pre><code class="lang-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
+<pre><code class="language-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
 (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> (<span class="hljs-name">fib</span> n)
     (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
       ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>) <span class="hljs-number">0</span>)
       ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">1</span>) <span class="hljs-number">1</span>)
       (<span class="hljs-name"><span class="hljs-builtin-name">else</span></span>
         (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">1</span>))
-           (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">2</span>))))))
-</code></pre>
+           (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">2</span>))))))</code></pre>
 <p>Now let&#39;s trace some example calls. If I try to find the 2nd term of the series, the computer runs something like this:</p>
-<pre><code class="lang-scheme">|(fib <span class="hljs-number">2</span>)
+<pre><code class="language-scheme">|(fib <span class="hljs-number">2</span>)
 | (fib <span class="hljs-number">1</span>)
 | <span class="hljs-number">1</span>
 | (fib <span class="hljs-number">0</span>)
 | <span class="hljs-number">0</span>
 
 ; Our final output
-<span class="hljs-number">1</span>
-</code></pre>
+<span class="hljs-number">1</span></code></pre>
 <p>As you can see, when we call <code>(fib 2)</code>, the computer has to calculate the values of <code>(fib 0)</code> and <code>(fib 1)</code>, or the addends of the 2nd term. What happens when we try a bigger number, say <code>(fib 5)</code>?</p>
-<pre><code class="lang-scheme">|<span class="hljs-string">(fib 5)
+<pre><code class="language-scheme">|<span class="hljs-string">(fib 5)
 </span>|<span class="hljs-string"> (fib 4)
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 3)
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 2)
@@ -239,14 +236,13 @@ KTHXBYE
 |<span class="hljs-string"> 2
 
 ; Final output
-5</span>
-</code></pre>
+5</span></code></pre>
 <p>The execution tree is exponentially larger! In fact, my computer can barely compute <code>(fib 20)</code>, and even that takes around a minute to calculate. Clearly, this recursive formula is fairly cumbersome if we cannot compute Fibonacci terms greater than the 20th term. Now in terms of computer science, you can drastically speed up the compute process by rewriting the Fibonacci code above as an <a href="https://mitpress.mit.edu/sicp/full-text/sicp/book/node15.html">iterative procedure</a>. However, the question is, can we do this using pure mathematics?</p>
 <h3 id="jacques-binet-and-raiders-of-the-lost-explicit-formula">Jacques Binet and Raiders of The Lost Explicit Formula</h3>
 <p>This is where it starts to get interesting.</p>
 <p>It turns out that an intuitively recursive sequence like the Fibonacci numbers can be computed explicitly, or using a direct formula in terms of the $$nth$$ Fibonacci term.</p>
 <p>One way to generate an approximation of the sequence is to use the Golden Ratio. Because the Fibonacci sequence adheres to the Golden Ratio, you can find a decimal approximation for the next term in the sequence by multiplying the previous term by the Golden Ratio.</p>
-<center>$$ F_{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $$</center>
+<center>$$ F_\{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $$</center>
 
 <p>Given that formula, the approximation of the sequence would go:</p>
 <center>$$ 1.00, 1.62, 2.62, 4.24, 6.85, 11.09, 17.94, ... $$</center>
@@ -260,7 +256,7 @@ KTHXBYE
 <center>$$ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... $$</center>
 
 <p>Binet produced this around 150 years ago. But <em>what if I told you there was a simpler (more profound) method</em> of generating Fibonacci numbers?</p>
-<h3 id="math-or-magic-">Math or Magic?</h3>
+<h3 id="math-or-magic">Math or Magic?</h3>
 <p>The rational function below produces all of the Fibonacci numbers.</p>
 <p><img src="/img/magic-generator.png" alt="The magic generator"></p>
 <center>$$ G(x) = {{1} \over {1 - x - x^2}} $$</center>
@@ -334,9 +330,8 @@ KTHXBYE
 <p>In high school, I saw an explosion in technology adoption, with teachers and students using sites like <strong>Quizlet</strong>, which aims to teach me my polyatomic ions through a set of interactive flashcards, and <strong>Naviance</strong>, which attempts to keep me on track for college. Teachers throw <strong>SurveyMonkey</strong> forms at students to grade their peers on class participation, and foreign-language classes use <strong>Audacity</strong> to record and gauge students&#39; speaking and listening proficiency. <strong>MathXL</strong> tells me that my math homework is wrong, but doesn&#39;t tell me why (and in some cases says the correct answer is the same as the &quot;incorrect&quot; answer I entered). <strong>CharmsOffice</strong> facilitates communication between teachers and students, but is unreliable and does no better than existing district-mandated solutions like Infinite Campus or Schoology. During a mandatory &quot;flex&quot; period where students are allowed to visit any class they are struggling in, our administration requires that we scan our student IDs using a <strong>Flextime Appointment System</strong> because the &quot;flex&quot; period has attendance corner cases that our primary attendance system on Infinite Campus cannot handle. <strong>Calendly</strong> allows teachers to schedule out-of-class meetings with students. At the same time, the school wants every student to have a <strong>Chromebook</strong> with <strong>Securly</strong> network monitoring to watch student Internet traffic while they&#39;re off campus.</p>
 <p>That&#39;s only a small preview of the technology our district has adopted, and I&#39;m sure I&#39;ve forgotten some key components. But last time I checked our district has over twenty different student-facing technology platforms. That&#39;s way too many.</p>
 <p>While speaking to teachers, I realized that some of the discontent with our current technology situation was not unknown. In fact, there are some teachers who have similar opinions on the issue of educational technology adoption in our district. However, teachers, for the most part, seem to be unaware of some of the largest platforms used for schoolwork by students: technologies that are not sanctioned by the school district such as <strong>Facebook, Snapchat</strong>, and <strong>Instagram</strong>.</p>
-<p><img src="/img/Screen+Shot+2017-06-14+at+11.17.52+AM.png" alt="My math class&#39;s Facebook group"></p>
-<lead><em>The Facebook group for my math class this past year.</em></lead>
-
+<p><img src="/img/Screen+Shot+2017-06-14+at+11.17.52+AM.png" alt="My math class&#39;s Facebook group">
+<lead><em>The Facebook group for my math class this past year.</em></lead></p>
 <p>This is more common than most educators may realize. There are groups for everything from AP United States History to Biology 1. I think the primary reason why these unsanctioned platforms succeed among students is because they already have plenty of engagement and they solve the problem of educational collaboration while also providing users a steady stream of entertaining content. As shown above, you can see that students are posting in our Analysis Honors (my math class this past school year) regarding final grades being updated on Infinite Campus. In many ways, these platforms allow students to ease the burden of constantly checking the plethora of district platforms while also not having to worry about teacher intervention.</p>
 <p>Unsanctioned technology is great from a student perspective (I can&#39;t say I&#39;m opposed to it), but there are a variety of drawbacks that come with it. Because the technology is unsanctioned, the school district cannot directly regulate anything that occurs inside these study groups. As a result, offensive memes, test questions, and completed homework assignments occasionally appear in these groups, raising concerns about student well-being and academic dishonesty. In some unique cases, district staff members are added to these unsanctioned Facebook groups to help facilitate the discussions, but from what I understand, I do not think those staff members are compensated or working for directly for the district in those rare scenarios. It also creates a fine line between whether a district staff member is your friend or your teacher. Finally, the widespread use of unsanctioned technology among students blurs the line with regards to which educational technologies should be endorsed by the district and which should not.</p>
 <p>In addition, a point that several of my teachers have brought up stresses the consequences of excessive technology integration. Anderson Cooper has a report for 60 Minutes on <a href="http://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/">&quot;Brain Hacking&quot;</a>, which explores some of the psychological effects of smartphone addiction. TL;DR the effects are analogous to those caused by excessive drug use. The anxiety created by the menagerie of technology platforms used by students doesn&#39;t help. As a result, unsanctioned technology flourishes as students try to find the easiest way to keep all of their schoolwork manageable (having your primary social media source as your primary schoolwork source is very desirable). In addition, the fact that today&#39;s parents do not know how to deal with this issue should be addressed. The proliferation of Internet-based technologies and smartphones has been so rapid that very few can predict what the long-term effects may be let alone know how to parent a generation that has adopted the technology so quickly.</p>
@@ -358,17 +353,18 @@ KTHXBYE
 <p>There are multiple approaches to quantifying toxicity in text on social media platforms. An intuitive baseline model would be to correlate toxicity with the frequency of obscene words found in the comment threads on social networks. However, the context of the obscenities chosen can greatly affect the overall toxicity of a particular comment. As a result, a more robust model is necessary to effectively quantify toxicity from the context and other textual features such as emoticons and punctuation of comments.</p>
 <p>Inspired by the Google Jigsaw Conversation AI team’s efforts to automate moderation at scale with natural language processing models, we designed and trained a deep neural network to automatically learn robust features from text inputs and to provide an associated multi-label classification score among six different labels: toxic, severe toxic, obscene, threat, insult, and identity hate.</p>
 <p>Our baseline model, which filters out <a href="https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html">stop words</a> and uses the frequency of obscene words as a toxicity metric can be described by the following Python code:</p>
-<pre><code class="lang-python">def predict(comment):
+<pre><code class="language-python">def predict(comment):
     all = <span class="hljs-built_in">len</span>([w <span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> comment.<span class="hljs-built_in">split</span>() <span class="hljs-keyword">if</span> w <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> STOP_WORDS])
     obscene = <span class="hljs-built_in">len</span>([w <span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> comment.<span class="hljs-built_in">split</span>() <span class="hljs-keyword">if</span> w <span class="hljs-keyword">in</span> OBSCENE_WORDS])
-    <span class="hljs-literal">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> all == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> obscene/all
-</code></pre>
+    <span class="hljs-literal">return</span> <span class="hljs-number">0</span> <span class="hljs-keyword">if</span> all == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> obscene/all</code></pre>
 <p>This model is only able to determine toxicity of a snippet of text and not the other five labels provided in our training set. In addition, it is unaware of additional textual features that may provide greater context in determining a more accurate toxicity metric for a social media comment.</p>
-<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" height="250" scrolling="no"></iframe></p>
-<p><lead>Baseline manual feature detector.</lead><br /></p>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/baseline/" height="250" scrolling="no"></iframe>
+<lead>Baseline manual feature detector.</lead><br />
+
 <p>To improve on this model, we use deep learning methods to enable automatic detection of robust features to determine toxicity given social media text. We trained a <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">multi-layer perceptron</a> with a word embedding layer of 256 units, a single hidden layer of 250 units, and an output layer with 6 units, one for each output label. Using the <a href="https://arxiv.org/pdf/1412.6980.pdf">Adam optimizer</a>, our network, when trained on the <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Toxic Comment Classification</a> data, converged in approximately 20 minutes on a quad-core Intel i7 CPU and achieved approximately 95% test accuracy on the Kaggle leaderboard. Although this model was able to discern the toxicity and other metrics for all of the validation samples with reasonable accuracy, this architecture inherently has no awareness of how different sequences of tokens affect the final output.</p>
-<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" height="250" scrolling="no"></iframe></p>
-<p><lead>Multilayer perceptron. This neural network runs in your browser using TensorFlow.js!</lead><br /><br /></p>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/mlp/" height="250" scrolling="no"></iframe>
+<lead>Multilayer perceptron. This neural network runs in your browser using TensorFlow.js!</lead><br /><br />
+
 <table>
     <thead>
         <tr>
@@ -385,8 +381,9 @@ KTHXBYE
 </table>
 
 <p>Our final model architecture was heavily inspired by top-scoring models on the public <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">Google Jigsaw Toxic Comment Classification Kaggle</a> challenge, and the training data for our model is the publicly available Kaggle competition training set. Our model primarily consists of <a href="https://en.wikipedia.org/wiki/Bidirectional_recurrent_neural_networks">bidirectional long short term memory (LSTM)</a> cells combined with <a href="https://blog.goodaudience.com/introduction-to-1d-convolutional-neural-networks-in-keras-for-time-sequences-3a7ff801a2cf">one-dimensional convolutional layers</a> and fully-connected layers. These layers allow the model to find sequential patterns in the training data and learn how ordered sequences affect the final toxicity metric. We use <a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">dropout</a> to regularize our model, allowing for more general predictions. The model has over 5.5 million parameters and takes approximately one hour to train on a quad-core Intel i7 CPU. Our model was trained on approximately 145,000 training samples, and achieved approximately 98% test accuracy on the Kaggle leaderboard.</p>
-<p><iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" height="250" scrolling="no"></iframe></p>
-<p><lead>Bidirectional LSTM.</lead><br /></p>
+<iframe src="https://gautam.cc/susa-fa18/interactive/models/lstm/" height="250" scrolling="no"></iframe>
+<lead>Bidirectional LSTM.</lead><br />
+
 <p>The data that was used for analysis was downloaded from the public Reddit Self-Post Classification Task available on Kaggle. It contains over 1000 posts from over 1000 subreddits resulting in over 1 million posts of varying length, content, and contexts to analyze using our trained model.</p>
 <h3 id="reddit-analysis">Reddit Analysis</h3>
 <p>With our model, we classified each post in the six labels mentioned above — toxic, severely toxic, obscene, insult, threat, and identity hate — each with a probability (0 meaning least-likely to be that label and 1 meaning most-likely). The basic statistics of the entire comment dataset are presented below:</p>
@@ -394,7 +391,7 @@ KTHXBYE
 <p>There are some labels that are more prevalent in the comments than others. This distinction could also result from inaccuracy in the classifier, as there are multiple comments that carry different sentiments and meanings depending on the context that they appear in. For example,
 From this classification, we can further categorize the comments into subreddits to obtain metrics on the toxicity and other labels for each subreddit. Out of the 1013 subreddits in the dataset, only one remained with the highest quantity of each metric: emojipasta. Another trend was the consistent presence of multiple specific pornographic subreddits in the 12 subreddits with the highest metric for each label, including the identity hate label. Furthermore, some comments appear multiple times in the 12 comments with the highest metric for each label, potentially indicating that these polarizing comments could have shifted the means of their subreddits in each respective label metric.</p>
 <p>Alongside the comments, we obtained another dataset with categorical info on each subreddit. By combining the datasets, we determined which categories had the highest mean metrics for each label:</p>
-<p><iframe id="graph" src="https://gautam.cc/susa-fa18/interactive/graphs/" scrolling="no" height="600"></iframe></p>
+<iframe id="graph" src="https://gautam.cc/susa-fa18/interactive/graphs/" scrolling="no" height="600"></iframe>
 <script>
 var iframe = document.getElementById("graph");
 iframe.contentWindow.postMessage("resize");

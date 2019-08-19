@@ -39,9 +39,8 @@
       </div>
       <div class="articleBody firstcharacter">
         <p>Mathematics is truly magical. It&#39;s also really important. How important? Well, the entire basis for our understanding of the universe relies on rules outlined by mathematics. The examples I outline in this post are very simple and are limited to a very simple set of concepts.</p>
-<p><img src="/img/math-purity.png" alt="Applied Math from XKCD"></p>
-<lead><em>The purity spectrum.</em></lead>
-
+<p><img src="/img/math-purity.png" alt="Applied Math from XKCD">
+<lead><em>The purity spectrum.</em></lead></p>
 <h3 id="fibonacci-and-the-golden-ratio">Fibonacci and The Golden Ratio</h3>
 <p>Today, I revisited a very magical series in mathematics: <a href="https://en.wikipedia.org/wiki/Fibonacci_number">The Fibonacci numbers</a>.</p>
 <center>$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... $</center>
@@ -53,27 +52,25 @@
 <p><img src="/img/trump-hair.jpg" alt="Donald Trump&#39;s hair is the Golden Spiral"></p>
 <h3 id="the-issue-with-a-recursive-formula">The Issue with a Recursive Formula</h3>
 <p>The simplest way to think of the Fibonacci sequence is to think of each number as the sum of the previous two numbers. This &quot;recursive formula&quot; is the most well-known way of computing the terms in the sequence. However, this recursive algorithm becomes exponentially more inefficient as you try to compute later terms in the sequence. Let&#39;s take this simple Scheme code to get some early terms of the sequence.</p>
-<pre><code class="lang-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
+<pre><code class="language-scheme"><span class="hljs-comment">; Our very basic (recursive) Fibonacci formula</span>
 (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> (<span class="hljs-name">fib</span> n)
     (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
       ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>) <span class="hljs-number">0</span>)
       ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">1</span>) <span class="hljs-number">1</span>)
       (<span class="hljs-name"><span class="hljs-builtin-name">else</span></span>
         (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">1</span>))
-           (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">2</span>))))))
-</code></pre>
+           (<span class="hljs-name">fib</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">2</span>))))))</code></pre>
 <p>Now let&#39;s trace some example calls. If I try to find the 2nd term of the series, the computer runs something like this:</p>
-<pre><code class="lang-scheme">|(fib <span class="hljs-number">2</span>)
+<pre><code class="language-scheme">|(fib <span class="hljs-number">2</span>)
 | (fib <span class="hljs-number">1</span>)
 | <span class="hljs-number">1</span>
 | (fib <span class="hljs-number">0</span>)
 | <span class="hljs-number">0</span>
 
 ; Our final output
-<span class="hljs-number">1</span>
-</code></pre>
+<span class="hljs-number">1</span></code></pre>
 <p>As you can see, when we call <code>(fib 2)</code>, the computer has to calculate the values of <code>(fib 0)</code> and <code>(fib 1)</code>, or the addends of the 2nd term. What happens when we try a bigger number, say <code>(fib 5)</code>?</p>
-<pre><code class="lang-scheme">|<span class="hljs-string">(fib 5)
+<pre><code class="language-scheme">|<span class="hljs-string">(fib 5)
 </span>|<span class="hljs-string"> (fib 4)
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string">(fib 3)
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string"> (fib 2)
@@ -104,14 +101,13 @@
 |<span class="hljs-string"> 2
 
 ; Final output
-5</span>
-</code></pre>
+5</span></code></pre>
 <p>The execution tree is exponentially larger! In fact, my computer can barely compute <code>(fib 20)</code>, and even that takes around a minute to calculate. Clearly, this recursive formula is fairly cumbersome if we cannot compute Fibonacci terms greater than the 20th term. Now in terms of computer science, you can drastically speed up the compute process by rewriting the Fibonacci code above as an <a href="https://mitpress.mit.edu/sicp/full-text/sicp/book/node15.html">iterative procedure</a>. However, the question is, can we do this using pure mathematics?</p>
 <h3 id="jacques-binet-and-raiders-of-the-lost-explicit-formula">Jacques Binet and Raiders of The Lost Explicit Formula</h3>
 <p>This is where it starts to get interesting.</p>
 <p>It turns out that an intuitively recursive sequence like the Fibonacci numbers can be computed explicitly, or using a direct formula in terms of the $nth$ Fibonacci term.</p>
 <p>One way to generate an approximation of the sequence is to use the Golden Ratio. Because the Fibonacci sequence adheres to the Golden Ratio, you can find a decimal approximation for the next term in the sequence by multiplying the previous term by the Golden Ratio.</p>
-<center>$ F_{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $</center>
+<center>$ F_\{n} \approx F_1 \cdot \phi ^n \quad F_1=1, $</center>
 
 <p>Given that formula, the approximation of the sequence would go:</p>
 <center>$ 1.00, 1.62, 2.62, 4.24, 6.85, 11.09, 17.94, ... $</center>
@@ -125,7 +121,7 @@
 <center>$ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... $</center>
 
 <p>Binet produced this around 150 years ago. But <em>what if I told you there was a simpler (more profound) method</em> of generating Fibonacci numbers?</p>
-<h3 id="math-or-magic-">Math or Magic?</h3>
+<h3 id="math-or-magic">Math or Magic?</h3>
 <p>The rational function below produces all of the Fibonacci numbers.</p>
 <p><img src="/img/magic-generator.png" alt="The magic generator"></p>
 <center>$ G(x) = {{1} \over {1 - x - x^2}} $</center>
