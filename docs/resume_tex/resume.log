@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  12 AUG 2019 21:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  19 AUG 2019 09:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,7 +1277,7 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 
 LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/bx/sc' undefined
-(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 206.
+(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 207.
 
 .................................................
 . fontspec info: "no-scripts"
@@ -1318,11 +1318,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 238.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 238.
-
-Overfull \hbox (6.6404pt too wide) in paragraph at lines 238--250
-[][]  
- []
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 [1
 
@@ -1342,7 +1337,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
 Here is how much of TeX's memory you used:
  23488 strings out of 492970
  432351 string characters out of 6133938
- 533022 words of memory out of 5000000
+ 532022 words of memory out of 5000000
  27274 multiletter control sequences out of 15000+600000
  531032 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
