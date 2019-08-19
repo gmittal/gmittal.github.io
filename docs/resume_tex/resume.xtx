@@ -213,7 +213,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \runsubsection{JazzML}
 \descript{| Real-time Computer Jazz Improvisation}
-\location{Aug. 2016 | \textbf{Python, TensorFlow, FluidSynth}}
+\location{August 2016 | \textbf{Python, TensorFlow, FluidSynth}}
 \begin{tightemize}
 \item Signal processing (FFT) and recurrent neural network (RNN) to generate improvised jazz solos with live accompanist; Source code: \href{https://github.com/gmittal/jazzml}{\textbf{github.com/gmittal/jazzml}}
 \end{tightemize}
@@ -221,7 +221,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \runsubsection{Kenko}
 \descript{| Computer Vision-based Mobile Nutrition Assistant}
-\location{Sept. 2015 | Top 10 at PennApps XII | Node.js, Objective-C}
+\location{September 2015 | Top 10 at PennApps XII | Node.js, Objective-C}
 \begin{tightemize}
 \item "Shazam for Food": iPhone app that determines nutritional content of food from a picture; Source code: \href{https://github.com/gmittal/kenko}{\textbf{github.com/gmittal/kenko}}
 \end{tightemize}
