@@ -182,7 +182,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \begin{tightemize}
 \item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects. 
 \item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security. 
-\item Designed and tested data infrastructure using Ruby and ElasticSearch, and Dashboard front-end with React. 
+\item Designed and tested data infrastructure using Ruby, ElasticSearch, \& MongoDB; worked on Dashboard front-end with React. 
 \item Coordinated UX research study to understand user needs and adjusted engineering \& product roadmap accordingly.
 \end{tightemize}
 \sectionsep
