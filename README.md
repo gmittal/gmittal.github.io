@@ -11,7 +11,7 @@ Build all of the static pages.
 ```
 npm run build
 ```
-Serve it up with your favorite static server.
+Serve.
 ```
 python -m SimpleHTTPServer
 ```
