@@ -153,11 +153,13 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS61A:} Structure \& Interpretation of Computer Programs\\
 \textbf{CS61B:} Data Structures \& Algorithms\\
 \textbf{CS61C:} Machine Structures\\
-\textbf{CS70:} Discrete Mathematics and Probability Theory\\
+\textbf{CS70:} Discrete Mathematics \& Probability Theory\\
+\textbf{CS170:} Efficient Algorithms \& Intractable Problems\\
 \textbf{CS188:} Artificial Intelligence\\
 \textbf{CS198-082:} Machine Learning DeCal\\
 \textbf{EE16A:} Linear Algebra, Devices, \& Systems I\\
 \textbf{EE16B:} Differential Equations, Devices, \& Systems II\\
+\textbf{EECS126:} Probability \& Random Processes\\
 \textbf{MATH53:} Multivariable Calculus\\
 \textbf{PHYSICS7B:} Thermodynamics, Electricity, Magnetism\\
 \sectionsep
@@ -182,7 +184,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{September 2019 – Present | Berkeley, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Prof. Ion Stoica. 
+\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Prof. Ion Stoica.
+\item Presented modular research platform for designing learned query optimizers at RISE Retreat 2020.
 \end{tightemize}
 \sectionsep
 
@@ -217,7 +220,6 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{June 2016 - June 2018 | \textbf{JavaScript, Node.js, Firebase}}
 \begin{tightemize}
 \item Designed and implemented an online, anonymous peer-to-peer mental health counseling platform; Source code: \href{https://github.com/projectcopilot}{\textbf{github.com/projectcopilot}}
-\item Managed engineering staff, school-based liaisons, platform volunteers, and legal discussions with local and national mental health experts.
 \end{tightemize}
 \sectionsep
 
