@@ -13,7 +13,7 @@ npm run build
 ```
 Serve.
 ```
-python -m SimpleHTTPServer
+npx http-server .
 ```
 
 ### License
