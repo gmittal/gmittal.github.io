@@ -155,9 +155,10 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS61C:} Machine Structures\\
 \textbf{CS70:} Discrete Mathematics \& Probability Theory\\
 \textbf{CS170:} Efficient Algorithms \& Intractable Problems\\
+\textbf{CS186:} Database Systems\\
 \textbf{CS188:} Artificial Intelligence\\
 \textbf{CS198-082:} Machine Learning DeCal\\
-\textbf{EE16A:} Linear Algebra, Devices, \& Systems I\\
+\textbf{EE16A:} Linear Algebra, Circuits, \& Systems I\\
 \textbf{EE16B:} Differential Equations, Devices, \& Systems II\\
 \textbf{EECS126:} Probability \& Random Processes\\
 \textbf{MATH53:} Multivariable Calculus\\
@@ -179,13 +180,13 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{UC Berkeley RISE Lab}
+\runsubsection{RISELab, UC Berkeley}
 \descript{| Undergraduate Researcher}
 \location{September 2019 – Present | Berkeley, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Prof. Ion Stoica.
-\item Presented modular research platform for designing learned query optimizers at RISE Retreat 2020.
+\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Professor Ion Stoica.
+\item Presented modular research platform for designing learned database query optimizers with deep RL at RISE Retreat (January 2020).
 \end{tightemize}
 \sectionsep
 
@@ -240,11 +241,11 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Awards}
 \begin{tabular}{rll}
+2019 & IEEE Eta Kappa Nu Member (top 25\% of Berkeley EECS)\\
 2019 & Accel Scholar (run by Accel Partners \& Berkeley EECS)\\
 2019 & Kleiner Perkins Engineering Fellow \\
 2018 & UC Berkeley Regents' and Chancellor's Scholarship \\
 2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\ 
-2018 & Gunn High School Outstanding Student in CS \\
 2016 & 2016 MIT Zero Robotics Challenge ISS Finalist\\
 % 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
 2015 & Top 10 \& Best Cloud App at PennApps XII Hackathon \\
