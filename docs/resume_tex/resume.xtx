@@ -108,6 +108,7 @@ Scheme \textbullet{}
 Ruby \textbullet{}
 Objective-C \textbullet{}
 SQL \\
+RISC-V \\
 \sectionsep
 
 \subsection{TOOLS}
@@ -156,8 +157,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS170:} Efficient Algorithms \& Intractable Problems\\
 \textbf{CS188:} Artificial Intelligence\\
 \textbf{CS198-082:} Machine Learning DeCal\\
-\textbf{EE16A:} Linear Algebra, Circuits, \& Systems I\\
-\textbf{EE16B:} Differential Equations, Devices, \& Systems II\\
+\textbf{EECS16A:} Linear Algebra, Circuits, \& Systems I\\
+\textbf{EECS16B:} Differential Equations, Devices, \& Systems II\\
 \textbf{EECS126:} Probability \& Random Processes\\
 \textbf{MATH53:} Multivariable Calculus\\
 \textbf{PHYSICS7B:} Thermodynamics, Electricity, Magnetism\\
@@ -178,13 +179,21 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Google}
+\descript{| Software Engineering Intern, Google Brain}
+\location{May 2020 – August 2020 | Mountain View, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Incoming intern on Magenta, a research group exploring the role of ML as a tool in the creative process, within the Google Brain team 
+\end{tightemize}
+\sectionsep
+
 \runsubsection{RISELab, UC Berkeley}
 \descript{| Undergraduate Researcher}
 \location{September 2019 – Present | Berkeley, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Professor Ion Stoica.
-\item Presented modular research platform for designing learned database query optimizers with deep RL at RISE Retreat (January 2020).
+\item Working on applications of deep reinforcement learning for database systems with Zongheng Yang under Professor Ion Stoica
+\item Presented modular research platform for designing learned database query optimizers with deep RL at RISE Retreat (January 2020)
 \end{tightemize}
 \sectionsep
 
@@ -192,10 +201,10 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \descript{| Software Engineering Intern}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \begin{tightemize}
-\item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects. 
-\item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security. 
-\item Designed and tested data infrastructure using Ruby, ElasticSearch, \& MongoDB; worked on Dashboard front-end with React. 
-\item Coordinated UX research study to understand user needs and adjusted engineering \& product roadmap accordingly.
+\item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
+\item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security
+\item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Dashboard front-end with React 
+\item Coordinated UX research study to understand user needs and adjusted engineering \& product roadmap accordingly
 \end{tightemize}
 \sectionsep
 
@@ -203,9 +212,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \descript{| Machine Learning Intern}
 \location{June 2017 – August 2017 | San Mateo, CA}
 \begin{tightemize}
-\item Designed deep learning models with Python, TensorFlow, NLTK, and Pandas to recommend user-generated questions for content engine with 100M+ users.
-\item Implemented a training \& evaluation pipeline and wrote scripts to preprocess and classify noisy signals from ElasticSearch index of world's largest educational social network.
-\item Designed experiments with seq2seq translation models, ByteNet, and denoising networks for text normalization; reported directly to CTO for AI.
+\item Designed deep learning models and data pipelines with Python, TensorFlow, and Elasticsearch for question recommendation on the world's largest educational social network (100M+ users)
 \end{tightemize}
 \sectionsep
 
@@ -214,22 +221,21 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+\runsubsection{Feverbase}
+\descript{| Engineering Lead | \href{https://feverbase.org}{feverbase.org}}
+\location{March 2020 – Present | \textbf{Python, Flask, MongoDB}}
+\begin{tightemize}
+\item An open platform for COVID-related clinical trial data connecting researchers, patients, and the public to relevant information for drug discovery and trial participation; Source code: \href{https://github.com/feverbase}{\textbf{github.com/feverbase}}
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Copilot}
 \descript{| Executive Director}
-\location{June 2016 - June 2018 | \textbf{JavaScript, Node.js, Firebase}}
+\location{June 2016 – June 2018 | \textbf{JavaScript, Node.js, Firebase}}
 \begin{tightemize}
 \item Designed and implemented an online, anonymous peer-to-peer mental health counseling platform; Source code: \href{https://github.com/projectcopilot}{\textbf{github.com/projectcopilot}}
 \end{tightemize}
 \sectionsep
-
-\runsubsection{JazzML}
-\descript{| Real-time Computer Jazz Improvisation}
-\location{August 2016 | \textbf{Python, TensorFlow, FluidSynth}}
-\begin{tightemize}
-\item Signal processing (FFT) and recurrent neural network (RNN) to generate improvised jazz solos with live accompanist; Source code: \href{https://github.com/gmittal/jazzml}{\textbf{github.com/gmittal/jazzml}}
-\end{tightemize}
-\sectionsep
-
 
 \sectionsep
 
@@ -242,13 +248,13 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 2019 & IEEE Eta Kappa Nu Member (top 25\% of Berkeley EECS)\\
 2019 & Accel Scholar (run by Accel Partners \& Berkeley EECS)\\
 2019 & Kleiner Perkins Engineering Fellow \\
-2018 & UC Berkeley Regents' and Chancellor's Scholarship \\
+2018 & Regents' and Chancellor's Scholarship (top 2\% of incoming class) \\
 2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\ 
-2016 & 2016 MIT Zero Robotics Challenge ISS Finalist\\
+2016 & MIT Zero Robotics Challenge International Finalist\\
 % 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
-2015 & Top 10 \& Best Cloud App at PennApps XII Hackathon \\
+2015 & Top 10 \& Best Cloud App at PennApps Hackathon \\
 2015 & Apple WWDC Scholarship\\
-2015 & Top 10 at MHacks V Hackathon\\
+2015 & Top 10 at MHacks Hackathon\\
 \end{tabular}
 
 \end{minipage}
