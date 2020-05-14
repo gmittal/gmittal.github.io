@@ -86,7 +86,7 @@
 
 \subsection{UC Berkeley}
 \descript{B.S. Electrical Engineering \& Computer Science (EECS)}
-\location{Expected May 2022 | Berkeley, CA \\ ~}
+\location{Expected May 2022 | Berkeley, CA \\ GPA: 3.81 / 4.0}
 \textbf{Regents' and Chancellor's Scholar} \\
 \textbf{Accel Scholar} \\
 \textbf{Eta Kappa Nu (EECS Honor Society)} \\
@@ -222,7 +222,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 
 \section{Projects}
 \runsubsection{Feverbase}
-\descript{| Engineering Lead | \href{https://feverbase.org}{feverbase.org}}
+\descript{| Software Engineer | \href{https://feverbase.org}{feverbase.org}}
 \location{March 2020 – Present | \textbf{Python, Flask, MongoDB}}
 \begin{tightemize}
 \item An open platform for COVID-related clinical trial data connecting researchers, patients, and the public to relevant information for drug discovery and trial participation; Source code: \href{https://github.com/feverbase}{\textbf{github.com/feverbase}}
