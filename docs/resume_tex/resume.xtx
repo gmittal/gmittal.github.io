@@ -86,9 +86,12 @@
 
 \subsection{UC Berkeley}
 \descript{B.S. Electrical Engineering \& Computer Science (EECS)}
-\location{Expected May 2022 | Berkeley, CA \\ GPA: 3.81 / 4.0}
+\location{Expected May 2022 | Berkeley, CA \\ ~}
+
+
 \textbf{Regents' and Chancellor's Scholar} \\
 \textbf{Accel Scholar} \\
+\textbf{Kleiner Perkins Engineering Felow} \\
 \textbf{Eta Kappa Nu (EECS Honor Society)} \\
 Cal Hacks, UC Jazz, Statistics Undergraduate Student Association \\ 
 \sectionsep
@@ -104,29 +107,24 @@ JavaScript \textbullet{}
 Swift \textbullet{}
 Java \textbullet{}
 C \\
+SQL \textbullet{}
 Scheme \textbullet{}
 Ruby \textbullet{}
-Objective-C \textbullet{}
-SQL \\
-RISC-V \\
+RISC-V \textbullet{}
+Objective-C
 \sectionsep
 
 \subsection{TOOLS}
-React \textbullet{}
-GraphQL \textbullet{}
 Node.js \textbullet{}
-Flask \\
+Flask \textbullet{}
 Rails \textbullet{}
-Keras \textbullet{}
-TensorFlow \textbullet{}
-Jupyter \\
-NumPy \textbullet{}
-Flow \textbullet{}
+TensorFlow \\
+PyTorch \textbullet{}
 HTML \textbullet{}
-CSS \\
+CSS \textbullet{}
+React \\
 Processing \textbullet{}
-Chrome Headless \textbullet{}
-AWS \\
+AWS \textbullet{}
 GCP \textbullet{}
 UNIX \textbullet{}
 Git
@@ -181,10 +179,10 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \section{Experience}
 \runsubsection{Google}
 \descript{| Software Engineering Intern, Google Brain}
-\location{May 2020 – August 2020 | Mountain View, CA}
+\location{May 2020 – August 2020 | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Incoming intern on Magenta, a research group exploring the role of ML as a tool in the creative process, within the Google Brain team 
+\item Building generative models for music composition with Magenta, a research group exploring the role of ML in the creative process
 \end{tightemize}
 \sectionsep
 
