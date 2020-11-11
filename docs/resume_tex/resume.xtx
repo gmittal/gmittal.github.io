@@ -184,7 +184,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2020 – Present | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Researching controllable generative models for music composition with Magenta, a research group exploring the role of ML in the creative process
+\item Researching energy-based generative models for music generation with Magenta, a research group exploring ML in the creative process
+\item Designed new methods for sampling from MusicVAE and enforcing long-term structure with JAX/Flax models
 \end{tightemize}
 \sectionsep
 
@@ -204,7 +205,6 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
 \item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security
 \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Dashboard front-end with React 
-\item Coordinated UX research study to understand user needs and adjusted engineering \& product roadmap accordingly
 \end{tightemize}
 \sectionsep
 
