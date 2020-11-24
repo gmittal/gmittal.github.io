@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/gmittal/gautam.cc#readme",
   "dependencies": {
-    "highlight.js": "^9.9.0",
+    "highlight.js": "^10.1.2",
     "marked": "^0.7.0",
     "moment": "^2.13.0",
     "rss": "^1.2.2"
