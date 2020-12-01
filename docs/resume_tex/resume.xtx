@@ -150,14 +150,15 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
 \subsection{Undergraduate}
-\textbf{CS61A:} Structure \& Interpretation of Computer Programs\\
 \textbf{CS61B:} Data Structures\\
 \textbf{CS61C:} Machine Structures\\
-\textbf{CS70:} Discrete Mathematics \& Probability\\
-\textbf{CS170:} Efficient Algorithms \& Intractable Problems\\
-\textbf{CS162:} Operating Systems (Fall 2020)\\
-\textbf{CS186:} Database Systems (Fall 2020)\\
+\textbf{CS70:} Discrete Math \& Probability\\
+\textbf{CS170:} Algorithms \& Intractable Problems\\
+\textbf{CS161:} Computer Security (Spring '21)\\
+\textbf{CS162:} Operating Systems\\
+\textbf{CS186:} Database Systems\\
 \textbf{CS188:} Artificial Intelligence\\
+\textbf{CS189:} Machine Learning (Spring '21)\\
 \textbf{EECS16A:} Linear Algebra, Circuits, \& Systems I\\
 \textbf{EECS16B:} Differential Equations, Devices, \& Systems II\\
 \textbf{EECS126:} Probability \& Random Processes\\
