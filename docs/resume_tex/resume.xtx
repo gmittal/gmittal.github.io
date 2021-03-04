@@ -86,7 +86,7 @@
 
 \subsection{UC Berkeley}
 \descript{B.S. Electrical Engineering \& Computer Science (EECS)}
-\location{Expected May 2022 | Berkeley, CA \\ GPA: 3.8 / 4.0}
+\location{Expected May 2022 | Berkeley, CA \\ GPA: 3.85 / 4.0}
 
 
 \textbf{Regents' and Chancellor's Scholar} \\
@@ -118,18 +118,20 @@ Objective-C
 PyTorch \textbullet{}
 JAX/Flax \textbullet{}
 TensorFlow \\
-Numpy \textbullet{}
+NumPy \textbullet{}
 Node.js \textbullet{}
 Flask \textbullet{}
 Rails \textbullet{}
 HTML \\
 CSS \textbullet{}
 React \textbullet{}
-Processing \textbullet{}
+Max/MSP \textbullet{}
 AWS \textbullet{}
 GCP \\
 UNIX \textbullet{}
-Git
+Git \textbullet{}
+MongoDB \textbullet{}
+PostgreSQL
 
 \sectionsep
 
@@ -149,20 +151,23 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
-\subsection{Undergraduate}
+%\subsection{Undergraduate}
 \textbf{CS61B:} Data Structures\\
-\textbf{CS61C:} Machine Structures\\
+\textbf{CS61C:} Computer Architecture\\
 \textbf{CS70:} Discrete Math \& Probability\\
-\textbf{CS170:} Algorithms \& Intractable Problems\\
-\textbf{CS161:} Computer Security (Spring '21)\\
+\textbf{CS170:} Algorithms \& Intractability\\
+\textbf{CS161:} Computer Security*\\
 \textbf{CS162:} Operating Systems\\
 \textbf{CS186:} Database Systems\\
 \textbf{CS188:} Artificial Intelligence\\
-\textbf{CS189:} Machine Learning (Spring '21)\\
-\textbf{EECS16A:} Linear Algebra, Circuits, \& Systems I\\
-\textbf{EECS16B:} Differential Equations, Devices, \& Systems II\\
-\textbf{EECS126:} Probability \& Random Processes\\
+\textbf{CS189:} Machine Learning*\\
+\textbf{EECS16A:} Linear Algebra \& Circuits\\
+\textbf{EECS16B:} Diff. Equations \& Devices\\
+\textbf{EECS126:} Random Processes\\
 \textbf{MATH53:} Multivariable Calculus\\
+\textbf{CS195:} Social Implications of Computing\\
+\hfill \break
+* in progress
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,22 +185,26 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Google}
-\descript{| Software Engineering Intern, Google Brain}
-\location{May 2020 – Present | Remote}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Researching energy-based generative models for music generation with Magenta, a research group exploring ML in the creative process
-\item Designed new methods for sampling from MusicVAE and enforcing long-term structure with JAX/Flax models
-\end{tightemize}
-\sectionsep
-
 \runsubsection{RISELab, UC Berkeley}
 \descript{| Undergraduate Researcher}
 \location{September 2019 – Present | Berkeley, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Researching deep reinforcement learning and unsupervised learning for database systems with Zongheng Yang under Professor Ion Stoica
-\item Presented modular research platform for designing learned database query optimizers with deep RL at RISE Retreat (January 2020)
+\item Researching deep reinforcement and unsupervised learning for databases
+\item Co-implemented system for training a relational query optimizer without imitation learning and experimented with VAEs and feature perturbation techniques to improve learned representations
+\item Co-authored conference paper (under peer review) on learned query optimization and presented work at RISE Retreat (2020, 2021) 
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Google}
+\descript{| Research Intern, Google Brain}
+\location{May 2020 – January 2021 | Mountain View, CA}
+\begin{tightemize}
+\item Researched deep energy-, score-, and diffusion-based generative models for symbolic music generation under the \href{https://magenta.tensorflow.org/}{Magenta team}
+\item Designed two-stage non-autoregressive model for unconditional generation and gradient-based sampling for post-hoc infilling
+\item Implemented and evaluated Transformer-based models, fast sampling mechanisms, and MusicVAE data pipelines with JAX, Flax, and TensorFlow
+\item Co-authored conference paper (under peer review) 
 \end{tightemize}
 \sectionsep
 
@@ -205,17 +214,17 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \begin{tightemize}
 \item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
 \item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security
-\item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Dashboard front-end with React 
+\item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React 
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Edmodo}
-\descript{| Machine Learning Intern}
-\location{June 2017 – August 2017 | San Mateo, CA}
-\begin{tightemize}
-\item Designed deep learning models and data pipelines with Python, TensorFlow, and Elasticsearch for question recommendation on the world's largest educational social network (100M+ users)
-\end{tightemize}
-\sectionsep
+%\runsubsection{Edmodo}
+%\descript{| Machine Learning Intern}
+%\location{June 2017 – August 2017 | San Mateo, CA}
+%\begin{tightemize}
+%\item Designed deep learning models and data pipelines with Python, TensorFlow, %and Elasticsearch for question recommendation on the world's largest educational% social network (100M+ users)
+%\end{tightemize}
+%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
