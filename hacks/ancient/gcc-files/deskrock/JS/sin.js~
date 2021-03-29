@@ -1,6 +1,0 @@
-function mathSin() {
-var sin1 = prompt ("What would you like me to find the Sine of?","Type Here!");
-
-
-alert(Math.sin(sin1));
-}
