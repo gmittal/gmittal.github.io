@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  3 MAR 2021 16:32
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  8 APR 2021 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,39 +777,33 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 
 
 LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/b/sc' undefined
-(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 236.
+(Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 237.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 257.
+(Font)              <7> on input line 258.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 257.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
+(Font)              <5> on input line 258.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: 740DEB21384D5E71FB88832D1C5DBEDC;475.
 
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: DCF12FC4C7742880A212C6637F5BD63B;538
-(rerunfilecheck)             After:  740DEB21384D5E71FB88832D1C5DBEDC;475.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
  ) 
 Here is how much of TeX's memory you used:
- 16562 strings out of 479418
- 300495 string characters out of 5884586
- 621588 words of memory out of 5000000
- 33804 multiletter control sequences out of 15000+600000
+ 16561 strings out of 479418
+ 300484 string characters out of 5884586
+ 621533 words of memory out of 5000000
+ 33803 multiletter control sequences out of 15000+600000
  533218 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,11n,123p,298b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
