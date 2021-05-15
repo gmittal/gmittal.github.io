@@ -157,18 +157,20 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS61C:} Computer Architecture\\
 \textbf{CS70:} Discrete Math \& Probability\\
 \textbf{CS170:} Algorithms \& Intractability\\
-\textbf{CS161:} Computer Security*\\
+\textbf{CS161:} Computer Security\\
 \textbf{CS162:} Operating Systems\\
+\textbf{CS164:} PL \& Compilers (Fall 2021)\\
 \textbf{CS186:} Database Systems\\
 \textbf{CS188:} Artificial Intelligence\\
-\textbf{CS189:} Machine Learning*\\
+\textbf{CS189:} Machine Learning\\
+\textbf{CS194-26:} Computer Vision (Fall 2021)\\
 \textbf{EECS16A:} Linear Algebra \& Circuits\\
-\textbf{EECS16B:} Diff. Equations \& Devices\\
+\textbf{EECS16B:} Diff. Equations \& Control\\
 \textbf{EECS126:} Random Processes\\
 \textbf{MATH53:} Multivariable Calculus\\
 \textbf{CS195:} Social Implications of Computing\\
 \hfill \break
-* in progress
+% * in progress
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -186,10 +188,19 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Tesla}
+\descript{| Machine Learning Intern, Autopilot}
+\location{May 2021 – August 2021 | Palo Alto, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working on the Full Self-Driving (FSD) Vision team under Andrej Karpathy 
+\end{tightemize}
+\sectionsep
+
 \runsubsection{RISELab, UC Berkeley}
 \descript{| Undergraduate Researcher}
 \location{September 2019 – Present | Berkeley, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Researching deep reinforcement and unsupervised learning for databases
 \item Co-implemented system for training a relational query optimizer without imitation learning and experimented with VAEs and feature perturbation techniques to improve learned representations
@@ -240,13 +251,15 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Copilot}
-\descript{| Executive Director}
-\location{June 2016 – June 2018 | \textbf{JavaScript, Node.js, Firebase}}
-\begin{tightemize}
-\item Designed and implemented an online, anonymous peer-to-peer mental health counseling platform; Source code: \href{https://github.com/projectcopilot}{\textbf{github.com/projectcopilot}}
-\end{tightemize}
-\sectionsep
+%\runsubsection{Copilot}
+%\descript{| Executive Director}
+%\location{June 2016 – June 2018 | \textbf{JavaScript, Node.js, Firebase}}
+%\begin{tightemize}
+%\item Designed and implemented an online, anonymous peer-to-peer mental health counseling platform; Source code: \href{https://github.com/projectcopilot}{\textbf{github.com/projectcopilot}}
+%\end{tightemize}
+%\sectionsep
+
+Additional projects available at \href{https://github.com/gmittal}{\textbf{github.com/gmittal}}.
 
 \sectionsep
 
