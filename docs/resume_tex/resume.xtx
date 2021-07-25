@@ -216,7 +216,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \item Researched deep energy-, score-, and diffusion-based generative models for symbolic music generation under the \href{https://magenta.tensorflow.org/}{Magenta team}
 \item Designed two-stage non-autoregressive model for unconditional generation and gradient-based sampling for post-hoc infilling
 \item Implemented and evaluated Transformer-based models, fast sampling mechanisms, and MusicVAE data pipelines with JAX, Flax, and TensorFlow
-\item Co-authored conference paper (under peer review) 
+\item First author conference paper published at \textbf{\href{https://ismir2021.ismir.net}{ISMIR 2021}} 
 \end{tightemize}
 \sectionsep
 
