@@ -93,7 +93,10 @@
 \textbf{Accel Scholar} \\
 \textbf{Kleiner Perkins Engineering Fellow} \\
 \textbf{Eta Kappa Nu (EECS Honor Society)} \\
-Cal Hacks, UC Jazz, Statistics Undergraduate Student Association \\ 
+\textbf{Dean's List (3x)} \\
+
+CS186 uGSI (database TA) \textbullet{} Cal Hacks \\ 
+UC Jazz \textbullet{} Statistics Undergraduate Student Association \\ 
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,11 +162,12 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS170:} Algorithms \& Intractability\\
 \textbf{CS161:} Computer Security\\
 \textbf{CS162:} Operating Systems\\
-\textbf{CS164:} PL \& Compilers (Fall 2021)\\
+\textbf{CS164:} Languages \& Compilers\\
 \textbf{CS186:} Database Systems\\
 \textbf{CS188:} Artificial Intelligence\\
 \textbf{CS189:} Machine Learning\\
-\textbf{CS194-26:} Computer Vision (Fall 2021)\\
+\textbf{CS194-26:} Computer Vision\\
+\textbf{CS285:} Deep RL (Graduate)\\
 \textbf{EECS16A:} Linear Algebra \& Circuits\\
 \textbf{EECS16B:} Diff. Equations \& Control\\
 \textbf{EECS126:} Random Processes\\
@@ -193,7 +197,22 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2021 – August 2021 | Palo Alto, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Working on the Full Self-Driving (FSD) Vision team under Andrej Karpathy 
+
+%- Detectron-based infrastructure for two-stage models and new data, training, and evaluation metrics/pipelines from scratch
+%- Engineering task owner for offline 2D networks supporting new autolabeling, offline tracking, and simulation pipelines
+%  - Downstream projects: offline tracker, BEV3D, autoalign, autohighbeam, sim2real on simulation
+%- Implemented SoTA panoptic segmentation, road detail understanding, and object detection models
+%  - multi-scale attention, etc. (though probably no need to mention this, nobody will care)
+%- Contributed to new segmentation-specific data engine working with Autopilot leadership, downstream engineering projects, and 
+%300+ person human labeling team to inform ontology and implementation decisions
+%- Advised by Andrej Karpathy (Senior Director of AI)
+%- Presented models to Elon Musk and had internship work demoed by senior Autopilot leadership at AI Day (link)
+
+\item Engineering task owner for all offline 2D networks: supported new autolabeling, tracking, simulation, AutoHighbeam, and 3D network efforts
+\item Implemented SoTA panoptic segmentation, road semantics, and object detection models along with new data, training, evaluation, and visualization infrastructure from scratch
+\item Contributed to spinning up a new segmentation data engine, working closely with senior leadership and downstream projects to refine ontology and steer large human labeling team to improve dataset quality
+\item Presented model to Elon Musk and had internship work demoed by senior Autopilot leadership at AI Day (see \textbf{\href{https://youtu.be/j0z4FweCy4M?t=4279}{1:11:19}} \& \textbf{\href{https://youtu.be/j0z4FweCy4M?t=5490}{1:31:30}} on \textbf{\href{https://www.youtube.com/watch?v=j0z4FweCy4M}{livestream}})
+
 \end{tightemize}
 \sectionsep
 
@@ -203,7 +222,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Researching deep reinforcement and unsupervised learning for databases
-\item Co-implemented system for training a relational query optimizer without imitation learning and experimented with VAEs and feature perturbation techniques to improve learned representations
+\item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
 \item Co-authored conference paper (under peer review) on learned query optimization and presented work at RISE Retreat (2020, 2021) 
 \end{tightemize}
 \sectionsep
@@ -226,7 +245,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \begin{tightemize}
 \item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
 \item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security
-\item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React 
+% \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React 
 \end{tightemize}
 \sectionsep
 
@@ -242,14 +261,14 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-\runsubsection{Feverbase}
-\descript{| Founding Engineer | \href{https://feverbase.org}{feverbase.org}}
-\location{March 2020 – July 2020 | \textbf{Python, Flask, MongoDB}}
-\begin{tightemize}
-\item An open platform for COVID-related clinical trial data connecting researchers, patients, and the public to relevant information for drug discovery and trial participation; Source code: \href{https://github.com/feverbase}{\textbf{github.com/feverbase}}
-\end{tightemize}
-\sectionsep
+%\section{Projects}
+%\runsubsection{Feverbase}
+%\descript{| Founding Engineer | \href{https://feverbase.org}{feverbase.org}}
+%\location{March 2020 – July 2020 | \textbf{Python, Flask, MongoDB}}
+%\begin{tightemize}
+%\item An open platform for COVID-related clinical trial data connecting researchers, patients, and the public to relevant information for drug discovery and trial participation; Source code: \href{https://github.com/feverbase}{\textbf{github.com/feverbase}}
+%\end{tightemize}
+%\sectionsep
 
 %\runsubsection{Copilot}
 %\descript{| Executive Director}
@@ -259,7 +278,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %\end{tightemize}
 %\sectionsep
 
-Additional projects available at \href{https://github.com/gmittal}{\textbf{github.com/gmittal}}.
+Earlier professional experience is available at \href{https://linkedin.com/in/mittalgautam}{\textbf{linkedin.com/in/mittalgautam}}. \\
+Additional open-source work and projects available at \href{https://github.com/gmittal}{\textbf{github.com/gmittal}}.
 
 \sectionsep
 
