@@ -206,12 +206,12 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %- Contributed to new segmentation-specific data engine working with Autopilot leadership, downstream engineering projects, and 
 %300+ person human labeling team to inform ontology and implementation decisions
 %- Advised by Andrej Karpathy (Senior Director of AI)
-%- Presented models to Elon Musk and had internship work demoed by senior Autopilot leadership at AI Day (link)
+%- Presented models to Elon Musk and had internship work demoed by Autopilot leadership at AI Day (link)
 
 \item Engineering task owner for all offline 2D networks: supported new autolabeling, tracking, simulation, AutoHighbeam, and 3D network efforts
 \item Implemented SoTA panoptic segmentation, road semantics, and object detection models along with new data, training, evaluation, and visualization infrastructure from scratch
 \item Contributed to spinning up a new segmentation data engine, working closely with senior leadership and downstream projects to refine ontology and steer large human labeling team to improve dataset quality
-\item Presented model to Elon Musk and had internship work demoed by senior Autopilot leadership at AI Day (see \textbf{\href{https://youtu.be/j0z4FweCy4M?t=4279}{1:11:19}} \& \textbf{\href{https://youtu.be/j0z4FweCy4M?t=5490}{1:31:30}} on \textbf{\href{https://www.youtube.com/watch?v=j0z4FweCy4M}{livestream}})
+\item Presented model to Elon Musk and had internship work demoed by Autopilot leadership at AI Day (see \textbf{\href{https://youtu.be/j0z4FweCy4M?t=4279}{1:11:19}} \& \textbf{\href{https://youtu.be/j0z4FweCy4M?t=5490}{1:31:30}} on \textbf{\href{https://www.youtube.com/watch?v=j0z4FweCy4M}{livestream}})
 
 \end{tightemize}
 \sectionsep
