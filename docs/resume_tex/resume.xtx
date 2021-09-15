@@ -223,7 +223,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \begin{tightemize}
 \item Researching deep reinforcement and unsupervised learning for databases
 \item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
-\item Co-authored conference paper (under peer review) on learned query optimization and presented work at RISE Retreat (2020, 2021) 
+\item Co-authored conference paper (accepted to \textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}}) on learned query optimization and presented work at RISE Retreat (2020, 2021) 
 \end{tightemize}
 \sectionsep
 
