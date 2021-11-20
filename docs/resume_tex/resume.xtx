@@ -113,8 +113,10 @@ C \\
 Go \textbullet{}
 SQL \textbullet{}
 Scheme \textbullet{}
-Ruby \textbullet{}
-RISC-V \\
+OCaml \textbullet{}
+Ruby \\
+RISC-V \textbullet{}
+x86 \textbullet{}
 Objective-C
 \sectionsep
 

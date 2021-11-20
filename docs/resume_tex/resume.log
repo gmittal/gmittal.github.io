@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  15 SEP 2021 10:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  20 NOV 2021 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,29 +776,29 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 (Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 89.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 291.
+(Font)              <7> on input line 293.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 291.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+(Font)              <5> on input line 293.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 307.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: A166F2CB58089370EBF00D29D84D86C1;431.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
  16558 strings out of 479418
  300410 string characters out of 5884586
- 621533 words of memory out of 5000000
+ 622533 words of memory out of 5000000
  33800 multiletter control sequences out of 15000+600000
  533218 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
