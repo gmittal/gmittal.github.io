@@ -75,25 +75,6 @@ fieldset {
   padding: 0;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-
-footer {
-  font-family: "Adobe Caslon";
-  font-size: 14pt;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 a {
   color:black;
   text-decoration: none;
@@ -107,108 +88,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.quote {
-  margin-top: 20px;
-  text-align:center;
-  font-family: "SFMoMA";
-  color: #999;
-}
-
-.wallet {
-  text-align:center;
-  color: #999;
-  font-family: "Menlo";
-  margin-top: 40px;
-  font-size: 9pt;
-}
-
-.lavaLamp {
-  height: 3px;
-  width: 100%;
-  background-color:#333;
-  /*animation: lavalamp 5s infinite;*/
-  position:absolute;
-  top:0;
-}
-
-@keyframes lavalamp {
-  0% {
-    background-color: #c0392b;
-  }
-  100% {
-    background-color: #8e44ad;
-  }
-}
-
 *:focus {
   outline: none;
-}
-
-#mainTitle {
-  font-family: "SFMoMA", "San Francisco";
-  font-weight: 300;
-  color:#333;
-  line-height: 110%;
-  text-align:center;
-  font-size: 35pt;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;
-  /*margin-left: 15px;*/
-  /*margin-right: 15px;*/
-
-}
-
-#mainDescription {
-  font-family: 'Colfax Web';
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-  font-size: 12pt;
-  margin-top: 10px;
-  /*margin-left: 15px;*/
-  /*margin-right: 15px;*/
-}
-
-#mainTitle:hover {
-  cursor:pointer;
-}
-
-.newsIcons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:nowrap;
-  margin-bottom: 10px;
-  align-items: stretch;
-}
-
-.newsInfoIcon {
-  border: 0;
-  width: 100px;
-  height: auto;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: white;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-
-.newsInfoIcon:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-}
-
-.info {
-  text-transform:uppercase;
 }
 
 .content {
@@ -316,12 +197,10 @@ h2 {
   font-family: "SFMoMA", "San Francisco", sans-serif;
   font-weight: 600;
   line-height: 120%;
-  border-bottom: 1px solid rgba(37, 36, 37, 0.1);
 }
 
 h3 {
-  font-family: "Inter UI", "SFMoMA", "Proxima Nova", sans-serif;
-  border-bottom: 1px solid rgba(37, 36, 37, 0.1);
+  font-family: "SFMoMA", "Proxima Nova", sans-serif;
   line-height: 120%;
 
 }
@@ -335,145 +214,9 @@ h3 {
   display:block;
 }
 
-.date #lead {
-  color: #000;
-  font-family: 'Inter UI', sans-serif;
-  font-weight: 300;
-}
-
-.whole .date {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 14pt;
-}
-
-.whole a {
-  font-weight: bold;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 input:focus {
   outline:none;
   outline-style:none;
-}
-
-.story {
-  margin-bottom: 15px;
-}
-
-.story a {
-  color: #333;
-  display:block;
-  text-align:left;
-  font-size: 14pt;
-  font-family: "Inter UI", "Proxima Nova", "Helvetica", sans-serif;
-  font-weight: 700;
-}
-
-#goHome:hover {
-  cursor:pointer;
-}
-
-#author img {
-  height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 3px;
-  border: 3px solid black;
-}
-
-#author {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  font-size: 14pt!important;
-}
-
-#readTime {
-  font-family: 'Colfax Web', sans-serif;
-  font-size: 14pt;
-  position: absolute;
-  top: 45px;
-  right: 25px;
-}
-
-#postArea {
-  margin-top: 60px;
-}
-
-#mobileDivider {
-  border: 0;
-  height: 1px;
-  background-color: #eee;
-  margin-top: 130px;
-  display: none;
-}
-
-.description {
-  margin-right: 10px;
-  font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
-  font-weight: 400;
-  display:block;
-}
-
-.articleBody {
-  font-size: 10.5pt;
-  font-family: "Inter UI", "Proxima Nova", "Helvetica", sans-serif;
-  font-weight: 400;
-  line-height: 1.6em;
-  color: #111;
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-}
-
-.articleBody a {
-  font-weight:normal;
-  margin:0;
-  color: #0f73aa;
-}
-
-.articleBody h2, h3, h4 {
-  line-height: 110%;
-  margin-bottom:-10px;
-  padding:0;
-}
-
-.mainIntro {
-  /* text-align: center; */
-}
-
-.mainIntro .date {
-  font-size: 13pt;
-  font-family: "Colfax Web";
-  font-weight: 100;
-  padding-top: 7px;
-}
-
-.mainIntro a {
-  margin:0;
-  font-weight: normal;
-}
-
-#headline {
-  color: #000;
-  font-size: 25pt;
-  font-family: 'Inter UI', 'SFMoMA', 'Proxima Nova';
-  font-weight:700;
-  line-height: 110%;
-  margin-top: 10px;
-}
-
-.blogArea {
-  margin-top: 10px!important;
-}
-
-img {
-  display: block;
-  margin: auto;
 }
 
 /* ==========================================================================
@@ -550,14 +293,6 @@ Helper classes
   clear: both;
 }
 
-#photo-wall img {
-  width: 100%!important;
-}
-
-#photo-wall video {
-    width: 100%;
-}
-
 img, video, iframe {
   padding: 3px;
   border: 1px solid #eee;
@@ -575,127 +310,6 @@ table td {
     text-align: center;
 }
 
-img#rss {
-  border: none;
-  background:none;
-  float:right;
-  height: 20pt;
-  -moz-opacity: 0.4;
-  -webkit-opacity: 0.4;
-  opacity: 0.4;
-}
-
-img#rss:hover {
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-}
-
-blockquote {
-  font-size: 16pt;
-  color: rgba(33, 33, 33, 0.8);
-  line-height: 160%;
-  font-style:italic;
-  font-family: "Inter UI", sans-serif;
-  font-weight: 300;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display:block;
-}
-
-blockquote quotee {
-  font-size: 11pt;
-  line-height: 1.5;
-  margin-top: 10px;
-  font-weight: 600;
-  font-family: "Inter UI", sans-serif;
-  display:block;
-  font-style:normal;
-}
-
-lead {
-  color: rgba(33, 33, 33, 0.5);
-}
-
-pre {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  line-height: 1.3em;
-  color: #abb2bf;
-  background: #282c34;
-  border-radius: 5px;
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: #5c6370;
-  font-style: italic;
-}
-
-.hljs-doctag,
-.hljs-keyword,
-.hljs-formula {
-  color: #c678dd;
-}
-
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e06c75;
-}
-
-.hljs-literal {
-  color: #56b6c2;
-}
-
-.hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-  color: #98c379;
-}
-
-.hljs-built_in,
-.hljs-class .hljs-title {
-  color: #e6c07b;
-}
-
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-  color: #d19a66;
-}
-
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-  color: #61aeee;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-.hljs-link {
-  text-decoration: underline;
-}
 
 @media only screen and (max-width: 599px) {
   #header {

@@ -2,19 +2,6 @@
 
 This is the source code for my personal website and blog. If you have any questions or concerns, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
-### Building
-Install the dependencies through ```npm```.
-```shell
-npm install
-```
-Build all of the static pages.
-```
-npm run build
-```
-Serve.
-```
-npx http-server .
-```
 
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
