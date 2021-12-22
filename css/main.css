@@ -184,13 +184,11 @@ p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-}
-
-p.lead {
   font-family: "Colfax Web", sans-serif;
-  font-size: 13pt;
+  font-size: 11.5pt;
   line-height: 145%;
-  hyphens: none;
+  color: #222;
+  /* hyphens: none; */
 }
 
 h2 {
