@@ -50,6 +50,8 @@
       line-height: 1.5;
       max-width: 660px;
 
+      padding-left: 20px;
+      padding-right: 20px;
       padding-top: 40px;
       margin-bottom: 10em;
       margin-left: auto;
@@ -60,6 +62,7 @@
       color: #222;
 
       min-height: 100%;
+      text-rendering: optimizeLegibility;
     }
 
     h1 {
@@ -75,17 +78,37 @@
     }
 
     p {
-      text-rendering: optimizeLegibility;
       font-family: "Colfax Web", sans-serif;
       font-size: 15px;
       line-height: 145%;
       color: #222;
     }
 
+    a, .button, .social > a > img {
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      -ms-transition: all .1s linear;
+      transition: all .1s linear;
+    }
+
+    .profile-pic > img {
+      -webkit-transition: all .5s linear;
+      -moz-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
     a {
       color: #0f73aa;
       border-bottom: 1px dotted #0f73aa;
       text-decoration: none;
+    }
+
+    a:hover {
+      color: #c0392b;
+      border-bottom: 1px solid #c0392b;
     }
 
     .button {
@@ -107,6 +130,8 @@
 
     .button:hover {
       background-color:rgba(0,0,0,0.08);
+      border: 0;
+      color: #000;
     }
 
     .profile {
@@ -118,11 +143,30 @@
       width:120px;
       height:120px;
       border-radius:100%;
-      margin-right:2em;
+      margin-right:10px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    .profile-pic > img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .profile-text {
+      margin: 10px;
     }
 
     .profile-text > h1 {
       line-height: 0;
+    }
+
+    .profile-text > h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 10pt;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
 
     .social > a {
@@ -133,15 +177,32 @@
       height: 24px;
       padding-right: 8px;
       border: 0;
-      -webkit-transition: all .1s linear;
-      -moz-transition: all .1s linear;
-      -o-transition: all .1s linear;
-      -ms-transition: all .1s linear;
-      transition: all .1s linear;
+      /* margin-top: -10px; */
       filter: opacity(100%);
       -webkit-filter: opacity(100%)
     }
 
+    .social > a > img:hover {
+      filter: opacity(50%);
+      -webkit-filter: opacity(50%);
+    }
+
+    .pub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Colfax Web', sans-serif;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 540px) {
+      .profile {
+        flex-direction: column;
+      }
+
+      .profile-pic, .profile-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
@@ -152,13 +213,19 @@
     </div>
     <div class="profile-text">
       <h1>Gautam Mittal</h1>
-      <h3>Hackathon Hacker at UC Berkeley</h3>
+      <h3>Hacking at UC Berkeley</h3>
       <div class="social">
+        <a href="mailto:gautam@mittal.net" target="_blank" rel="noreferrer">
+          <img src="/img/social/mail.svg" id="in" alt="LinkedIn" />
+        </a>
         <a href="//github.com/gmittal" target="_blank" rel="noreferrer">
           <img src="/img/social/github.svg" id="gh" alt="GitHub" />
         </a>
         <a href="//www.linkedin.com/in/mittalgautam/" target="_blank" rel="noreferrer">
           <img src="/img/social/linkedin.svg" id="in" alt="LinkedIn" />
+        </a>
+        <a href="//scholar.google.com/citations?hl=en&user=6HbdDgIAAAAJ" target="_blank" rel="noreferrer">
+          <img src="/img/social/scholar.svg" id="in" alt="LinkedIn" />
         </a>
         <a href="//twitter.com/realgmittal" target="_blank" rel="noreferrer">
           <img src="/img/social/twitter.svg" id="fb" alt="Twitter" />
@@ -172,17 +239,17 @@
 
   <p>
     I’m at UC Berkeley studying Electrical Engineering and Computer
-    Science. I enjoy building things, taekwondo, running, and music of all
-    genres. I am fascinated by difficult problems, AI, computer-generated art,
-    hackathons, jazz, and the design of products and systems.
+    Science. I enjoy building things, cycling, and music of all
+    genres. I am interested in real-world applications of deep learning, data systems,
+    computer-generated art, hackathons, jazz, and the design of products and systems.
   </p>
 
-  <p>
+  <!-- <p>
     Previously, I was at UC Berkeley studying Electrical Engineering and Computer
     Science. I enjoy building things, taekwondo, running, and music of all
     genres. I am fascinated by difficult problems, AI, computer-generated art,
     hackathons, jazz, and the design of products and systems.
-  </p>
+  </p> -->
 
   <p>
     All of my code is on <a href="//github.com/gmittal">GitHub</a> and I
@@ -193,7 +260,7 @@
 
   <h2>Research</h2>
   <p>
-    <b>Balsa: Learning a Query Optimizer Without Expert Demonstrations</b><br />
+    <span class="pub">Balsa: Learning a Query Optimizer Without Expert Demonstrations</span><br />
     Zongheng Yang, Wei-Lin Chiang*, Sifei Luan*, Gautam Mittal, Michael Luo, Ion Stoica<br />
     ACM Special Interest Group on Management of Data (SIGMOD), 2022<br />
     <a class="button" href="https://arxiv.org/abs/2201.01441">arxiv</a>
@@ -201,20 +268,17 @@
   </p>
 
   <p>
-    <b>Symbolic Music Generation with Diffusion Models</b><br />
+    <span class="pub">Symbolic Music Generation with Diffusion Models</span><br />
     Gautam Mittal, Jesse Engel, Curtis Hawthorne, Ian Simon<br />
     International Society for Music Information Retrieval (ISMIR), 2021<br />
     <a class="button" href="https://arxiv.org/abs/2103.16091">arXiv</a>
     <a class="button" href="https://github.com/magenta/symbolic-music-diffusion">Code</a>
   </p>
 
-  <h2>Outreach</h2>
-  <p><b><a href="https://cs186berkeley.net">CS 186 (Databases)</a></b> at UC Berkeley: Fall 2021 and Spring 2022<br />
-    <b><a href="https://calhacks.io/">Cal Hacks</a></b> at UC Berkeley: Fall 2019, Spring 2020, and Fall 2020
+  <h2>Teaching</h2>
+  <p><a href="https://cs186berkeley.net">CS 186 (Databases)</a> at UC Berkeley: Fall 2021 and Spring 2022<br />
+    <a href="https://calhacks.io/">Cal Hacks</a> at UC Berkeley: Fall 2019, Spring 2020, and Fall 2020
   </p>
-
-  <h2>Special Projects</h2>
-  <p>I am a second degree black belt in taekwondo. I also play lots of jazz.</p>
 
   <script>
     (function(b, o, i, l, e, r) {
