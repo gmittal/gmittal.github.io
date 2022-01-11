@@ -5,98 +5,287 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/img/favicon.png">
-  <link rel="stylesheet" href="css/main.css">
+  <style>
+    @font-face {
+      font-family: "Colfax Web";
+      src: url("../fonts/Colfax Web/Regular.woff");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Colfax Web";
+      src: url("../fonts/Colfax Web/RegularItalic.woff");
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: "Colfax Web";
+      src: url("../fonts/Colfax Web/Bold.woff");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Colfax Web";
+      src: url("../fonts/Colfax Web/BoldItalic.woff");
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: "SFMoMA";
+      src: url('../fonts/MoMA/SFMOMAText-Bold.ttf') format("truetype"),
+           url('../fonts/MoMA/SFMOMAText-Bold.otf') format("otf");
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: 'Colfax Web', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
+
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 40px;
+      margin-bottom: 10em;
+      margin-left: auto;
+      margin-right: auto;
+
+      background: white;
+      color: #222;
+
+      max-width: 660px;
+      min-height: 100%;
+    }
+
+    h1, h2, h3 {
+      font-weight: 300;
+    }
+
+    p {
+      font-family: "Colfax Web", sans-serif;
+      font-size: 15px;
+      line-height: 145%;
+      color: #222;
+    }
+
+    a, .button, .social > a > img {
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      -ms-transition: all .1s linear;
+      transition: all .1s linear;
+    }
+
+    .profile-pic > img {
+      -webkit-transition: all .5s linear;
+      -moz-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
+    a {
+      color: #0f73aa;
+      border-bottom: 1px dotted #0f73aa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #c0392b;
+      border-bottom: 1px solid #c0392b;
+    }
+
+    .button {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding:0px 1.35em;
+      background-color:rgba(0,0,0,0.05);
+      border: 0;
+      border-radius:5px;
+      display:inline-block;
+      text-transform:uppercase;
+      text-decoration:none;
+      color:#000;
+      font-weight:600;
+      letter-spacing:1px;
+      font-size:10px;
+    }
+
+    .button:hover {
+      background-color:rgba(0,0,0,0.08);
+      border: 0;
+      color: #000;
+    }
+
+    .profile {
+      display:flex;
+      flex-direction:row;
+    }
+
+    .profile-pic > img {
+      width:120px;
+      height:120px;
+      border-radius:100%;
+      margin-right:10px;
+      /* -webkit-filter: grayscale(100%); */
+      /* filter: grayscale(100%); */
+    }
+
+    /* .profile-pic > img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    } */
+
+    .profile-text {
+      margin: 10px;
+    }
+
+    .profile-text > h1 {
+      line-height: 0;
+      font-family: "SFMoMA", "San Francisco";
+      font-weight: bold;
+      color: black;
+      font-size: 30px;
+      text-transform: none;
+    }
+
+    .profile-text > h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 10pt;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .social > a {
+      border: 0;
+    }
+
+    .social > a + a {
+      margin-left: 8px;
+    }
+
+    .social > a > img {
+      height: 24px;
+      border: 0;
+      filter: opacity(100%);
+      -webkit-filter: opacity(100%)
+    }
+
+    .social > a > img:hover {
+      filter: opacity(50%);
+      -webkit-filter: opacity(50%);
+    }
+
+    .pub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Colfax Web', sans-serif;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 540px) {
+      .profile {
+        flex-direction: column;
+      }
+
+      .profile-pic, .profile-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="header">
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="eight columns">
-        <div class="nav">
-          <h1>Gautam Mittal</h1>
-          <div class="social">
-            <a href="//github.com/gmittal" target="_blank" rel="noreferrer">
-              <img src="/img/social/github.svg" id="gh" alt="GitHub" />
-            </a>
-            <a href="//www.linkedin.com/in/mittalgautam/" target="_blank" rel="noreferrer">
-              <img src="/img/social/linkedin.svg" id="in" alt="LinkedIn" />
-            </a>
-            <a href="//twitter.com/realgmittal" target="_blank" rel="noreferrer">
-              <img src="/img/social/twitter.svg" id="fb" alt="Twitter" />
-            </a>
-            <a href="/.well-known/ssh.txt" target="_blank" rel="noreferrer">
-              <img src="/img/social/fingerprint.svg" id="ssh" alt="SSH" />
-            </a>
-          </div>
-        </div>
-        <p>
-          I’m an undergrad at UC Berkeley studying Electrical Engineering and Computer Science.
-          I enjoy building things, taekwondo, running, and music of all genres.
-          I am fascinated by difficult problems, AI, computer-generated art, hackathons, jazz,
-          and the design of products and systems.
-        </p>
-        <p>
-          All of my code is on <a href="//github.com/gmittal">GitHub</a>
-          and I occasionally <a href="//twitter.com/realgmittal">tweet</a>.
-          I also have a <a href="/docs/resume.pdf">resumé</a>.
-          If you want to talk,
-          <a href="mailto:gautam@mittal.net">send me an email</a>.
-        </p>
+  <div class="profile">
+    <div class="profile-pic">
+      <img src="/img/me/pixel.png" />
+    </div>
+    <div class="profile-text">
+      <h1>Gautam Mittal</h1>
+      <h3>Student at UC Berkeley</h3>
+      <div class="social">
+        <a href="mailto:gautam@mittal.net" target="_blank" rel="noreferrer">
+          <img src="/img/social/mail.svg" id="in" alt="LinkedIn" />
+        </a>
+        <a href="//github.com/gmittal" target="_blank" rel="noreferrer">
+          <img src="/img/social/github.svg" id="gh" alt="GitHub" />
+        </a>
+        <a href="//www.linkedin.com/in/mittalgautam/" target="_blank" rel="noreferrer">
+          <img src="/img/social/linkedin.svg" id="in" alt="LinkedIn" />
+        </a>
+        <a href="//scholar.google.com/citations?hl=en&user=6HbdDgIAAAAJ" target="_blank" rel="noreferrer">
+          <img src="/img/social/scholar.svg" id="in" alt="LinkedIn" />
+        </a>
+        <a href="//twitter.com/realgmittal" target="_blank" rel="noreferrer">
+          <img src="/img/social/twitter.svg" id="fb" alt="Twitter" />
+        </a>
+        <a href="/.well-known/ssh.txt" target="_blank" rel="noreferrer">
+          <img src="/img/social/fingerprint.svg" id="ssh" alt="SSH" />
+        </a>
       </div>
     </div>
   </div>
-  <!-- <div id="photo-wall">
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="four columns">
-        <img src="/img/me/me-bamboo.jpg" alt="March 2019" />
-      </div>
-      <div class="four columns">
-        <img src="/img/ucjazz.jpg" alt="October 2018" />
-      </div>
-      <div class="two columns"></div>
-    </div>
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="four columns">
-        <video preload loop muted autoplay>
-          <source src="/img/brickbreak.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="four columns">
-        <img src="/img/me/me-flying.jpg" alt="June 2016" />
-      </div>
-      <div class="two columns"></div>
-    </div>
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="eight columns">
-        <img src="/img/me/me-jazz.jpg" alt="May 2018" />
-      </div>
-      <div class="two columns"></div>
-    </div>
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="eight columns">
-        <video preload loop muted autoplay>
-          <source src="/img/building-mic-board.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="two columns"></div>
-    </div>
-  </div> -->
+
+  <p>
+    I’m at UC Berkeley studying Electrical Engineering and Computer
+    Science. I enjoy building things, cycling, and music of all
+    genres. I am interested in real-world applications of deep learning, data systems,
+    computer-generated art, hackathons, jazz, and the design of products and systems.
+  </p>
+
+  <p>
+    All of my code is on <a href="//github.com/gmittal">GitHub</a> and I
+    occasionally <a href="//twitter.com/realgmittal">tweet</a>. I also have a
+    <a href="/docs/resume.pdf">resumé</a>. I enjoy meeting new people and am happy to talk
+    about almost anything &mdash; feel free to reach out by
+    <a href="mailto:gautam@mittal.net">sending me an email</a>.
+  </p>
+
+  <h2>Research</h2>
+  <p>
+    <span class="pub">Balsa: Learning a Query Optimizer Without Expert Demonstrations</span><br />
+    Zongheng Yang, Wei-Lin Chiang*, Sifei Luan*, Gautam Mittal, Michael Luo, Ion Stoica<br />
+    ACM Special Interest Group on Management of Data (SIGMOD), 2022<br />
+    <a class="button" href="https://arxiv.org/abs/2201.01441">arxiv</a>
+    <a class="button" href="#">Code (coming soon)</a>
+  </p>
+
+  <p>
+    <span class="pub">Symbolic Music Generation with Diffusion Models</span><br />
+    Gautam Mittal, Jesse Engel, Curtis Hawthorne, Ian Simon<br />
+    International Society for Music Information Retrieval (ISMIR), 2021<br />
+    <a class="button" href="https://arxiv.org/abs/2103.16091">arXiv</a>
+    <a class="button" href="https://github.com/magenta/symbolic-music-diffusion">Code</a>
+  </p>
+
+  <h2>Teaching</h2>
+  <p><a href="https://cs186berkeley.net">CS 186 (Databases)</a> at UC Berkeley: Fall 2021 and Spring 2022<br />
+    <a href="https://calhacks.io/">Cal Hacks</a> at UC Berkeley: Fall 2019, Spring 2020, and Fall 2020
+  </p>
+
   <script>
-    (function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-      function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
       e.src = '//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
-    ga('create', 'UA-35192434-1', 'auto'); ga('send', 'pageview');
+    ga('create', 'UA-35192434-1', 'auto');
+    ga('send', 'pageview');
   </script>
-  <script src="//instant.page/1.2.2" type="module"
-    integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+  <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
 </body>
-
 </html>
