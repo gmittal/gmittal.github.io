@@ -66,7 +66,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com} | 
+\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com} |
 \href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | +1 (480) 648-8254
 }
 
@@ -90,13 +90,11 @@
 
 
 \textbf{Regents' and Chancellor's Scholar} \\
-\textbf{Accel Scholar} \\
-\textbf{Kleiner Perkins Engineering Fellow} \\
-\textbf{Eta Kappa Nu (EECS Honor Society)} \\
-\textbf{Dean's List (3x)} \\
+\textbf{Accel Scholar, Kleiner Perkins Fellow} \\
+\textbf{Eta Kappa Nu (EECS Honor Society) \\ Dean's List} \\
 
-CS186 uGSI (database TA) \textbullet{} Cal Hacks \\ 
-UC Jazz \textbullet{} Statistics Undergraduate Student Association \\ 
+CS186 uGSI (database TA) \textbullet{} Cal Hacks \\
+UC Jazz \textbullet{} Statistics Undergraduate Student Association \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,11 +108,12 @@ JavaScript \textbullet{}
 Swift \textbullet{}
 Java \textbullet{}
 C \\
+C++ \textbullet{}
 Go \textbullet{}
 SQL \textbullet{}
 Scheme \textbullet{}
-OCaml \textbullet{}
-Ruby \\
+OCaml \\
+Ruby \textbullet{}
 RISC-V \textbullet{}
 x86 \textbullet{}
 Objective-C
@@ -149,6 +148,7 @@ PostgreSQL
 \section{Links}
 GitHub: \href{https://github.com/gmittal}{\bf github.com/gmittal} \\
 LinkedIn: \href{https://www.linkedin.com/in/mittalgautam}{\bf linkedin.com/in/mittalgautam} \\
+Google Scholar: \href{https://gbm.pw/gscholar}{\bf gbm.pw/gscholar} \\
 Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \sectionsep
 
@@ -195,10 +195,22 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+
+\runsubsection{RISELab, UC Berkeley}
+\descript{| Student Researcher}
+\location{September 2019 – Present | Berkeley, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Researching and developing Sky computing systems to enable large-scale multi-cloud ML workloads and deep RL techniques for query optimizers
+\item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
+\item Co-authored paper (\textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}}) on learned query optimization
+\item Co-authored paper on implementing an intercloud broker for Sky computing (under review)
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Tesla}
 \descript{| Machine Learning Intern, Autopilot}
 \location{May 2021 – August 2021 | Palo Alto, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 
 %- Detectron-based infrastructure for two-stage models and new data, training, and evaluation metrics/pipelines from scratch
@@ -206,30 +218,18 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %  - Downstream projects: offline tracker, BEV3D, autoalign, autohighbeam, sim2real on simulation
 %- Implemented SoTA panoptic segmentation, road detail understanding, and object detection models
 %  - multi-scale attention, etc. (though probably no need to mention this, nobody will care)
-%- Contributed to new segmentation-specific data engine working with Autopilot leadership, downstream engineering projects, and 
+%- Contributed to new segmentation data engine working with Autopilot leadership, downstream engineering projects, and
 %300+ person human labeling team to inform ontology and implementation decisions
 %- Advised by Andrej Karpathy (Senior Director of AI)
 %- Presented models to Elon Musk and had internship work demoed by Autopilot leadership at AI Day (link)
 
 \item Engineering task owner for all offline 2D networks: supported new autolabeling, tracking, simulation, AutoHighbeam, and 3D network efforts
 \item Implemented SoTA panoptic segmentation, road semantics, and object detection models along with new data, training, evaluation, and visualization infrastructure from scratch
-\item Contributed to spinning up a new segmentation data engine, working closely with senior leadership and downstream projects to refine ontology and steer large human labeling team to improve dataset quality
-\item Presented model to Elon Musk and had internship work demoed by Autopilot leadership at AI Day (see \textbf{\href{https://youtu.be/j0z4FweCy4M?t=4279}{1:11:19}} \& \textbf{\href{https://youtu.be/j0z4FweCy4M?t=5490}{1:31:30}} on \textbf{\href{https://www.youtube.com/watch?v=j0z4FweCy4M}{livestream}})
+\item Contributed to segmentation data engine, helping refine labeling ontology and implement system to improve label quality and diversity
+\item Presented model to Elon Musk and had internship work demoed by Autopilot leadership at AI Day 2021 (see \textbf{\href{https://youtu.be/j0z4FweCy4M?t=4279}{1:11:19}} \& \textbf{\href{https://youtu.be/j0z4FweCy4M?t=5490}{1:31:30}} on \textbf{\href{https://www.youtube.com/watch?v=j0z4FweCy4M}{livestream}})
 
 \end{tightemize}
 \sectionsep
-
-\runsubsection{RISELab, UC Berkeley}
-\descript{| Undergraduate Researcher}
-\location{September 2019 – Present | Berkeley, CA}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Researching deep reinforcement and unsupervised learning for databases
-\item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
-\item Co-authored conference paper (accepted to \textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}}) on learned query optimization and presented work at RISE Retreat (2020, 2021) 
-\end{tightemize}
-\sectionsep
-
 
 \runsubsection{Google}
 \descript{| Research Intern, Google Brain}
@@ -238,7 +238,7 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \item Researched deep energy-, score-, and diffusion-based generative models for symbolic music generation under the \href{https://magenta.tensorflow.org/}{Magenta team}
 \item Designed two-stage non-autoregressive model for unconditional generation and gradient-based sampling for post-hoc infilling
 \item Implemented and evaluated Transformer-based models, fast sampling mechanisms, and MusicVAE data pipelines with JAX, Flax, and TensorFlow
-\item First author conference paper published at \textbf{\href{https://ismir2021.ismir.net}{ISMIR 2021}} 
+\item First author paper (\textbf{\href{https://ismir2021.ismir.net}{ISMIR 2021}}) on diffusion models for musical sequences
 \end{tightemize}
 \sectionsep
 
@@ -247,8 +247,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \location{May 2019 – August 2019 | San Francisco, CA}
 \begin{tightemize}
 \item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
-\item Refactored export infrastructure to use a concurrent GraphQL resolver to enable API-consistent data, faster exports, and increased security
-% \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React 
+\item Overhauled infra to improve performance, consistency, and security
+% \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React
 \end{tightemize}
 \sectionsep
 
@@ -282,7 +282,8 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 %\sectionsep
 
 Earlier professional experience is available at \href{https://linkedin.com/in/mittalgautam}{\textbf{linkedin.com/in/mittalgautam}}. \\
-Additional open-source work and projects available at \href{https://github.com/gmittal}{\textbf{github.com/gmittal}}.
+Additional open-source work and projects available at \href{https://github.com/gmittal}{\textbf{github.com/gmittal}}. \\
+All available publications and preprints can be viewed at \href{https://gbm.pw/gscholar}{\bf gbm.pw/gscholar}.
 
 \sectionsep
 
@@ -292,16 +293,16 @@ Additional open-source work and projects available at \href{https://github.com/g
 
 \section{Awards}
 \begin{tabular}{rll}
-2020 & Contrary Talent Fellow (inaugural cohort)\\
+%2020 & Contrary Talent Fellow (inaugural cohort)\\
 2019 & IEEE Eta Kappa Nu Member (top 25\% of Berkeley EECS)\\
 2019 & Accel Scholar (run by Accel Partners \& Berkeley EECS)\\
 2019 & Kleiner Perkins Engineering Fellow \\
 2018 & Regents' and Chancellor's Scholarship (top 2\% of incoming class) \\
-2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\ 
-2016 & MIT Zero Robotics Challenge International Finalist\\
+2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\
+%2016 & MIT Zero Robotics Challenge International Finalist\\
 % 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
 2015 & Top 10 at MHacks, PennApps (international hackathons)\\
-2015 & Apple WWDC Scholarship\\
+2015 & Apple WWDC Scholarship
 \end{tabular}
 
 \end{minipage}

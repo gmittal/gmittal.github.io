@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  29 JAN 2022 17:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  31 MAR 2022 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,9 +776,9 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 (Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 89.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 294.
+(Font)              <7> on input line 295.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 294.
+(Font)              <5> on input line 295.
 [1
 
 ] (./resume.aux)
@@ -795,6 +795,6 @@ Here is how much of TeX's memory you used:
  35655 multiletter control sequences out of 15000+600000
  404310 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,11n,137p,346b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,11n,137p,351b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
