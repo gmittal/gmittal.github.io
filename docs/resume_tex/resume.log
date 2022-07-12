@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  18 MAY 2022 16:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  11 JUL 2022 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -780,7 +780,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 295.
 
-Overfull \hbox (6.17036pt too wide) in paragraph at lines 295--308
+Overfull \hbox (6.17036pt too wide) in paragraph at lines 295--309
 [][]  
  []
 
@@ -796,7 +796,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  15928 strings out of 476919
  288757 string characters out of 5821840
- 675907 words of memory out of 5000000
+ 676907 words of memory out of 5000000
  35655 multiletter control sequences out of 15000+600000
  404310 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
