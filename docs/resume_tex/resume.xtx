@@ -66,8 +66,8 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://gautammittal.com}{gautammittal.com} |
-\href{mailto:gbm@berkeley.edu}{gbm@berkeley.edu} | +1 (480) 648-8254
+\namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://mittal.ai}{mittal.ai} |
+\href{mailto:gmittal@stanford.edu}{gmittal@stanford.edu} | +1 (480) 648-8254 | \href{https://github.com/gmittal}{github.com/gmittal}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,8 +84,13 @@
 
 \section{Education}
 
+\subsection{Stanford University}
+\descript{M.S. Computer Science}
+\location{June 2024 (expected) | Stanford, CA}
+\sectionsep
+
 \subsection{UC Berkeley}
-\descript{B.S. Electrical Engineering \& Computer Science (EECS)}
+\descript{B.S. Electrical Engineering \& Computer Science}
 \location{May 2022 | Berkeley, CA \\ GPA: 3.9 / 4.0}
 
 
@@ -93,8 +98,8 @@
 \textbf{Accel Scholar, Kleiner Perkins Fellow} \\
 \textbf{Eta Kappa Nu (EECS Honor Society) \\ Dean's List (3x)} \\
 
-CS186 uGSI (database TA) \textbullet{} Cal Hacks \\
-UC Jazz \textbullet{} Statistics Undergraduate Student Association \\
+%CS186 uGSI (database TA) \textbullet{} Cal Hacks \\
+%UC Jazz \textbullet{} Statistics Undergraduate Student Association \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,12 +150,12 @@ PostgreSQL
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links}
-GitHub: \href{https://github.com/gmittal}{\bf github.com/gmittal} \\
-LinkedIn: \href{https://www.linkedin.com/in/mittalgautam}{\bf linkedin.com/in/mittalgautam} \\
-Google Scholar: \href{https://gbm.pw/gscholar}{\bf gbm.pw/gscholar} \\
-Website: \href{https://gautam.cc}{\bf gautammittal.com}
-\sectionsep
+%\section{Links}
+%GitHub: \href{https://github.com/gmittal}{\bf github.com/gmittal} \\
+%LinkedIn: \href{https://www.linkedin.com/in/mittalgautam}{\bf linkedin.com/in/mittalgautam} \\
+%Google Scholar: \href{https://gbm.pw/gscholar}{\bf gbm.pw/gscholar} \\
+%Website: \href{https://gautam.cc}{\bf gautammittal.com}
+%\sectionsep
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,7 +175,9 @@ Website: \href{https://gautam.cc}{\bf gautammittal.com}
 \textbf{CS188:} Artificial Intelligence\\
 \textbf{CS189:} Machine Learning\\
 \textbf{CS194-26:} Computer Vision\\
+\textbf{CS251:} Blockchain \& Cryptocurrencies\\
 \textbf{CS285:} Deep RL (Graduate)\\
+\textbf{CS330:} Meta Learning (Graduate)\\
 \textbf{EECS16A:} Linear Algebra \& Circuits\\
 \textbf{EECS16B:} Diff. Equations \& Control\\
 \textbf{EECS126:} Random Processes\\
