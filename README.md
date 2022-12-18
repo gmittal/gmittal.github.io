@@ -2,6 +2,8 @@
 
 This is the source code for my personal website and blog. If you have any questions or concerns, either [email me](mailto:gautam@mittal.net) or [file an issue](https://github.com/gmittal/gautam.cc/issues).
 
+Feel free to use this website as a template for your own, just add a link back to [my website](https://gmittal.github.io). 
+
 
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
