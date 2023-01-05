@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  5 NOV 2022 14:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  20 DEC 2022 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,11 +776,11 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 (Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 89.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 302.
+(Font)              <7> on input line 303.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 302.
+(Font)              <5> on input line 303.
 
-Overfull \hbox (6.17036pt too wide) in paragraph at lines 302--316
+Overfull \hbox (6.17036pt too wide) in paragraph at lines 303--317
 [][]  
  []
 
@@ -790,19 +790,13 @@ Overfull \hbox (6.17036pt too wide) in paragraph at lines 302--316
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: 7C39E291564077CC8859CACF555688D3;943
-(rerunfilecheck)             After:  AE1A8F57569BD97BDAE7D05161304D5D;874.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: AE1A8F57569BD97BDAE7D05161304D5D;874.
  ) 
 Here is how much of TeX's memory you used:
  15928 strings out of 476919
  288757 string characters out of 5821840
- 676074 words of memory out of 5000000
+ 675985 words of memory out of 5000000
  35655 multiletter control sequences out of 15000+600000
  404310 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
