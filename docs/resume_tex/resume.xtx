@@ -212,7 +212,7 @@ PostgreSQL
 \item Researching and developing Sky computing systems to enable large-scale multi-cloud ML workloads and deep RL techniques for query optimizers
 \item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
 \item Co-authored paper (\textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}}) on learned query optimization
-\item Co-authored paper on implementing an intercloud broker for Sky computing (under review)
+\item Co-authored paper on implementing an intercloud broker for Sky computing (\textbf{NSDI 2023})
 \end{tightemize}
 \sectionsep
 
