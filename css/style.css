@@ -137,7 +137,7 @@ a:hover {
 } */
 
 .profile-text {
-  margin: 10px;
+  margin: 20px 15px;
 }
 
 .profile-text > h1 {
@@ -157,16 +157,20 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.social {
+  margin-top: 30px;
+}
+
 .social > a {
   border: 0;
 }
 
 .social > a + a {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .social > a > img {
-  height: 24px;
+  height: 22px;
   border: 0;
   filter: opacity(100%);
   -webkit-filter: opacity(100%)
@@ -186,6 +190,10 @@ a:hover {
   .profile {
     flex-direction: column;
     margin-bottom: 0;
+  }
+
+  .profile-text {
+    margin: 10px;
   }
 
   .profile-pic, .profile-text {
