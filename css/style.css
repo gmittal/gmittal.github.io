@@ -1,27 +1,15 @@
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/Regular.woff");
+  src: url("../fonts/Colfax/webfont/Colfax-Regular.woff"),
+       url("../fonts/Colfax/webfont/Colfax-Regular.woff2") format('woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/RegularItalic.woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/Bold.woff");
+  src: url("../fonts/Colfax/webfont/Colfax-Bold.woff") format('woff'),
+       url("../fonts/Colfax/webfont/Colfax-Bold.woff2") format('woff2');
   font-weight: 700;
-}
-
-@font-face {
-  font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/BoldItalic.woff");
-  font-weight: 700;
-  font-style: italic;
 }
 
 @font-face {
