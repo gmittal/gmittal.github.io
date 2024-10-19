@@ -67,7 +67,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Gautam}{Mittal}{ \urlstyle{same}\href{https://mittal.ai}{mittal.ai} |
-\href{mailto:gmittal@stanford.edu}{gmittal@stanford.edu} | +1 (480) 648-8254 | \href{https://github.com/gmittal}{github.com/gmittal}
+\href{mailto:gautam@mittal.net}{gautam@mittal.net} | +1 (480) 648-8254 | \href{https://github.com/gmittal}{github.com/gmittal}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,8 +86,9 @@
 
 \subsection{Stanford University}
 \descript{M.S. Computer Science}
-\location{Dec 2023 (expected) | Stanford, CA}
-\textbf{Advisor:} Prof. Douwe Kiela
+\location{August 2023 | Stanford, CA \\ GPA: 4.1 / 4.0}
+\textbf{Advisor:} Prof. Douwe Kiela \\
+\textbf{Research with SAIL, CRFM, HAI} \\
 
 \sectionsep
 
@@ -98,7 +99,7 @@
 \textbf{Advisor:} Prof. Ion Stoica \\
 \textbf{Regents' and Chancellor's Scholar} \\
 \textbf{Accel Scholar, Kleiner Perkins Fellow} \\
-\textbf{Eta Kappa Nu (EECS Honor Society) \\ Dean's List (3x)} \\
+\textbf{Eta Kappa Nu (EECS Honor Society) \\ Dean's List (3x), CS186 TA (2x)} \\
 
 %CS186 uGSI (database TA) \textbullet{} Cal Hacks \\
 %UC Jazz \textbullet{} Statistics Undergraduate Student Association \\
@@ -165,7 +166,7 @@ PostgreSQL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
 %\subsection{Undergraduate}
-\textbf{CS61B:} Data Structures\\
+%\textbf{CS61B:} Data Structures\\
 \textbf{CS61C:} Computer Architecture\\
 \textbf{CS70:} Discrete Math \& Probability\\
 \textbf{CS170:} Algorithms \& Intractability\\
@@ -179,12 +180,14 @@ PostgreSQL
 \textbf{CS194-26:} Computer Vision\\
 \textbf{CS251:} Blockchain \& Cryptocurrencies\\
 \textbf{CS285:} Deep RL (Graduate)\\
+\textbf{CS295:} Software Eng. (Graduate)\\
 \textbf{CS330:} Meta Learning (Graduate)\\
+\textbf{CS324:} Foundation Models (Graduate)\\
 \textbf{EECS16A:} Linear Algebra \& Circuits\\
 \textbf{EECS16B:} Diff. Equations \& Control\\
 \textbf{EECS126:} Random Processes\\
-\textbf{MATH53:} Multivariable Calculus\\
-\textbf{CS195:} Society \& Computing\\
+%\textbf{MATH53:} Multivariable Calculus\\
+%\textbf{CS195:} Society \& Computing\\
 \hfill \break
 % * in progress
 \sectionsep
@@ -205,15 +208,26 @@ PostgreSQL
 
 \section{Experience}
 
+\runsubsection{Contextual AI}
+\descript{| Research Engineer, Founding Team}
+\location{April 2023 – June 2024 | Mountain View, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Co-implemented distributed training, evaluation, and deployment frameworks for end-to-end retrieval (lexical \& neural) and LM systems
+\item Project lead for \textbf{\href{https://contextual.ai/introducing-rag2/}{RAG 2.0}}, co-implemented \textbf{\href{https://contextual.ai/introducing-lens/}{LENS}}, and led experiments across multimodal, retrieval, \& language model pre- and post-training
+\item Benchmarking and scaling of HPC infrastructure to support training and inference of models up to 100B parameters
+\item Significant involvement in hiring and co-designed eng. loop (2$\rightarrow$20+)
+\end{tightemize}
+\sectionsep
+
+
 \runsubsection{RISELab, UC Berkeley}
 \descript{| Student Researcher}
 \location{September 2019 – May 2022 | Berkeley, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Researching and developing Sky computing systems to enable large-scale multi-cloud ML workloads and deep RL techniques for query optimizers
 \item Co-implemented system for training a relational query optimizer without expert demonstrations and experimented with generative models, feature perturbation, and planning techniques to improve agent performance
-\item Co-authored paper (\textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}}) on learned query optimization
-\item Co-authored paper on implementing an intercloud broker for Sky computing (\textbf{NSDI 2023})
+\item Published in \textbf{\href{https://2022.sigmod.org/}{SIGMOD 2022}} and \textbf{NSDI 2023}, core contributor to \textbf{\href{https://github.com/skypilot-org/skypilot}{SkyPilot (5.7K+ stars)}}
 \end{tightemize}
 \sectionsep
 
@@ -245,21 +259,21 @@ PostgreSQL
 \location{May 2020 – January 2021 | Mountain View, CA}
 \begin{tightemize}
 \item Researched deep energy-, score-, and diffusion-based generative models for symbolic music generation under the \href{https://magenta.tensorflow.org/}{Magenta team}
-\item Designed two-stage non-autoregressive model for unconditional generation and gradient-based sampling for post-hoc infilling
+\item Designed one of the first latent diffusion models, focused on unconditional and controllable generation
 \item Implemented and evaluated Transformer-based models, fast sampling mechanisms, and MusicVAE data pipelines with JAX, Flax, and TensorFlow
 \item First author paper (\textbf{\href{https://ismir2021.ismir.net}{ISMIR 2021}}) on diffusion models for musical sequences
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Stripe}
-\descript{| Software Engineering Intern}
-\location{May 2019 – August 2019 | San Francisco, CA}
-\begin{tightemize}
-\item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of financial objects
-\item Overhauled infra to improve performance, consistency, and security
-% \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with React
-\end{tightemize}
-\sectionsep
+% \runsubsection{Stripe}
+%\descript{| Software Engineering Intern}
+%\location{May 2019 – August 2019 | San Francisco, CA}
+%\begin{tightemize}
+%\item Built an end-to-end data export pipeline for Connect, used daily by Lyft, DoorDash, and others to process millions of fina%ncial objects
+%\item Overhauled infra to improve performance, consistency, and security
+%% \item Designed and tested data infrastructure using Ruby, Elasticsearch, \& MongoDB; worked on Stripe Dashboard front-end with% React
+%\end{tightemize}
+%\sectionsep
 
 %\runsubsection{Edmodo}
 %\descript{| Machine Learning Intern}
@@ -309,11 +323,11 @@ All available publications and preprints can be viewed at \href{https://gbm.pw/g
 2019 & Accel Scholar (run by Accel Partners \& Berkeley EECS)\\
 2019 & Kleiner Perkins Engineering Fellow \\
 2018 & Regents' and Chancellor's Scholarship (top 2\% of incoming class) \\
-2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\
+%2018 & US Marine Corps \& Louis Armstrong Jazz Awards \\
 %2016 & MIT Zero Robotics Challenge International Finalist\\
 % 2016	     & Regional  & 3\textsuperscript{rd} Place for Congressional App Challenge (CA-18)\\ %
 2015 & Top 10 at MHacks, PennApps (international hackathons)\\
-2015 & Apple WWDC Scholarship
+%2015 & Apple WWDC Scholarship
 \end{tabular}
 
 \end{minipage}

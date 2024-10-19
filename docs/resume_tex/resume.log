@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  11 MAR 2023 22:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.29)  4 JUL 2024 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,27 +633,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Info:    Font shape `TU/HelveticaNeueUltraLight(0)/m/n' will be
 (Font)              scaled to size 10.0769pt on input line 71.
 
-Package fontspec Info: Font family 'HelveticaNeueUltraLight(1)' created for
-(fontspec)             font 'Helvetica Neue UltraLight' with options
-(fontspec)             [Mapping=tex-text].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Helvetica Neue
-(fontspec)             UltraLight/AAT:mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Helvetica Neue
-(fontspec)             UltraLight/B/AAT:mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Helvetica Neue
-(fontspec)             UltraLight/I/AAT:mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Helvetica
-(fontspec)             Neue UltraLight/BI/AAT:mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-
-
 Package fontspec Info: Font family 'HelveticaNeueLight(0)' created for font
 (fontspec)             'Helvetica Neue Light' with options [Mapping=tex-text].
 (fontspec)              
@@ -776,11 +755,11 @@ LaTeX Font Warning: Font shape `TU/HeitiTCMedium(0)/m/sc' undefined
 (Font)              using `TU/HeitiTCMedium(0)/m/n' instead on input line 89.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 304.
+(Font)              <7> on input line 219.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 304.
+(Font)              <5> on input line 219.
 
-Overfull \hbox (6.17036pt too wide) in paragraph at lines 304--318
+Overfull \hbox (6.17036pt too wide) in paragraph at lines 318--332
 [][]  
  []
 
@@ -794,11 +773,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: AE1A8F57569BD97BDAE7D05161304D5D;874.
  ) 
 Here is how much of TeX's memory you used:
- 15928 strings out of 476919
- 288757 string characters out of 5821840
- 676985 words of memory out of 5000000
- 35655 multiletter control sequences out of 15000+600000
- 404310 words of font info for 93 fonts, out of 8000000 for 9000
+ 15905 strings out of 476919
+ 287838 string characters out of 5821840
+ 676980 words of memory out of 5000000
+ 35635 multiletter control sequences out of 15000+600000
+ 404286 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,137p,351b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 
