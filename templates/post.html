@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  
+    <div class="blog-header">
+        <div class="profile-pic">
+            <img src="/img/me/stanford2023.jpg" />
+          </div>      
+        <h1>Gautam Mittal</h1>
+        <div class="profile-links">
+            <a class="button" href="/">About</a>
+        </div>
+    </div>
+
+  <h1>{{title}}</h1>
+  <div class="blog-content">{{content}}</div>
+
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-35192434-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</body>
+</html>
